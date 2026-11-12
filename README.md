@@ -22,10 +22,13 @@ python3 build.py --pages  # только страницы
 - кадры игры 1170×2084 (англ.): `SHOT_TOLKO=yazyki SHOT_YAZYKI=en … engine.sh run --resolution 1170x2532 --script tools/shot.gd` в `~/lotok/game`.
 OG-картинки: `src/og.html` + `work/og.mjs` (Playwright, Chrome) → `docs/assets/og-*.jpg`.
 
-## Проверки (work/, `npm i playwright-core@1.48.2`, браузер — системный Chrome)
-- `node shoot.mjs URL out.png 390 844 --full` — кадр страницы (прокрутка до низа, ленивые картинки);
-- `node weight.mjs` — вес первого экрана и всей страницы; `node idle.mjs` — страница замирает (бегущих анимаций 0, главный поток ≈ 0 мс за 5 с покоя);
+## Проверки
+Глобальный предмет **web-shot** (`~/tooling/web-shot`, ID `web-shot`, граф: `python3 ~/tooling/graph.py show web-shot`):
+- `node ~/tooling/web-shot/webshot.mjs shot URL out.png 390 844 --full` — кадр страницы;
+- `… weight URL 390 844` — вес; `… idle URL 1440 900` — страница замирает (код 1 «ЖИВЁТ В ПОКОЕ» — нельзя выкладывать);
+- до переключения DNS: `PAGES_IP=185.199.108.153 node … shot http://coffeebeansstudio.eu/ out.png`;
 - Lighthouse: `npx lighthouse@12.2.1 URL --only-categories=performance,accessibility,best-practices,seo`.
+`work/` (не в git) — черновики, из которых вынесен web-shot; OG-картинки — `work/og.mjs` + `src/og.html`.
 
 ## Движение (правило владельца: живёт, только пока смотрят)
 Одно оркестрованное движение — открытие кадра на первом экране (шторки + наезд, конечные). Таймеров нет; параллакс — rAF только по
