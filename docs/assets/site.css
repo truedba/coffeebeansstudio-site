@@ -1,0 +1,403 @@
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/CormorantGaramond-400i-cyrillic.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/CormorantGaramond-400i-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/CormorantGaramond-400i-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/CormorantGaramond-400-cyrillic.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/CormorantGaramond-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/CormorantGaramond-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/CormorantGaramond-500-cyrillic.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/CormorantGaramond-500-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Cormorant Garamond';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/CormorantGaramond-500-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/Manrope-400-cyrillic.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/Manrope-400-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(fonts/Manrope-400-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/Manrope-500-cyrillic.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/Manrope-500-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(fonts/Manrope-500-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/Manrope-600-cyrillic.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/Manrope-600-latin-ext.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Manrope';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(fonts/Manrope-600-latin.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Coffee Beans Studio — «вечер в кадре»: фон страницы теплеет от синего часа к свече по мере прокрутки.
+   Движение: одно оркестрованное — открытие кадра (шторки-леттербокс + медленный наезд) при загрузке;
+   всё остальное — ответ на прокрутку, без бесконечных анимаций. */
+:root{
+  --night:#1b2530; --spruce:#202c37; --brown:#2a1e17; --walnut:#34251b; --ember:#120d0a;
+  --linen:#ece3d3; --linen-2:#cdbfaa; --ink:#2a2019;
+  --candle:#f2b866; --cream:#efe2c6; --sage:#97ab97; --blue:#7f96b5;
+  --bg:var(--night);
+  --display:"Cormorant Garamond", "Iowan Old Style", Georgia, serif;
+  --text:"Manrope", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --gut:clamp(16px, 5vw, 72px);
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--linen);font:400 1.0625rem/1.68 var(--text);
+  transition:background-color 1.6s ease;overflow-x:hidden;text-rendering:optimizeLegibility}
+body[data-scene=blue]{--bg:var(--night)} body[data-scene=brown]{--bg:var(--brown)}
+body[data-scene=walnut]{--bg:var(--walnut)} body[data-scene=linen]{--bg:#3a2f25}
+body[data-scene=linen-dark]{--bg:#2e241c} body[data-scene=night]{--bg:#161d26} body[data-scene=ember]{--bg:var(--ember)}
+img{max-width:100%;height:auto;display:block}
+a{color:var(--cream);text-decoration-thickness:1px;text-underline-offset:.22em}
+a:hover{color:var(--candle)}
+:focus-visible{outline:2px solid var(--candle);outline-offset:3px;border-radius:4px}
+h1,h2,h3{font-family:var(--display);font-weight:500;line-height:1;margin:0;letter-spacing:-.01em;text-wrap:balance}
+p{margin:0 0 1em}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.skip{position:absolute;left:-999px;top:8px;z-index:50;background:var(--cream);color:var(--ink);padding:8px 14px;border-radius:6px}
+.skip:focus{left:8px}
+
+/* ── шапка ── */
+.top{position:fixed;inset:0 0 auto 0;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:16px;
+  padding:14px var(--gut);padding-top:max(14px, env(safe-area-inset-top));transition:background-color .6s ease, backdrop-filter .6s ease}
+.top.solid{background:rgba(18,15,13,.72);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+.brand{display:flex;align-items:center;gap:10px;color:var(--linen);text-decoration:none;font:500 1.3rem/1 var(--display);letter-spacing:.01em}
+.brand img{width:22px;height:auto}
+.top nav{display:flex;align-items:center;gap:clamp(12px,2.4vw,28px);font-size:.95rem}
+.top nav a{color:var(--linen);text-decoration:none;padding:6px 0}
+.top nav a[aria-current=page]{color:var(--candle)}
+.langs{display:flex;gap:2px;border:1px solid rgba(236,227,211,.25);border-radius:999px;padding:2px}
+.langs a{padding:3px 9px!important;border-radius:999px;font-size:.78rem;letter-spacing:.04em;color:var(--linen-2)!important}
+.langs a[aria-current=true]{background:rgba(236,227,211,.14);color:var(--linen)!important}
+@media (max-width:560px){.brand span{display:none}.top nav{gap:14px;font-size:.9rem}}
+
+/* ── кнопка ── */
+.btn{display:inline-flex;align-items:center;gap:.6em;padding:.85em 1.5em;border-radius:999px;background:var(--candle);color:#24180f;
+  text-decoration:none;font-weight:600;font-size:.98rem;box-shadow:0 0 0 0 rgba(242,184,102,.0);transition:box-shadow .4s ease, transform .4s ease}
+.btn:hover{color:#24180f;box-shadow:0 0 40px 4px rgba(242,184,102,.35);transform:translateY(-1px)}
+.kicker{font:italic 400 1.35rem/1.2 var(--display);color:var(--candle);margin:0 0 .6em}
+.lead{font-size:clamp(1.05rem,1.5vw,1.25rem);color:var(--linen);max-width:32em}
+
+/* ── первый экран: кадр фильма ── */
+.hero{position:relative;height:100svh;min-height:560px;overflow:hidden;isolation:isolate}
+.hero-img,.hero-img picture,.hero-img img{position:absolute;inset:0;width:100%;height:100%}
+.hero-img img{object-fit:cover;object-position:62% 60%;transform-origin:70% 60%;animation:dolly 9s cubic-bezier(.2,.6,.2,1) both}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:linear-gradient(90deg, rgba(15,20,27,.86) 0%, rgba(15,20,27,.55) 34%, rgba(15,20,27,0) 62%),
+             linear-gradient(0deg, rgba(15,20,27,.7) 0%, rgba(15,20,27,0) 38%)}
+.letterbox{position:absolute;inset:0;z-index:3;pointer-events:none}
+.letterbox i{position:absolute;left:0;right:0;height:50%;background:#07090c;animation:shutter 2.2s cubic-bezier(.7,0,.2,1) .15s both}
+.letterbox i:first-child{top:0;transform-origin:top}
+.letterbox i:last-child{bottom:0;transform-origin:bottom}
+.hero-text{position:absolute;z-index:2;left:var(--gut);bottom:clamp(48px,12vh,140px);max-width:min(52rem, calc(100% - 2*var(--gut)))}
+.hero h1{font-size:clamp(3.1rem,8.4vw,8.2rem);line-height:.92;margin:0 0 .3em;text-shadow:0 2px 30px rgba(0,0,0,.35)}
+.hero-text>*{animation:rise 1.6s cubic-bezier(.2,.7,.2,1) both}
+.hero h1{animation-delay:1.4s}.hero .lead{animation-delay:1.8s}.hero .btn{animation-delay:2.1s}
+.hero .lead{margin-bottom:1.6em}
+@keyframes shutter{0%{transform:scaleY(1)}55%{transform:scaleY(.2)}100%{transform:scaleY(.0)}}
+@keyframes dolly{from{transform:scale(1.09)}to{transform:scale(1)}}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@media (max-aspect-ratio:4/5){
+  .hero-img img{object-position:50% 70%}
+  .hero::after{background:linear-gradient(180deg, rgba(15,20,27,.78) 0%, rgba(15,20,27,.35) 40%, rgba(15,20,27,0) 58%),
+    linear-gradient(0deg, rgba(15,20,27,.75) 0%, rgba(15,20,27,0) 30%)}
+  .hero-text{top:max(96px, 13svh);bottom:auto}
+  .hero .lead{max-width:22em}
+}
+
+/* ── сцены с картинкой во весь кадр ── */
+.scene,.word,.finale{position:relative;min-height:100svh;display:flex;overflow:hidden;isolation:isolate}
+.scene-img,.word-img,.finale-img{position:absolute;inset:-8% 0;z-index:-1}
+.scene-img picture,.scene-img img,.word-img picture,.word-img img,.finale-img picture,.finale-img img{width:100%;height:100%}
+.scene-img img,.word-img img,.finale-img img{object-fit:cover;will-change:transform}
+.scene-text{align-self:flex-end;max-width:34rem;margin:0 var(--gut) clamp(56px,12vh,140px);position:relative}
+.scene-right .scene-text{margin-left:auto}
+.scene h2,.finale h2{font-size:clamp(2.6rem,6vw,5.6rem);margin-bottom:.35em}
+.scene p{font-size:1.1rem;color:var(--linen)}
+.scene-left::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(18,12,9,.88),rgba(18,12,9,.5) 45%,rgba(18,12,9,0) 70%),linear-gradient(0deg,rgba(18,12,9,.6),rgba(18,12,9,0) 40%)}
+.scene-right::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(270deg,rgba(10,13,18,.94),rgba(10,13,18,.82) 46%,rgba(10,13,18,0) 78%),linear-gradient(0deg,rgba(10,13,18,.7),rgba(10,13,18,0) 45%)}
+.scene-left .scene-img img{object-position:70% 50%}
+.scene-right .scene-img img{object-position:30% 50%}
+@media (max-width:760px){
+  .scene-left::after,.scene-right::after{background:linear-gradient(0deg,rgba(14,10,8,.94) 0%,rgba(14,10,8,.7) 45%,rgba(14,10,8,0) 75%)}
+  .scene-left .scene-img img{object-position:62% 50%}
+  .scene-right .scene-img img{object-position:38% 50%}
+}
+
+/* ── Koselig на главной ── */
+.game{padding:clamp(96px,16vh,180px) var(--gut);background:linear-gradient(180deg,#22180f 0%,var(--walnut) 30%,var(--walnut) 70%,#2c2119 100%)}
+.game-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:clamp(32px,6vw,96px);align-items:center;max-width:1240px;margin:0 auto}
+.game-icon{width:80px;height:80px;border-radius:20px;box-shadow:0 10px 30px rgba(0,0,0,.45);margin-bottom:28px}
+.game-title{font-size:clamp(4rem,11vw,9.5rem);line-height:.85;letter-spacing:-.02em;margin-bottom:.12em}
+.game-sub{font:italic 400 clamp(1.4rem,2.4vw,2rem)/1.2 var(--display);color:var(--candle);margin-bottom:1.1em}
+.game-copy>p{max-width:34em}
+.polys{list-style:none;padding:0;margin:1.6em 0;display:grid;gap:.7em}
+.polys li{display:flex;align-items:center;gap:14px}
+.poly{flex:none;width:auto;height:18px}
+.stores{color:var(--linen-2);font-size:.95rem;margin:1.6em 0 1.2em}
+.game-phones{position:relative;height:clamp(460px,52vw,680px)}
+.phone{margin:0;border-radius:clamp(22px,3vw,36px);overflow:hidden;background:#0c0907;border:clamp(4px,.55vw,7px) solid #0c0907;
+  box-shadow:0 40px 80px -20px rgba(0,0,0,.7), 0 0 0 1px rgba(236,227,211,.08)}
+.phone img{width:100%;height:auto}
+.game-phones .phone{position:absolute;width:min(300px,46%)}
+.game-phones .p1{left:4%;top:0;transform:rotate(-4deg)}
+.game-phones .p2{right:4%;bottom:0;transform:rotate(3.5deg)}
+@media (max-width:860px){
+  .game-grid{grid-template-columns:1fr}
+  .game-phones{height:min(118vw,560px)}
+  .game-phones .phone{width:48%}
+}
+
+/* ── слово ── */
+.word{align-items:center;justify-content:flex-start}
+.word::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(236,227,211,.0) 30%,rgba(236,227,211,.0)),radial-gradient(62% 80% at 22% 55%,rgba(240,232,218,.93),rgba(240,232,218,.75) 45%,rgba(240,232,218,0) 80%)}
+.word-text{margin:0 var(--gut);max-width:36rem;color:var(--ink)}
+.word-q{font:italic 500 clamp(4.4rem,15vw,12rem)/.8 var(--display);margin:0 0 .25em;letter-spacing:-.03em;color:#3a2a1e}
+.word-text p:last-child{font-size:1.15rem;line-height:1.6;max-width:24em}
+.word-img img{object-position:65% 50%}
+@media (max-width:760px){
+  .word{align-items:flex-start;padding-top:96px}
+  .word::after{background:linear-gradient(180deg,rgba(240,232,218,.9) 0%,rgba(240,232,218,.7) 40%,rgba(240,232,218,0) 70%)}
+  .word-img img{object-position:40% 50%}
+}
+
+/* ── финал ── */
+.finale{align-items:center;justify-content:flex-end}
+.finale::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(270deg,rgba(18,13,10,.75),rgba(18,13,10,0) 60%)}
+.finale-img img{object-position:25% 50%}
+.finale-text{margin:0 var(--gut);max-width:30rem}
+.finale-text p{font-size:1.1rem}
+.mail{font:500 clamp(1.4rem,2.6vw,2.1rem)/1.2 var(--display);color:var(--candle);word-break:break-word}
+@media (max-width:760px){
+  .finale{align-items:flex-start;padding-top:110px}
+  .finale::after{background:linear-gradient(180deg,rgba(18,13,10,.85),rgba(18,13,10,0) 55%)}
+  .finale-img img{object-position:46% 50%}
+}
+
+/* ── подвал ── */
+.foot{background:#0d0a08;color:var(--linen-2);font-size:.92rem;padding:56px var(--gut) max(40px, env(safe-area-inset-bottom))}
+.foot-in{max-width:1240px;margin:0 auto;display:grid;gap:18px}
+.foot-brand{display:flex;align-items:center;gap:10px;font:500 1.35rem/1 var(--display);color:var(--linen);margin:0}
+.foot-links{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px 26px}
+.foot-links a{color:var(--linen-2)} .foot-links a:hover{color:var(--candle)}
+.foot-note{margin:0;color:#988a77}
+
+/* ── страница игры ── */
+.k-hero{min-height:100svh;display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(28px,6vw,90px);align-items:center;
+  padding:110px var(--gut) 80px;max-width:1320px;margin:0 auto}
+.k-hero-art img{border-radius:clamp(120px,18vw,260px) clamp(120px,18vw,260px) 28px 28px;box-shadow:0 50px 100px -30px rgba(0,0,0,.8);
+  width:100%;max-height:82svh;object-fit:cover;animation:rise 1.8s cubic-bezier(.2,.7,.2,1) both}
+.k-hero .game-icon{width:96px;height:96px;border-radius:24px}
+.k-hero .game-title{font-size:clamp(4.6rem,13vw,11rem)}
+.stores .store{display:inline-block;padding:.55em 1.1em;margin:0 .5em .5em 0;border:1px solid rgba(236,227,211,.3);border-radius:12px;color:var(--linen);font-weight:500}
+.stores-note{color:var(--candle);font:italic 400 1.35rem/1.3 var(--display);margin-top:1.4em}
+@media (max-width:800px){
+  .k-hero{grid-template-columns:1fr;padding-top:96px}
+  .k-hero-art{order:2}
+  .k-hero-art img{max-height:70svh}
+}
+.k-about{position:relative;background:var(--brown);padding:clamp(80px,14vh,160px) max(var(--gut), calc((100% - 1240px)/2));display:grid;grid-template-columns:minmax(0,1fr) auto;gap:48px;align-items:center}
+.prose{max-width:40rem}
+.prose.wide{max-width:46rem}
+.prose h2{font-size:clamp(2.4rem,5vw,4.2rem);margin-bottom:.5em}
+.prose p{color:var(--linen)}
+.bonsai{position:relative;width:min(280px,60vw);aspect-ratio:1/1.05}
+.bonsai img{position:absolute;inset:auto 0 0 0;width:100%;transition:opacity 2.4s ease, transform 2.4s ease}
+.bonsai .b-bloom{opacity:0;transform:scale(.97)}
+.bonsai.in .b-bloom{opacity:1;transform:none}
+.bonsai.in .b-green{opacity:0}
+@media (max-width:760px){.k-about{grid-template-columns:1fr}.bonsai{margin:0 auto}}
+.k-shots{padding:40px 0 clamp(80px,14vh,140px);background:linear-gradient(180deg,var(--brown),var(--walnut))}
+.strip{list-style:none;margin:0;padding:10px var(--gut) 30px;display:flex;gap:clamp(18px,3vw,36px);overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:thin;scrollbar-color:rgba(236,227,211,.25) transparent}
+.strip li{flex:0 0 clamp(210px,62vw,260px);scroll-snap-align:center}
+.strip li:nth-child(odd) .phone{transform:translateY(22px)}
+@media (min-width:1000px){.strip{justify-content:center;overflow:visible}.strip li{flex:1 1 0;max-width:230px}}
+.k-feats{padding:clamp(80px,14vh,150px) var(--gut);background:linear-gradient(180deg,var(--walnut),#2e241c 40%,#1d1b1d)}
+.k-feats .prose{margin:0 auto;max-width:1100px}
+.feats{list-style:none;padding:0;margin:2em 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:36px 48px}
+.feats li{display:flex;gap:18px;align-items:flex-start}
+.feats .poly{margin-top:.5em;height:22px}
+.feats h3{font-size:1.7rem;margin-bottom:.25em}
+.feats p{color:var(--linen-2);margin:0}
+.k-ads{padding:clamp(80px,14vh,150px) var(--gut) clamp(100px,16vh,180px);background:linear-gradient(180deg,#1d1b1d,#161d26)}
+.k-ads .prose{margin:0 auto}
+.platforms{color:var(--linen-2);font-size:.95rem}
+.k-ads h3{font-size:1.6rem;margin:1.6em 0 .6em}
+.links{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px 24px}
+
+/* ── правовые и поддержка ── */
+.legal{--bg:var(--night)}
+.legal-main{padding:120px var(--gut) 100px;max-width:calc(44rem + 2*var(--gut));margin:0 auto}
+.legal-head{margin-bottom:48px}
+.legal-head h1{font-size:clamp(2.8rem,7vw,5rem);margin-bottom:.2em}
+.legal-sub{font:italic 400 1.45rem/1.3 var(--display);color:var(--candle);margin-bottom:.6em}
+.legal-date{color:var(--linen-2);font-size:.9rem}
+.legal-date.end{margin-top:56px;padding-top:20px;border-top:1px solid rgba(236,227,211,.14)}
+.legal-body h2{font-size:clamp(1.7rem,3.4vw,2.2rem);margin:1.9em 0 .55em;scroll-margin-top:90px}
+.legal-body p,.legal-body li{color:#ded3c1}
+.legal-body ul{padding-left:1.2em;margin:0 0 1.1em}
+.legal-body li{margin:.35em 0}
+.legal-body li::marker{color:var(--candle)}
+.legal-body strong{color:var(--linen);font-weight:600}
+.legal-body code{font-size:.92em;background:rgba(236,227,211,.08);padding:.1em .35em;border-radius:5px}
+.note{font-size:.92rem;color:var(--linen-2)!important;border-left:2px solid var(--candle);padding-left:14px}
+.mailbox{padding:28px 0 8px}
+.mailbox h2{margin-top:0!important}
+.faq details{border-top:1px solid rgba(236,227,211,.14);padding:2px 0}
+.faq details:last-child{border-bottom:1px solid rgba(236,227,211,.14)}
+.faq summary{cursor:pointer;list-style:none;padding:18px 36px 18px 0;position:relative;font:500 1.3rem/1.3 var(--display);color:var(--linen)}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"";position:absolute;right:6px;top:50%;width:10px;height:10px;border-right:1.5px solid var(--candle);border-bottom:1.5px solid var(--candle);transform:translateY(-70%) rotate(45deg);transition:transform .3s ease}
+.faq details[open] summary::after{transform:translateY(-30%) rotate(225deg)}
+.faq details p{margin:0 0 20px;color:#ded3c1}
+
+/* ── 404 ── */
+.nf{--bg:var(--ember)}
+.nf-main{position:relative;min-height:100svh;display:flex;align-items:center;justify-content:flex-end;overflow:hidden;isolation:isolate}
+.nf-img{position:absolute;inset:0;z-index:-1}.nf-img picture,.nf-img img{width:100%;height:100%}.nf-img img{object-fit:cover;object-position:25% 50%}
+.nf-text{max-width:30rem;margin:0 var(--gut)}
+.nf-text h1{font-size:clamp(2.6rem,6vw,4.6rem);margin-bottom:.4em}
+.nf-alt{margin-left:14px}
+
+/* ── движение: пауза в фоне и уважение к системной настройке ── */
+body.paused *{animation-play-state:paused!important}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .letterbox{display:none}
+  .bonsai .b-bloom{opacity:1;transform:none}.bonsai .b-green{opacity:0}
+}

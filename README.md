@@ -1,0 +1,41 @@
+# coffeebeansstudio.eu — сайт студии Coffee Beans Studio
+
+**Цель одной фразой:** дать человеку, который нашёл Koselig в магазине (или магазину, который проверяет разработчика), тёплое
+первое впечатление о студии и честные ответы — что за игра, что она делает с данными, куда писать.
+**Правило отбора текста:** фраза проходит, только если её можно проверить в коде игры (`~/lotok/game`) или в магазине.
+
+- Прод: https://coffeebeansstudio.eu (GitHub Pages, ветка `main`, папка `/docs`, файл `docs/CNAME`)
+- Репозиторий: https://github.com/truedba/coffeebeansstudio-site · локально `~/coffeebeansstudio-site`
+- Обязательные адреса для магазинов: `/privacy/`, `/koselig/privacy/`, `/terms/`, `/support/`, `/koselig/delete-data/`,
+  `/app-ads.txt` (строка AdMob `pub-8167533003532456`). Те же страницы на `/ru/…` и `/pl/…` (переводы, обязывает английская).
+
+## Сборка
+```
+python3 build.py          # картинки (если их нет) + страницы → docs/, в конце проверка ссылок: 0 цело · 1 битые · 2 нет исходников
+python3 build.py --pages  # только страницы
+```
+Тексты — `content.py` (en/ru/pl), вёрстка — `src/site.css`, `src/site.js`, шаблоны — функции `page_*` в `build.py`.
+Картинки-исходники в `src/img/` в git не лежат (сотни МБ): откуда они —
+- кадры Nano Banana 4K: `~/lotok/game/assets/sait/*.png`, промпты — `~/lotok/art/NB_SAIT.tsv`, учёт — `~/lotok/art/GEN-LEDGER.md`;
+- бонсай и логотип с пурпура: `bash ~/tooling/claude-rig/rig.sh prep_key.py <src> <out> [--no-crop]` (розовые лепестки сохраняются);
+- иконка и заставка игры: `~/lotok/game/assets/icon.png`, `nb/zs_fon_a.png`;
+- кадры игры 1170×2084 (англ.): `SHOT_TOLKO=yazyki SHOT_YAZYKI=en … engine.sh run --resolution 1170x2532 --script tools/shot.gd` в `~/lotok/game`.
+OG-картинки: `src/og.html` + `work/og.mjs` (Playwright, Chrome) → `docs/assets/og-*.jpg`.
+
+## Проверки (work/, `npm i playwright-core@1.48.2`, браузер — системный Chrome)
+- `node shoot.mjs URL out.png 390 844 --full` — кадр страницы (прокрутка до низа, ленивые картинки);
+- `node weight.mjs` — вес первого экрана и всей страницы; `node idle.mjs` — страница замирает (бегущих анимаций 0, главный поток ≈ 0 мс за 5 с покоя);
+- Lighthouse: `npx lighthouse@12.2.1 URL --only-categories=performance,accessibility,best-practices,seo`.
+
+## Движение (правило владельца: живёт, только пока смотрят)
+Одно оркестрованное движение — открытие кадра на первом экране (шторки + наезд, конечные). Таймеров нет; параллакс — rAF только по
+событию прокрутки; `visibilitychange` ставит CSS на паузу; `prefers-reduced-motion` убирает всё движение.
+
+## Откуда факты политики (сверено 12.11.2026)
+- реклама: `game/scripts/reklama.gd`, `reklama_poing.gd` (только rewarded, UMP до запуска SDK, ролик грузится заранее);
+  `foundation/ads/ad_service_v2.gd` + `addons/admob/src/utils/AdMobSettings.gd`: `is_for_child_directed_treatment=false`, `max_ad_content_rating=PG`;
+- адаптеры медиации Meta/AppLovin есть в Android-сборке (`addons/admob/admob_export_plugin.gd`), в AdMob не включены (BACKLOG P2);
+- Firebase: плагины закомментированы (`android/overlay/build.gradle`), аналитика — заглушка `DummyAnalytics`;
+- iOS: нет `NSUserTrackingUsageDescription` → ATT не спрашивается; `PrivacyInfo.xcprivacy`: `NSPrivacyTracking=false`;
+- покупка: `scripts/pokupka.gd`, товар `koselig.no_ads`, состояние `user://pokupki.json`; сохранения `user://lotok.json`.
+**Включили Firebase, медиацию или новую сеть — СНАЧАЛА правка `content.py` (раздел ads/no) и дата, потом сборка игры.**
