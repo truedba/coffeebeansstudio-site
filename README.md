@@ -13,7 +13,11 @@
 ```
 python3 build.py          # картинки (если их нет) + страницы → docs/, в конце проверка ссылок: 0 цело · 1 битые · 2 нет исходников
 python3 build.py --pages  # только страницы
+python3 build.py --podlog # самопроверка стража безопасности: 6 подлогов в копию docs/, каждый назван своей строкой (условие: 6 из 6)
 ```
+Проверка после сборки — ссылки И **страж безопасности** (`BEZOPASNOST.md`: CSP без unsafe-inline, Referrer-Policy, нет
+style=/встроенных скриптов/голых адресов/внешних ресурсов, security.txt не просрочен). Почта на страницах собирается в `site.js`
+из `data-u/data-d/data-t` — в HTML адреса нет. Заголовки живого сайта: `python3 ~/tooling/web-headers/webheaders.py URL`.
 Тексты — `content.py` (en/ru/pl), вёрстка — `src/site.css`, `src/site.js`, шаблоны — функции `page_*` в `build.py`.
 Картинки-исходники в `src/img/` в git не лежат (сотни МБ): откуда они —
 - кадры Nano Banana 4K: `~/lotok/game/assets/sait/*.png`, промпты — `~/lotok/art/NB_SAIT.tsv`, учёт — `~/lotok/art/GEN-LEDGER.md`;

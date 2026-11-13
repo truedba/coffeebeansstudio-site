@@ -105,6 +105,7 @@ p{margin:0 0 1em}
 .polys{list-style:none;padding:0;margin:1.6em 0;display:grid;gap:.7em}
 .polys li{display:flex;align-items:center;gap:14px}
 .poly{flex:none;width:auto;height:18px}
+.poly-cream{fill:var(--cream)}.poly-sage{fill:var(--sage)}.poly-blue{fill:var(--blue)}
 .stores{color:var(--linen-2);font-size:.95rem;margin:1.6em 0 1.2em}
 .game-phones{position:relative;height:clamp(460px,52vw,680px)}
 .phone{margin:0;border-radius:clamp(22px,3vw,36px);overflow:hidden;background:#0c0907;border:clamp(4px,.55vw,7px) solid #0c0907;

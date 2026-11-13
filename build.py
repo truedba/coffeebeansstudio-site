@@ -3,9 +3,13 @@
 
   python3 build.py            страницы + картинки (картинки пересобираются, только если их нет)
   python3 build.py --pages    только страницы
+  python3 build.py --podlog   самопроверка стража: подложить 6 нарушений в копию docs/ и убедиться, что каждое названо своей строкой
   python3 build.py -h         справка (код 0)
 
 Коды: 0 собрано · 1 собрано, но проверка нашла нарушение · 2 не состоялось (нет исходников, неизвестный ключ).
+Проверка после сборки — ссылки целы И страж безопасности (BEZOPASNOST.md): на каждой странице CSP без unsafe-inline и
+Referrer-Policy; ни одного style=/on*=/встроенного <script> (кроме ld+json); ни одного голого адреса почты; ни одного
+внешнего ресурса (всё self-hosted); security.txt по RFC 9116 и не просрочен.
 Все ссылки относительные — сайт работает и на truedba.github.io/coffeebeansstudio-site/, и на домене.
 Исключение — 404.html: GitHub отдаёт его на любой глубине, поэтому там ссылки от корня домена.
 """
@@ -16,6 +20,7 @@ ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "docs"
 SRC = ROOT / "src"
 DOMAIN = "https://coffeebeansstudio.eu"
+SECURITY_EXPIRES = "2027-11-01T00:00:00.000Z"  # security.txt; продлевать раз в год
 sys.path.insert(0, str(ROOT))
 from content import L, EMAIL, DATE_ISO  # noqa: E402
 
@@ -23,9 +28,9 @@ ARGS = sys.argv[1:]
 for a in ARGS:
     if a in ("-h", "--help"):
         print(__doc__); sys.exit(0)
-    if a not in ("--pages",):
+    if a not in ("--pages", "--podlog"):
         print(f"неизвестный ключ: {a}\n{__doc__}"); sys.exit(2)
-ONLY_PAGES = "--pages" in ARGS
+ONLY_PAGES = "--pages" in ARGS or "--podlog" in ARGS
 
 # ───────────────────────────── картинки ─────────────────────────────
 # имя → (исходник в src/img, ширины, формат «фото» или «альфа»)
@@ -122,13 +127,13 @@ def rel_root(path):
 
 
 # фигуры-«поли­мино» игры для маркеров списка: клетки (x, y) и цвет
-POLY = [
-    ([(0, 0), (0, 1), (0, 2), (1, 2)], "var(--cream)"),
-    ([(0, 0), (1, 0), (2, 0), (1, 1)], "var(--sage)"),
-    ([(0, 0), (1, 0), (1, 1), (2, 1)], "var(--blue)"),
-    ([(0, 0), (1, 0), (0, 1), (1, 1)], "var(--cream)"),
-    ([(0, 0), (0, 1), (1, 1), (2, 1)], "var(--blue)"),
-    ([(0, 0), (1, 0), (2, 0), (3, 0)], "var(--sage)"),
+POLY = [  # цвет — классом (CSP: style-атрибуты запрещены)
+    ([(0, 0), (0, 1), (0, 2), (1, 2)], "cream"),
+    ([(0, 0), (1, 0), (2, 0), (1, 1)], "sage"),
+    ([(0, 0), (1, 0), (1, 1), (2, 1)], "blue"),
+    ([(0, 0), (1, 0), (0, 1), (1, 1)], "cream"),
+    ([(0, 0), (0, 1), (1, 1), (2, 1)], "blue"),
+    ([(0, 0), (1, 0), (2, 0), (3, 0)], "sage"),
 ]
 
 
@@ -136,10 +141,25 @@ def poly_svg(i):
     cells, col = POLY[i % len(POLY)]
     mx = max(x for x, _ in cells) + 1; my = max(y for _, y in cells) + 1
     r = "".join(f'<rect x="{x*10+.6}" y="{y*10+.6}" width="8.8" height="8.8" rx="1.6"/>' for x, y in cells)
-    return f'<svg class="poly" viewBox="0 0 {mx*10} {my*10}" width="{mx*10}" height="{my*10}" aria-hidden="true" style="fill:{col}">{r}</svg>'
+    return f'<svg class="poly poly-{col}" viewBox="0 0 {mx*10} {my*10}" width="{mx*10}" height="{my*10}" aria-hidden="true">{r}</svg>'
 
 
 LOGO_SVG = None
+
+# Почта без голого адреса в HTML: части в data-атрибутах, собирает site.js; без JS видна подпись «support [at] … [dot] eu»
+# (читается человеком и читалкой), а ссылка ведёт на страницу поддержки. Сборщики адресов ищут «x@y.z» регуляркой — здесь его нет.
+MAIL_U, MAIL_D, MAIL_T = EMAIL.split("@")[0], EMAIL.split("@")[1].rsplit(".", 1)[0], EMAIL.rsplit(".", 1)[1]
+MAIL_TEXT = f"{MAIL_U} [at] {MAIL_D} [dot] {MAIL_T}"
+
+
+def mail_link(R, lang, cls="", subject=""):
+    s = f' data-s="{subject}"' if subject else ""
+    c = f' class="{cls}"' if cls else ""
+    return f'<a{c} href="{R}{lp(lang, "support")}" data-u="{MAIL_U}" data-d="{MAIL_D}" data-t="{MAIL_T}"{s}>{MAIL_TEXT}</a>'
+
+
+CSP = ("default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; "
+       "base-uri 'none'; form-action 'none'")  # frame-ancestors в <meta> не действует — он в заголовке Cloudflare (BEZOPASNOST.md)
 
 
 def head(lang, key, title, desc, R, path, og="og-studio", extra_css=""):
@@ -155,6 +175,8 @@ def head(lang, key, title, desc, R, path, og="og-studio", extra_css=""):
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(desc)}">
+<meta http-equiv="Content-Security-Policy" content="{CSP}">
+<meta name="referrer" content="no-referrer">
 <link rel="canonical" href="{canonical}">
 {alts}
 <meta name="theme-color" content="#1b2530">
@@ -203,7 +225,7 @@ def footer(lang, R, T):
       <li><a href="{R}{lp(lang, 'terms')}">{T['foot_terms']}</a></li>
       <li><a href="{R}{lp(lang, 'support')}">{T['foot_support']}</a></li>
       <li><a href="{R}{lp(lang, 'delete')}">{T['foot_delete']}</a></li>
-      <li><a href="mailto:{EMAIL}">{EMAIL}</a></li>
+      <li>{mail_link(R, lang)}</li>
     </ul>
     <p class="foot-note">{T['foot_note']} © 2026</p>
   </div>
@@ -274,7 +296,7 @@ def page_home(lang, R, T):
   <div class="finale-text">
     <h2>{T['end_h']}</h2>
     <p>{T['end_p']}</p>
-    <a class="mail" href="mailto:{EMAIL}">{EMAIL}</a>
+    {mail_link(R, lang, "mail")}
   </div>
 </section>
 </main>
@@ -293,7 +315,7 @@ def page_koselig(lang, R, T):
         "@context": "https://schema.org", "@type": "VideoGame", "name": "Koselig",
         "description": T["k_desc"], "gamePlatform": ["iOS", "Android"], "genre": "Puzzle",
         "inLanguage": ["en", "es", "de", "fr", "it", "pl", "ru"],
-        "publisher": {"@type": "Organization", "name": "Coffee Beans Studio", "url": DOMAIN, "email": EMAIL},
+        "publisher": {"@type": "Organization", "name": "Coffee Beans Studio", "url": DOMAIN},
         "url": f"{DOMAIN}/koselig/",
     }
     return f"""<body class="koselig">
@@ -348,7 +370,8 @@ def page_koselig(lang, R, T):
 
 
 def page_legal(lang, R, T, h1, sub, body, key):
-    body = body.replace("{EMAIL}", EMAIL).replace("{R}", R)
+    body = (body.replace('<a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a>', mail_link(R, lang, subject="Delete%20my%20data"))
+            .replace('<a href="mailto:{EMAIL}">{EMAIL}</a>', mail_link(R, lang)).replace("{R}", R))
     return f"""<body class="legal">
 {header(lang, key, R, T, solid=True)}
 <main id="main" class="legal-main">
@@ -359,7 +382,7 @@ def page_legal(lang, R, T, h1, sub, body, key):
   </header>
   <article class="prose legal-body">
 {body}
-  <p class="legal-date end">{T['legal_updated']}: <time datetime="{DATE_ISO}">{T['date']}</time> · <a href="mailto:{EMAIL}">{EMAIL}</a></p>
+  <p class="legal-date end">{T['legal_updated']}: <time datetime="{DATE_ISO}">{T['date']}</time> · {mail_link(R, lang)}</p>
   </article>
 </main>
 {footer(lang, R, T)}"""
@@ -367,7 +390,7 @@ def page_legal(lang, R, T, h1, sub, body, key):
 
 def page_support(lang, R, T):
     faq = "".join(f"<details><summary>{q}</summary><p>{a}</p></details>" for q, a in T["faq"])
-    body = f"""<section class="mailbox"><h2>{T['s_mail_h']}</h2><p><a class="mail" href="mailto:{EMAIL}">{EMAIL}</a></p><p>{T['s_mail_p']}</p></section>
+    body = f"""<section class="mailbox"><h2>{T['s_mail_h']}</h2><p>{mail_link(R, lang, "mail")}</p><p>{T['s_mail_p']}</p></section>
 <h2>{T['s_faq_h']}</h2>
 <div class="faq">{faq}</div>
 <h2 id="delete">{T['s_del_h']}</h2>
@@ -436,6 +459,12 @@ def build_pages():
     sm = "".join(f"<url><loc>{u}</loc><lastmod>{DATE_ISO}</lastmod></url>\n" for u in urls)
     (OUT / "sitemap.xml").write_text(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n{sm}</urlset>\n', encoding="utf-8")
     (OUT / "CNAME").write_text("coffeebeansstudio.eu\n", encoding="utf-8")
+    # RFC 9116: куда писать о дыре. Срок — меньше года; просрочен → check() код 1 (обновить SECURITY_EXPIRES).
+    sec = (f"Contact: mailto:{EMAIL}\nContact: {DOMAIN}/support/\nExpires: {SECURITY_EXPIRES}\n"
+           f"Preferred-Languages: en, ru, pl\nCanonical: {DOMAIN}/.well-known/security.txt\n")
+    (OUT / ".well-known").mkdir(exist_ok=True)
+    (OUT / ".well-known" / "security.txt").write_text(sec, encoding="utf-8")
+    (OUT / "security.txt").write_text(sec, encoding="utf-8")
     (OUT / ".nojekyll").write_text("", encoding="utf-8")
     (OUT / "site.webmanifest").write_text(json.dumps({"name": "Coffee Beans Studio", "short_name": "Coffee Beans", "icons": [{"src": "/icon-512.png", "sizes": "512x512", "type": "image/png"}], "theme_color": "#1b2530", "background_color": "#1b2530", "display": "browser"}), encoding="utf-8")
     # css/js/шрифты
@@ -454,10 +483,11 @@ def fix_lang_links(h, lang, key, R):
     return h
 
 
-def check():
-    """Проверка собранного: каждая относительная ссылка и картинка ведёт на файл. Нарушение → код 1 с перечнем."""
+def check(out=None):
+    """Проверка собранного: каждая относительная ссылка и картинка ведёт на файл; страж безопасности. Нарушение → код 1 с перечнем."""
+    out = out or OUT
     bad = []
-    for p in OUT.rglob("*.html"):
+    for p in out.rglob("*.html"):
         if p.name == "404.html":
             continue
         t = p.read_text(encoding="utf-8")
@@ -472,14 +502,87 @@ def check():
                 if not tgt.exists():
                     bad.append(f"{p.relative_to(OUT)} → {ref}")
         if "{EMAIL}" in t or "{R}" in t:
-            bad.append(f"{p.relative_to(OUT)}: неподставленный шаблон")
-    if (OUT / "app-ads.txt").read_text() != "google.com, pub-8167533003532456, DIRECT, f08c47fec0942fa0\n":
+            bad.append(f"{p.relative_to(out)}: неподставленный шаблон")
+    if (out / "app-ads.txt").read_text() != "google.com, pub-8167533003532456, DIRECT, f08c47fec0942fa0\n":
         bad.append("app-ads.txt: строка не та")
+    bad += check_security(out)
     if bad:
-        print("НАРУШЕНИЯ ССЫЛОК:\n  " + "\n  ".join(sorted(set(bad))[:60])); return 1
-    n = len(list(OUT.rglob("*.html")))
-    print(f"ссылки целы: {n} страниц")
+        print("НАРУШЕНИЯ:\n  " + "\n  ".join(sorted(set(bad))[:60])); return 1
+    n = len(list(out.rglob("*.html")))
+    print(f"ссылки целы, страж безопасности чист: {n} страниц")
     return 0
+
+
+EMAIL_RE = re.compile(r"[\w.+-]+@[\w-]+\.[a-z]{2,}", re.I)
+
+
+def check_security(out):
+    """Страж безопасности собранного сайта. Каждое нарушение — строка с ИМЕНЕМ класса нарушения (по ней узнаётся подлог)."""
+    bad = []
+    for p in sorted(out.rglob("*.html")):
+        rel, t = p.relative_to(out), p.read_text(encoding="utf-8")
+        m = re.search(r'<meta http-equiv="Content-Security-Policy" content="([^"]*)"', t)
+        if not m:
+            bad.append(f"НЕТ CSP: {rel}")
+        elif "unsafe-inline" in m.group(1) or "default-src 'none'" not in m.group(1):
+            bad.append(f"СЛАБЫЙ CSP: {rel}: {m.group(1)[:60]}")
+        if '<meta name="referrer"' not in t:
+            bad.append(f"НЕТ REFERRER-POLICY: {rel}")
+        for s in re.findall(r'\sstyle="[^"]*"', t):
+            bad.append(f"ВСТРОЕННЫЙ СТИЛЬ: {rel}: {s.strip()[:50]}")
+        for s in re.findall(r'\son[a-z]+="[^"]*"', t):
+            bad.append(f"ОБРАБОТЧИК В АТРИБУТЕ: {rel}: {s.strip()[:50]}")
+        for s in re.findall(r"<script\b[^>]*>", t):
+            if "src=" not in s and 'type="application/ld+json"' not in s:
+                bad.append(f"ВСТРОЕННЫЙ СКРИПТ: {rel}: {s[:50]}")
+        for s in set(EMAIL_RE.findall(t)):
+            bad.append(f"ГОЛЫЙ АДРЕС ПОЧТЫ: {rel}: {s}")
+        # ресурсы — src= и <link href=; обычные ссылки <a href> наружу (политики Google/Apple) — не загрузка, их не трогаем
+        for s in re.findall(r'\ssrc="(https?://[^"]+)"', t) + re.findall(r'<link\b[^>]*\shref="(https?://[^"]+)"', t):
+            if not s.startswith(DOMAIN + "/"):
+                bad.append(f"ВНЕШНИЙ РЕСУРС: {rel}: {s[:60]}")
+    css = out / "assets" / "site.css"
+    if css.exists():
+        for s in re.findall(r"url\(\s*['\"]?(https?:|//)[^)]*\)", css.read_text(encoding="utf-8")):
+            bad.append(f"ВНЕШНИЙ РЕСУРС: assets/site.css: {s}")
+    for sp in (out / ".well-known" / "security.txt", out / "security.txt"):
+        if not sp.exists():
+            bad.append(f"НЕТ SECURITY.TXT: {sp.relative_to(out)}"); continue
+        st = sp.read_text(encoding="utf-8")
+        for f in ("Contact:", "Expires:", "Preferred-Languages:", "Canonical:"):
+            if f not in st:
+                bad.append(f"SECURITY.TXT БЕЗ ПОЛЯ {f[:-1]}: {sp.relative_to(out)}")
+        m = re.search(r"Expires: (\S+)", st)
+        if m and m.group(1)[:10] <= DATE_ISO:
+            bad.append(f"SECURITY.TXT ПРОСРОЧЕН: {sp.relative_to(out)}: {m.group(1)}")
+    return bad
+
+
+def podlog():
+    """Самопроверка стража: 6 подлогов в копию docs/, каждый обязан быть назван СВОЕЙ строкой. Код 0 — все пойманы, 1 — нет."""
+    import tempfile
+    cases = [  # (имя, правка файла → текст, ожидаемая строка причины)
+        ("голый адрес",     "index.html", lambda s: s.replace("</main>", f"<p>{EMAIL}</p></main>", 1), "ГОЛЫЙ АДРЕС ПОЧТЫ: index.html: " + EMAIL),
+        ("style-атрибут",   "index.html", lambda s: s.replace("<h1>", '<h1 style="color:red">', 1),       "ВСТРОЕННЫЙ СТИЛЬ: index.html: style=\"color:red\""),
+        ("внешний скрипт",  "koselig/index.html", lambda s: s.replace("</body>", '<script src="https://cdn.example.com/x.js"></script></body>', 1), "ВНЕШНИЙ РЕСУРС: koselig/index.html: https://cdn.example.com/x.js"),
+        ("снят CSP",        "support/index.html", lambda s: re.sub(r'<meta http-equiv="Content-Security-Policy"[^>]*>', "", s), "НЕТ CSP: support/index.html"),
+        ("встроенный скрипт", "ru/index.html", lambda s: s.replace("</body>", "<script>alert(1)</script></body>", 1), "ВСТРОЕННЫЙ СКРИПТ: ru/index.html: <script>"),
+        ("security.txt просрочен", ".well-known/security.txt", lambda s: re.sub(r"Expires: \S+", "Expires: 2020-01-01T00:00:00.000Z", s), "SECURITY.TXT ПРОСРОЧЕН: .well-known/security.txt: 2020-01-01T00:00:00.000Z"),
+    ]
+    missed = 0
+    for name, f, mut, want in cases:
+        with tempfile.TemporaryDirectory() as d:
+            cp = Path(d) / "docs"; shutil.copytree(OUT, cp)
+            p = cp / f; p.write_text(mut(p.read_text(encoding="utf-8")), encoding="utf-8")
+            got = check_security(cp)
+            hit = any(g.startswith(want) for g in got)
+            print(f"{'пойман ' if hit else 'ПРОПУЩЕН'} подлог «{name}» → {want if hit else 'ждали: ' + want + '; получили: ' + '; '.join(got[:3])}")
+            missed += not hit
+    clean = check_security(OUT)
+    if clean:
+        print("ПРОВАЛ: страж ругается на чистую сборку: " + "; ".join(clean[:3]))
+    print(f"самопроверка стража: {len(cases) - missed} из {len(cases)} подлогов пойманы, чистая сборка {'чиста' if not clean else 'НЕ ЧИСТА'}")
+    return 1 if (missed or clean) else 0
 
 
 if __name__ == "__main__":
@@ -487,4 +590,6 @@ if __name__ == "__main__":
     if not ONLY_PAGES:
         build_images()
     build_pages()
+    if "--podlog" in ARGS:
+        sys.exit(podlog())
     sys.exit(check())

@@ -2,6 +2,16 @@
 // Таймеров нет вовсе: параллакс считается в requestAnimationFrame ТОЛЬКО в ответ на прокрутку
 // (вкладка в фоне не прокручивается — значит, ни такта), смена тона фона и цветение бонсая — IntersectionObserver.
 (() => {
+  // не даём показать сайт в чужом <iframe> (кликджекинг) — запасной путь, основной — заголовок frame-ancestors у Cloudflare
+  try { if (self !== top) top.location.replace(location.href); } catch (e) { /* чужой фрейм без доступа — ничего не делаем */ }
+
+  // почта собирается здесь: в HTML адреса нет (сборщикам спама нечего брать), без JS остаётся подпись и ссылка на поддержку
+  for (const a of document.querySelectorAll('a[data-u]')) {
+    const e = `${a.dataset.u}@${a.dataset.d}.${a.dataset.t}`;
+    a.href = 'mailto:' + e + (a.dataset.s ? '?subject=' + a.dataset.s : '');
+    a.textContent = e;
+  }
+
   const body = document.body;
   const reduce = matchMedia('(prefers-reduced-motion: reduce)');
 
