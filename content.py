@@ -1,4 +1,4 @@
-# Тексты сайта coffeebeansstudio.eu на трёх языках. Факты об игре — только из кода ~/lotok (см. README.md, раздел «Откуда факты»).
+# Тексты сайта coffeebeansstudio.eu на семи языках (как в игре). Факты об игре — только из кода ~/lotok (см. README.md, раздел «Откуда факты»).
 # Правило отбора: фраза проходит, если её можно проверить в коде игры или в магазине; «красивое, но непроверяемое» — нет.
 
 DATE_ISO = "2026-11-12"
@@ -9,9 +9,8 @@ L = {}
 # ─────────────────────────────── ENGLISH ───────────────────────────────
 L["en"] = dict(
     name="English", short="EN", date="12 November 2026",
-    nav_koselig="Koselig", nav_support="Support", skip="Skip to content",
+    nav_koselig="Koselig", nav_support="Support", skip="Skip to content", lang_label="Language",
     foot_legal="Privacy", foot_terms="Terms", foot_support="Support", foot_delete="Delete data",
-    foot_note="Coffee Beans Studio is the trading name of Dzmitry Kurtsikau, Poland.",
     soon_stores="Coming soon to the App Store and Google Play",
     home_title="Coffee Beans Studio — cozy, clever games",
     home_desc="Coffee Beans Studio is a small independent studio making cozy, clever games. Our first game, Koselig, is a wooden tray puzzle for iPhone and Android.",
@@ -76,7 +75,7 @@ L["en"] = dict(
 <p>This policy explains what happens to your data when you play <strong>Koselig</strong> on iPhone or Android and when you visit <strong>coffeebeansstudio.eu</strong>. We wrote it to match what the app actually does.</p>
 
 <h2 id="who">Who we are</h2>
-<p>Koselig is published by <strong>Coffee Beans Studio</strong>, the trading name of <strong>Dzmitry Kurtsikau</strong>, a private individual based in Poland (“we”, “us”). For any question about privacy, write to <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
+<p>Koselig is published by <strong>Coffee Beans Studio</strong>. The controller of your personal data under the GDPR is <strong>Dzmitry Kurtsikau</strong>, a private individual based in Poland (“we”, “us”). For any question about privacy, write to <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
 
 <h2 id="short">In short</h2>
 <ul>
@@ -164,7 +163,7 @@ L["en"] = dict(
     t_h1="Terms of Use",
     t_sub="Koselig and other games by Coffee Beans Studio",
     terms_html="""
-<p>These terms apply when you use <strong>Koselig</strong> or another game by <strong>Coffee Beans Studio</strong> (the trading name of Dzmitry Kurtsikau, Poland). By playing, you agree to them. They are short on purpose.</p>
+<p>These terms apply when you use <strong>Koselig</strong> or another game by <strong>Coffee Beans Studio</strong> (Dzmitry Kurtsikau, Poland). By playing, you agree to them. They are short on purpose.</p>
 
 <h2>1. Playing the game</h2>
 <p>We give you a personal, non-exclusive, non-transferable right to install and play our games on devices you own or control, for your own non-commercial use. Please do not copy, resell, reverse engineer or redistribute the game or its art, except where the law allows it.</p>
@@ -201,7 +200,7 @@ L["en"] = dict(
     s_faq_h="Questions",
     faq=[
         ("How do I restore the “No ads” purchase?",
-         "Open the menu (☰ in the top right corner) → Settings → next to <em>No ads</em> tap <em>Restore</em>. Use the same Apple ID or Google account you bought it with. The purchase is checked with the store every time the game starts, so it also comes back by itself after a reinstall once the store answers."),
+         "Tap ☰ in the top right corner to open Settings, then tap <em>Restore</em> next to <em>No ads</em>. Use the same Apple ID or Google account you bought it with. The purchase is checked with the store every time the game starts, so it also comes back by itself after a reinstall once the store answers."),
         ("How do I start a level over?",
          "Open Settings and tap <em>Start over</em>, then tap again to confirm. This resets the current level. To erase everything — all progress and settings — delete the app."),
         ("How do I change the language?",
@@ -253,9 +252,8 @@ L["en"] = dict(
 # ─────────────────────────────── РУССКИЙ ───────────────────────────────
 L["ru"] = dict(
     name="Русский", short="RU", date="12 ноября 2026",
-    nav_koselig="Koselig", nav_support="Поддержка", skip="К содержанию",
+    nav_koselig="Koselig", nav_support="Поддержка", skip="К содержанию", lang_label="Язык",
     foot_legal="Конфиденциальность", foot_terms="Условия", foot_support="Поддержка", foot_delete="Удаление данных",
-    foot_note="Coffee Beans Studio — торговое название Дмитрия Курцикова (Dzmitry Kurtsikau), Польша.",
     soon_stores="Скоро в App Store и Google Play",
     home_title="Coffee Beans Studio — уютные умные игры",
     home_desc="Coffee Beans Studio — маленькая независимая студия уютных умных игр. Первая игра — Koselig, деревянный лоток-головоломка для iPhone и Android.",
@@ -318,7 +316,7 @@ L["ru"] = dict(
 <p>Здесь описано, что происходит с вашими данными, когда вы играете в <strong>Koselig</strong> на iPhone или Android и когда заходите на <strong>coffeebeansstudio.eu</strong>. Текст написан по тому, что приложение делает на самом деле.</p>
 
 <h2 id="who">Кто мы</h2>
-<p>Koselig выпускает <strong>Coffee Beans Studio</strong> — торговое название <strong>Dzmitry Kurtsikau</strong>, частного лица в Польше («мы»). По любым вопросам о данных пишите на <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
+<p>Koselig выпускает <strong>Coffee Beans Studio</strong>. Ответственный за ваши персональные данные (контролёр по GDPR) — <strong>Dzmitry Kurtsikau</strong>, частное лицо в Польше («мы»). По любым вопросам о данных пишите на <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
 
 <h2 id="short">Коротко</h2>
 <ul>
@@ -406,7 +404,7 @@ L["ru"] = dict(
     t_sub="Koselig и другие игры Coffee Beans Studio",
     terms_html="""
 <p class="note">Юридически обязывающая версия — <a href="{R}terms/">английская</a>. Это перевод для удобства.</p>
-<p>Эти условия действуют, когда вы пользуетесь <strong>Koselig</strong> или другой игрой <strong>Coffee Beans Studio</strong> (торговое название Dzmitry Kurtsikau, Польша). Играя, вы с ними соглашаетесь. Они короткие нарочно.</p>
+<p>Эти условия действуют, когда вы пользуетесь <strong>Koselig</strong> или другой игрой <strong>Coffee Beans Studio</strong> (Dzmitry Kurtsikau, Польша). Играя, вы с ними соглашаетесь. Они короткие нарочно.</p>
 <h2>1. Игра</h2>
 <p>Мы даём вам личное, неисключительное и непередаваемое право устанавливать наши игры на свои устройства и играть в них для некоммерческих целей. Пожалуйста, не копируйте, не перепродавайте, не декомпилируйте и не распространяйте игру и её графику, кроме случаев, разрешённых законом.</p>
 <h2>2. Магазины</h2>
@@ -434,7 +432,7 @@ L["ru"] = dict(
     s_faq_h="Вопросы",
     faq=[
         ("Как восстановить покупку «Без рекламы»?",
-         "Откройте меню (☰ в правом верхнем углу) → Настройки → рядом с <em>«Без рекламы»</em> нажмите <em>«Восстановить»</em>. Нужен тот же Apple ID или аккаунт Google, с которого была покупка. Игра сверяется с магазином при каждом запуске, так что после переустановки покупка вернётся и сама, как только магазин ответит."),
+         "Нажмите ☰ в правом верхнем углу, чтобы открыть Настройки, затем — <em>«Восстановить»</em> рядом с <em>«Без рекламы»</em>. Нужен тот же Apple ID или аккаунт Google, с которого была покупка. Игра сверяется с магазином при каждом запуске, так что после переустановки покупка вернётся и сама, как только магазин ответит."),
         ("Как начать уровень сначала?",
          "В настройках нажмите <em>«Начать сначала»</em> и ещё раз для подтверждения. Сбросится текущий уровень. Чтобы стереть всё — прогресс и настройки — удалите приложение."),
         ("Как сменить язык?",
@@ -482,9 +480,8 @@ L["ru"] = dict(
 # ─────────────────────────────── POLSKI ───────────────────────────────
 L["pl"] = dict(
     name="Polski", short="PL", date="12 listopada 2026",
-    nav_koselig="Koselig", nav_support="Pomoc", skip="Przejdź do treści",
+    nav_koselig="Koselig", nav_support="Pomoc", skip="Przejdź do treści", lang_label="Język",
     foot_legal="Prywatność", foot_terms="Warunki", foot_support="Pomoc", foot_delete="Usuwanie danych",
-    foot_note="Coffee Beans Studio to nazwa handlowa Dzmitry Kurtsikau, Polska.",
     soon_stores="Wkrótce w App Store i Google Play",
     home_title="Coffee Beans Studio — przytulne, mądre gry",
     home_desc="Coffee Beans Studio to małe niezależne studio, które tworzy przytulne, mądre gry. Nasza pierwsza gra, Koselig, to drewniana łamigłówka z tacką na iPhone’a i Androida.",
@@ -547,7 +544,7 @@ L["pl"] = dict(
 <p>Ta polityka wyjaśnia, co dzieje się z Twoimi danymi, gdy grasz w <strong>Koselig</strong> na iPhonie lub Androidzie i gdy odwiedzasz <strong>coffeebeansstudio.eu</strong>. Opisuje to, co aplikacja faktycznie robi.</p>
 
 <h2 id="who">Kim jesteśmy</h2>
-<p>Koselig wydaje <strong>Coffee Beans Studio</strong> — nazwa handlowa <strong>Dzmitry Kurtsikau</strong>, osoby prywatnej z Polski („my”). W sprawach prywatności pisz na <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
+<p>Koselig wydaje <strong>Coffee Beans Studio</strong>. Administratorem Twoich danych osobowych w rozumieniu RODO jest <strong>Dzmitry Kurtsikau</strong>, osoba prywatna z Polski („my”). W sprawach prywatności pisz na <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
 
 <h2 id="short">W skrócie</h2>
 <ul>
@@ -635,7 +632,7 @@ L["pl"] = dict(
     t_sub="Koselig i inne gry Coffee Beans Studio",
     terms_html="""
 <p class="note">Wiążąca jest wersja <a href="{R}terms/">angielska</a>. To tłumaczenie dla wygody.</p>
-<p>Te warunki obowiązują, gdy korzystasz z <strong>Koselig</strong> lub innej gry <strong>Coffee Beans Studio</strong> (nazwa handlowa Dzmitry Kurtsikau, Polska). Grając, akceptujesz je. Są krótkie celowo.</p>
+<p>Te warunki obowiązują, gdy korzystasz z <strong>Koselig</strong> lub innej gry <strong>Coffee Beans Studio</strong> (Dzmitry Kurtsikau, Polska). Grając, akceptujesz je. Są krótkie celowo.</p>
 <h2>1. Gra</h2>
 <p>Udzielamy Ci osobistego, niewyłącznego i nieprzenoszalnego prawa do instalowania naszych gier na swoich urządzeniach i grania w nie do celów niekomercyjnych. Prosimy nie kopiować, nie odsprzedawać, nie dekompilować i nie rozpowszechniać gry ani jej grafiki, poza przypadkami dozwolonymi przez prawo.</p>
 <h2>2. Sklepy</h2>
@@ -663,7 +660,7 @@ L["pl"] = dict(
     s_faq_h="Pytania",
     faq=[
         ("Jak przywrócić zakup „Bez reklam”?",
-         "Otwórz menu (☰ w prawym górnym rogu) → Ustawienia → przy <em>„Bez reklam”</em> stuknij <em>„Przywróć”</em>. Użyj tego samego Apple ID lub konta Google, na którym kupiłeś. Gra sprawdza zakup w sklepie przy każdym uruchomieniu, więc po ponownej instalacji wraca on sam, gdy tylko sklep odpowie."),
+         "Stuknij ☰ w prawym górnym rogu, aby otworzyć Ustawienia, a potem stuknij <em>„Przywróć”</em> przy <em>„Bez reklam”</em>. Użyj tego samego Apple ID lub konta Google, na którym kupiłeś. Gra sprawdza zakup w sklepie przy każdym uruchomieniu, więc po ponownej instalacji wraca on sam, gdy tylko sklep odpowie."),
         ("Jak zacząć poziom od nowa?",
          "W Ustawieniach stuknij <em>„Zacznij od nowa”</em> i jeszcze raz, aby potwierdzić. Zresetuje to bieżący poziom. Aby skasować wszystko — postęp i ustawienia — usuń aplikację."),
         ("Jak zmienić język?",
@@ -706,4 +703,988 @@ L["pl"] = dict(
     nf_h1="Ta strona zgasła jak świeca",
     nf_p="Adres może być błędny albo strona została przeniesiona.",
     nf_cta="Wróć do studia",
+)
+
+# ─────────────────────────────── ESPAÑOL ───────────────────────────────
+# Термины игры — колонка «es» ~/lotok/tools/teksty_gen.py; правовые тексты — смысл английских без изменений.
+L["es"] = dict(
+    name="Español", short="ES", date="12 de noviembre de 2026",
+    nav_koselig="Koselig", nav_support="Soporte", skip="Saltar al contenido", lang_label="Idioma",
+    foot_legal="Privacidad", foot_terms="Condiciones", foot_support="Soporte", foot_delete="Eliminar datos",
+    soon_stores="Próximamente en el App Store y Google Play",
+    home_title="Coffee Beans Studio — juegos acogedores e ingeniosos",
+    home_desc="Coffee Beans Studio es un pequeño estudio independiente que hace juegos acogedores e ingeniosos. Nuestro primer juego, Koselig, es un rompecabezas con bandeja de madera para iPhone y Android.",
+    hero_eyebrow="Coffee Beans Studio",
+    hero_h1="Juegos tranquilos<br>para veladas cálidas",
+    hero_p="Hacemos juegos acogedores e ingeniosos, de esos que se juegan despacio, con una taza de té y a la luz de una vela.",
+    hero_cta="Conoce Koselig",
+    ch1_h="A fuego lento",
+    ch1_p="Coffee Beans Studio es un pequeño estudio independiente. Nos importan los rompecabezas tranquilos, los materiales cálidos y el diseño honesto: las cosas que se acarician con la mirada —madera, lino, luz de vela— y las reglas que se aprenden en un minuto.",
+    ch2_h="Koselig",
+    ch2_sub="Un rompecabezas con bandeja de madera",
+    ch2_p="Encaja todas las piezas en la bandeja de madera. Cambia la mesa, la bandeja y las piezas según tu estado de ánimo: roble o lino, nogal o latón, pintura o piedra. Y si te atascas, un pequeño bonsái puede decirte si la posición aún tiene solución.",
+    ch2_cta="Sobre el juego",
+    word_q="koselig",
+    word_def="<em>noruego</em> — acogedor, cálido, entrañable. La sensación de una vela, una manta y buena compañía.",
+    soon_h="Casi a punto",
+    soon_p="Koselig se prepara para llegar al App Store y a Google Play. El día del lanzamiento encontrarás aquí los enlaces.",
+    end_h="Escríbenos",
+    end_p="¿Preguntas, ideas o un fallo en algún rompecabezas? Leemos todos los mensajes.",
+    # Koselig
+    k_title="Koselig — un acogedor rompecabezas con bandeja de madera para iPhone y Android",
+    k_desc="Koselig es un rompecabezas tranquilo con bandeja de madera: encaja todas las piezas, elige tu mesa, tu bandeja y tus piezas, y deja que un pequeño bonsái florezca cuando lo resuelvas. Próximamente en el App Store y Google Play.",
+    k_eyebrow="Un juego de Coffee Beans Studio",
+    k_h1="Koselig",
+    k_lead="Un acogedor rompecabezas con bandeja de madera. Encaja todas las piezas en la bandeja y tómate tu tiempo.",
+    k_about_h="Un rompecabezas sin prisas",
+    k_about_p=[
+        "Koselig es un rompecabezas digital con bandeja de madera. Las piezas están sobre la mesa, alrededor de la bandeja: las tomas, las giras y las encajas hasta llenar todas las casillas.",
+        "Los niveles te llevan por un mapa, desde bandejas pequeñas hasta la bandeja completa. Hay más de una forma de llenar una bandeja, y también una solución más estricta, en la que no se tocan piezas del mismo color.",
+        "Cuando no tengas claro si una posición aún tiene solución, toca <em>¿Atascado?</em> y el bonsái la comprobará por ti tras un video corto que eliges ver, o al instante si has comprado <em>Sin anuncios</em>.",
+    ],
+    k_feat_h="Qué hay dentro",
+    k_feats=[
+        ("Tres mesas", "Roble, lino y nogal, cada una con su propia vida tranquila: una vela, el vapor sobre el té, lavanda mecida por la brisa."),
+        ("Bandejas y piezas", "Bandejas de pino, nogal, piedra, acero, latón, olivo y cerezo. Piezas: pintura, madera, piedra, metal y terrazo."),
+        ("Un mapa de niveles", "Primeros pasos suaves en bandejas más pequeñas y, después, el rompecabezas completo."),
+        ("El bonsái", "Te ayuda con la comprobación <em>¿Atascado?</em> y florece cuando resuelves un nivel."),
+        ("Partidas", "Tres espacios de guardado para las posiciones a las que quieras volver."),
+        ("Siete idiomas", "Español, English, Deutsch, Français, Italiano, Polski y Русский."),
+    ],
+    k_ads_h="Juego limpio con los anuncios",
+    k_ads_p="Ni banners ni anuncios emergentes. Un video corto solo se reproduce cuando pides una comprobación <em>¿Atascado?</em> y decides verlo. Una compra opcional, <em>Sin anuncios</em>, hace que la comprobación funcione sin videos.",
+    k_shots_h="Capturas de pantalla",
+    k_shot_alts=[
+        "Una bandeja pequeña sobre la mesa de lino, con algunas piezas alrededor",
+        "La mesa de nogal con la bandeja de madera y piezas arriba y abajo",
+        "La tarjeta «¿Atascado?» con un bonsái en su maceta",
+        "La pantalla «¡Resuelto!» con el bonsái y el tiempo del nivel",
+        "El mapa de niveles: un sendero entre colinas otoñales hasta una casa en lo alto",
+        "Ajustes: piezas, bandeja, mesa, partidas, sonido, idioma y «Sin anuncios»",
+    ],
+    k_platforms="iPhone y Android · español, English, Deutsch, Français, Italiano, Polski, Русский",
+    k_links_h="Conviene saber",
+    # legal common
+    legal_updated="Última actualización",
+    # privacy
+    p_title="Política de privacidad — Koselig",
+    p_desc="Cómo tratan tus datos el juego Koselig y coffeebeansstudio.eu: sin cuentas, el progreso en tu dispositivo, Google AdMob para videos con recompensa opcionales y compras a través de Apple y Google.",
+    p_h1="Política de privacidad",
+    p_sub="Koselig y coffeebeansstudio.eu",
+    privacy_html="""
+<p class="note">La versión jurídicamente vinculante es la <a href="{R}koselig/privacy/">inglesa</a>. Esta es su traducción fiel, para tu comodidad.</p>
+<p>Esta política explica qué ocurre con tus datos cuando juegas a <strong>Koselig</strong> en iPhone o Android y cuando visitas <strong>coffeebeansstudio.eu</strong>. La redactamos para que se ajuste a lo que la aplicación hace realmente.</p>
+
+<h2 id="who">Quiénes somos</h2>
+<p>Koselig lo publica <strong>Coffee Beans Studio</strong>. El responsable del tratamiento de tus datos personales según el RGPD es <strong>Dzmitry Kurtsikau</strong>, persona física establecida en Polonia («nosotros»). Para cualquier pregunta sobre privacidad, escríbenos a <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
+
+<h2 id="short">En resumen</h2>
+<ul>
+<li><strong>No hay cuentas</strong> ni inicio de sesión. Nunca te pedimos tu nombre, tu correo electrónico ni tu número de teléfono.</li>
+<li>Tu progreso y tus ajustes <strong>se guardan solo en tu dispositivo</strong>. Nosotros no los recibimos.</li>
+<li>El juego muestra anuncios <strong>solo cuando tú decides</strong> ver un video corto con recompensa a cambio de la comprobación <em>¿Atascado?</em>; no hay banners ni anuncios intersticiales. Los anuncios los proporciona <strong>Google AdMob</strong>, que trata datos e identificadores del dispositivo.</li>
+<li>Donde la ley lo exige (por ejemplo, en el EEE, el Reino Unido y Suiza), se te pide el <strong>consentimiento</strong> mediante el formulario de consentimiento de Google antes de mostrarte anuncios personalizados.</li>
+<li>La compra opcional <strong>«Sin anuncios»</strong> la gestionan Apple o Google. Nunca vemos tus datos de pago.</li>
+<li>Koselig <strong>no incluye analítica</strong> ni ningún servicio de informes de fallos. No vendemos datos personales.</li>
+</ul>
+
+<h2 id="device">1. Datos guardados en tu dispositivo</h2>
+<p>Koselig guarda lo siguiente en tu teléfono para que puedas seguir donde lo dejaste:</p>
+<ul>
+<li>el progreso del juego: los niveles desbloqueados, la posición actual de las piezas y tus tres espacios de guardado;</li>
+<li>los ajustes: sonido, idioma y la mesa, la bandeja y las piezas que hayas elegido;</li>
+<li>si tienes la compra «Sin anuncios»;</li>
+<li>tu elección sobre el consentimiento publicitario, que el SDK de consentimiento de Google guarda en el dispositivo.</li>
+</ul>
+<p>Estos datos permanecen en tu dispositivo y no se nos envían. Se borran al eliminar la aplicación. Si vuelves a instalar el juego, puedes restaurar la compra «Sin anuncios» desde Apple o Google (Ajustes → <em>Restaurar</em>); el progreso empieza de cero.</p>
+
+<h2 id="ads">2. Publicidad: Google AdMob</h2>
+<p>Koselig usa el <strong>Google Mobile Ads SDK</strong> (Google AdMob) para mostrar videos con recompensa. Para tener un video listo cuando lo pidas, la aplicación inicia el SDK al abrirse y carga un video en segundo plano. Esto significa que Google puede recibir datos de tu dispositivo <strong>aunque nunca llegues a ver un video</strong>.</p>
+<p>Entre los datos que Google puede recopilar y tratar a través del SDK están:</p>
+<ul>
+<li>identificadores del dispositivo: en Android, el <strong>ID de publicidad</strong>; en iPhone, el identificador del proveedor (IDFV) y otras señales del dispositivo;</li>
+<li>tu <strong>dirección IP</strong>, que puede usarse para estimar una ubicación aproximada (país o ciudad);</li>
+<li>información del dispositivo y de la aplicación: modelo, sistema operativo y su versión, idioma, tamaño de pantalla y versión de la aplicación;</li>
+<li>interacciones con los anuncios: qué anuncios se cargaron, se mostraron, se vieron hasta el final o se tocaron.</li>
+</ul>
+<p>Google usa estos datos para publicar y medir anuncios, prevenir el fraude y el abuso y —<strong>solo con tu consentimiento, donde este sea obligatorio</strong>— personalizar los anuncios. Sin consentimiento, Google puede seguir mostrando anuncios no personalizados o limitados, que aun así usan algunos datos del dispositivo para la limitación de frecuencia, la medición y la prevención del fraude.</p>
+<p><strong>En iPhone</strong>, Koselig no te pide permiso para rastrearte (App Tracking Transparency). Por eso, el identificador publicitario de Apple (IDFA) no está disponible ni para la aplicación ni para Google.</p>
+<p><strong>Redes publicitarias.</strong> Solo usamos Google AdMob y no hemos activado la mediación con otras redes. La versión para Android incluye por ahora adaptadores de software que AdMob puede usar para la mediación con Meta Audience Network y AppLovin; no están activados en nuestra cuenta de AdMob y tenemos previsto eliminarlos. Si algún día activamos otra red, primero actualizaremos esta política.</p>
+<p>Más información en los sitios de Google:</p>
+<ul>
+<li><a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Cómo utiliza Google la información de sitios web o aplicaciones que utilizan sus servicios</a></li>
+<li><a href="https://policies.google.com/privacy" rel="noopener">Política de privacidad de Google</a></li>
+<li><a href="https://www.google.com/about/company/user-consent-policy/" rel="noopener">Política de consentimiento de usuarios de la UE de Google</a></li>
+<li><a href="https://support.google.com/admob/answer/10113207" rel="noopener">Herramientas de consentimiento de Google para aplicaciones (UMP)</a></li>
+<li><a href="https://myadcenter.google.com/" rel="noopener">Mi Centro de Anuncios: gestiona la personalización de anuncios en tu cuenta de Google</a></li>
+</ul>
+
+<h2 id="consent">3. Tu consentimiento y cómo cambiarlo</h2>
+<p>En las regiones donde se requiere consentimiento, Koselig muestra el formulario de consentimiento de Google (User Messaging Platform) antes de solicitar anuncios. Puedes aceptar, rechazar o elegir finalidades, y cambiar tu elección en cualquier momento dentro del juego: <strong>Ajustes → Anuncios y datos</strong> (esta opción aparece donde se aplican las normas de consentimiento). Eliminar y volver a instalar la aplicación también restablece tu elección.</p>
+<p>También puedes limitar los anuncios en tu dispositivo: en Android, en <em>Ajustes → Google → Anuncios</em> (restablecer o eliminar el ID de publicidad); en iPhone, en <em>Ajustes → Privacidad y seguridad → Publicidad de Apple</em>.</p>
+
+<h2 id="purchases">4. La compra «Sin anuncios»</h2>
+<p>Koselig ofrece una única compra opcional dentro de la aplicación, <strong>«Sin anuncios»</strong> (producto <code>koselig.no_ads</code>). La procesan íntegramente el <strong>Apple App Store</strong> o <strong>Google Play</strong>. No recibimos tu nombre, tu tarjeta ni tus datos de pago. La aplicación solo recibe de la tienda la confirmación de que tienes la compra y guarda ese dato en tu dispositivo. Consulta la <a href="https://www.apple.com/legal/privacy/" rel="noopener">Política de privacidad de Apple</a> y la <a href="https://policies.google.com/privacy" rel="noopener">Política de privacidad de Google</a>.</p>
+
+<h2 id="no">5. Lo que no hacemos</h2>
+<ul>
+<li>Sin cuentas, sin inicio de sesión, sin funciones sociales.</li>
+<li>Sin analítica, sin informes de fallos, sin seguimiento por nuestra parte.</li>
+<li>Sin acceso a tus contactos, fotos, cámara, micrófono ni ubicación precisa.</li>
+<li>No vendemos datos personales ni los usamos para nada más que lo descrito aquí.</li>
+</ul>
+<p>La aplicación usa el acceso a internet (para los anuncios y la compra) y, en Android, la vibración para la respuesta háptica.</p>
+
+<h2 id="children">6. Niños</h2>
+<p>Koselig es un juego de rompecabezas para el público general. No está dirigido a niños menores de 13 años ni forma parte de ninguna categoría infantil. Los anuncios de Koselig no están configurados como dirigidos a niños. No recopilamos a sabiendas información personal de niños. Si crees que un niño nos ha facilitado datos personales, contáctanos y los eliminaremos.</p>
+
+<h2 id="legal">7. Bases jurídicas (RGPD)</h2>
+<ul>
+<li><strong>Consentimiento</strong> (art. 6.1.a) del RGPD): publicidad personalizada y almacenamiento de información en tu dispositivo o acceso a ella, cuando se requiera consentimiento.</li>
+<li><strong>Interés legítimo</strong> (art. 6.1.f) del RGPD): mostrar anuncios no personalizados para financiar un juego gratuito, medir los anuncios y prevenir el fraude.</li>
+<li><strong>Contrato</strong> (art. 6.1.b) del RGPD): proporcionar y restaurar la compra «Sin anuncios».</li>
+</ul>
+<p>Google actúa como responsable del tratamiento independiente respecto de los datos que recopila a través de su SDK. Google y Apple pueden tratar datos fuera del Espacio Económico Europeo con sus propias garantías.</p>
+
+<h2 id="retention">8. Cuánto tiempo se conservan los datos</h2>
+<p>Los datos de tu dispositivo permanecen allí hasta que eliminas la aplicación. Los datos recopilados por Google se conservan según las políticas de Google. Si nos escribes, conservamos tu correo electrónico solo el tiempo necesario para responderte y resolver tu solicitud.</p>
+
+<h2 id="rights">9. Tus derechos</h2>
+<p>Tienes derecho a acceder a tus datos personales, rectificarlos y suprimirlos, a limitar su tratamiento u oponerte a él, a la portabilidad de los datos y a retirar tu consentimiento en cualquier momento. Como no guardamos datos del juego en nuestros servidores, la mayoría de las solicitudes se resuelven eliminando la aplicación; las solicitudes sobre datos publicitarios pueden dirigirse a Google a través de los enlaces anteriores. Siempre puedes escribirnos a <a href="mailto:{EMAIL}">{EMAIL}</a>. También tienes derecho a presentar una reclamación ante una autoridad de control —en Polonia, el <a href="https://uodo.gov.pl/" rel="noopener">Presidente de la Oficina de Protección de Datos Personales (UODO)</a>— o ante la autoridad de tu país.</p>
+
+<h2 id="website">10. Este sitio web</h2>
+<p>coffeebeansstudio.eu es un sitio web estático. No usa <strong>cookies, analítica ni fuentes o scripts de terceros</strong>. Está alojado en <strong>GitHub Pages</strong> (GitHub, Inc.), y el servicio de nombres de dominio lo presta <strong>Cloudflare</strong>. Estos proveedores pueden tratar tu dirección IP y datos técnicos de las solicitudes en los registros de sus servidores, por motivos de seguridad y para servir el sitio. Consulta la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">Declaración de privacidad de GitHub</a> y la <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Política de privacidad de Cloudflare</a>.</p>
+
+<h2 id="changes">11. Cambios</h2>
+<p>Si la aplicación empieza a hacer algo nuevo con los datos —por ejemplo, una nueva red publicitaria o analítica—, actualizaremos esta página antes de que el cambio llegue a la aplicación y cambiaremos la fecha que figura abajo.</p>
+""",
+    # terms
+    t_title="Condiciones de uso — Coffee Beans Studio",
+    t_desc="Condiciones breves y honestas para Koselig y otros juegos de Coffee Beans Studio.",
+    t_h1="Condiciones de uso",
+    t_sub="Koselig y otros juegos de Coffee Beans Studio",
+    terms_html="""
+<p class="note">La versión jurídicamente vinculante es la <a href="{R}terms/">inglesa</a>. Esta traducción se ofrece para tu comodidad.</p>
+<p>Estas condiciones se aplican cuando usas <strong>Koselig</strong> u otro juego de <strong>Coffee Beans Studio</strong> (Dzmitry Kurtsikau, Polonia). Al jugar, las aceptas. Son breves a propósito.</p>
+
+<h2>1. Jugar</h2>
+<p>Te concedemos un derecho personal, no exclusivo e intransferible a instalar nuestros juegos y jugar a ellos en dispositivos de tu propiedad o bajo tu control, para tu propio uso no comercial. Te pedimos que no copies, revendas, apliques ingeniería inversa ni redistribuyas el juego o sus gráficos, salvo en la medida en que la ley lo permita.</p>
+
+<h2>2. Las tiendas</h2>
+<p>Descargas nuestros juegos del Apple App Store o de Google Play, y sus condiciones también se aplican. A las aplicaciones descargadas del App Store se les aplica, además de estas condiciones, el <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Contrato de licencia de usuario final estándar</a> de Apple. Apple y Google no son responsables del juego ni de su soporte.</p>
+
+<h2>3. Anuncios y la compra «Sin anuncios»</h2>
+<p>Koselig es gratuito. Cuando pides una comprobación <em>¿Atascado?</em>, puede mostrar un video corto con recompensa. Los anuncios los proporciona Google AdMob; no controlamos su contenido ni somos responsables de los productos de terceros que se anuncian en ellos.</p>
+<p>«Sin anuncios» es una compra no consumible de pago único. Hace que la comprobación <em>¿Atascado?</em> funcione sin videos; el número de comprobaciones por nivel no cambia. La tienda muestra el precio antes del pago. Los pagos, reembolsos y cancelaciones los gestionan Apple o Google según sus políticas. La compra está vinculada a tu ID de Apple o a tu cuenta de Google y puede restaurarse después de reinstalar el juego (Ajustes → <em>Restaurar</em>).</p>
+
+<h2>4. Tu progreso</h2>
+<p>El progreso se guarda solo en tu dispositivo. Si eliminas la aplicación o pierdes el dispositivo, no podremos recuperarlo.</p>
+
+<h2>5. Cambios y disponibilidad</h2>
+<p>Podemos actualizar el juego —añadir, cambiar o quitar niveles y funciones— y podemos dejar de ofrecerlo. Haremos lo posible por que siga funcionando, pero no podemos prometer que esté siempre disponible ni libre de errores.</p>
+
+<h2>6. Responsabilidad</h2>
+<p>El juego se ofrece «tal cual». En la medida en que la ley lo permita, no somos responsables de daños indirectos ni de la pérdida de datos. Nada de lo dispuesto en estas condiciones limita la responsabilidad que la ley no permite limitar, ni tus derechos como consumidor conforme a las leyes de tu país.</p>
+
+<h2>7. Legislación aplicable</h2>
+<p>Estas condiciones se rigen por la legislación de Polonia. Si eres consumidor, conservas además la protección de las normas imperativas del país donde vives.</p>
+
+<h2>8. Contacto</h2>
+<p>Preguntas o reclamaciones: <a href="mailto:{EMAIL}">{EMAIL}</a>. Cómo tratamos los datos se explica en la <a href="{R}es/privacy/">Política de privacidad</a>.</p>
+""",
+    # support
+    s_title="Soporte — Coffee Beans Studio",
+    s_desc="Ayuda con Koselig: restaurar la compra «Sin anuncios», empezar de nuevo un nivel, cambiar el idioma o el consentimiento para los anuncios, y eliminar tus datos.",
+    s_h1="Soporte",
+    s_sub="Leemos todos los mensajes",
+    s_mail_h="Escríbenos",
+    s_mail_p="Cuéntanos el modelo de tu teléfono, la versión del juego y qué ocurrió. Una captura de pantalla ayuda mucho.",
+    s_faq_h="Preguntas",
+    faq=[
+        ("¿Cómo restauro la compra «Sin anuncios»?",
+         "Toca ☰ en la esquina superior derecha para abrir los Ajustes y luego toca <em>Restaurar</em> junto a <em>Sin anuncios</em>. Usa el mismo ID de Apple o la misma cuenta de Google con los que la compraste. Cada vez que se inicia, el juego comprueba la compra con la tienda, así que tras una reinstalación también vuelve sola en cuanto la tienda responde."),
+        ("¿Cómo vuelvo a empezar un nivel?",
+         "Abre Ajustes y toca <em>Empezar de nuevo</em>; luego vuelve a tocar para confirmar. Así se reinicia el nivel actual. Para borrarlo todo —todo el progreso y los ajustes—, elimina la aplicación."),
+        ("¿Cómo cambio el idioma?",
+         "Ajustes → <em>Idioma</em>. Koselig está disponible en español, English, Deutsch, Français, Italiano, Polski y Русский. <em>Del sistema</em> sigue el idioma de tu teléfono."),
+        ("¿Cuándo muestra anuncios el juego?",
+         "Solo cuando tocas <em>¿Atascado?</em> y eliges <em>Ver video</em>. No hay banners ni anuncios emergentes. Con <em>Sin anuncios</em>, la comprobación funciona al instante."),
+        ("¿Cómo cambio mi consentimiento para los anuncios?",
+         "Ajustes → <em>Anuncios y datos</em> vuelve a abrir el formulario de consentimiento de Google. Esta opción aparece en las regiones donde se aplican las normas de consentimiento."),
+        ("¿Puedo guardar una posición y volver a ella?",
+         "Sí. En Ajustes → <em>Partidas</em> hay tres espacios: <em>Guardar</em> almacena la posición actual y <em>Cargar</em> la recupera."),
+    ],
+    s_del_h="Eliminar tus datos",
+    s_del_p="Koselig no tiene cuentas y guarda tu progreso solo en tu dispositivo. Al eliminar la aplicación se borra todo lo que guardó. Los datos publicitarios los gestiona Google: consulta la <a href=\"{R}es/koselig/delete-data/\">página sobre la eliminación de datos</a>.",
+    # delete data
+    d_title="Eliminar tus datos — Koselig",
+    d_desc="Cómo eliminar los datos relacionados con el juego Koselig: todo se guarda en tu dispositivo, así que basta con eliminar la aplicación. Los datos publicitarios los gestiona Google.",
+    d_h1="Eliminar tus datos",
+    d_sub="Koselig, de Coffee Beans Studio",
+    delete_html="""
+<p><strong>Koselig</strong> no tiene cuentas, así que no hay ninguna cuenta que eliminar. No guardamos tus datos del juego en ningún servidor.</p>
+
+<h2>Datos en tu dispositivo</h2>
+<p>El progreso, las partidas guardadas, los ajustes, el estado de la compra «Sin anuncios» y tu elección sobre el consentimiento publicitario se guardan solo en tu teléfono. <strong>Para borrarlo todo, elimina la aplicación</strong>:</p>
+<ul>
+<li><strong>iPhone:</strong> mantén el dedo sobre el icono de Koselig → <em>Eliminar app</em> → <em>Eliminar app</em>.</li>
+<li><strong>Android:</strong> mantén el dedo sobre el icono de Koselig → <em>Información de la app</em> → <em>Desinstalar</em> (o <em>Almacenamiento → Borrar almacenamiento</em> para conservar la aplicación y borrar sus datos).</li>
+</ul>
+<p>Eliminar la aplicación no cancela ni elimina la compra «Sin anuncios»: está vinculada a tu ID de Apple o a tu cuenta de Google y puedes restaurarla más adelante.</p>
+
+<h2>Datos publicitarios</h2>
+<p>Los anuncios de Koselig los proporciona Google AdMob. Los datos que recopila Google están bajo el control de Google. Puedes:</p>
+<ul>
+<li>restablecer o eliminar el ID de publicidad de Android: <em>Ajustes → Google → Anuncios</em>;</li>
+<li>cambiar tu consentimiento en el juego: <em>Ajustes → Anuncios y datos</em>;</li>
+<li>gestionar o eliminar los datos de tu cuenta de Google: <a href="https://myadcenter.google.com/" rel="noopener">Mi Centro de Anuncios</a> y <a href="https://myaccount.google.com/data-and-privacy" rel="noopener">Datos y privacidad de Google</a>;</li>
+<li>leer cómo usa Google los datos de las aplicaciones: <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">policies.google.com</a>.</li>
+</ul>
+
+<h2>Correos que nos enviaste</h2>
+<p>Si nos escribiste y quieres que borremos tus mensajes, envía una solicitud a <a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a> desde la misma dirección. Los borraremos en un plazo de 30 días y te lo confirmaremos.</p>
+<p>Más información: <a href="{R}es/koselig/privacy/">Política de privacidad</a>.</p>
+""",
+    nf_title="Página no encontrada — Coffee Beans Studio",
+    nf_h1="Esta página se apagó como una vela",
+    nf_p="Puede que la dirección esté mal escrita o que la página se haya movido.",
+    nf_cta="Volver al estudio",
+)
+
+# ─────────────────────────────── DEUTSCH ───────────────────────────────
+# Термины игры — колонка «de» ~/lotok/tools/teksty_gen.py; правовые тексты — смысл английских без изменений.
+L["de"] = dict(
+    name="Deutsch", short="DE", date="12. November 2026",
+    nav_koselig="Koselig", nav_support="Hilfe", skip="Zum Inhalt springen", lang_label="Sprache",
+    foot_legal="Datenschutz", foot_terms="Nutzungsbedingungen", foot_support="Hilfe", foot_delete="Daten löschen",
+    soon_stores="Bald im App Store und bei Google Play",
+    home_title="Coffee Beans Studio – gemütliche, kluge Spiele",
+    home_desc="Coffee Beans Studio ist ein kleines unabhängiges Studio für gemütliche, kluge Spiele. Unser erstes Spiel, Koselig, ist ein Legespiel im Holzrahmen für iPhone und Android.",
+    hero_eyebrow="Coffee Beans Studio",
+    hero_h1="Ruhige Spiele<br>für warme Abende",
+    hero_p="Wir machen gemütliche, kluge Spiele – solche, die man in aller Ruhe spielt, bei einer Tasse Tee und Kerzenschein.",
+    hero_cta="Koselig kennenlernen",
+    ch1_h="In Ruhe aufgebrüht",
+    ch1_p="Coffee Beans Studio ist ein kleines unabhängiges Studio. Uns liegen ruhige Rätsel, warme Materialien und ehrliches Design am Herzen: Dinge, die man mit den Augen berühren kann – Holz, Leinen, Kerzenschein – und Regeln, die man in einer Minute versteht.",
+    ch2_h="Koselig",
+    ch2_sub="Ein Legespiel im Holzrahmen",
+    ch2_p="Lege jedes Teil in den Holzrahmen. Tisch, Rahmen und Teile wählst du nach Lust und Laune: Eiche oder Leinen, Nuss oder Messing, Lack oder Stein. Und wenn du nicht weiterkommst, verrät dir ein kleiner Bonsai, ob es von hier aus noch eine Lösung gibt.",
+    ch2_cta="Mehr zum Spiel",
+    word_q="koselig",
+    word_def="<em>Norwegisch</em> – gemütlich, warm, angenehm vertraut. Das Gefühl von Kerzenlicht, einer Wolldecke und guter Gesellschaft.",
+    soon_h="Fast eingepackt",
+    soon_p="Koselig wird gerade für den App Store und Google Play vorbereitet. Am Tag der Veröffentlichung findest du hier die Links.",
+    end_h="Schreib uns",
+    end_p="Fragen, Ideen oder ein Fehler in einem Rätsel? Wir lesen jede Nachricht.",
+    # Koselig
+    k_title="Koselig – ein gemütliches Legespiel im Holzrahmen für iPhone und Android",
+    k_desc="Koselig ist ein ruhiges Legespiel im Holzrahmen: Lege jedes Teil in den Rahmen, wähle Tisch, Rahmen und Teile – und ist das Level gelöst, blüht ein kleiner Bonsai auf. Bald im App Store und bei Google Play.",
+    k_eyebrow="Ein Spiel von Coffee Beans Studio",
+    k_h1="Koselig",
+    k_lead="Ein gemütliches Legespiel im Holzrahmen. Lege jedes Teil in den Rahmen – und lass dir Zeit.",
+    k_about_h="Rätseln ohne Eile",
+    k_about_p=[
+        "Koselig ist ein digitales Legespiel im Holzrahmen. Die Teile liegen auf dem Tisch rund um den Rahmen: Du nimmst sie, drehst sie und legst sie ein, bis jedes Feld belegt ist.",
+        "Die Level führen dich über eine Karte – von kleinen Rahmen bis zum großen. Jeder Rahmen lässt sich auf mehr als eine Art füllen, und es gibt eine perfekte Lösung, bei der sich keine zwei gleichfarbigen Teile berühren.",
+        "Du bist nicht sicher, ob es noch eine Lösung gibt? Tippe auf <em>Sackgasse?</em>, und der Bonsai prüft es für dich – nach einem kurzen Video, das du dir freiwillig ansiehst, oder sofort, wenn du <em>Werbefrei</em> gekauft hast.",
+    ],
+    k_feat_h="Was drinsteckt",
+    k_feats=[
+        ("Drei Tische", "Eiche, Leinen und Nuss – auf jedem regt sich leise etwas: eine Kerze, Dampf über dem Tee, Lavendel im Wind."),
+        ("Rahmen und Teile", "Rahmen aus Kiefer, Nuss, Stein, Stahl, Messing, Olive und Kirsche. Teile in Lack, Holz, Stein, Metall und Terrazzo."),
+        ("Eine Levelkarte", "Sanfte erste Schritte in kleineren Rahmen, dann das ganze Rätsel."),
+        ("Der Bonsai", "Dein Helfer bei <em>Sackgasse?</em> – und er blüht auf, wenn du ein Level löst."),
+        ("Spielstände", "Drei Speicherplätze für Zwischenstände, zu denen du zurückkehren möchtest."),
+        ("Sieben Sprachen", "Deutsch, English, Español, Français, Italiano, Polski und Русский."),
+    ],
+    k_ads_h="Fair in Sachen Werbung",
+    k_ads_p="Keine Banner, keine Pop-ups. Ein kurzes Video läuft nur, wenn du über <em>Sackgasse?</em> prüfen lassen möchtest und dich für das Video entscheidest. Dazu gibt es einen optionalen Kauf: Mit <em>Werbefrei</em> funktioniert die Prüfung ohne Videos.",
+    k_shots_h="Screenshots",
+    k_shot_alts=[
+        "Ein kleiner Rahmen auf dem Leinentisch, ringsum ein paar Teile",
+        "Der Nusstisch mit dem Holzrahmen, Teile darüber und darunter",
+        "Das Fenster „Sackgasse?“ mit einem Bonsai im Topf",
+        "Der Bildschirm „Geschafft!“ mit dem Bonsai und der Levelzeit",
+        "Die Levelkarte: ein Weg durch herbstliche Hügel zu einem Haus auf einer Anhöhe",
+        "Einstellungen: Teile, Rahmen, Tisch, Spielstände, Ton, Sprache und „Werbefrei“",
+    ],
+    k_platforms="iPhone und Android · Deutsch, English, Español, Français, Italiano, Polski, Русский",
+    k_links_h="Gut zu wissen",
+    # legal common
+    legal_updated="Stand",
+    # privacy
+    p_title="Datenschutzerklärung – Koselig",
+    p_desc="Wie das Spiel Koselig und coffeebeansstudio.eu mit deinen Daten umgehen: keine Konten, Fortschritt auf deinem Gerät, Google AdMob für freiwillige Belohnungsvideos, Käufe über Apple und Google.",
+    p_h1="Datenschutzerklärung",
+    p_sub="Koselig und coffeebeansstudio.eu",
+    privacy_html="""
+<p class="note">Rechtlich verbindlich ist die <a href="{R}koselig/privacy/">englische Fassung</a>. Dies ist eine genaue Übersetzung zur leichteren Orientierung.</p>
+<p>Diese Erklärung beschreibt, was mit deinen Daten passiert, wenn du <strong>Koselig</strong> auf dem iPhone oder unter Android spielst und wenn du <strong>coffeebeansstudio.eu</strong> besuchst. Wir haben sie so geschrieben, dass sie dem entspricht, was die App tatsächlich tut.</p>
+
+<h2 id="who">Wer wir sind</h2>
+<p>Koselig wird von <strong>Coffee Beans Studio</strong> veröffentlicht. Verantwortlicher für deine personenbezogenen Daten im Sinne der DSGVO ist <strong>Dzmitry Kurtsikau</strong>, eine in Polen ansässige Privatperson („wir“, „uns“). Wenn du Fragen zum Datenschutz hast, schreib an <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
+
+<h2 id="short">Das Wichtigste in Kürze</h2>
+<ul>
+<li>Es gibt <strong>keine Konten</strong> und keine Anmeldung. Wir fragen nie nach deinem Namen, deiner E-Mail-Adresse oder deiner Telefonnummer.</li>
+<li>Dein Fortschritt und deine Einstellungen werden <strong>nur auf deinem Gerät gespeichert</strong>. Wir erhalten sie nicht.</li>
+<li>Das Spiel zeigt Werbung <strong>nur, wenn du dich dafür entscheidest</strong>, für die Prüfung mit <em>Sackgasse?</em> ein kurzes Belohnungsvideo anzusehen. Es gibt keine Banner und keine Interstitial-Anzeigen. Die Werbung stammt von <strong>Google AdMob</strong>; Google verarbeitet dabei Gerätedaten und Kennungen.</li>
+<li>Wo das Gesetz es verlangt (zum Beispiel im EWR, im Vereinigten Königreich und in der Schweiz), wirst du über das Einwilligungsformular von Google um deine <strong>Einwilligung</strong> gebeten, bevor personalisierte Werbung angezeigt wird.</li>
+<li>Den optionalen Kauf <strong>„Werbefrei“</strong> wickeln Apple oder Google ab. Deine Zahlungsdaten sehen wir nie.</li>
+<li>Koselig enthält <strong>keine Analysedienste</strong> und keinen Dienst für Absturzberichte. Wir verkaufen keine personenbezogenen Daten.</li>
+</ul>
+
+<h2 id="device">1. Daten auf deinem Gerät</h2>
+<p>Damit du dort weitermachen kannst, wo du aufgehört hast, speichert Koselig auf deinem Smartphone:</p>
+<ul>
+<li>Spielfortschritt: freigeschaltete Level, die aktuelle Position der Teile und deine drei Speicherplätze;</li>
+<li>Einstellungen: Ton, Sprache sowie die Wahl von Tisch, Rahmen und Teilen;</li>
+<li>ob du den Kauf „Werbefrei“ besitzt;</li>
+<li>deine Entscheidung zur Werbeeinwilligung, die das Einwilligungs-SDK von Google auf dem Gerät speichert.</li>
+</ul>
+<p>Diese Daten bleiben auf deinem Gerät und werden nicht an uns gesendet. Sie werden gelöscht, wenn du die App löschst. Wenn du das Spiel neu installierst, lässt sich der Kauf „Werbefrei“ über Apple oder Google wiederherstellen (Einstellungen → <em>Wiederherstellen</em>); der Fortschritt beginnt von vorn.</p>
+
+<h2 id="ads">2. Werbung: Google AdMob</h2>
+<p>Koselig nutzt das <strong>Google Mobile Ads SDK</strong> (Google AdMob), um Belohnungsvideos anzuzeigen. Damit ein Video bereitsteht, wenn du eines anforderst, startet die App das SDK gleich beim Öffnen und lädt im Hintergrund ein Video vor. Google kann daher Daten von deinem Gerät erhalten, <strong>auch wenn du nie ein Video ansiehst</strong>.</p>
+<p>Zu den Daten, die Google über das SDK erheben und verarbeiten kann, gehören:</p>
+<ul>
+<li>Gerätekennungen: unter Android die <strong>Werbe-ID</strong>; auf dem iPhone die Anbieter-Kennung (IDFV) und weitere Gerätesignale;</li>
+<li>deine <strong>IP-Adresse</strong>, aus der sich ein ungefährer Standort (Land oder Stadt) ableiten lässt;</li>
+<li>Geräte- und App-Informationen: Modell, Betriebssystem und Version, Sprache, Bildschirmgröße, App-Version;</li>
+<li>Interaktionen mit Anzeigen: welche Anzeigen geladen, angezeigt, bis zum Ende angesehen oder angetippt wurden.</li>
+</ul>
+<p>Google nutzt diese Daten, um Werbung auszuliefern und zu messen, um Betrug und Missbrauch zu verhindern und – <strong>nur mit deiner Einwilligung, wo diese erforderlich ist</strong> – um Werbung zu personalisieren. Ohne Einwilligung kann Google weiterhin nicht personalisierte oder eingeschränkte Anzeigen ausliefern; auch diese nutzen einige Gerätedaten, um die Häufigkeit zu begrenzen, Anzeigen zu messen und Betrug vorzubeugen.</p>
+<p><strong>Auf dem iPhone</strong> bittet Koselig nicht um die Erlaubnis, dich zu tracken (App Tracking Transparency). Deshalb steht die Werbekennung von Apple (IDFA) weder der App noch Google zur Verfügung.</p>
+<p><strong>Werbenetzwerke.</strong> Wir nutzen nur Google AdMob und haben keine Mediation mit anderen Netzwerken aktiviert. Die Android-Version enthält derzeit Software-Adapter, die AdMob für eine Mediation mit Meta Audience Network und AppLovin nutzen kann; in unserem AdMob-Konto sind sie nicht aktiviert, und wir planen, sie zu entfernen. Sollten wir jemals ein weiteres Netzwerk aktivieren, aktualisieren wir zuerst diese Erklärung.</p>
+<p>Mehr dazu bei Google:</p>
+<ul>
+<li><a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Wie Google Daten von Websites und Apps verwendet, die Google-Dienste nutzen</a></li>
+<li><a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a></li>
+<li><a href="https://www.google.com/about/company/user-consent-policy/" rel="noopener">Google-Richtlinie zur Einwilligung der Nutzer in der EU</a></li>
+<li><a href="https://support.google.com/admob/answer/10113207" rel="noopener">Einwilligungstools von Google für Apps (UMP)</a></li>
+<li><a href="https://myadcenter.google.com/" rel="noopener">Mein Werbecenter – Personalisierung von Werbung in deinem Google-Konto verwalten</a></li>
+</ul>
+
+<h2 id="consent">3. Deine Einwilligung und wie du sie änderst</h2>
+<p>In Regionen, in denen eine Einwilligung erforderlich ist, zeigt Koselig das Einwilligungsformular von Google (User Messaging Platform), bevor Anzeigen angefordert werden. Du kannst zustimmen, ablehnen oder Zwecke auswählen. Deine Entscheidung kannst du im Spiel jederzeit ändern: <strong>Einstellungen → Werbung &amp; Daten</strong> (dieser Punkt erscheint dort, wo die Einwilligungsregeln gelten). Löschst du die App und installierst sie neu, wird deine Entscheidung ebenfalls zurückgesetzt.</p>
+<p>Du kannst Werbung auch auf deinem Gerät einschränken: unter Android in <em>Einstellungen → Google → Anzeigen</em> (Werbe-ID zurücksetzen oder löschen); auf dem iPhone in <em>Einstellungen → Datenschutz &amp; Sicherheit → Apple-Werbung</em>.</p>
+
+<h2 id="purchases">4. Der Kauf „Werbefrei“</h2>
+<p>Koselig bietet einen optionalen In-App-Kauf an: <strong>„Werbefrei“</strong> (Produkt <code>koselig.no_ads</code>). Er wird vollständig über den <strong>Apple App Store</strong> oder <strong>Google Play</strong> abgewickelt. Wir erhalten weder deinen Namen noch deine Karten- oder Zahlungsdaten. Die App erhält vom Store nur die Bestätigung, dass du den Kauf besitzt, und speichert diese Information auf deinem Gerät. Siehe die <a href="https://www.apple.com/legal/privacy/" rel="noopener">Datenschutzrichtlinie von Apple</a> und die <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a>.</p>
+
+<h2 id="no">5. Was wir nicht tun</h2>
+<ul>
+<li>Keine Konten, keine Anmeldung, keine sozialen Funktionen.</li>
+<li>Keine Analyse, keine Absturzberichte, kein Tracking durch uns.</li>
+<li>Kein Zugriff auf Kontakte, Fotos, Kamera, Mikrofon oder deinen genauen Standort.</li>
+<li>Wir verkaufen keine personenbezogenen Daten und verwenden sie für nichts anderes als das hier Beschriebene.</li>
+</ul>
+<p>Die App nutzt den Internetzugang (für Werbung und den Kauf) und unter Android die Vibration für haptisches Feedback.</p>
+
+<h2 id="children">6. Kinder</h2>
+<p>Koselig ist ein Rätselspiel für ein allgemeines Publikum. Es richtet sich nicht an Kinder unter 13 Jahren und gehört keiner Kinderkategorie an. Die Werbung in Koselig ist nicht als kindgerichtet konfiguriert. Wir erheben nicht wissentlich personenbezogene Daten von Kindern. Wenn du glaubst, dass ein Kind uns personenbezogene Daten übermittelt hat, melde dich bei uns – wir löschen sie dann.</p>
+
+<h2 id="legal">7. Rechtsgrundlagen (DSGVO)</h2>
+<ul>
+<li><strong>Einwilligung</strong> (Art. 6 Abs. 1 lit. a DSGVO) – personalisierte Werbung sowie das Speichern von Informationen auf deinem Gerät oder der Zugriff darauf, wo eine Einwilligung erforderlich ist.</li>
+<li><strong>Berechtigte Interessen</strong> (Art. 6 Abs. 1 lit. f) – das Ausspielen nicht personalisierter Werbung zur Finanzierung eines kostenlosen Spiels, Anzeigenmessung und Betrugsprävention.</li>
+<li><strong>Vertrag</strong> (Art. 6 Abs. 1 lit. b) – Bereitstellung und Wiederherstellung des Kaufs „Werbefrei“.</li>
+</ul>
+<p>Für die Daten, die Google über sein SDK erhebt, ist Google eigenständiger Verantwortlicher. Google und Apple können Daten außerhalb des Europäischen Wirtschaftsraums verarbeiten und stützen sich dabei auf eigene Garantien.</p>
+
+<h2 id="retention">8. Speicherdauer</h2>
+<p>Daten auf deinem Gerät bleiben dort, bis du die App löschst. Von Google erhobene Daten werden nach den Richtlinien von Google aufbewahrt. Wenn du uns schreibst, bewahren wir deine E-Mail nur so lange auf, wie es nötig ist, um dir zu antworten und dein Anliegen zu klären.</p>
+
+<h2 id="rights">9. Deine Rechte</h2>
+<p>Du hast das Recht auf Auskunft über deine personenbezogenen Daten, auf ihre Berichtigung und Löschung, auf Einschränkung der Verarbeitung und Widerspruch gegen sie, auf Datenübertragbarkeit sowie das Recht, deine Einwilligung jederzeit zu widerrufen. Da wir keine Spieldaten auf unseren Servern speichern, lassen sich die meisten Anfragen durch das Löschen der App erledigen; Anfragen zu Werbedaten kannst du über die oben genannten Links an Google richten. Du kannst uns jederzeit unter <a href="mailto:{EMAIL}">{EMAIL}</a> schreiben. Außerdem hast du das Recht, dich bei einer Aufsichtsbehörde zu beschweren – in Polen beim <a href="https://uodo.gov.pl/" rel="noopener">Präsidenten des Amtes für den Schutz personenbezogener Daten (UODO)</a> – oder bei der Behörde in deinem Land.</p>
+
+<h2 id="website">10. Diese Website</h2>
+<p>coffeebeansstudio.eu ist eine statische Website. Sie verwendet <strong>keine Cookies, keine Analysedienste und keine Schriften oder Skripte von Dritten</strong>. Sie wird bei <strong>GitHub Pages</strong> (GitHub, Inc.) gehostet, den DNS-Dienst der Domain stellt <strong>Cloudflare</strong> bereit. Diese Anbieter können deine IP-Adresse und technische Daten deiner Anfragen zu Sicherheits- und Auslieferungszwecken in Serverprotokollen verarbeiten. Siehe die <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">Datenschutzerklärung von GitHub</a> und die <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Datenschutzrichtlinie von Cloudflare</a>.</p>
+
+<h2 id="changes">11. Änderungen</h2>
+<p>Sollte die App künftig etwas Neues mit Daten tun – etwa ein neues Werbenetzwerk oder Analysedienste nutzen –, aktualisieren wir diese Seite, bevor die Änderung in der App ankommt, und ändern das Datum unten.</p>
+""",
+    # terms
+    t_title="Nutzungsbedingungen – Coffee Beans Studio",
+    t_desc="Kurze, ehrliche Nutzungsbedingungen für Koselig und andere Spiele von Coffee Beans Studio.",
+    t_h1="Nutzungsbedingungen",
+    t_sub="Koselig und andere Spiele von Coffee Beans Studio",
+    terms_html="""
+<p class="note">Rechtlich verbindlich ist die <a href="{R}terms/">englische Fassung</a>. Diese Übersetzung ist zur leichteren Orientierung gedacht.</p>
+<p>Diese Bedingungen gelten, wenn du <strong>Koselig</strong> oder ein anderes Spiel von <strong>Coffee Beans Studio</strong> (Dzmitry Kurtsikau, Polen) nutzt. Indem du spielst, stimmst du ihnen zu. Sie sind bewusst kurz gehalten.</p>
+
+<h2>1. Das Spiel nutzen</h2>
+<p>Wir räumen dir ein persönliches, nicht ausschließliches und nicht übertragbares Recht ein, unsere Spiele auf Geräten zu installieren und zu spielen, die dir gehören oder über die du verfügst – für deine eigene, nicht kommerzielle Nutzung. Bitte kopiere das Spiel und seine Grafiken nicht, verkaufe oder verbreite sie nicht weiter und betreibe kein Reverse Engineering – es sei denn, das Gesetz erlaubt es.</p>
+
+<h2>2. Die Stores</h2>
+<p>Du lädst unsere Spiele aus dem Apple App Store oder von Google Play herunter; deren Bedingungen gelten ebenfalls. Für Apps aus dem App Store gilt zusätzlich zu diesen Bedingungen Apples <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Standard-Endbenutzer-Lizenzvertrag</a>. Apple und Google sind weder für das Spiel noch für den Support verantwortlich.</p>
+
+<h2>3. Werbung und der Kauf „Werbefrei“</h2>
+<p>Koselig ist kostenlos. Das Spiel kann ein kurzes Belohnungsvideo zeigen, wenn du über <em>Sackgasse?</em> eine Prüfung anforderst. Die Werbung stellt Google AdMob bereit; wir haben keinen Einfluss auf ihren Inhalt und sind nicht für Produkte Dritter verantwortlich, die darin beworben werden.</p>
+<p>„Werbefrei“ ist ein einmaliger Kauf, der sich nicht verbraucht. Damit funktioniert die Prüfung mit <em>Sackgasse?</em> ohne Videos; die Zahl der Prüfungen pro Level bleibt gleich. Den Preis zeigt dir der Store, bevor du bezahlst. Zahlung, Erstattungen und Stornierungen wickeln Apple oder Google nach ihren eigenen Richtlinien ab. Der Kauf ist an deine Apple-ID oder dein Google-Konto gebunden und lässt sich nach einer Neuinstallation wiederherstellen (Einstellungen → <em>Wiederherstellen</em>).</p>
+
+<h2>4. Dein Fortschritt</h2>
+<p>Der Fortschritt wird nur auf deinem Gerät gespeichert. Wenn du die App löschst oder das Gerät verlierst, können wir ihn nicht wiederherstellen.</p>
+
+<h2>5. Änderungen und Verfügbarkeit</h2>
+<p>Wir können das Spiel aktualisieren – Level und Funktionen hinzufügen, ändern oder entfernen – und das Angebot auch einstellen. Wir bemühen uns, es am Laufen zu halten, können aber nicht versprechen, dass es immer verfügbar oder fehlerfrei ist.</p>
+
+<h2>6. Haftung</h2>
+<p>Das Spiel wird „wie besehen“ bereitgestellt. Soweit gesetzlich zulässig, haften wir nicht für mittelbare Schäden oder Datenverlust. Nichts in diesen Bedingungen beschränkt eine Haftung, die gesetzlich nicht beschränkt werden kann, oder deine Rechte als Verbraucher nach dem Recht deines Landes.</p>
+
+<h2>7. Anwendbares Recht</h2>
+<p>Für diese Bedingungen gilt polnisches Recht. Wenn du Verbraucher bist, behältst du außerdem den Schutz der zwingenden Vorschriften des Landes, in dem du lebst.</p>
+
+<h2>8. Kontakt</h2>
+<p>Fragen oder Beschwerden: <a href="mailto:{EMAIL}">{EMAIL}</a>. Wie wir mit Daten umgehen, steht in der <a href="{R}de/privacy/">Datenschutzerklärung</a>.</p>
+""",
+    # support
+    s_title="Hilfe – Coffee Beans Studio",
+    s_desc="Hilfe zu Koselig: den Kauf „Werbefrei“ wiederherstellen, ein Level neu beginnen, die Sprache wechseln, die Werbeeinwilligung ändern und deine Daten löschen.",
+    s_h1="Hilfe",
+    s_sub="Wir lesen jede Nachricht",
+    s_mail_h="Schreib uns",
+    s_mail_p="Nenn uns dein Handymodell, die Spielversion und was passiert ist. Ein Screenshot hilft sehr.",
+    s_faq_h="Fragen",
+    faq=[
+        ("Wie stelle ich den Kauf „Werbefrei“ wieder her?",
+         "Tippe oben rechts auf ☰, um die Einstellungen zu öffnen, und dann neben <em>Werbefrei</em> auf <em>Wiederherstellen</em>. Verwende dieselbe Apple-ID bzw. dasselbe Google-Konto wie beim Kauf. Das Spiel gleicht den Kauf bei jedem Start mit dem Store ab – nach einer Neuinstallation kommt er also auch von selbst zurück, sobald der Store antwortet."),
+        ("Wie beginne ich ein Level neu?",
+         "Öffne die Einstellungen, tippe auf <em>Neu beginnen</em> und zur Bestätigung noch einmal. Dadurch wird das aktuelle Level zurückgesetzt. Um alles zu löschen – den gesamten Fortschritt und alle Einstellungen –, lösche die App."),
+        ("Wie ändere ich die Sprache?",
+         "Einstellungen → <em>Sprache</em>. Koselig spricht Deutsch, English, Español, Français, Italiano, Polski und Русский. Mit <em>System</em> richtet sich das Spiel nach der Sprache deines Handys."),
+        ("Wann zeigt das Spiel Werbung?",
+         "Nur wenn du auf <em>Sackgasse?</em> tippst und <em>Video ansehen</em> wählst. Es gibt keine Banner und keine Pop-up-Werbung. Mit <em>Werbefrei</em> funktioniert die Prüfung sofort."),
+        ("Wie ändere ich meine Werbeeinwilligung?",
+         "Einstellungen → <em>Werbung &amp; Daten</em> öffnet das Einwilligungsformular von Google erneut. Der Punkt erscheint in Regionen, in denen Einwilligungsregeln gelten."),
+        ("Kann ich einen Zwischenstand speichern und später weitermachen?",
+         "Ja. Unter Einstellungen → <em>Spielstände</em> gibt es drei Plätze: <em>Speichern</em> sichert den aktuellen Stand, <em>Öffnen</em> holt ihn zurück."),
+    ],
+    s_del_h="Daten löschen",
+    s_del_p="Koselig hat keine Konten und speichert deinen Fortschritt nur auf deinem Gerät. Löschst du die App, wird alles entfernt, was sie gespeichert hat. Werbedaten verwaltet Google – siehe die <a href=\"{R}de/koselig/delete-data/\">Seite zum Löschen von Daten</a>.",
+    # delete data
+    d_title="Deine Daten löschen – Koselig",
+    d_desc="So löschst du Daten zum Spiel Koselig: Alles liegt auf deinem Gerät – lösche die App. Werbedaten verwaltet Google.",
+    d_h1="Deine Daten löschen",
+    d_sub="Koselig von Coffee Beans Studio",
+    delete_html="""
+<p><strong>Koselig</strong> hat keine Konten – es gibt also kein Konto, das gelöscht werden müsste. Wir speichern deine Spieldaten auf keinem Server.</p>
+
+<h2>Daten auf deinem Gerät</h2>
+<p>Fortschritt, Spielstände, Einstellungen, der Status des Kaufs „Werbefrei“ und deine Entscheidung zur Werbeeinwilligung werden nur auf deinem Smartphone gespeichert. <strong>Um all das zu löschen, lösche die App</strong>:</p>
+<ul>
+<li><strong>iPhone:</strong> Halte das Koselig-Symbol gedrückt → <em>App entfernen</em> → <em>App löschen</em>.</li>
+<li><strong>Android:</strong> Halte das Koselig-Symbol gedrückt → <em>App-Info</em> → <em>Deinstallieren</em> (oder <em>Speicher → Speicherinhalt löschen</em>, um die App zu behalten und nur ihre Daten zu löschen).</li>
+</ul>
+<p>Das Löschen der App storniert oder entfernt den Kauf „Werbefrei“ nicht – er gehört zu deiner Apple-ID oder deinem Google-Konto und lässt sich später wiederherstellen.</p>
+
+<h2>Werbedaten</h2>
+<p>Die Werbung in Koselig stellt Google AdMob bereit. Für die von Google erhobenen Daten ist Google verantwortlich. Du kannst:</p>
+<ul>
+<li>deine Android-Werbe-ID zurücksetzen oder löschen: <em>Einstellungen → Google → Anzeigen</em>;</li>
+<li>deine Einwilligung im Spiel ändern: <em>Einstellungen → Werbung &amp; Daten</em>;</li>
+<li>Daten in deinem Google-Konto verwalten oder löschen: <a href="https://myadcenter.google.com/" rel="noopener">Mein Werbecenter</a> und <a href="https://myaccount.google.com/data-and-privacy" rel="noopener">Daten und Datenschutz</a>;</li>
+<li>nachlesen, wie Google Daten aus Apps verwendet: <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">policies.google.com</a>.</li>
+</ul>
+
+<h2>E-Mails an uns</h2>
+<p>Wenn du uns geschrieben hast und deine Nachrichten gelöscht haben möchtest, schick von derselben Adresse eine Anfrage an <a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a>. Wir löschen sie innerhalb von 30 Tagen und bestätigen dir das.</p>
+<p>Mehr dazu: <a href="{R}de/koselig/privacy/">Datenschutzerklärung</a>.</p>
+""",
+    nf_title="Seite nicht gefunden – Coffee Beans Studio",
+    nf_h1="Diese Seite ist erloschen wie eine Kerze",
+    nf_p="Vielleicht stimmt die Adresse nicht, oder die Seite ist umgezogen.",
+    nf_cta="Zurück zum Studio",
+)
+
+# ─────────────────────────────── FRANÇAIS ───────────────────────────────
+# Термины игры — колонка «fr» ~/lotok/tools/teksty_gen.py; правовые тексты — смысл английских без изменений.
+L["fr"] = dict(
+    name="Français", short="FR", date="12 novembre 2026",
+    nav_koselig="Koselig", nav_support="Aide", skip="Aller au contenu", lang_label="Langue",
+    foot_legal="Confidentialité", foot_terms="Conditions", foot_support="Aide", foot_delete="Suppression des données",
+    soon_stores="Bientôt sur l’App Store et Google Play",
+    home_title="Coffee Beans Studio — des jeux douillets et malins",
+    home_desc="Coffee Beans Studio est un petit studio indépendant qui crée des jeux douillets et malins. Notre premier jeu, Koselig, est un casse-tête sur plateau de bois pour iPhone et Android.",
+    hero_eyebrow="Coffee Beans Studio",
+    hero_h1="Des jeux paisibles<br>pour les soirées au chaud",
+    hero_p="Nous créons des jeux douillets et malins — de ceux auxquels on joue sans se presser, une tasse de thé à la main, à la lueur d’une bougie.",
+    hero_cta="Découvrir Koselig",
+    ch1_h="Infusé sans hâte",
+    ch1_p="Coffee Beans Studio est un petit studio indépendant. Ce qui compte pour nous : des casse-tête paisibles, des matières chaleureuses et un design honnête — des choses qu’on touche du regard (le bois, le lin, la lueur d’une bougie) et des règles qu’on apprend en une minute.",
+    ch2_h="Koselig",
+    ch2_sub="Un casse-tête sur plateau de bois",
+    ch2_p="Placez toutes les pièces sur le plateau de bois. Changez de table, de plateau et de pièces selon votre humeur : chêne ou lin, noyer ou laiton, peinture ou pierre. Et si vous ne voyez plus d’issue, un petit bonsaï peut vous dire si la position a encore une solution.",
+    ch2_cta="À propos du jeu",
+    word_q="koselig",
+    word_def="<em>norvégien</em> — douillet, chaleureux, d’une intimité agréable. Ce que l’on ressent près d’une bougie, sous un plaid, en bonne compagnie.",
+    soon_h="Presque dans la boîte",
+    soon_p="Koselig se prépare pour l’App Store et Google Play. Les liens apparaîtront ici le jour de la sortie.",
+    end_h="Un petit mot ?",
+    end_p="Une question, une idée, un bug dans un casse-tête ? Nous lisons chaque message.",
+    # Koselig
+    k_title="Koselig — un casse-tête douillet sur plateau de bois pour iPhone et Android",
+    k_desc="Koselig est un casse-tête paisible sur plateau de bois : placez toutes les pièces sur le plateau, choisissez votre table, votre plateau et vos pièces, et un petit bonsaï fleurit quand vous réussissez. Bientôt sur l’App Store et Google Play.",
+    k_eyebrow="Un jeu de Coffee Beans Studio",
+    k_h1="Koselig",
+    k_lead="Un casse-tête douillet sur plateau de bois. Placez toutes les pièces sur le plateau — et prenez votre temps.",
+    k_about_h="Un casse-tête, sans se presser",
+    k_about_p=[
+        "Koselig est un casse-tête numérique sur plateau de bois. Les pièces sont posées sur la table autour du plateau : vous les prenez, les tournez et les placez jusqu’à ce que chaque case soit remplie.",
+        "Les niveaux vous guident le long d’une carte, des petits plateaux jusqu’au plateau complet. Il y a plus d’une façon de remplir un plateau — et la plus stricte de toutes, où deux pièces de même couleur ne se touchent jamais.",
+        "Vous doutez que la position ait encore une issue ? Touchez <em>Impasse ?</em> : le bonsaï vérifie pour vous, après une courte vidéo que vous choisissez de regarder — ou tout de suite si vous avez acheté <em>Sans pub</em>.",
+    ],
+    k_feat_h="Ce que vous y trouverez",
+    k_feats=[
+        ("Trois tables", "Chêne, lin et noyer — chacune avec sa petite vie tranquille : une bougie, le thé qui fume, la lavande dans la brise."),
+        ("Plateaux et pièces", "Plateaux en pin, noyer, pierre, acier, laiton, olivier et cerisier. Pièces : peinture, bois, pierre, métal et terrazzo."),
+        ("Une carte des niveaux", "Des premiers pas en douceur sur de petits plateaux, puis le casse-tête complet."),
+        ("Le bonsaï", "Votre allié pour la vérification <em>Impasse ?</em> — et il fleurit quand vous réussissez un niveau."),
+        ("Sauvegardes", "Trois emplacements pour les positions auxquelles vous voulez revenir."),
+        ("Sept langues", "Français, English, Español, Deutsch, Italiano, Polski et Русский."),
+    ],
+    k_ads_h="Franc jeu sur la pub",
+    k_ads_p="Ni bannière ni publicité qui surgit à l’écran. Une courte vidéo n’est diffusée que si vous demandez une vérification <em>Impasse ?</em> et choisissez de la regarder. Un seul achat facultatif, <em>Sans pub</em>, permet de vérifier sans vidéo.",
+    k_shots_h="Captures d’écran",
+    k_shot_alts=[
+        "Un petit plateau sur la table en lin, entouré de quelques pièces",
+        "La table en noyer, avec le plateau de bois et des pièces au-dessus et en dessous",
+        "La fenêtre « Impasse ? » avec un bonsaï en pot",
+        "L’écran « Réussi ! » avec le bonsaï et le temps réalisé",
+        "La carte des niveaux : un chemin à travers les collines d’automne, jusqu’à une maison tout en haut",
+        "Réglages : pièces, plateau, table, sauvegardes, son, langue et « Sans pub »",
+    ],
+    k_platforms="iPhone et Android · Français, English, Español, Deutsch, Italiano, Polski, Русский",
+    k_links_h="Bon à savoir",
+    # legal common
+    legal_updated="Dernière mise à jour",
+    # privacy
+    p_title="Politique de confidentialité — Koselig",
+    p_desc="Ce que le jeu Koselig et le site coffeebeansstudio.eu font de vos données : pas de compte, progression sur votre appareil, Google AdMob pour des vidéos avec récompense facultatives, achats via Apple et Google.",
+    p_h1="Politique de confidentialité",
+    p_sub="Koselig et coffeebeansstudio.eu",
+    privacy_html="""
+<p class="note">Seule la version <a href="{R}koselig/privacy/">anglaise</a> fait foi. Ce texte en est une traduction, fournie pour votre commodité.</p>
+<p>Cette politique explique ce que deviennent vos données lorsque vous jouez à <strong>Koselig</strong> sur iPhone ou Android et lorsque vous consultez <strong>coffeebeansstudio.eu</strong>. Nous l’avons rédigée pour qu’elle corresponde à ce que fait réellement l’application.</p>
+
+<h2 id="who">Qui sommes-nous ?</h2>
+<p>Koselig est publié par <strong>Coffee Beans Studio</strong>. Le responsable du traitement de vos données personnelles au sens du RGPD est <strong>Dzmitry Kurtsikau</strong>, particulier établi en Pologne (« nous »). Pour toute question relative à la confidentialité, écrivez à <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
+
+<h2 id="short">En bref</h2>
+<ul>
+<li>Il n’y a <strong>aucun compte</strong>, et aucune connexion n’est requise. Nous ne vous demandons jamais votre nom, votre adresse e-mail ni votre numéro de téléphone.</li>
+<li>Votre progression et vos réglages sont <strong>enregistrés uniquement sur votre appareil</strong>. Nous ne les recevons pas.</li>
+<li>Le jeu n’affiche de publicité <strong>que si vous choisissez</strong> de regarder une courte vidéo avec récompense pour la vérification <em>Impasse ?</em> Il n’y a ni bannière ni publicité interstitielle. Les publicités sont fournies par <strong>Google AdMob</strong>, qui traite des données et des identifiants de l’appareil.</li>
+<li>Lorsque la loi l’exige (par exemple dans l’EEE, au Royaume-Uni et en Suisse), votre <strong>consentement</strong> vous est demandé via le formulaire de consentement de Google avant l’affichage de publicités personnalisées.</li>
+<li>L’achat facultatif <strong>« Sans pub »</strong> est géré par Apple ou Google. Nous ne voyons jamais vos informations de paiement.</li>
+<li>Koselig ne contient <strong>aucun outil d’analyse</strong> ni service de rapports de plantage. Nous ne vendons pas de données personnelles.</li>
+</ul>
+
+<h2 id="device">1. Données stockées sur votre appareil</h2>
+<p>Koselig enregistre les éléments suivants sur votre téléphone, pour que vous puissiez reprendre la partie là où vous l’aviez laissée :</p>
+<ul>
+<li>la progression : niveaux débloqués, position actuelle des pièces et vos trois emplacements de sauvegarde ;</li>
+<li>les réglages : son, langue, table, plateau et pièces choisis ;</li>
+<li>le fait que vous possédiez ou non l’achat « Sans pub » ;</li>
+<li>votre choix en matière de consentement publicitaire, enregistré sur l’appareil par le SDK de consentement de Google.</li>
+</ul>
+<p>Ces données restent sur votre appareil et ne nous sont pas transmises. Elles sont effacées lorsque vous supprimez l’application. Si vous réinstallez le jeu, l’achat « Sans pub » peut être restauré auprès d’Apple ou de Google (Réglages → <em>Restaurer</em>) ; la progression, elle, repart de zéro.</p>
+
+<h2 id="ads">2. Publicité : Google AdMob</h2>
+<p>Koselig utilise le <strong>Google Mobile Ads SDK</strong> (Google AdMob) pour afficher des vidéos avec récompense. Pour qu’une vidéo soit prête au moment où vous la demandez, l’application initialise le SDK au lancement et charge une vidéo en arrière-plan. Google peut donc recevoir des données de votre appareil <strong>même si vous ne regardez jamais de vidéo</strong>.</p>
+<p>Parmi les données que Google peut collecter et traiter via le SDK :</p>
+<ul>
+<li>des identifiants de l’appareil : sur Android, l’<strong>identifiant publicitaire</strong> ; sur iPhone, l’identifiant pour les fournisseurs (IDFV) et d’autres signaux de l’appareil ;</li>
+<li>votre <strong>adresse IP</strong>, qui peut servir à estimer une localisation approximative (pays ou ville) ;</li>
+<li>des informations sur l’appareil et l’application : modèle, système d’exploitation et sa version, langue, taille de l’écran, version de l’application ;</li>
+<li>les interactions avec les publicités : quelles publicités ont été chargées, affichées, regardées jusqu’au bout ou touchées.</li>
+</ul>
+<p>Google utilise ces données pour diffuser et mesurer les publicités, pour prévenir la fraude et les abus et — <strong>uniquement avec votre consentement lorsque celui-ci est requis</strong> — pour personnaliser les publicités. Sans consentement, Google peut tout de même afficher des publicités non personnalisées ou limitées, qui utilisent néanmoins certaines données de l’appareil à des fins de limitation de la fréquence d’affichage, de mesure et de prévention de la fraude.</p>
+<p><strong>Sur iPhone</strong>, Koselig ne vous demande pas l’autorisation de vous suivre (App Tracking Transparency). De ce fait, l’identifiant publicitaire d’Apple (IDFA) n’est accessible ni à l’application ni à Google.</p>
+<p><strong>Réseaux publicitaires.</strong> Nous utilisons uniquement Google AdMob et n’avons pas activé de médiation avec d’autres réseaux. La version Android contient actuellement des adaptateurs logiciels qu’AdMob peut utiliser pour la médiation avec Meta Audience Network et AppLovin ; ils ne sont pas activés dans notre compte AdMob, et nous prévoyons de les retirer. Si nous activons un jour un autre réseau, nous mettrons d’abord cette politique à jour.</p>
+<p>En savoir plus auprès de Google :</p>
+<ul>
+<li><a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Comment Google utilise les informations des sites ou applications qui utilisent ses services</a></li>
+<li><a href="https://policies.google.com/privacy" rel="noopener">Règles de confidentialité de Google</a></li>
+<li><a href="https://www.google.com/about/company/user-consent-policy/" rel="noopener">Règles de Google relatives au consentement de l’utilisateur dans l’UE</a></li>
+<li><a href="https://support.google.com/admob/answer/10113207" rel="noopener">Outils de consentement de Google pour les applications (UMP)</a></li>
+<li><a href="https://myadcenter.google.com/" rel="noopener">Mon Centre publicitaire — gérer la personnalisation des annonces dans votre compte Google</a></li>
+</ul>
+
+<h2 id="consent">3. Votre consentement et comment le modifier</h2>
+<p>Dans les régions où le consentement est requis, Koselig affiche le formulaire de consentement de Google (User Messaging Platform) avant toute demande de publicité. Vous pouvez accepter, refuser ou choisir les finalités. Votre choix peut être modifié à tout moment dans le jeu : <strong>Réglages → Publicité et données</strong> (cette option apparaît là où les règles de consentement s’appliquent). Supprimer puis réinstaller l’application réinitialise aussi votre choix.</p>
+<p>Vous pouvez également limiter la publicité sur votre appareil : sur Android, dans <em>Paramètres → Google → Annonces</em> (réinitialiser ou supprimer l’identifiant publicitaire) ; sur iPhone, dans <em>Réglages → Confidentialité et sécurité → Publicité Apple</em>.</p>
+
+<h2 id="purchases">4. L’achat « Sans pub »</h2>
+<p>Koselig propose un seul achat intégré facultatif, <strong>« Sans pub »</strong> (produit <code>koselig.no_ads</code>). Il est entièrement traité par l’<strong>App Store d’Apple</strong> ou par <strong>Google Play</strong>. Nous ne recevons ni votre nom, ni votre carte, ni vos informations de paiement. L’application reçoit seulement de la boutique la confirmation que l’achat vous appartient, et elle enregistre cette information sur votre appareil. Voir la <a href="https://www.apple.com/legal/privacy/" rel="noopener">Politique de confidentialité d’Apple</a> et les <a href="https://policies.google.com/privacy" rel="noopener">Règles de confidentialité de Google</a>.</p>
+
+<h2 id="no">5. Ce que nous ne faisons pas</h2>
+<ul>
+<li>Pas de compte, pas de connexion, pas de fonctions sociales.</li>
+<li>Pas d’outil d’analyse, pas de rapports de plantage, aucun suivi de notre part.</li>
+<li>Aucun accès à vos contacts, à vos photos, à l’appareil photo, au micro ni à votre localisation précise.</li>
+<li>Nous ne vendons pas de données personnelles et ne les utilisons à aucune autre fin que celles décrites ici.</li>
+</ul>
+<p>L’application utilise l’accès à Internet (pour la publicité et l’achat) et, sur Android, le vibreur pour le retour haptique.</p>
+
+<h2 id="children">6. Enfants</h2>
+<p>Koselig est un jeu de casse-tête tout public. Il ne s’adresse pas aux enfants de moins de 13 ans et ne figure dans aucune catégorie destinée aux enfants. Les publicités de Koselig ne sont pas configurées comme destinées aux enfants. Nous ne collectons pas sciemment d’informations personnelles auprès d’enfants. Si vous pensez qu’un enfant nous a communiqué des données personnelles, contactez-nous et nous les supprimerons.</p>
+
+<h2 id="legal">7. Bases légales (RGPD)</h2>
+<ul>
+<li><strong>Consentement</strong> (art. 6.1.a du RGPD) — publicité personnalisée, ainsi que stockage d’informations sur votre appareil ou accès à celles-ci lorsque le consentement est requis.</li>
+<li><strong>Intérêts légitimes</strong> (art. 6.1.f) — affichage de publicités non personnalisées pour financer un jeu gratuit, mesure des publicités et prévention de la fraude.</li>
+<li><strong>Contrat</strong> (art. 6.1.b) — fourniture et restauration de l’achat « Sans pub ».</li>
+</ul>
+<p>Google agit en qualité de responsable du traitement indépendant pour les données qu’il collecte via son SDK. Google et Apple peuvent traiter des données en dehors de l’Espace économique européen, dans le cadre de leurs propres garanties.</p>
+
+<h2 id="retention">8. Durée de conservation</h2>
+<p>Les données stockées sur votre appareil y restent jusqu’à ce que vous supprimiez l’application. Les données collectées par Google sont conservées conformément aux règles de Google. Si vous nous écrivez, nous ne conservons votre adresse e-mail que le temps nécessaire pour vous répondre et traiter votre demande.</p>
+
+<h2 id="rights">9. Vos droits</h2>
+<p>Vous disposez d’un droit d’accès, de rectification et d’effacement de vos données personnelles, du droit de demander la limitation du traitement ou de vous y opposer, du droit à la portabilité des données et du droit de retirer votre consentement à tout moment. Comme nous ne conservons pas de données de jeu sur nos serveurs, la plupart des demandes se règlent en supprimant l’application ; les demandes concernant les données publicitaires peuvent être adressées à Google via les liens ci-dessus. Vous pouvez toujours nous écrire à <a href="mailto:{EMAIL}">{EMAIL}</a>. Vous avez également le droit d’introduire une réclamation auprès d’une autorité de contrôle — en Pologne, le <a href="https://uodo.gov.pl/" rel="noopener">Président de l’Office de protection des données personnelles (UODO)</a> — ou auprès de l’autorité de votre pays.</p>
+
+<h2 id="website">10. Ce site</h2>
+<p>Le site coffeebeansstudio.eu est statique. Il n’utilise <strong>ni cookies, ni outil d’analyse, ni polices ou scripts tiers</strong>. Il est hébergé sur <strong>GitHub Pages</strong> (GitHub, Inc.), et son service de noms de domaine (DNS) est assuré par <strong>Cloudflare</strong>. Ces prestataires peuvent traiter votre adresse IP et des données techniques relatives aux requêtes dans les journaux de leurs serveurs, à des fins de sécurité et d’acheminement. Voir la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">Déclaration de confidentialité de GitHub</a> et la <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Politique de confidentialité de Cloudflare</a>.</p>
+
+<h2 id="changes">11. Modifications</h2>
+<p>Si l’application se met à faire quelque chose de nouveau avec les données — par exemple un nouveau réseau publicitaire ou un outil d’analyse —, nous mettrons cette page à jour avant que le changement n’arrive dans l’application, et nous modifierons la date ci-dessous.</p>
+""",
+    # terms
+    t_title="Conditions d’utilisation — Coffee Beans Studio",
+    t_desc="Des conditions courtes et honnêtes pour Koselig et les autres jeux de Coffee Beans Studio.",
+    t_h1="Conditions d’utilisation",
+    t_sub="Koselig et les autres jeux de Coffee Beans Studio",
+    terms_html="""
+<p class="note">Seule la version <a href="{R}terms/">anglaise</a> fait foi. Ce texte en est une traduction, fournie pour votre commodité.</p>
+<p>Ces conditions s’appliquent lorsque vous utilisez <strong>Koselig</strong> ou un autre jeu de <strong>Coffee Beans Studio</strong> (Dzmitry Kurtsikau, Pologne). En jouant, vous les acceptez. Elles sont courtes, et c’est voulu.</p>
+
+<h2>1. Utilisation du jeu</h2>
+<p>Nous vous accordons un droit personnel, non exclusif et non cessible d’installer nos jeux et d’y jouer sur les appareils que vous possédez ou contrôlez, pour votre propre usage non commercial. Merci de ne pas copier, revendre ni redistribuer le jeu ou ses graphismes, et de ne pas en faire l’ingénierie inverse, sauf dans la mesure où la loi l’autorise.</p>
+
+<h2>2. Les boutiques</h2>
+<p>Vous téléchargez nos jeux sur l’App Store d’Apple ou sur Google Play, dont les conditions s’appliquent également. Pour les applications téléchargées sur l’App Store, le <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">contrat de licence d’utilisateur final standard</a> d’Apple s’applique en plus des présentes conditions. Apple et Google ne sont responsables ni du jeu ni de son assistance.</p>
+
+<h2>3. La publicité et l’achat « Sans pub »</h2>
+<p>Koselig est gratuit. Il peut afficher une courte vidéo avec récompense lorsque vous demandez une vérification <em>Impasse ?</em> Les publicités sont fournies par Google AdMob ; nous n’en contrôlons pas le contenu et ne sommes pas responsables des produits de tiers qui y sont présentés.</p>
+<p>« Sans pub » est un achat unique et non consommable. Il permet à la vérification <em>Impasse ?</em> de fonctionner sans vidéo ; le nombre de vérifications par niveau reste le même. Le prix est indiqué par la boutique avant le paiement. Le paiement, les remboursements et les annulations sont gérés par Apple ou Google selon leurs propres règles. L’achat est lié à votre identifiant Apple ou à votre compte Google et peut être restauré après une réinstallation (Réglages → <em>Restaurer</em>).</p>
+
+<h2>4. Votre progression</h2>
+<p>La progression est enregistrée uniquement sur votre appareil. Si vous supprimez l’application ou perdez l’appareil, nous ne pouvons pas la récupérer.</p>
+
+<h2>5. Évolutions et disponibilité</h2>
+<p>Nous pouvons mettre le jeu à jour — ajouter, modifier ou retirer des niveaux et des fonctionnalités — et nous pouvons cesser de le proposer. Nous nous efforcerons de le maintenir en état de marche, mais nous ne pouvons pas promettre qu’il sera toujours disponible ni exempt de bugs.</p>
+
+<h2>6. Responsabilité</h2>
+<p>Le jeu est fourni « en l’état ». Dans la mesure permise par la loi, nous ne sommes pas responsables des dommages indirects ni de la perte de données. Rien dans les présentes conditions ne limite une responsabilité que la loi ne permet pas de limiter, ni vos droits de consommateur au titre du droit de votre pays.</p>
+
+<h2>7. Droit applicable</h2>
+<p>Les présentes conditions sont régies par le droit polonais. Si vous êtes un consommateur, vous conservez en outre la protection des dispositions impératives du droit du pays où vous résidez.</p>
+
+<h2>8. Contact</h2>
+<p>Questions ou réclamations : <a href="mailto:{EMAIL}">{EMAIL}</a>. La façon dont nous traitons les données est décrite dans la <a href="{R}fr/privacy/">Politique de confidentialité</a>.</p>
+""",
+    # support
+    s_title="Aide — Coffee Beans Studio",
+    s_desc="Aide pour Koselig : restaurer l’achat « Sans pub », recommencer un niveau, changer de langue, consentement publicitaire et suppression de vos données.",
+    s_h1="Aide",
+    s_sub="Nous lisons chaque message",
+    s_mail_h="Écrivez-nous",
+    s_mail_p="Indiquez le modèle de votre téléphone, la version du jeu et ce qui s’est passé. Une capture d’écran nous aide beaucoup.",
+    s_faq_h="Questions",
+    faq=[
+        ("Comment restaurer l’achat « Sans pub » ?",
+         "Touchez ☰ en haut à droite pour ouvrir les Réglages, puis touchez <em>Restaurer</em> à côté de <em>Sans pub</em>. Utilisez le même identifiant Apple ou compte Google que pour l’achat. Le jeu vérifie l’achat auprès de la boutique à chaque lancement : après une réinstallation, l’achat revient donc aussi de lui-même dès que la boutique a répondu."),
+        ("Comment recommencer un niveau ?",
+         "Ouvrez les Réglages et touchez <em>Recommencer</em>, puis touchez à nouveau pour confirmer. Le niveau en cours repart de zéro. Pour tout effacer — progression et réglages —, supprimez l’application."),
+        ("Comment changer de langue ?",
+         "Réglages → <em>Langue</em>. Koselig parle français, anglais, espagnol, allemand, italien, polonais et russe. <em>Système</em> suit la langue de votre téléphone."),
+        ("Quand le jeu affiche-t-il des publicités ?",
+         "Uniquement quand vous touchez <em>Impasse ?</em> et choisissez <em>Voir la vidéo</em>. Ni bannière ni publicité qui surgit à l’écran. Avec <em>Sans pub</em>, la vérification se fait tout de suite."),
+        ("Comment modifier mon consentement publicitaire ?",
+         "Réglages → <em>Publicité et données</em> rouvre le formulaire de consentement de Google. Cette option apparaît dans les régions où les règles de consentement s’appliquent."),
+        ("Puis-je garder une position pour y revenir plus tard ?",
+         "Oui. Réglages → <em>Sauvegardes</em> propose trois emplacements : <em>Sauver</em> enregistre la position actuelle, <em>Charger</em> la rétablit."),
+    ],
+    s_del_h="Supprimer vos données",
+    s_del_p="Koselig fonctionne sans compte et ne conserve votre progression que sur votre appareil. Supprimer l’application efface tout ce qu’elle a enregistré. Les données publicitaires sont gérées par Google — voir la <a href=\"{R}fr/koselig/delete-data/\">page sur la suppression des données</a>.",
+    # delete data
+    d_title="Supprimer vos données — Koselig",
+    d_desc="Comment supprimer les données liées au jeu Koselig : tout est stocké sur votre appareil, il suffit de supprimer l’application. Les données publicitaires sont gérées par Google.",
+    d_h1="Supprimer vos données",
+    d_sub="Koselig, un jeu de Coffee Beans Studio",
+    delete_html="""
+<p><strong>Koselig</strong> fonctionne sans compte : il n’y a donc aucun compte à supprimer. Nous ne conservons vos données de jeu sur aucun serveur.</p>
+
+<h2>Données sur votre appareil</h2>
+<p>La progression, les sauvegardes, les réglages, l’état de l’achat « Sans pub » et votre choix de consentement publicitaire sont enregistrés uniquement sur votre téléphone. <strong>Pour tout effacer, supprimez l’application</strong> :</p>
+<ul>
+<li><strong>iPhone :</strong> maintenez le doigt sur l’icône de Koselig → <em>Supprimer l’app</em> → <em>Supprimer l’app</em>.</li>
+<li><strong>Android :</strong> maintenez le doigt sur l’icône de Koselig → <em>Infos sur l’appli</em> → <em>Désinstaller</em> (ou <em>Stockage → Vider l’espace de stockage</em> pour garder l’application mais effacer ses données).</li>
+</ul>
+<p>Supprimer l’application n’annule pas et ne retire pas l’achat « Sans pub » : il est rattaché à votre identifiant Apple ou à votre compte Google et pourra être restauré plus tard.</p>
+
+<h2>Données publicitaires</h2>
+<p>Les publicités de Koselig sont fournies par Google AdMob. Google est responsable du traitement des données qu’il collecte. Vous pouvez :</p>
+<ul>
+<li>réinitialiser ou supprimer votre identifiant publicitaire Android : <em>Paramètres → Google → Annonces</em> ;</li>
+<li>modifier votre consentement dans le jeu : <em>Réglages → Publicité et données</em> ;</li>
+<li>gérer ou supprimer des données dans votre compte Google : <a href="https://myadcenter.google.com/" rel="noopener">Mon Centre publicitaire</a> et <a href="https://myaccount.google.com/data-and-privacy" rel="noopener">Données et confidentialité</a> ;</li>
+<li>découvrir comment Google utilise les données des applications : <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">policies.google.com</a>.</li>
+</ul>
+
+<h2>Vos e-mails</h2>
+<p>Si vous nous avez écrit et souhaitez que vos messages soient supprimés, envoyez une demande à <a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a> depuis la même adresse. Nous les supprimerons sous 30 jours et vous le confirmerons.</p>
+<p>Plus de détails : <a href="{R}fr/koselig/privacy/">Politique de confidentialité</a>.</p>
+""",
+    nf_title="Page introuvable — Coffee Beans Studio",
+    nf_h1="Cette page s’est éteinte comme une bougie",
+    nf_p="L’adresse est peut-être erronée, ou la page a été déplacée.",
+    nf_cta="Retour au studio",
+)
+
+# ─────────────────────────────── ITALIANO ───────────────────────────────
+# Термины игры — колонка «it» ~/lotok/tools/teksty_gen.py; правовые тексты — смысл английских без изменений.
+L["it"] = dict(
+    name="Italiano", short="IT", date="12 novembre 2026",
+    nav_koselig="Koselig", nav_support="Assistenza", skip="Vai al contenuto", lang_label="Lingua",
+    foot_legal="Privacy", foot_terms="Termini", foot_support="Assistenza", foot_delete="Elimina dati",
+    soon_stores="Presto su App Store e Google Play",
+    home_title="Coffee Beans Studio — giochi accoglienti e ingegnosi",
+    home_desc="Coffee Beans Studio è un piccolo studio indipendente che crea giochi accoglienti e ingegnosi. Il nostro primo gioco, Koselig, è un rompicapo a incastro in un vassoio di legno, per iPhone e Android.",
+    hero_eyebrow="Coffee Beans Studio",
+    hero_h1="Giochi tranquilli<br>per serate al calduccio",
+    hero_p="Creiamo giochi accoglienti e ingegnosi, di quelli da giocare con calma, con una tazza di tè, a lume di candela.",
+    hero_cta="Scopri Koselig",
+    ch1_h="A fuoco lento",
+    ch1_p="Coffee Beans Studio è un piccolo studio indipendente. Ci stanno a cuore i rompicapi tranquilli, i materiali caldi e un design onesto: cose da toccare con gli occhi — legno, lino, luce di candela — e regole che si imparano in un minuto.",
+    ch2_h="Koselig",
+    ch2_sub="Un rompicapo a incastro in un vassoio di legno",
+    ch2_p="Sistema tutti i pezzi nel vassoio di legno. Tavolo, vassoio e pezzi li scegli a seconda dell’umore: rovere o lino, noce o ottone, vernice o pietra. E quando sei bloccato, un piccolo bonsai può dirti se c’è ancora una soluzione.",
+    ch2_cta="Tutto sul gioco",
+    word_q="koselig",
+    word_def="<em>norvegese</em> — accogliente, caldo, piacevolmente intimo. La sensazione di una candela, di una coperta e di buona compagnia.",
+    soon_h="Il pacchetto è quasi pronto",
+    soon_p="Koselig si prepara al debutto su App Store e Google Play. Il giorno dell’uscita troverai qui i link.",
+    end_h="Passa a salutarci",
+    end_p="Domande, idee o un bug in un rompicapo? Leggiamo ogni messaggio.",
+    # Koselig
+    k_title="Koselig — un rompicapo accogliente in un vassoio di legno, per iPhone e Android",
+    k_desc="Koselig è un rompicapo tranquillo a incastro: sistema tutti i pezzi nel vassoio di legno, scegli tavolo, vassoio e pezzi e, quando lo completi, guarda fiorire un piccolo bonsai. Presto su App Store e Google Play.",
+    k_eyebrow="Un gioco di Coffee Beans Studio",
+    k_h1="Koselig",
+    k_lead="Un rompicapo accogliente in un vassoio di legno. Sistema tutti i pezzi nel vassoio — e prenditi il tuo tempo.",
+    k_about_h="Un rompicapo senza fretta",
+    k_about_p=[
+        "Koselig è la versione digitale di un rompicapo a incastro in un vassoio di legno. I pezzi sono sul tavolo, intorno al vassoio: li prendi, li ruoti e li sistemi finché non riempi ogni casella.",
+        "I livelli ti guidano lungo una mappa, dai vassoi piccoli fino a quello completo. Un vassoio si può riempire in più di un modo, e c’è anche la soluzione più rigorosa, in cui due pezzi dello stesso colore non si toccano mai.",
+        "Quando non sei sicuro che una disposizione abbia ancora una soluzione, tocca <em>Bloccato?</em>. Il bonsai la controlla per te dopo un breve video che scegli tu di guardare, oppure subito, se hai acquistato <em>Senza annunci</em>.",
+    ],
+    k_feat_h="Cosa c’è dentro",
+    k_feats=[
+        ("Tre tavoli", "Rovere, lino e noce, ognuno con la sua vita quieta: una candela, il vapore del tè, la lavanda mossa dalla brezza."),
+        ("Vassoi e pezzi", "Vassoi in pino, noce, pietra, acciaio, ottone, ulivo e ciliegio. Pezzi: vernice, legno, pietra, metallo e terrazzo."),
+        ("La mappa dei livelli", "Si comincia piano, con vassoi più piccoli, poi arriva il rompicapo completo."),
+        ("Il bonsai", "Ti aiuta nel controllo <em>Bloccato?</em> e fiorisce quando completi un livello."),
+        ("Salvataggi", "Tre slot di salvataggio per le disposizioni a cui vuoi tornare."),
+        ("Sette lingue", "Italiano, English, Español, Deutsch, Français, Polski e Русский."),
+    ],
+    k_ads_h="Pubblicità onesta",
+    k_ads_p="Niente banner e niente pop-up. Un breve video parte solo quando chiedi il controllo <em>Bloccato?</em> e scegli di guardarlo. Un unico acquisto facoltativo, <em>Senza annunci</em>, fa funzionare il controllo senza video.",
+    k_shots_h="Screenshot",
+    k_shot_alts=[
+        "Un vassoio piccolo sul tavolo in lino, con alcuni pezzi intorno",
+        "Il tavolo in noce con il vassoio di legno e i pezzi sopra e sotto",
+        "Il riquadro «Bloccato?» con un bonsai in vaso",
+        "La schermata «Completato!» con il bonsai e il tempo del livello",
+        "La mappa dei livelli: un sentiero tra colline autunnali fino a una casa in cima a un colle",
+        "Impostazioni: pezzi, vassoio, tavolo, salvataggi, audio, lingua e «Senza annunci»",
+    ],
+    k_platforms="iPhone e Android · Italiano, English, Español, Deutsch, Français, Polski, Русский",
+    k_links_h="Buono a sapersi",
+    # legal common
+    legal_updated="Ultimo aggiornamento",
+    # privacy
+    p_title="Informativa sulla privacy — Koselig",
+    p_desc="Come il gioco Koselig e coffeebeansstudio.eu trattano i tuoi dati: nessun account, progressi sul tuo dispositivo, Google AdMob per i video con premio facoltativi, acquisti tramite Apple e Google.",
+    p_h1="Informativa sulla privacy",
+    p_sub="Koselig e coffeebeansstudio.eu",
+    privacy_html="""
+<p class="note">La versione vincolante è quella <a href="{R}koselig/privacy/">inglese</a>; questa è una traduzione per comodità.</p>
+<p>Questa informativa spiega che cosa succede ai tuoi dati quando giochi a <strong>Koselig</strong> su iPhone o Android e quando visiti <strong>coffeebeansstudio.eu</strong>. L’abbiamo scritta in base a ciò che l’app fa davvero.</p>
+
+<h2 id="who">Chi siamo</h2>
+<p>Koselig è pubblicato da <strong>Coffee Beans Studio</strong>. Il titolare del trattamento dei tuoi dati personali ai sensi del GDPR è <strong>Dzmitry Kurtsikau</strong>, persona fisica residente in Polonia («noi»). Per qualsiasi domanda sulla privacy, scrivi a <a href="mailto:{EMAIL}">{EMAIL}</a>.</p>
+
+<h2 id="short">In breve</h2>
+<ul>
+<li><strong>Nessun account</strong> e nessun login. Non ti chiediamo mai nome, email o numero di telefono.</li>
+<li>Progressi e impostazioni sono <strong>salvati solo sul tuo dispositivo</strong>. Noi non li riceviamo.</li>
+<li>Il gioco mostra annunci <strong>solo quando scegli tu</strong> di guardare un breve video con premio per il controllo <em>Bloccato?</em>. Non ci sono banner né annunci interstitial. Gli annunci sono forniti da <strong>Google AdMob</strong>, che tratta dati e identificatori del dispositivo.</li>
+<li>Dove la legge lo richiede (ad esempio nel SEE, nel Regno Unito e in Svizzera), prima di mostrarti annunci personalizzati ti viene chiesto il <strong>consenso</strong> tramite il modulo di Google.</li>
+<li>L’acquisto facoltativo <strong>«Senza annunci»</strong> è gestito da Apple o da Google. Non vediamo mai i tuoi dati di pagamento.</li>
+<li>Koselig <strong>non contiene strumenti di analisi</strong> né servizi di segnalazione degli arresti anomali. Non vendiamo dati personali.</li>
+</ul>
+
+<h2 id="device">1. Dati salvati sul tuo dispositivo</h2>
+<p>Koselig salva sul tuo telefono quanto segue, così puoi riprendere da dove avevi lasciato:</p>
+<ul>
+<li>progressi di gioco: livelli sbloccati, posizione attuale dei pezzi e i tuoi tre slot di salvataggio;</li>
+<li>impostazioni: audio, lingua, tavolo, vassoio e pezzi scelti;</li>
+<li>se possiedi l’acquisto «Senza annunci»;</li>
+<li>la tua scelta sul consenso pubblicitario, che l’SDK di consenso di Google salva sul dispositivo.</li>
+</ul>
+<p>Questi dati restano sul tuo dispositivo e non ci vengono inviati. Vengono cancellati quando elimini l’app. Se reinstalli il gioco, l’acquisto «Senza annunci» si può ripristinare tramite Apple o Google (Impostazioni → <em>Ripristina</em>); i progressi ripartono da zero.</p>
+
+<h2 id="ads">2. Pubblicità: Google AdMob</h2>
+<p>Koselig usa il <strong>Google Mobile Ads SDK</strong> (Google AdMob) per mostrare video con premio. Per avere un video pronto quando lo chiedi, l’app avvia l’SDK all’apertura e carica un video in background. Ciò significa che Google può ricevere dati dal tuo dispositivo <strong>anche se non guardi mai un video</strong>.</p>
+<p>Tra i dati che Google può raccogliere e trattare tramite l’SDK ci sono:</p>
+<ul>
+<li>identificatori del dispositivo: su Android l’<strong>ID pubblicità</strong>; su iPhone l’identificatore per il fornitore e altri segnali del dispositivo;</li>
+<li>il tuo <strong>indirizzo IP</strong>, che può servire a stimare una posizione approssimativa (paese o città);</li>
+<li>informazioni sul dispositivo e sull’app: modello, sistema operativo e relativa versione, lingua, dimensioni dello schermo, versione dell’app;</li>
+<li>interazioni con gli annunci: quali annunci sono stati caricati, mostrati, guardati fino alla fine o toccati.</li>
+</ul>
+<p>Google usa questi dati per pubblicare e misurare gli annunci, per prevenire frodi e abusi e — <strong>solo con il tuo consenso, dove il consenso è richiesto</strong> — per personalizzare gli annunci. Senza consenso, Google può comunque mostrare annunci non personalizzati o limitati, che usano pur sempre alcuni dati del dispositivo per il limite di frequenza, la misurazione e la prevenzione delle frodi.</p>
+<p><strong>Su iPhone</strong> Koselig non ti chiede il permesso di tracciarti (App Tracking Transparency). Per questo l’identificatore pubblicitario di Apple (IDFA) non è disponibile né per l’app né per Google.</p>
+<p><strong>Reti pubblicitarie.</strong> Usiamo solo Google AdMob e non abbiamo attivato la mediazione con altre reti. La versione Android contiene al momento adattatori software che AdMob può usare per la mediazione con Meta Audience Network e AppLovin; non sono attivati nel nostro account AdMob e prevediamo di rimuoverli. Se mai attiveremo un’altra rete, prima aggiorneremo questa informativa.</p>
+<p>Maggiori informazioni da Google:</p>
+<ul>
+<li><a href="https://policies.google.com/technologies/partner-sites" rel="noopener">Come Google utilizza le informazioni dei siti o delle app che usano i suoi servizi</a></li>
+<li><a href="https://policies.google.com/privacy" rel="noopener">Norme sulla privacy di Google</a></li>
+<li><a href="https://www.google.com/about/company/user-consent-policy/" rel="noopener">Norme di Google relative al consenso degli utenti dell’UE</a></li>
+<li><a href="https://support.google.com/admob/answer/10113207" rel="noopener">Strumenti di Google per il consenso nelle app (UMP)</a></li>
+<li><a href="https://myadcenter.google.com/" rel="noopener">Il mio Centro annunci — gestisci la personalizzazione degli annunci nel tuo account Google</a></li>
+</ul>
+
+<h2 id="consent">3. Il tuo consenso e come modificarlo</h2>
+<p>Nelle regioni in cui il consenso è richiesto, Koselig mostra il modulo di consenso di Google (User Messaging Platform) prima di richiedere annunci. Puoi accettare, rifiutare o scegliere le finalità. Puoi cambiare la tua scelta in qualsiasi momento nel gioco: <strong>Impostazioni → Annunci e dati</strong> (la voce compare dove si applicano le regole sul consenso). Anche eliminare e reinstallare l’app azzera la tua scelta.</p>
+<p>Puoi anche limitare gli annunci sul tuo dispositivo: su Android in <em>Impostazioni → Google → Annunci</em> (reimposta o elimina l’ID pubblicità); su iPhone in <em>Impostazioni → Privacy e sicurezza → Pubblicità di Apple</em>.</p>
+
+<h2 id="purchases">4. L’acquisto «Senza annunci»</h2>
+<p>Koselig offre un solo acquisto in-app facoltativo, <strong>«Senza annunci»</strong> (prodotto <code>koselig.no_ads</code>). È gestito interamente da <strong>Apple App Store</strong> o <strong>Google Play</strong>. Non riceviamo il tuo nome, la tua carta né i tuoi dati di pagamento. L’app riceve dallo store soltanto la conferma che possiedi l’acquisto e salva questa informazione sul tuo dispositivo. Consulta l’<a href="https://www.apple.com/legal/privacy/" rel="noopener">Informativa sulla privacy di Apple</a> e le <a href="https://policies.google.com/privacy" rel="noopener">Norme sulla privacy di Google</a>.</p>
+
+<h2 id="no">5. Cosa non facciamo</h2>
+<ul>
+<li>Nessun account, nessun login, nessuna funzione social.</li>
+<li>Nessuno strumento di analisi, nessuna segnalazione degli arresti anomali, nessun tracciamento da parte nostra.</li>
+<li>Nessun accesso a contatti, foto, fotocamera, microfono o posizione precisa.</li>
+<li>Non vendiamo dati personali e non li usiamo per scopi diversi da quelli descritti qui.</li>
+</ul>
+<p>L’app usa l’accesso a internet (per gli annunci e l’acquisto) e, su Android, la vibrazione per il feedback aptico.</p>
+
+<h2 id="children">6. Bambini</h2>
+<p>Koselig è un rompicapo per un pubblico generale. Non è rivolto ai bambini sotto i 13 anni e non fa parte di una categoria per bambini. Gli annunci in Koselig non sono configurati come destinati ai bambini. Non raccogliamo consapevolmente informazioni personali dai bambini. Se ritieni che un bambino ci abbia fornito dati personali, contattaci e li elimineremo.</p>
+
+<h2 id="legal">7. Basi giuridiche (GDPR)</h2>
+<ul>
+<li><strong>Consenso</strong> (art. 6, par. 1, lett. a, GDPR) — pubblicità personalizzata e archiviazione di informazioni o accesso a informazioni sul tuo dispositivo, dove è richiesto il consenso.</li>
+<li><strong>Legittimo interesse</strong> (art. 6, par. 1, lett. f) — visualizzazione di annunci non personalizzati per finanziare un gioco gratuito, misurazione degli annunci e prevenzione delle frodi.</li>
+<li><strong>Contratto</strong> (art. 6, par. 1, lett. b) — fornitura e ripristino dell’acquisto «Senza annunci».</li>
+</ul>
+<p>Google agisce come titolare autonomo del trattamento per i dati che raccoglie tramite il suo SDK. Google e Apple possono trattare dati al di fuori dello Spazio economico europeo, con garanzie proprie.</p>
+
+<h2 id="retention">8. Per quanto tempo vengono conservati i dati</h2>
+<p>I dati sul tuo dispositivo restano lì finché non elimini l’app. I dati raccolti da Google vengono conservati secondo le norme di Google. Se ci scrivi, conserviamo il tuo indirizzo email solo per il tempo necessario a risponderti e a risolvere la tua richiesta.</p>
+
+<h2 id="rights">9. I tuoi diritti</h2>
+<p>Hai il diritto di accesso, di rettifica e di cancellazione dei tuoi dati personali, di limitazione del trattamento, di opposizione al trattamento, alla portabilità dei dati e di revocare il consenso in qualsiasi momento. Poiché non conserviamo dati di gioco sui nostri server, la maggior parte delle richieste si risolve eliminando l’app; le richieste sui dati pubblicitari si possono rivolgere a Google tramite i link qui sopra. Puoi sempre scriverci a <a href="mailto:{EMAIL}">{EMAIL}</a>. Hai anche il diritto di proporre reclamo a un’autorità di controllo — in Polonia il <a href="https://uodo.gov.pl/" rel="noopener">Presidente dell’Ufficio per la protezione dei dati personali (UODO)</a> — o all’autorità del tuo Paese.</p>
+
+<h2 id="website">10. Questo sito</h2>
+<p>coffeebeansstudio.eu è un sito statico. Non usa <strong>né cookie, né strumenti di analisi, né font o script di terze parti</strong>. È ospitato su <strong>GitHub Pages</strong> (GitHub, Inc.) e il servizio DNS del dominio è fornito da <strong>Cloudflare</strong>. Questi fornitori possono trattare il tuo indirizzo IP e i dati tecnici delle richieste nei log dei server, per la sicurezza e per l’erogazione del sito. Consulta l’<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">Informativa sulla privacy di GitHub</a> e l’<a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Informativa sulla privacy di Cloudflare</a>.</p>
+
+<h2 id="changes">11. Modifiche</h2>
+<p>Se l’app inizierà a fare qualcosa di nuovo con i dati — ad esempio una nuova rete pubblicitaria o strumenti di analisi — aggiorneremo questa pagina prima che la modifica arrivi nell’app e cambieremo la data qui sotto.</p>
+""",
+    # terms
+    t_title="Termini di utilizzo — Coffee Beans Studio",
+    t_desc="Termini brevi e onesti per Koselig e gli altri giochi di Coffee Beans Studio.",
+    t_h1="Termini di utilizzo",
+    t_sub="Koselig e gli altri giochi di Coffee Beans Studio",
+    terms_html="""
+<p class="note">La versione vincolante è quella <a href="{R}terms/">inglese</a>; questa è una traduzione per comodità.</p>
+<p>Questi termini si applicano quando usi <strong>Koselig</strong> o un altro gioco di <strong>Coffee Beans Studio</strong> (Dzmitry Kurtsikau, Polonia). Giocando, li accetti. Sono brevi di proposito.</p>
+
+<h2>1. Il gioco</h2>
+<p>Ti concediamo un diritto personale, non esclusivo e non trasferibile di installare i nostri giochi e di giocarci su dispositivi di tua proprietà o sotto il tuo controllo, per uso personale e non commerciale. Ti chiediamo di non copiare, rivendere, sottoporre a reverse engineering né ridistribuire il gioco o la sua grafica, salvo nei casi consentiti dalla legge.</p>
+
+<h2>2. Gli store</h2>
+<p>Scarichi i nostri giochi da Apple App Store o da Google Play, e si applicano anche i loro termini. Per le app scaricate da App Store, oltre a questi termini si applica il <a href="https://www.apple.com/legal/internet-services/itunes/dev/stdeula/" rel="noopener">Contratto di licenza standard per l’utente finale</a> di Apple. Apple e Google non sono responsabili del gioco né dell’assistenza.</p>
+
+<h2>3. Pubblicità e acquisto «Senza annunci»</h2>
+<p>Koselig è gratuito. Può mostrare un breve video con premio quando chiedi il controllo <em>Bloccato?</em>. Gli annunci sono forniti da Google AdMob; non ne controlliamo il contenuto e non siamo responsabili dei prodotti di terzi che vi vengono pubblicizzati.</p>
+<p>«Senza annunci» è un acquisto una tantum, non consumabile. Permette al controllo <em>Bloccato?</em> di funzionare senza video; il numero di controlli per livello resta lo stesso. Il prezzo viene indicato dallo store prima del pagamento. Pagamenti, rimborsi e annullamenti sono gestiti da Apple o da Google secondo le rispettive regole. L’acquisto è legato al tuo ID Apple o al tuo account Google e si può ripristinare dopo una reinstallazione (Impostazioni → <em>Ripristina</em>).</p>
+
+<h2>4. I tuoi progressi</h2>
+<p>I progressi sono salvati solo sul tuo dispositivo. Se elimini l’app o perdi il dispositivo, non possiamo recuperarli.</p>
+
+<h2>5. Modifiche e disponibilità</h2>
+<p>Possiamo aggiornare il gioco — aggiungere, modificare o rimuovere livelli e funzioni — e possiamo smettere di offrirlo. Cercheremo di mantenerlo funzionante, ma non possiamo promettere che sarà sempre disponibile o privo di bug.</p>
+
+<h2>6. Responsabilità</h2>
+<p>Il gioco è fornito «così com’è». Nei limiti consentiti dalla legge, non siamo responsabili di danni indiretti o della perdita di dati. Nulla in questi termini limita la responsabilità che per legge non può essere limitata, né i tuoi diritti di consumatore previsti dalle leggi del tuo Paese.</p>
+
+<h2>7. Legge applicabile</h2>
+<p>Questi termini sono regolati dalla legge polacca. Se sei un consumatore, conservi anche la tutela delle norme imperative del Paese in cui vivi.</p>
+
+<h2>8. Contatti</h2>
+<p>Domande o reclami: <a href="mailto:{EMAIL}">{EMAIL}</a>. Come trattiamo i dati è spiegato nell’<a href="{R}it/privacy/">Informativa sulla privacy</a>.</p>
+""",
+    # support
+    s_title="Assistenza — Coffee Beans Studio",
+    s_desc="Aiuto con Koselig: ripristinare l’acquisto «Senza annunci», ricominciare un livello, cambiare lingua, consenso agli annunci ed eliminazione dei dati.",
+    s_h1="Assistenza",
+    s_sub="Leggiamo ogni messaggio",
+    s_mail_h="Scrivici",
+    s_mail_p="Indicaci il modello del telefono, la versione del gioco e che cosa è successo. Uno screenshot aiuta molto.",
+    s_faq_h="Domande",
+    faq=[
+        ("Come ripristino l’acquisto «Senza annunci»?",
+         "Tocca ☰ in alto a destra per aprire le Impostazioni, poi tocca <em>Ripristina</em> accanto a <em>Senza annunci</em>. Usa lo stesso ID Apple o account Google con cui l’hai acquistato. Il gioco verifica l’acquisto presso lo store a ogni avvio, quindi dopo una reinstallazione si ripristina anche da solo, appena lo store risponde."),
+        ("Come ricomincio un livello?",
+         "Apri Impostazioni e tocca <em>Ricomincia da capo</em>, poi tocca di nuovo per confermare. Così il livello in corso riparte da zero. Per cancellare tutto — tutti i progressi e le impostazioni — elimina l’app."),
+        ("Come cambio lingua?",
+         "Impostazioni → <em>Lingua</em>. Le lingue di Koselig sono Italiano, English, Español, Deutsch, Français, Polski e Русский. <em>Di sistema</em> segue la lingua del telefono."),
+        ("Quando il gioco mostra annunci?",
+         "Solo quando tocchi <em>Bloccato?</em> e scegli <em>Guarda il video</em>. Niente banner e niente annunci pop-up. Con <em>Senza annunci</em> il controllo funziona subito."),
+        ("Come cambio il consenso agli annunci?",
+         "Impostazioni → <em>Annunci e dati</em> riapre il modulo di consenso di Google. La voce compare nelle regioni in cui si applicano le regole sul consenso."),
+        ("Posso salvare una disposizione e tornarci più tardi?",
+         "Sì. In Impostazioni, <em>Salvataggi</em> ha tre slot: <em>Salva</em> memorizza la disposizione attuale, <em>Apri</em> la ricarica."),
+    ],
+    s_del_h="Eliminare i tuoi dati",
+    s_del_p="Koselig non ha account e conserva i progressi solo sul tuo dispositivo. Eliminando l’app elimini tutto ciò che aveva salvato. I dati pubblicitari sono gestiti da Google: vedi la <a href=\"{R}it/koselig/delete-data/\">pagina sull’eliminazione dei dati</a>.",
+    # delete data
+    d_title="Elimina i tuoi dati — Koselig",
+    d_desc="Come eliminare i dati legati al gioco Koselig. Tutto è salvato sul tuo dispositivo: basta eliminare l’app. I dati pubblicitari sono gestiti da Google.",
+    d_h1="Elimina i tuoi dati",
+    d_sub="Koselig di Coffee Beans Studio",
+    delete_html="""
+<p><strong>Koselig</strong> non ha account, quindi non c’è nessun account da eliminare. Non conserviamo i tuoi dati di gioco su alcun server.</p>
+
+<h2>Dati sul tuo dispositivo</h2>
+<p>Progressi, salvataggi, impostazioni, stato dell’acquisto «Senza annunci» e la tua scelta sul consenso pubblicitario sono salvati solo sul tuo telefono. <strong>Per eliminare tutto, elimina l’app</strong>:</p>
+<ul>
+<li><strong>iPhone:</strong> tieni premuta l’icona di Koselig → <em>Rimuovi app</em> → <em>Elimina app</em>.</li>
+<li><strong>Android:</strong> tieni premuta l’icona di Koselig → <em>Informazioni app</em> → <em>Disinstalla</em> (oppure <em>Spazio di archiviazione → Cancella spazio di archiviazione</em> per tenere l’app ma cancellarne i dati).</li>
+</ul>
+<p>Eliminare l’app non annulla né rimuove l’acquisto «Senza annunci»: appartiene al tuo ID Apple o al tuo account Google e puoi ripristinarlo in seguito.</p>
+
+<h2>Dati pubblicitari</h2>
+<p>Gli annunci in Koselig sono forniti da Google AdMob. I dati raccolti da Google sono sotto il controllo di Google. Puoi:</p>
+<ul>
+<li>reimpostare o eliminare l’ID pubblicità di Android: <em>Impostazioni → Google → Annunci</em>;</li>
+<li>cambiare il consenso nel gioco: <em>Impostazioni → Annunci e dati</em>;</li>
+<li>gestire o eliminare i dati nel tuo account Google: <a href="https://myadcenter.google.com/" rel="noopener">Il mio Centro annunci</a> e <a href="https://myaccount.google.com/data-and-privacy" rel="noopener">Dati e privacy di Google</a>;</li>
+<li>leggere come Google usa i dati delle app: <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">policies.google.com</a>.</li>
+</ul>
+
+<h2>Email che ci hai inviato</h2>
+<p>Se ci hai scritto e vuoi che i tuoi messaggi vengano eliminati, invia una richiesta a <a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a> dallo stesso indirizzo. Li elimineremo entro 30 giorni e te lo confermeremo.</p>
+<p>Maggiori dettagli: <a href="{R}it/koselig/privacy/">Informativa sulla privacy</a>.</p>
+""",
+    nf_title="Pagina non trovata — Coffee Beans Studio",
+    nf_h1="Questa pagina si è spenta come una candela",
+    nf_p="Forse l’indirizzo è sbagliato, o la pagina è stata spostata.",
+    nf_cta="Torna allo studio",
 )

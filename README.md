@@ -7,7 +7,7 @@
 - Прод: https://coffeebeansstudio.eu (GitHub Pages, ветка `main`, папка `/docs`, файл `docs/CNAME`)
 - Репозиторий: https://github.com/truedba/coffeebeansstudio-site · локально `~/coffeebeansstudio-site`
 - Обязательные адреса для магазинов: `/privacy/`, `/koselig/privacy/`, `/terms/`, `/support/`, `/koselig/delete-data/`,
-  `/app-ads.txt` (строка AdMob `pub-8167533003532456`). Те же страницы на `/ru/…` и `/pl/…` (переводы, обязывает английская).
+  `/app-ads.txt` (строка AdMob `pub-8167533003532456`). Те же страницы на `/es/…`, `/de/…`, `/fr/…`, `/it/…`, `/pl/…`, `/ru/…` (переводы, обязывает английская).
 
 ## Сборка
 ```
@@ -18,13 +18,22 @@ python3 build.py --podlog # самопроверка стража безопас
 Проверка после сборки — ссылки И **страж безопасности** (`BEZOPASNOST.md`: CSP без unsafe-inline, Referrer-Policy, нет
 style=/встроенных скриптов/голых адресов/внешних ресурсов, security.txt не просрочен). Почта на страницах собирается в `site.js`
 из `data-u/data-d/data-t` — в HTML адреса нет. Заголовки живого сайта: `python3 ~/tooling/web-headers/webheaders.py URL`.
-Тексты — `content.py` (en/ru/pl), вёрстка — `src/site.css`, `src/site.js`, шаблоны — функции `page_*` в `build.py`.
+Тексты — `content.py` (7 языков, как в игре: en es de fr it pl ru; порядок — `LANGS` в `build.py`), вёрстка — `src/site.css`, `src/site.js`, шаблоны — функции `page_*` в `build.py`.
 Картинки-исходники в `src/img/` в git не лежат (сотни МБ): откуда они —
 - кадры Nano Banana 4K: `~/lotok/game/assets/sait/*.png`, промпты — `~/lotok/art/NB_SAIT.tsv`, учёт — `~/lotok/art/GEN-LEDGER.md`;
 - бонсай и логотип с пурпура: `bash ~/tooling/claude-rig/rig.sh prep_key.py <src> <out> [--no-crop]` (розовые лепестки сохраняются);
 - иконка и заставка игры: `~/lotok/game/assets/icon.png`, `nb/zs_fon_a.png`;
 - кадры игры 1170×2084 (англ.): `SHOT_TOLKO=yazyki SHOT_YAZYKI=en … engine.sh run --resolution 1170x2532 --script tools/shot.gd` в `~/lotok/game`.
 OG-картинки: `src/og.html` + `work/og.mjs` (Playwright, Chrome) → `docs/assets/og-*.jpg`.
+
+## Языки
+Семь — ровно языки игры. Названия кнопок и терминов (Тупик?/Stuck?/¿Atascado?/Sackgasse?/Impasse ?/Bloccato?, «Без рекламы»,
+Настройки, Позиции, материалы столов, лотков и фигур) берутся из `~/lotok/tools/teksty_gen.py` — единого источника строк игры:
+сайт обязан называть то, что игрок видит на экране. Правовые страницы переводятся без изменения смысла; на каждой — пометка,
+что обязывает английская версия. Новый язык: словарь `L["xx"]` в `content.py` с теми же ключами, что `L["en"]` (включая
+`lang_label`), + `LANGS` и `og:locale` в `build.py`. Переключатель — `<details class="langs">` (не встаёт строкой в шапку
+телефона 390 px); без JS раскрывается сам, `site.js` только закрывает его по клику мимо и Esc.
+Кадр с раскрытым меню: `node ~/tooling/web-shot/webshot.mjs shot URL out.png 390 844 --click='.langs summary'`.
 
 ## Проверки
 Глобальный предмет **web-shot** (`~/tooling/web-shot`, ID `web-shot`, граф: `python3 ~/tooling/graph.py show web-shot`):

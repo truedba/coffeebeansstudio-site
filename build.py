@@ -111,7 +111,7 @@ def picture(R, name, alt, sizes, cls="", eager=False, mobile=None):
 
 
 # ───────────────────────────── страницы ─────────────────────────────
-LANGS = ["en", "ru", "pl"]
+LANGS = ["en", "es", "de", "fr", "it", "pl", "ru"]  # порядок — как список языков игры (k_platforms)
 PAGES = {  # ключ → путь без префикса языка
     "home": "", "koselig": "koselig/", "privacy": "privacy/", "kprivacy": "koselig/privacy/",
     "terms": "terms/", "support": "support/", "delete": "koselig/delete-data/",
@@ -167,7 +167,7 @@ def head(lang, key, title, desc, R, path, og="og-studio", extra_css=""):
     alts += f'<link rel="alternate" hreflang="x-default" href="{DOMAIN}/{lp("en", key)}">'
     canon_key = "kprivacy" if key == "privacy" else key
     canonical = f"{DOMAIN}/{lp(lang, canon_key)}"
-    loc = {"en": "en_GB", "ru": "ru_RU", "pl": "pl_PL"}[lang]
+    loc = {"en": "en_GB", "es": "es_ES", "de": "de_DE", "fr": "fr_FR", "it": "it_IT", "pl": "pl_PL", "ru": "ru_RU"}[lang]
     return f"""<!doctype html>
 <html lang="{lang}">
 <head>
@@ -199,10 +199,18 @@ def head(lang, key, title, desc, R, path, og="og-studio", extra_css=""):
 """
 
 
+GLOBE_SVG = ('<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.2">'
+             '<circle cx="8" cy="8" r="6.4"/><path d="M1.6 8h12.8M8 1.6c1.9 1.9 2.8 4 2.8 6.4S9.9 12.5 8 14.4M8 1.6C6.1 3.5 5.2 5.6 5.2 8s.9 4.5 2.8 6.4"/></svg>')
+
+
 def header(lang, key, R, T, solid=False):
-    langs = "".join(
-        f'<a href="{R}{lp(l, key)}" hreflang="{l}" lang="{l}"{" aria-current=" + chr(34) + "true" + chr(34) if l == lang else ""}>{L[l]["short"]}</a>'
+    # Переключатель языков — <details>: 7 языков не встают строкой в шапку телефона 390 px. Без JS раскрывается сам,
+    # site.js только закрывает его по клику мимо и Esc. Ссылки — полными именами языков на них самих (как в меню игры).
+    items = "".join(
+        f'<li><a href="{R}{lp(l, key)}" hreflang="{l}" lang="{l}"{" aria-current=" + chr(34) + "true" + chr(34) if l == lang else ""}>{L[l]["name"]}</a></li>'
         for l in LANGS)
+    langs = (f'<details class="langs" data-langs><summary aria-label="{T["lang_label"]}: {L[lang]["name"]}">{GLOBE_SVG}'
+             f'<span>{T["short"]}</span></summary><ul>{items}</ul></details>')
     home = R + lp(lang, "home")
     return f"""<a class="skip" href="#main">{T['skip']}</a>
 <header class="top{' solid' if solid else ''}" data-top>
@@ -210,7 +218,7 @@ def header(lang, key, R, T, solid=False):
   <nav aria-label="Main">
     <a href="{R}{lp(lang, 'koselig')}"{' aria-current="page"' if key == 'koselig' else ''}>{T['nav_koselig']}</a>
     <a href="{R}{lp(lang, 'support')}"{' aria-current="page"' if key == 'support' else ''}>{T['nav_support']}</a>
-    <span class="langs" aria-label="Language">{langs}</span>
+    {langs}
   </nav>
 </header>
 """
@@ -227,7 +235,7 @@ def footer(lang, R, T):
       <li><a href="{R}{lp(lang, 'delete')}">{T['foot_delete']}</a></li>
       <li>{mail_link(R, lang)}</li>
     </ul>
-    <p class="foot-note">{T['foot_note']} © 2026</p>
+    <p class="foot-note">© 2026 Coffee Beans Studio</p>
   </div>
 </footer>
 <script src="{R}assets/site.js" defer></script>
@@ -409,7 +417,8 @@ def page_404(R, T):
   <div class="nf-text">
     <h1>{T['nf_h1']}</h1>
     <p>{T['nf_p']}</p>
-    <p><a class="btn" href="/">{T['nf_cta']}</a> <a class="nf-alt" href="/ru/">Русский</a> <a class="nf-alt" href="/pl/">Polski</a></p>
+    <p><a class="btn" href="/">{T['nf_cta']}</a></p>
+    <p class="nf-langs">{" ".join(f'<a href="/{l}/" hreflang="{l}" lang="{l}">{L[l]["name"]}</a>' for l in LANGS if l != "en")}</p>
   </div>
 </main>
 </body>

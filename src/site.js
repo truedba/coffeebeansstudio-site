@@ -12,6 +12,15 @@
     a.textContent = e;
   }
 
+  // переключатель языков (<details>): закрыть по клику мимо и по Esc — без таймеров, только по событию
+  const langs = document.querySelector('[data-langs]');
+  if (langs) {
+    document.addEventListener('click', (e) => { if (langs.open && !langs.contains(e.target)) langs.open = false; });
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && langs.open) { langs.open = false; langs.querySelector('summary').focus(); }
+    });
+  }
+
   const body = document.body;
   const reduce = matchMedia('(prefers-reduced-motion: reduce)');
 
