@@ -68,7 +68,8 @@ Flags 0. **`issuewild` не добавлять**: сертификат Cloudflar
 
 **5. Cloudflare — DNSSEC:** DNS → **Settings** → DNSSEC → **Enable DNSSEC**. Cloudflare покажет DS-запись: **Key Tag**,
 **Algorithm** (13), **Digest Type** (2), **Digest**, и ниже **Public Key** (DNSKEY). Все четыре поля + ключ переписать (копировать).
-OVH → **Web Cloud → Domain names → coffeebeansstudio.eu → вкладка DNSSEC** → Add a DNSSEC key (или «Manage DS records»):
+OVH → **Web Cloud → Domain names → coffeebeansstudio.eu → вкладка «DS records»** (на General information виден переключатель
+«Secure delegation — DNSSEC: Disabled») → Add / Modify DS records:
 Key Tag — из Cloudflare; Flag — `257 (KSK)`; Algorithm — `13 — ECDSAP256SHA256`; **Public key** — Public Key из Cloudflare
 (OVH спрашивает ключ, не digest). Save. У EURid DS появится в течение часа–суток; Cloudflare в разделе DNSSEC напишет «Success».
 Проверка: `dig +short DS coffeebeansstudio.eu @1.1.1.1` (должна появиться строка) и https://dnsviz.net/d/coffeebeansstudio.eu/.
@@ -79,9 +80,9 @@ Key Tag — из Cloudflare; Flag — `257 (KSK)`; Algorithm — `13 — ECDSAP2
 Action `Drop` → Save. Правило `support@ → dikur86@gmail.com` остаётся. Смысл: письма на выдуманные адреса (info@, admin@,
 abuse-боты) не доходят до Gmail. Исключение, если захочется: добавить `postmaster@` и `abuse@` → тот же Gmail.
 
-**7. OVH — замок переноса:** Web Cloud → Domain names → coffeebeansstudio.eu → **General information** → блок
-**Protection against transfer** (Transfer lock) → Enable/Activate. Там же: **Anti-hijacking / Authorization code** не
-запрашивать без нужды. Сам аккаунт OVH — 2FA по PDF.
+**7. OVH — замок переноса: УЖЕ СТОИТ** (снято с экрана 13.11: General information → «Protection against domain name
+transfer — Enabled»). Не снимать; код авторизации (auth code) не запрашивать без нужды. Сам аккаунт OVH — 2FA по PDF:
+на 13.11 у OVH и у Cloudflare 2FA ВЫКЛЮЧЕНА, у Google включена с 01.09.2025.
 
 ### После того, как GitHub выпустит сертификат
 
