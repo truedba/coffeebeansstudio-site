@@ -79,7 +79,7 @@ L["en"] = dict(
 
 <h2 id="short">In short</h2>
 <ul>
-<li>There are <strong>no accounts</strong> and no sign-in. We never ask for your name, email or phone number.</li>
+<li>There are <strong>no Koselig accounts</strong> and no sign-in to us (on Android, your phone may sign you in to Google Play Games for cloud saves). We never ask for your name, email or phone number.</li>
 <li>Your progress and settings are <strong>stored on your device</strong>; on iPhone they are also copied to your own iCloud account, and on Android to your own Google Play Games account if you are signed in to it. We do not receive them.</li>
 <li>The game shows ads <strong>only when you choose</strong> to watch a short rewarded video for the <em>Stuck?</em> check. There are no banners and no interstitial ads. The ads come from <strong>Google AdMob</strong>, which processes device data and identifiers.</li>
 <li>Where the law requires it (for example in the EEA, the UK and Switzerland), you are asked for <strong>consent</strong> through Google’s consent form before personalised ads are shown.</li>
@@ -136,7 +136,7 @@ L["en"] = dict(
 
 <h2 id="no">6. What we do not do</h2>
 <ul>
-<li>No accounts, no sign-in, no social features.</li>
+<li>No Koselig accounts, no sign-in to us, no social features; on Android, Google Play Games sign-in is used only for cloud saves.</li>
 <li>No tracking by us across other companies’ apps or websites.</li>
 <li>No access to your contacts, photos, camera, microphone or precise location.</li>
 <li>We do not sell personal data and we do not use it for anything except what is described here.</li>
@@ -342,7 +342,7 @@ L["ru"] = dict(
 
 <h2 id="short">Коротко</h2>
 <ul>
-<li><strong>Аккаунтов нет</strong>, входа нет. Мы не спрашиваем имя, почту или телефон.</li>
+<li><strong>Аккаунтов Koselig нет</strong>, входа к нам тоже (на Android телефон может выполнить вход в Google Play Games для облачных сохранений). Мы не спрашиваем имя, почту или телефон.</li>
 <li>Прогресс и настройки <strong>хранятся на вашем устройстве</strong>; на iPhone они ещё копируются в ваш собственный iCloud, а на Android — в ваш аккаунт Google Play Games, если вы в него вошли. Мы их не получаем.</li>
 <li>Реклама — <strong>только по вашему выбору</strong>: короткий ролик за награду для проверки «Тупик?». Баннеров и межстраничной рекламы нет. Ролики показывает <strong>Google AdMob</strong>, он обрабатывает данные устройства и идентификаторы.</li>
 <li>Где этого требует закон (например, ЕЭЗ, Великобритания, Швейцария), перед персонализированной рекламой у вас спрашивают <strong>согласие</strong> через форму Google.</li>
@@ -399,7 +399,7 @@ L["ru"] = dict(
 
 <h2 id="no">6. Чего мы не делаем</h2>
 <ul>
-<li>Нет аккаунтов, входа и социальных функций.</li>
+<li>Нет аккаунтов Koselig, входа к нам и социальных функций; вход в Google Play Games на Android нужен только для облачных сохранений.</li>
 <li>Мы не отслеживаем вас в чужих приложениях и на чужих сайтах.</li>
 <li>Нет доступа к контактам, фото, камере, микрофону и точному местоположению.</li>
 <li>Мы не продаём персональные данные и не используем их ни для чего, кроме описанного здесь.</li>
@@ -592,7 +592,7 @@ L["pl"] = dict(
 
 <h2 id="short">W skrócie</h2>
 <ul>
-<li><strong>Nie ma kont</strong> ani logowania. Nie pytamy o imię, e-mail ani numer telefonu.</li>
+<li><strong>Nie ma kont Koselig</strong> ani logowania u nas (na Androidzie telefon może zalogować Cię do Google Play Games na potrzeby zapisów w chmurze). Nie pytamy o imię, e-mail ani numer telefonu.</li>
 <li>Postęp i ustawienia <strong>są zapisywane na Twoim urządzeniu</strong>; na iPhonie są też kopiowane do Twojego własnego iCloud, a na Androidzie — do Twojego konta Google Play Games, jeśli zalogowano się do niego na telefonie. Nie otrzymujemy ich.</li>
 <li>Reklamy pojawiają się <strong>tylko wtedy, gdy sam wybierzesz</strong> krótki film z nagrodą przy sprawdzaniu „Impas?”. Nie ma banerów ani reklam pełnoekranowych. Reklamy dostarcza <strong>Google AdMob</strong>, który przetwarza dane urządzenia i identyfikatory.</li>
 <li>Tam, gdzie wymaga tego prawo (np. w EOG, Wielkiej Brytanii i Szwajcarii), przed reklamami spersonalizowanymi prosimy o <strong>zgodę</strong> w formularzu Google.</li>
@@ -649,7 +649,7 @@ L["pl"] = dict(
 
 <h2 id="no">6. Czego nie robimy</h2>
 <ul>
-<li>Nie ma kont, logowania ani funkcji społecznościowych.</li>
+<li>Nie ma kont Koselig, logowania u nas ani funkcji społecznościowych; na Androidzie logowanie do Google Play Games służy wyłącznie do zapisów w chmurze.</li>
 <li>Nie śledzimy Cię w aplikacjach ani na stronach innych firm.</li>
 <li>Nie ma dostępu do kontaktów, zdjęć, aparatu, mikrofonu ani dokładnej lokalizacji.</li>
 <li>Nie sprzedajemy danych osobowych i nie używamy ich do niczego poza tym, co tu opisano.</li>
@@ -846,7 +846,7 @@ L["es"] = dict(
 
 <h2 id="short">En resumen</h2>
 <ul>
-<li><strong>No hay cuentas</strong> ni inicio de sesión. Nunca te pedimos tu nombre, tu correo electrónico ni tu número de teléfono.</li>
+<li><strong>No hay cuentas de Koselig</strong> ni inicio de sesión con nosotros (en Android, el teléfono puede iniciar sesión en Google Play Games para el guardado en la nube). Nunca te pedimos tu nombre, tu correo electrónico ni tu número de teléfono.</li>
 <li>Tu progreso y tus ajustes <strong>se guardan en tu dispositivo</strong>; en iPhone también se copian a tu propia cuenta de iCloud y, en Android, a tu cuenta de Google Play Games si has iniciado sesión en ella. Nosotros no los recibimos.</li>
 <li>El juego muestra anuncios <strong>solo cuando tú decides</strong> ver un video corto con recompensa a cambio de la comprobación <em>¿Atascado?</em>; no hay banners ni anuncios intersticiales. Los anuncios los proporciona <strong>Google AdMob</strong>, que trata datos e identificadores del dispositivo.</li>
 <li>Donde la ley lo exige (por ejemplo, en el EEE, el Reino Unido y Suiza), se te pide el <strong>consentimiento</strong> mediante el formulario de consentimiento de Google antes de mostrarte anuncios personalizados.</li>
@@ -903,7 +903,7 @@ L["es"] = dict(
 
 <h2 id="no">6. Lo que no hacemos</h2>
 <ul>
-<li>Sin cuentas, sin inicio de sesión, sin funciones sociales.</li>
+<li>Sin cuentas de Koselig, sin inicio de sesión con nosotros, sin funciones sociales; en Android, el inicio de sesión en Google Play Games solo se usa para el guardado en la nube.</li>
 <li>No te rastreamos en aplicaciones ni sitios web de otras empresas.</li>
 <li>Sin acceso a tus contactos, fotos, cámara, micrófono ni ubicación precisa.</li>
 <li>No vendemos datos personales ni los usamos para nada más que lo descrito aquí.</li>
@@ -1114,7 +1114,7 @@ L["de"] = dict(
 
 <h2 id="short">Das Wichtigste in Kürze</h2>
 <ul>
-<li>Es gibt <strong>keine Konten</strong> und keine Anmeldung. Wir fragen nie nach deinem Namen, deiner E-Mail-Adresse oder deiner Telefonnummer.</li>
+<li>Es gibt <strong>keine Koselig-Konten</strong> und keine Anmeldung bei uns (unter Android kann dich dein Handy für Cloud-Spielstände bei Google Play Games anmelden). Wir fragen nie nach deinem Namen, deiner E-Mail-Adresse oder deiner Telefonnummer.</li>
 <li>Dein Fortschritt und deine Einstellungen werden <strong>auf deinem Gerät gespeichert</strong>; auf dem iPhone zusätzlich in deinem eigenen iCloud, unter Android in deinem Konto bei Google Play Games, wenn du dort angemeldet bist. Wir erhalten sie nicht.</li>
 <li>Das Spiel zeigt Werbung <strong>nur, wenn du dich dafür entscheidest</strong>, für die Prüfung mit <em>Verrannt?</em> ein kurzes Belohnungsvideo anzusehen. Es gibt keine Banner und keine Interstitial-Anzeigen. Die Werbung stammt von <strong>Google AdMob</strong>; Google verarbeitet dabei Gerätedaten und Kennungen.</li>
 <li>Wo das Gesetz es verlangt (zum Beispiel im EWR, im Vereinigten Königreich und in der Schweiz), wirst du über das Einwilligungsformular von Google um deine <strong>Einwilligung</strong> gebeten, bevor personalisierte Werbung angezeigt wird.</li>
@@ -1171,7 +1171,7 @@ L["de"] = dict(
 
 <h2 id="no">6. Was wir nicht tun</h2>
 <ul>
-<li>Keine Konten, keine Anmeldung, keine sozialen Funktionen.</li>
+<li>Keine Koselig-Konten, keine Anmeldung bei uns, keine sozialen Funktionen; unter Android dient die Anmeldung bei Google Play Games nur den Cloud-Spielständen.</li>
 <li>Kein Tracking durch uns über Apps oder Websites anderer Unternehmen hinweg.</li>
 <li>Kein Zugriff auf Kontakte, Fotos, Kamera, Mikrofon oder deinen genauen Standort.</li>
 <li>Wir verkaufen keine personenbezogenen Daten und verwenden sie für nichts anderes als das hier Beschriebene.</li>
@@ -1382,7 +1382,7 @@ L["fr"] = dict(
 
 <h2 id="short">En bref</h2>
 <ul>
-<li>Il n’y a <strong>aucun compte</strong>, et aucune connexion n’est requise. Nous ne vous demandons jamais votre nom, votre adresse e-mail ni votre numéro de téléphone.</li>
+<li>Il n’y a <strong>aucun compte Koselig</strong> et aucune connexion chez nous (sur Android, votre téléphone peut vous connecter à Google Play Games pour la sauvegarde dans le cloud). Nous ne vous demandons jamais votre nom, votre adresse e-mail ni votre numéro de téléphone.</li>
 <li>Votre progression et vos réglages sont <strong>enregistrés sur votre appareil</strong> ; sur iPhone, ils sont aussi copiés dans votre propre iCloud et, sur Android, dans votre compte Google Play Games si vous y êtes connecté. Nous ne les recevons pas.</li>
 <li>Le jeu n’affiche de publicité <strong>que si vous choisissez</strong> de regarder une courte vidéo avec récompense pour la vérification <em>Sans issue ?</em> Il n’y a ni bannière ni publicité interstitielle. Les publicités sont fournies par <strong>Google AdMob</strong>, qui traite des données et des identifiants de l’appareil.</li>
 <li>Lorsque la loi l’exige (par exemple dans l’EEE, au Royaume-Uni et en Suisse), votre <strong>consentement</strong> vous est demandé via le formulaire de consentement de Google avant l’affichage de publicités personnalisées.</li>
@@ -1439,7 +1439,7 @@ L["fr"] = dict(
 
 <h2 id="no">6. Ce que nous ne faisons pas</h2>
 <ul>
-<li>Pas de compte, pas de connexion, pas de fonctions sociales.</li>
+<li>Pas de compte Koselig, pas de connexion chez nous, pas de fonctions sociales ; sur Android, la connexion à Google Play Games sert uniquement à la sauvegarde dans le cloud.</li>
 <li>Aucun suivi de notre part dans les applications ou sites web d’autres entreprises.</li>
 <li>Aucun accès à vos contacts, à vos photos, à l’appareil photo, au micro ni à votre localisation précise.</li>
 <li>Nous ne vendons pas de données personnelles et ne les utilisons à aucune autre fin que celles décrites ici.</li>
@@ -1650,7 +1650,7 @@ L["it"] = dict(
 
 <h2 id="short">In breve</h2>
 <ul>
-<li><strong>Nessun account</strong> e nessun login. Non ti chiediamo mai nome, email o numero di telefono.</li>
+<li><strong>Nessun account Koselig</strong> e nessun accesso presso di noi (su Android il telefono può farti accedere a Google Play Games per i salvataggi nel cloud). Non ti chiediamo mai nome, email o numero di telefono.</li>
 <li>Progressi e impostazioni sono <strong>salvati sul tuo dispositivo</strong>; su iPhone vengono anche copiati nel tuo iCloud personale e, su Android, nel tuo account Google Play Games se hai effettuato l’accesso. Noi non li riceviamo.</li>
 <li>Il gioco mostra annunci <strong>solo quando scegli tu</strong> di guardare un breve video con premio per il controllo <em>Bloccato?</em>. Non ci sono banner né annunci interstitial. Gli annunci sono forniti da <strong>Google AdMob</strong>, che tratta dati e identificatori del dispositivo.</li>
 <li>Dove la legge lo richiede (ad esempio nel SEE, nel Regno Unito e in Svizzera), prima di mostrarti annunci personalizzati ti viene chiesto il <strong>consenso</strong> tramite il modulo di Google.</li>
@@ -1707,7 +1707,7 @@ L["it"] = dict(
 
 <h2 id="no">6. Cosa non facciamo</h2>
 <ul>
-<li>Nessun account, nessun login, nessuna funzione social.</li>
+<li>Nessun account Koselig, nessun accesso presso di noi, nessuna funzione social; su Android l’accesso a Google Play Games serve solo per i salvataggi nel cloud.</li>
 <li>Nessun tracciamento da parte nostra nelle app o nei siti di altre aziende.</li>
 <li>Nessun accesso a contatti, foto, fotocamera, microfono o posizione precisa.</li>
 <li>Non vendiamo dati personali e non li usiamo per scopi diversi da quelli descritti qui.</li>
