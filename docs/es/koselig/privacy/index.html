@@ -39,7 +39,7 @@
   <header class="legal-head">
     <h1>Política de privacidad</h1>
     <p class="legal-sub">Koselig y coffeebeansstudio.eu</p>
-    <p class="legal-date">Última actualización: <time datetime="2026-11-12">12 de noviembre de 2026</time></p>
+    <p class="legal-date">Última actualización: <time datetime="2026-11-17">17 de noviembre de 2026</time></p>
   </header>
   <article class="prose legal-body">
 <p class="note">La versión jurídicamente vinculante es la <a href="../../../koselig/privacy/">inglesa</a>. Esta es su traducción fiel, para tu comodidad.</p>
@@ -49,11 +49,11 @@
 <h2 id="short">En resumen</h2>
 <ul>
 <li><strong>No hay cuentas</strong> ni inicio de sesión. Nunca te pedimos tu nombre, tu correo electrónico ni tu número de teléfono.</li>
-<li>Tu progreso y tus ajustes <strong>se guardan solo en tu dispositivo</strong>. Nosotros no los recibimos.</li>
+<li>Tu progreso y tus ajustes <strong>se guardan en tu dispositivo</strong>; en iPhone también se copian a tu propia cuenta de iCloud. Nosotros no los recibimos.</li>
 <li>El juego muestra anuncios <strong>solo cuando tú decides</strong> ver un video corto con recompensa a cambio de la comprobación <em>¿Atascado?</em>; no hay banners ni anuncios intersticiales. Los anuncios los proporciona <strong>Google AdMob</strong>, que trata datos e identificadores del dispositivo.</li>
 <li>Donde la ley lo exige (por ejemplo, en el EEE, el Reino Unido y Suiza), se te pide el <strong>consentimiento</strong> mediante el formulario de consentimiento de Google antes de mostrarte anuncios personalizados.</li>
 <li>La compra opcional <strong>«Sin anuncios»</strong> la gestionan Apple o Google. Nunca vemos tus datos de pago.</li>
-<li>Koselig <strong>no incluye analítica</strong> ni ningún servicio de informes de fallos. No vendemos datos personales.</li>
+<li>Koselig usa <strong>Google Firebase</strong> para la analítica del juego y los informes de fallos. No incluyen tu nombre, tu correo ni tus contactos. No vendemos datos personales.</li>
 </ul>
 <h2 id="device">1. Datos guardados en tu dispositivo</h2>
 <p>Koselig guarda lo siguiente en tu teléfono para que puedas seguir donde lo dejaste:</p>
@@ -63,7 +63,7 @@
 <li>si tienes la compra «Sin anuncios»;</li>
 <li>tu elección sobre el consentimiento publicitario, que el SDK de consentimiento de Google guarda en el dispositivo.</li>
 </ul>
-<p>Estos datos permanecen en tu dispositivo y no se nos envían. Se borran al eliminar la aplicación. Si vuelves a instalar el juego, puedes restaurar la compra «Sin anuncios» desde Apple o Google (Ajustes → <em>Restaurar</em>); el progreso empieza de cero.</p>
+<p>Estos datos permanecen en tu dispositivo y no se nos envían. Se borran al eliminar la aplicación. <strong>En iPhone</strong>, el progreso y las partidas guardadas también se copian a <strong>tu propia cuenta de iCloud</strong> (almacenamiento clave-valor de iCloud), para que puedas seguir en otro dispositivo o tras reinstalar. Esa copia la guarda Apple con tu Apple ID; nosotros no podemos leerla. Puedes desactivarla en Ajustes de iOS → [tu nombre] → iCloud. En Android el juego no usa guardado en la nube, así que tras reinstalar el progreso empieza de cero. La compra «Sin anuncios» siempre se puede restaurar desde Apple o Google (Ajustes → <em>Restaurar</em>).</p>
 <h2 id="ads">2. Publicidad: Google AdMob</h2>
 <p>Koselig usa el <strong>Google Mobile Ads SDK</strong> (Google AdMob) para mostrar videos con recompensa. Para tener un video listo cuando lo pidas, la aplicación inicia el SDK al abrirse y carga un video en segundo plano. Esto significa que Google puede recibir datos de tu dispositivo <strong>aunque nunca llegues a ver un video</strong>.</p>
 <p>Entre los datos que Google puede recopilar y tratar a través del SDK están:</p>
@@ -74,7 +74,7 @@
 <li>interacciones con los anuncios: qué anuncios se cargaron, se mostraron, se vieron hasta el final o se tocaron.</li>
 </ul>
 <p>Google usa estos datos para publicar y medir anuncios, prevenir el fraude y el abuso y —<strong>solo con tu consentimiento, donde este sea obligatorio</strong>— personalizar los anuncios. Sin consentimiento, Google puede seguir mostrando anuncios no personalizados o limitados, que aun así usan algunos datos del dispositivo para la limitación de frecuencia, la medición y la prevención del fraude.</p>
-<p><strong>En iPhone</strong>, Koselig no te pide permiso para rastrearte (App Tracking Transparency). Por eso, el identificador publicitario de Apple (IDFA) no está disponible ni para la aplicación ni para Google.</p>
+<p><strong>En iPhone</strong>, Koselig te pide una vez permiso para rastrearte (App Tracking Transparency) antes de cargar anuncios. Si lo permites, Google puede usar el identificador publicitario de Apple (IDFA) para personalizar y medir los anuncios. Si lo rechazas, el IDFA no está disponible ni para la aplicación ni para Google, y el juego funciona igual. Puedes cambiarlo cuando quieras en Ajustes de iOS → Privacidad y seguridad → Rastreo.</p>
 <p><strong>Redes publicitarias.</strong> Solo usamos Google AdMob y no hemos activado la mediación con otras redes. La versión para Android incluye por ahora adaptadores de software que AdMob puede usar para la mediación con Meta Audience Network y AppLovin; no están activados en nuestra cuenta de AdMob y tenemos previsto eliminarlos. Si algún día activamos otra red, primero actualizaremos esta política.</p>
 <p>Más información en los sitios de Google:</p>
 <ul>
@@ -87,34 +87,43 @@
 <h2 id="consent">3. Tu consentimiento y cómo cambiarlo</h2>
 <p>En las regiones donde se requiere consentimiento, Koselig muestra el formulario de consentimiento de Google (User Messaging Platform) antes de solicitar anuncios. Puedes aceptar, rechazar o elegir finalidades, y cambiar tu elección en cualquier momento dentro del juego: <strong>Ajustes → Anuncios y datos</strong> (esta opción aparece donde se aplican las normas de consentimiento). Eliminar y volver a instalar la aplicación también restablece tu elección.</p>
 <p>También puedes limitar los anuncios en tu dispositivo: en Android, en <em>Ajustes → Google → Anuncios</em> (restablecer o eliminar el ID de publicidad); en iPhone, en <em>Ajustes → Privacidad y seguridad → Publicidad de Apple</em>.</p>
-<h2 id="purchases">4. La compra «Sin anuncios»</h2>
+<h2 id="firebase">4. Analítica del juego e informes de fallos: Google Firebase</h2>
+<p>Koselig usa <strong>Google Analytics for Firebase</strong>, <strong>Firebase Crashlytics</strong> y <strong>Firebase Remote Config</strong> (Google). Con ellos vemos qué niveles son demasiado difíciles, encontramos y corregimos fallos y ajustamos el juego sin actualizar la aplicación.</p>
+<ul>
+<li><strong>Analytics</strong> recibe un identificador de instancia de la aplicación generado por Firebase y eventos sobre el uso del juego: nivel empezado, completado o reiniciado, pistas y la comprobación <em>¿Atascado?</em>, ajustes abiertos, idioma cambiado, compra «Sin anuncios» iniciada, completada o fallida. No lo vinculamos con tu nombre, tu correo ni tu identificador publicitario.</li>
+<li><strong>Crashlytics</strong>, tras un fallo, recibe un informe: el estado técnico de la aplicación, el seguimiento de la pila, el modelo del dispositivo y la versión del sistema, y un identificador de instalación de Crashlytics.</li>
+<li><strong>Remote Config</strong> descarga los ajustes del juego y envía tu país, idioma, zona horaria y versiones de la aplicación y del sistema.</li>
+</ul>
+<p>Google trata estos datos por encargo nuestro. Los eventos de analítica se conservan como máximo 14 meses y los informes de fallos, 90 días. Consulta <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacidad y seguridad en Firebase</a>.</p>
+<h2 id="purchases">5. La compra «Sin anuncios»</h2>
 <p>Koselig ofrece una única compra opcional dentro de la aplicación, <strong>«Sin anuncios»</strong> (producto <code>koselig.no_ads</code>). La procesan íntegramente el <strong>Apple App Store</strong> o <strong>Google Play</strong>. No recibimos tu nombre, tu tarjeta ni tus datos de pago. La aplicación solo recibe de la tienda la confirmación de que tienes la compra y guarda ese dato en tu dispositivo. Consulta la <a href="https://www.apple.com/legal/privacy/" rel="noopener">Política de privacidad de Apple</a> y la <a href="https://policies.google.com/privacy" rel="noopener">Política de privacidad de Google</a>.</p>
-<h2 id="no">5. Lo que no hacemos</h2>
+<h2 id="no">6. Lo que no hacemos</h2>
 <ul>
 <li>Sin cuentas, sin inicio de sesión, sin funciones sociales.</li>
-<li>Sin analítica, sin informes de fallos, sin seguimiento por nuestra parte.</li>
+<li>No te rastreamos en aplicaciones ni sitios web de otras empresas.</li>
 <li>Sin acceso a tus contactos, fotos, cámara, micrófono ni ubicación precisa.</li>
 <li>No vendemos datos personales ni los usamos para nada más que lo descrito aquí.</li>
 </ul>
-<p>La aplicación usa el acceso a internet (para los anuncios y la compra) y, en Android, la vibración para la respuesta háptica.</p>
-<h2 id="children">6. Niños</h2>
+<p>La aplicación usa el acceso a internet (para los anuncios, la analítica y los informes de fallos, la compra y, en iPhone, el guardado en iCloud) y, en Android, la vibración para la respuesta háptica.</p>
+<h2 id="children">7. Niños</h2>
 <p>Koselig es un juego de rompecabezas para el público general. No está dirigido a niños menores de 13 años ni forma parte de ninguna categoría infantil. Los anuncios de Koselig no están configurados como dirigidos a niños. No recopilamos a sabiendas información personal de niños. Si crees que un niño nos ha facilitado datos personales, contáctanos y los eliminaremos.</p>
-<h2 id="legal">7. Bases jurídicas (RGPD)</h2>
+<h2 id="legal">8. Bases jurídicas (RGPD)</h2>
 <ul>
 <li><strong>Consentimiento</strong> (art. 6.1.a) del RGPD): publicidad personalizada y almacenamiento de información en tu dispositivo o acceso a ella, cuando se requiera consentimiento.</li>
 <li><strong>Interés legítimo</strong> (art. 6.1.f) del RGPD): mostrar anuncios no personalizados para financiar un juego gratuito, medir los anuncios y prevenir el fraude.</li>
+<li><strong>Interés legítimo</strong> (art. 6.1.f) del RGPD): analítica del juego e informes de fallos para corregir y mejorar el juego.</li>
 <li><strong>Contrato</strong> (art. 6.1.b) del RGPD): proporcionar y restaurar la compra «Sin anuncios».</li>
 </ul>
 <p>Google actúa como responsable del tratamiento independiente respecto de los datos que recopila a través de su SDK. Google y Apple pueden tratar datos fuera del Espacio Económico Europeo con sus propias garantías.</p>
-<h2 id="retention">8. Cuánto tiempo se conservan los datos</h2>
-<p>Los datos de tu dispositivo permanecen allí hasta que eliminas la aplicación. Los datos recopilados por Google se conservan según las políticas de Google. Si nos escribes, conservamos tu correo electrónico solo el tiempo necesario para responderte y resolver tu solicitud.</p>
-<h2 id="rights">9. Tus derechos</h2>
+<h2 id="retention">9. Cuánto tiempo se conservan los datos</h2>
+<p>Los datos de tu dispositivo permanecen allí hasta que eliminas la aplicación. La copia del progreso en iCloud permanece en tu cuenta de iCloud. Los eventos de analítica se conservan como máximo 14 meses y los informes de fallos, 90 días. Los datos publicitarios recopilados por Google se conservan según las políticas de Google. Si nos escribes, conservamos tu correo electrónico solo el tiempo necesario para responderte y resolver tu solicitud.</p>
+<h2 id="rights">10. Tus derechos</h2>
 <p>Tienes derecho a acceder a tus datos personales, rectificarlos y suprimirlos, a limitar su tratamiento u oponerte a él, a la portabilidad de los datos y a retirar tu consentimiento en cualquier momento. Como no guardamos datos del juego en nuestros servidores, la mayoría de las solicitudes se resuelven eliminando la aplicación; las solicitudes sobre datos publicitarios pueden dirigirse a Google a través de los enlaces anteriores. Siempre puedes escribirnos a <a href="../../../es/support/" data-u="support" data-d="coffeebeansstudio" data-t="eu">support [at] coffeebeansstudio [dot] eu</a>. También tienes derecho a presentar una reclamación ante una autoridad de control —en Polonia, el <a href="https://uodo.gov.pl/" rel="noopener">Presidente de la Oficina de Protección de Datos Personales (UODO)</a>— o ante la autoridad de tu país.</p>
-<h2 id="website">10. Este sitio web</h2>
+<h2 id="website">11. Este sitio web</h2>
 <p>coffeebeansstudio.eu es un sitio web estático. No usa <strong>cookies, analítica ni fuentes o scripts de terceros</strong>. Está alojado en <strong>GitHub Pages</strong> (GitHub, Inc.), y el servicio de nombres de dominio lo presta <strong>Cloudflare</strong>. Estos proveedores pueden tratar tu dirección IP y datos técnicos de las solicitudes en los registros de sus servidores, por motivos de seguridad y para servir el sitio. Consulta la <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">Declaración de privacidad de GitHub</a> y la <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Política de privacidad de Cloudflare</a>.</p>
-<h2 id="changes">11. Cambios</h2>
+<h2 id="changes">12. Cambios</h2>
 <p>Si la aplicación empieza a hacer algo nuevo con los datos —por ejemplo, una nueva red publicitaria o analítica—, actualizaremos esta página antes de que el cambio llegue a la aplicación y cambiaremos la fecha que figura abajo.</p>
-  <p class="legal-date end">Última actualización: <time datetime="2026-11-12">12 de noviembre de 2026</time> · <a href="../../../es/support/" data-u="support" data-d="coffeebeansstudio" data-t="eu">support [at] coffeebeansstudio [dot] eu</a></p>
+  <p class="legal-date end">Última actualización: <time datetime="2026-11-17">17 de noviembre de 2026</time> · <a href="../../../es/support/" data-u="support" data-d="coffeebeansstudio" data-t="eu">support [at] coffeebeansstudio [dot] eu</a></p>
   </article>
 </main>
 <footer class="foot">

@@ -39,7 +39,7 @@
   <header class="legal-head">
     <h1>Privacy Policy</h1>
     <p class="legal-sub">Koselig and coffeebeansstudio.eu</p>
-    <p class="legal-date">Last updated: <time datetime="2026-11-12">12 November 2026</time></p>
+    <p class="legal-date">Last updated: <time datetime="2026-11-17">17 November 2026</time></p>
   </header>
   <article class="prose legal-body">
 <p>This policy explains what happens to your data when you play <strong>Koselig</strong> on iPhone or Android and when you visit <strong>coffeebeansstudio.eu</strong>. We wrote it to match what the app actually does.</p>
@@ -48,11 +48,11 @@
 <h2 id="short">In short</h2>
 <ul>
 <li>There are <strong>no accounts</strong> and no sign-in. We never ask for your name, email or phone number.</li>
-<li>Your progress and settings are <strong>stored only on your device</strong>. We do not receive them.</li>
+<li>Your progress and settings are <strong>stored on your device</strong>; on iPhone they are also copied to your own iCloud account. We do not receive them.</li>
 <li>The game shows ads <strong>only when you choose</strong> to watch a short rewarded video for the <em>Stuck?</em> check. There are no banners and no interstitial ads. The ads come from <strong>Google AdMob</strong>, which processes device data and identifiers.</li>
 <li>Where the law requires it (for example in the EEA, the UK and Switzerland), you are asked for <strong>consent</strong> through Google’s consent form before personalised ads are shown.</li>
 <li>The optional <strong>“No ads”</strong> purchase is handled by Apple or Google. We never see your payment details.</li>
-<li>Koselig contains <strong>no analytics</strong> and no crash-reporting service. We do not sell personal data.</li>
+<li>Koselig uses <strong>Google Firebase</strong> for game analytics and crash reports. They do not include your name, email or contacts. We do not sell personal data.</li>
 </ul>
 <h2 id="device">1. Data stored on your device</h2>
 <p>Koselig saves the following on your phone so you can continue where you left off:</p>
@@ -62,7 +62,7 @@
 <li>whether you own the “No ads” purchase;</li>
 <li>your advertising consent choice, which is stored on the device by Google’s consent SDK.</li>
 </ul>
-<p>This data stays on your device and is not sent to us. It is deleted when you delete the app. If you reinstall the game, the “No ads” purchase can be restored from Apple or Google (Settings → <em>Restore</em>); progress starts again.</p>
+<p>This data stays on your device and is not sent to us. It is deleted when you delete the app. <strong>On iPhone</strong>, progress and save slots are also copied to <strong>your own iCloud account</strong> (iCloud key-value storage), so you can continue on another device or after reinstalling. This copy is stored by Apple under your Apple ID; we cannot read it. You can stop it in iOS Settings → [your name] → iCloud. On Android the game does not use cloud saves, so after reinstalling progress starts again. The “No ads” purchase can always be restored from Apple or Google (Settings → <em>Restore</em>).</p>
 <h2 id="ads">2. Advertising: Google AdMob</h2>
 <p>Koselig uses the <strong>Google Mobile Ads SDK</strong> (Google AdMob) to show rewarded videos. To have a video ready when you ask for one, the app starts the SDK at launch and loads one video in the background. This means Google may receive data from your device <strong>even if you never watch a video</strong>.</p>
 <p>Data that Google may collect and process through the SDK includes:</p>
@@ -73,7 +73,7 @@
 <li>interactions with ads: which ads were loaded, shown, watched to the end or tapped.</li>
 </ul>
 <p>Google uses this data to deliver and measure ads, to prevent fraud and abuse and — <strong>only with your consent where consent is required</strong> — to personalise ads. Without consent, Google may still show non-personalised or limited ads, which still use some device data for frequency capping, measurement and fraud prevention.</p>
-<p><strong>On iPhone</strong>, Koselig does not ask for permission to track you (App Tracking Transparency). Because of that, the Apple advertising identifier (IDFA) is not available to the app or to Google.</p>
+<p><strong>On iPhone</strong>, Koselig asks once for permission to track (App Tracking Transparency) before ads are loaded. If you allow it, Google may use the Apple advertising identifier (IDFA) to personalise and measure ads. If you refuse, the IDFA is not available to the app or to Google, and the game works the same. You can change this at any time in iOS Settings → Privacy &amp; Security → Tracking.</p>
 <p><strong>Ad networks.</strong> We use Google AdMob only and have not enabled ad mediation with other networks. The Android version currently contains software adapters that AdMob can use for mediation with Meta Audience Network and AppLovin; they are not enabled in our AdMob account, and we plan to remove them. If we ever enable another network, we will update this policy first.</p>
 <p>Learn more from Google:</p>
 <ul>
@@ -86,34 +86,43 @@
 <h2 id="consent">3. Your consent and how to change it</h2>
 <p>In regions where consent is required, Koselig shows Google’s consent form (User Messaging Platform) before ads are requested. You can accept, refuse or choose purposes. You can change your choice at any time in the game: <strong>Settings → Ads &amp; data</strong> (this item appears where the consent rules apply). Deleting and reinstalling the app also resets your choice.</p>
 <p>You can also limit ads on your device: on Android in <em>Settings → Google → Ads</em> (reset or delete the Advertising ID); on iPhone in <em>Settings → Privacy &amp; Security → Apple Advertising</em>.</p>
-<h2 id="purchases">4. The “No ads” purchase</h2>
+<h2 id="firebase">4. Game analytics and crash reports: Google Firebase</h2>
+<p>Koselig uses <strong>Google Analytics for Firebase</strong>, <strong>Firebase Crashlytics</strong> and <strong>Firebase Remote Config</strong> (Google). We use them to see which levels are too hard, to find and fix crashes and to adjust game settings without an app update.</p>
+<ul>
+<li><strong>Analytics</strong> receives an app-instance identifier generated by Firebase and events about how the game is used: levels started, finished or reset, hints and the <em>Stuck?</em> check, settings opened, language changed, the “No ads” purchase started, completed or failed. We do not link it to your name, email or advertising ID.</li>
+<li><strong>Crashlytics</strong>, after a crash, receives a crash report: the technical state of the app, the stack trace, device model and OS version, and a Crashlytics installation identifier.</li>
+<li><strong>Remote Config</strong> downloads game settings and sends your country, language, time zone, app and OS version.</li>
+</ul>
+<p>Google processes this data on our behalf. Analytics event data is kept for no longer than 14 months, crash reports for 90 days. See <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacy and security in Firebase</a>.</p>
+<h2 id="purchases">5. The “No ads” purchase</h2>
 <p>Koselig offers one optional in-app purchase, <strong>“No ads”</strong> (product <code>koselig.no_ads</code>). It is processed entirely by the <strong>Apple App Store</strong> or <strong>Google Play</strong>. We do not receive your name, card or payment details. The app only receives confirmation from the store that the purchase is owned and stores that fact on your device. See the <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a> and the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
-<h2 id="no">5. What we do not do</h2>
+<h2 id="no">6. What we do not do</h2>
 <ul>
 <li>No accounts, no sign-in, no social features.</li>
-<li>No analytics, no crash reporting, no tracking by us.</li>
+<li>No tracking by us across other companies’ apps or websites.</li>
 <li>No access to your contacts, photos, camera, microphone or precise location.</li>
 <li>We do not sell personal data and we do not use it for anything except what is described here.</li>
 </ul>
-<p>The app uses internet access (for ads and the purchase) and, on Android, vibration for haptic feedback.</p>
-<h2 id="children">6. Children</h2>
+<p>The app uses internet access (for ads, analytics and crash reports, the purchase and, on iPhone, iCloud saves) and, on Android, vibration for haptic feedback.</p>
+<h2 id="children">7. Children</h2>
 <p>Koselig is a general-audience puzzle game. It is not directed at children under 13 and is not part of a children’s category. Ads in Koselig are not configured as child-directed. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, contact us and we will delete it.</p>
-<h2 id="legal">7. Legal bases (GDPR)</h2>
+<h2 id="legal">8. Legal bases (GDPR)</h2>
 <ul>
 <li><strong>Consent</strong> (Art. 6(1)(a) GDPR) — personalised advertising and storing or accessing information on your device where consent is required.</li>
 <li><strong>Legitimate interests</strong> (Art. 6(1)(f)) — showing non-personalised ads to fund a free game, ad measurement and fraud prevention.</li>
+<li><strong>Legitimate interests</strong> (Art. 6(1)(f)) — game analytics and crash reports to fix and improve the game.</li>
 <li><strong>Contract</strong> (Art. 6(1)(b)) — delivering and restoring the “No ads” purchase.</li>
 </ul>
 <p>Google acts as an independent controller for the data it collects through its SDK. Google and Apple may process data outside the European Economic Area under their own safeguards.</p>
-<h2 id="retention">8. How long data is kept</h2>
-<p>Data on your device stays there until you delete the app. Data collected by Google is kept according to Google’s policies. If you write to us, we keep your email only as long as needed to answer and solve your request.</p>
-<h2 id="rights">9. Your rights</h2>
+<h2 id="retention">9. How long data is kept</h2>
+<p>Data on your device stays there until you delete the app. The iCloud copy of your progress stays in your iCloud account. Analytics event data is kept for no longer than 14 months and crash reports for 90 days. Data collected by Google for ads is kept according to Google’s policies. If you write to us, we keep your email only as long as needed to answer and solve your request.</p>
+<h2 id="rights">10. Your rights</h2>
 <p>You have the right to access, correct and delete your personal data, to restrict or object to processing, to data portability and to withdraw consent at any time. Because we do not hold game data on our servers, most requests are answered by deleting the app; requests about advertising data can be made to Google through the links above. You can always write to us at <a href="../../support/" data-u="support" data-d="coffeebeansstudio" data-t="eu">support [at] coffeebeansstudio [dot] eu</a>. You also have the right to lodge a complaint with a supervisory authority — in Poland the <a href="https://uodo.gov.pl/" rel="noopener">President of the Personal Data Protection Office (UODO)</a> — or with the authority in your country.</p>
-<h2 id="website">10. This website</h2>
+<h2 id="website">11. This website</h2>
 <p>coffeebeansstudio.eu is a static website. It uses <strong>no cookies, no analytics and no third-party fonts or scripts</strong>. It is hosted on <strong>GitHub Pages</strong> (GitHub, Inc.), and its domain name service is provided by <strong>Cloudflare</strong>. These providers may process your IP address and technical request data in server logs for security and delivery. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener">GitHub Privacy Statement</a> and the <a href="https://www.cloudflare.com/privacypolicy/" rel="noopener">Cloudflare Privacy Policy</a>.</p>
-<h2 id="changes">11. Changes</h2>
+<h2 id="changes">12. Changes</h2>
 <p>If the app starts doing something new with data — for example a new ad network or analytics — we will update this page before the change reaches the app, and change the date below.</p>
-  <p class="legal-date end">Last updated: <time datetime="2026-11-12">12 November 2026</time> · <a href="../../support/" data-u="support" data-d="coffeebeansstudio" data-t="eu">support [at] coffeebeansstudio [dot] eu</a></p>
+  <p class="legal-date end">Last updated: <time datetime="2026-11-17">17 November 2026</time> · <a href="../../support/" data-u="support" data-d="coffeebeansstudio" data-t="eu">support [at] coffeebeansstudio [dot] eu</a></p>
   </article>
 </main>
 <footer class="foot">
