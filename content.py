@@ -130,7 +130,7 @@ L["en"] = dict(
 <li><strong>Crashlytics</strong>, after a crash, receives a crash report: the technical state of the app, the stack trace, device model and OS version, and a Crashlytics installation identifier.</li>
 <li><strong>Remote Config</strong> downloads game settings and sends your country, language, time zone, app and OS version.</li>
 </ul>
-<p>Google processes this data on our behalf. Analytics event data is kept for no longer than 14 months, crash reports for 90 days. See <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacy and security in Firebase</a>.</p>
+<p>Google processes this data on our behalf. Analytics event data is kept for no longer than 2 months, crash reports for 90 days. See <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacy and security in Firebase</a>.</p>
 <h2 id="purchases">5. The “No ads” purchase</h2>
 <p>Koselig offers one optional in-app purchase, <strong>“No ads”</strong> (product <code>koselig.no_ads</code>). It is processed entirely by the <strong>Apple App Store</strong> or <strong>Google Play</strong>. We do not receive your name, card or payment details. The app only receives confirmation from the store that the purchase is owned and stores that fact on your device. See the <a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple Privacy Policy</a> and the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
 
@@ -156,7 +156,7 @@ L["en"] = dict(
 <p>Google acts as an independent controller for the data it collects through its SDK. Google and Apple may process data outside the European Economic Area under their own safeguards. Google Play Games on Android is a Google service that you sign in to yourself; Google processes your Play Games profile and saved games under its own privacy policy.</p>
 
 <h2 id="retention">9. How long data is kept</h2>
-<p>Data on your device stays there until you delete the app. The iCloud copy of your progress stays in your iCloud account. The Google Play Games copy stays in your Google account until you delete it. Analytics event data is kept for no longer than 14 months and crash reports for 90 days. Data collected by Google for ads is kept according to Google’s policies. If you write to us, we keep your email only as long as needed to answer and solve your request.</p>
+<p>Data on your device stays there until you delete the app. The iCloud copy of your progress stays in your iCloud account. The Google Play Games copy stays in your Google account until you delete it. Analytics event data is kept for no longer than 2 months and crash reports for 90 days. Data collected by Google for ads is kept according to Google’s policies. If you write to us, we keep your email only as long as needed to answer and solve your request.</p>
 
 <h2 id="rights">10. Your rights</h2>
 <p>You have the right to access, correct and delete your personal data, to restrict or object to processing, to data portability and to withdraw consent at any time. Because we do not hold game data on our servers, most requests are answered by deleting the app; requests about advertising data can be made to Google through the links above. You can always write to us at <a href="mailto:{EMAIL}">{EMAIL}</a>. You also have the right to lodge a complaint with a supervisory authority — in Poland the <a href="https://uodo.gov.pl/" rel="noopener">President of the Personal Data Protection Office (UODO)</a> — or with the authority in your country.</p>
@@ -251,7 +251,7 @@ L["en"] = dict(
 </ul>
 <p>If the game is still installed and you are still signed in, your progress will be copied again the next time you play.</p>
 <h2>Analytics and crash reports</h2>
-<p>Analytics events and crash reports (Google Firebase) are not linked to your name or email, so we cannot find one person’s records. They are deleted automatically: analytics events after no more than 14 months, crash reports after 90 days.</p>
+<p>Analytics events and crash reports (Google Firebase) are not linked to your name or email, so we cannot find one person’s records. They are deleted automatically: analytics events after no more than 2 months, crash reports after 90 days.</p>
 <h2>Advertising data</h2>
 <p>Ads in Koselig are provided by Google AdMob. Data collected by Google is controlled by Google. You can:</p>
 <ul>
@@ -393,7 +393,7 @@ L["ru"] = dict(
 <li><strong>Crashlytics</strong> после сбоя получает отчёт: техническое состояние приложения, трассировку стека, модель устройства и версию ОС, идентификатор установки Crashlytics.</li>
 <li><strong>Remote Config</strong> скачивает настройки игры и передаёт страну, язык, часовой пояс, версию приложения и ОС.</li>
 </ul>
-<p>Google обрабатывает эти данные по нашему поручению. События аналитики хранятся не дольше 14 месяцев, отчёты о сбоях — 90 дней. См. <a href="https://firebase.google.com/support/privacy" rel="noopener">Конфиденциальность и безопасность в Firebase</a>.</p>
+<p>Google обрабатывает эти данные по нашему поручению. События аналитики хранятся не дольше 2 месяцев, отчёты о сбоях — 90 дней. См. <a href="https://firebase.google.com/support/privacy" rel="noopener">Конфиденциальность и безопасность в Firebase</a>.</p>
 <h2 id="purchases">5. Покупка «Без рекламы»</h2>
 <p>В Koselig одна необязательная покупка — <strong>«Без рекламы»</strong> (товар <code>koselig.no_ads</code>). Её целиком проводят <strong>Apple App Store</strong> или <strong>Google Play</strong>. Мы не получаем ни имени, ни карты, ни платёжных данных. Приложение получает от магазина только подтверждение, что покупка есть, и запоминает это на устройстве. См. <a href="https://www.apple.com/legal/privacy/" rel="noopener">политику Apple</a> и <a href="https://policies.google.com/privacy" rel="noopener">политику Google</a>.</p>
 
@@ -419,7 +419,7 @@ L["ru"] = dict(
 <p>Google — самостоятельный контролёр данных, которые собирает через свой SDK. Google и Apple могут обрабатывать данные за пределами ЕЭЗ со своими гарантиями защиты. Google Play Games на Android — сервис Google, в который вы входите сами; ваш игровой профиль и сохранения Google обрабатывает по своей политике конфиденциальности.</p>
 
 <h2 id="retention">9. Сроки хранения</h2>
-<p>Данные на устройстве хранятся, пока вы не удалите приложение. Копия прогресса в iCloud остаётся в вашем iCloud. Копия в Google Play Games остаётся в вашем аккаунте Google, пока вы её не удалите. События аналитики хранятся не дольше 14 месяцев, отчёты о сбоях — 90 дней. Рекламные данные Google хранятся по правилам Google. Если вы нам написали, мы храним вашу почту, пока это нужно для ответа и решения вопроса.</p>
+<p>Данные на устройстве хранятся, пока вы не удалите приложение. Копия прогресса в iCloud остаётся в вашем iCloud. Копия в Google Play Games остаётся в вашем аккаунте Google, пока вы её не удалите. События аналитики хранятся не дольше 2 месяцев, отчёты о сбоях — 90 дней. Рекламные данные Google хранятся по правилам Google. Если вы нам написали, мы храним вашу почту, пока это нужно для ответа и решения вопроса.</p>
 
 <h2 id="rights">10. Ваши права</h2>
 <p>Вы вправе получить доступ к своим данным, исправить и удалить их, ограничить обработку или возразить против неё, получить данные в переносимом виде и в любой момент отозвать согласие. Игровых данных на наших серверах нет, поэтому большинство запросов решается удалением приложения; запросы о рекламных данных — к Google по ссылкам выше. Нам всегда можно написать: <a href="mailto:{EMAIL}">{EMAIL}</a>. Вы также вправе подать жалобу в надзорный орган — в Польше это <a href="https://uodo.gov.pl/" rel="noopener">Председатель Управления по защите персональных данных (UODO)</a> — или в орган своей страны.</p>
@@ -502,7 +502,7 @@ L["ru"] = dict(
 </ul>
 <p>Если игра осталась на телефоне и вы не вышли из Google Play Games, при следующей игре прогресс снова скопируется.</p>
 <h2>Аналитика и отчёты о сбоях</h2>
-<p>События аналитики и отчёты о сбоях (Google Firebase) не связаны с вашим именем или почтой, поэтому найти записи одного человека мы не можем. Они удаляются сами: события аналитики — не позже чем через 14 месяцев, отчёты о сбоях — через 90 дней.</p>
+<p>События аналитики и отчёты о сбоях (Google Firebase) не связаны с вашим именем или почтой, поэтому найти записи одного человека мы не можем. Они удаляются сами: события аналитики — не позже чем через 2 месяца, отчёты о сбоях — через 90 дней.</p>
 <h2>Рекламные данные</h2>
 <p>Рекламу в Koselig показывает Google AdMob, собранными данными распоряжается Google. Вы можете:</p>
 <ul>
@@ -643,7 +643,7 @@ L["pl"] = dict(
 <li><strong>Crashlytics</strong> po awarii otrzymuje raport: stan techniczny aplikacji, ślad stosu, model urządzenia i wersję systemu oraz identyfikator instalacji Crashlytics.</li>
 <li><strong>Remote Config</strong> pobiera ustawienia gry i wysyła kraj, język, strefę czasową, wersję aplikacji i systemu.</li>
 </ul>
-<p>Google przetwarza te dane w naszym imieniu. Zdarzenia analityki są przechowywane nie dłużej niż 14 miesięcy, raporty awarii — 90 dni. Zobacz <a href="https://firebase.google.com/support/privacy" rel="noopener">Prywatność i bezpieczeństwo w Firebase</a>.</p>
+<p>Google przetwarza te dane w naszym imieniu. Zdarzenia analityki są przechowywane nie dłużej niż 2 miesiące, raporty awarii — 90 dni. Zobacz <a href="https://firebase.google.com/support/privacy" rel="noopener">Prywatność i bezpieczeństwo w Firebase</a>.</p>
 <h2 id="purchases">5. Zakup „Bez reklam”</h2>
 <p>Koselig oferuje jeden opcjonalny zakup w aplikacji — <strong>„Bez reklam”</strong> (produkt <code>koselig.no_ads</code>). Obsługuje go w całości <strong>Apple App Store</strong> lub <strong>Google Play</strong>. Nie otrzymujemy Twojego imienia, karty ani danych płatniczych. Aplikacja dostaje od sklepu tylko potwierdzenie, że zakup jest Twój, i zapisuje to na urządzeniu. Zobacz <a href="https://www.apple.com/legal/privacy/" rel="noopener">politykę prywatności Apple</a> i <a href="https://policies.google.com/privacy" rel="noopener">politykę prywatności Google</a>.</p>
 
@@ -669,7 +669,7 @@ L["pl"] = dict(
 <p>Google jest niezależnym administratorem danych zbieranych przez swój SDK. Google i Apple mogą przetwarzać dane poza Europejskim Obszarem Gospodarczym na podstawie własnych zabezpieczeń. Google Play Games na Androidzie to usługa Google, do której logujesz się samodzielnie; Twój profil gracza i zapisy Google przetwarza zgodnie z własną polityką prywatności.</p>
 
 <h2 id="retention">9. Jak długo przechowujemy dane</h2>
-<p>Dane na urządzeniu pozostają tam do usunięcia aplikacji. Kopia postępu w iCloud pozostaje na Twoim koncie iCloud. Kopia w Google Play Games pozostaje na Twoim koncie Google, dopóki jej nie usuniesz. Zdarzenia analityki są przechowywane nie dłużej niż 14 miesięcy, raporty awarii — 90 dni. Dane reklamowe zebrane przez Google są przechowywane zgodnie z zasadami Google. Jeśli do nas napiszesz, przechowujemy Twój e-mail tak długo, jak to potrzebne do odpowiedzi i rozwiązania sprawy.</p>
+<p>Dane na urządzeniu pozostają tam do usunięcia aplikacji. Kopia postępu w iCloud pozostaje na Twoim koncie iCloud. Kopia w Google Play Games pozostaje na Twoim koncie Google, dopóki jej nie usuniesz. Zdarzenia analityki są przechowywane nie dłużej niż 2 miesiące, raporty awarii — 90 dni. Dane reklamowe zebrane przez Google są przechowywane zgodnie z zasadami Google. Jeśli do nas napiszesz, przechowujemy Twój e-mail tak długo, jak to potrzebne do odpowiedzi i rozwiązania sprawy.</p>
 
 <h2 id="rights">10. Twoje prawa</h2>
 <p>Masz prawo dostępu do swoich danych, ich sprostowania i usunięcia, ograniczenia przetwarzania, sprzeciwu, przenoszenia danych oraz wycofania zgody w dowolnym momencie. Nie przechowujemy danych gry na serwerach, więc większość żądań realizuje usunięcie aplikacji; żądania dotyczące danych reklamowych kieruj do Google przez powyższe linki. Zawsze możesz napisać do nas: <a href="mailto:{EMAIL}">{EMAIL}</a>. Masz też prawo wnieść skargę do <a href="https://uodo.gov.pl/" rel="noopener">Prezesa Urzędu Ochrony Danych Osobowych (UODO)</a> lub do organu nadzorczego w swoim kraju.</p>
@@ -752,7 +752,7 @@ L["pl"] = dict(
 </ul>
 <p>Jeśli gra jest nadal zainstalowana, a telefon wciąż jest zalogowany do Google Play Games, przy następnej grze postęp znów zostanie skopiowany.</p>
 <h2>Analityka i raporty awarii</h2>
-<p>Zdarzenia analityki i raporty awarii (Google Firebase) nie są powiązane z Twoim imieniem ani e-mailem, więc nie możemy znaleźć zapisów jednej osoby. Usuwają się same: zdarzenia analityki najpóźniej po 14 miesiącach, raporty awarii po 90 dniach.</p>
+<p>Zdarzenia analityki i raporty awarii (Google Firebase) nie są powiązane z Twoim imieniem ani e-mailem, więc nie możemy znaleźć zapisów jednej osoby. Usuwają się same: zdarzenia analityki najpóźniej po 2 miesiącach, raporty awarii po 90 dniach.</p>
 <h2>Dane reklamowe</h2>
 <p>Reklamy w Koselig dostarcza Google AdMob, a zebranymi danymi zarządza Google. Możesz:</p>
 <ul>
@@ -897,7 +897,7 @@ L["es"] = dict(
 <li><strong>Crashlytics</strong>, tras un fallo, recibe un informe: el estado técnico de la aplicación, el seguimiento de la pila, el modelo del dispositivo y la versión del sistema, y un identificador de instalación de Crashlytics.</li>
 <li><strong>Remote Config</strong> descarga los ajustes del juego y envía tu país, idioma, zona horaria y versiones de la aplicación y del sistema.</li>
 </ul>
-<p>Google trata estos datos por encargo nuestro. Los eventos de analítica se conservan como máximo 14 meses y los informes de fallos, 90 días. Consulta <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacidad y seguridad en Firebase</a>.</p>
+<p>Google trata estos datos por encargo nuestro. Los eventos de analítica se conservan como máximo 2 meses y los informes de fallos, 90 días. Consulta <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacidad y seguridad en Firebase</a>.</p>
 <h2 id="purchases">5. La compra «Sin anuncios»</h2>
 <p>Koselig ofrece una única compra opcional dentro de la aplicación, <strong>«Sin anuncios»</strong> (producto <code>koselig.no_ads</code>). La procesan íntegramente el <strong>Apple App Store</strong> o <strong>Google Play</strong>. No recibimos tu nombre, tu tarjeta ni tus datos de pago. La aplicación solo recibe de la tienda la confirmación de que tienes la compra y guarda ese dato en tu dispositivo. Consulta la <a href="https://www.apple.com/legal/privacy/" rel="noopener">Política de privacidad de Apple</a> y la <a href="https://policies.google.com/privacy" rel="noopener">Política de privacidad de Google</a>.</p>
 
@@ -923,7 +923,7 @@ L["es"] = dict(
 <p>Google actúa como responsable del tratamiento independiente respecto de los datos que recopila a través de su SDK. Google y Apple pueden tratar datos fuera del Espacio Económico Europeo con sus propias garantías. Google Play Games en Android es un servicio de Google en el que inicias sesión por tu cuenta; Google trata tu perfil de jugador y tus partidas guardadas según su propia política de privacidad.</p>
 
 <h2 id="retention">9. Cuánto tiempo se conservan los datos</h2>
-<p>Los datos de tu dispositivo permanecen allí hasta que eliminas la aplicación. La copia del progreso en iCloud permanece en tu cuenta de iCloud. La copia en Google Play Games permanece en tu cuenta de Google hasta que la elimines. Los eventos de analítica se conservan como máximo 14 meses y los informes de fallos, 90 días. Los datos publicitarios recopilados por Google se conservan según las políticas de Google. Si nos escribes, conservamos tu correo electrónico solo el tiempo necesario para responderte y resolver tu solicitud.</p>
+<p>Los datos de tu dispositivo permanecen allí hasta que eliminas la aplicación. La copia del progreso en iCloud permanece en tu cuenta de iCloud. La copia en Google Play Games permanece en tu cuenta de Google hasta que la elimines. Los eventos de analítica se conservan como máximo 2 meses y los informes de fallos, 90 días. Los datos publicitarios recopilados por Google se conservan según las políticas de Google. Si nos escribes, conservamos tu correo electrónico solo el tiempo necesario para responderte y resolver tu solicitud.</p>
 
 <h2 id="rights">10. Tus derechos</h2>
 <p>Tienes derecho a acceder a tus datos personales, rectificarlos y suprimirlos, a limitar su tratamiento u oponerte a él, a la portabilidad de los datos y a retirar tu consentimiento en cualquier momento. Como no guardamos datos del juego en nuestros servidores, la mayoría de las solicitudes se resuelven eliminando la aplicación; las solicitudes sobre datos publicitarios pueden dirigirse a Google a través de los enlaces anteriores. Siempre puedes escribirnos a <a href="mailto:{EMAIL}">{EMAIL}</a>. También tienes derecho a presentar una reclamación ante una autoridad de control —en Polonia, el <a href="https://uodo.gov.pl/" rel="noopener">Presidente de la Oficina de Protección de Datos Personales (UODO)</a>— o ante la autoridad de tu país.</p>
@@ -1019,7 +1019,7 @@ L["es"] = dict(
 </ul>
 <p>Si el juego sigue instalado y la sesión sigue iniciada, el progreso se volverá a copiar la próxima vez que juegues.</p>
 <h2>Analítica e informes de fallos</h2>
-<p>Los eventos de analítica y los informes de fallos (Google Firebase) no están vinculados a tu nombre ni a tu correo, así que no podemos encontrar los registros de una persona. Se borran solos: los eventos de analítica en un máximo de 14 meses y los informes de fallos a los 90 días.</p>
+<p>Los eventos de analítica y los informes de fallos (Google Firebase) no están vinculados a tu nombre ni a tu correo, así que no podemos encontrar los registros de una persona. Se borran solos: los eventos de analítica en un máximo de 2 meses y los informes de fallos a los 90 días.</p>
 <h2>Datos publicitarios</h2>
 <p>Los anuncios de Koselig los proporciona Google AdMob. Los datos que recopila Google están bajo el control de Google. Puedes:</p>
 <ul>
@@ -1165,7 +1165,7 @@ L["de"] = dict(
 <li><strong>Crashlytics</strong> erhält nach einem Absturz einen Bericht: den technischen Zustand der App, den Stacktrace, Gerätemodell und Systemversion sowie eine Crashlytics-Installations-ID.</li>
 <li><strong>Remote Config</strong> lädt Spieleinstellungen herunter und übermittelt Land, Sprache, Zeitzone, App- und Systemversion.</li>
 </ul>
-<p>Google verarbeitet diese Daten in unserem Auftrag. Analyse-Ereignisse werden höchstens 14 Monate aufbewahrt, Absturzberichte 90 Tage. Siehe <a href="https://firebase.google.com/support/privacy" rel="noopener">Datenschutz und Sicherheit in Firebase</a>.</p>
+<p>Google verarbeitet diese Daten in unserem Auftrag. Analyse-Ereignisse werden höchstens 2 Monate aufbewahrt, Absturzberichte 90 Tage. Siehe <a href="https://firebase.google.com/support/privacy" rel="noopener">Datenschutz und Sicherheit in Firebase</a>.</p>
 <h2 id="purchases">5. Der Kauf „Werbefrei“</h2>
 <p>Koselig bietet einen optionalen In-App-Kauf an: <strong>„Werbefrei“</strong> (Produkt <code>koselig.no_ads</code>). Er wird vollständig über den <strong>Apple App Store</strong> oder <strong>Google Play</strong> abgewickelt. Wir erhalten weder deinen Namen noch deine Karten- oder Zahlungsdaten. Die App erhält vom Store nur die Bestätigung, dass du den Kauf besitzt, und speichert diese Information auf deinem Gerät. Siehe die <a href="https://www.apple.com/legal/privacy/" rel="noopener">Datenschutzrichtlinie von Apple</a> und die <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a>.</p>
 
@@ -1191,7 +1191,7 @@ L["de"] = dict(
 <p>Für die Daten, die Google über sein SDK erhebt, ist Google eigenständiger Verantwortlicher. Google und Apple können Daten außerhalb des Europäischen Wirtschaftsraums verarbeiten und stützen sich dabei auf eigene Garantien. Google Play Games unter Android ist ein Dienst von Google, bei dem du dich selbst anmeldest; dein Spielerprofil und deine Spielstände verarbeitet Google nach seiner eigenen Datenschutzerklärung.</p>
 
 <h2 id="retention">9. Speicherdauer</h2>
-<p>Daten auf deinem Gerät bleiben dort, bis du die App löschst. Die iCloud-Kopie deines Fortschritts bleibt in deinem iCloud. Die Kopie in Google Play Games bleibt in deinem Google-Konto, bis du sie löschst. Analyse-Ereignisse werden höchstens 14 Monate aufbewahrt, Absturzberichte 90 Tage. Von Google für Werbung erhobene Daten werden nach den Richtlinien von Google aufbewahrt. Wenn du uns schreibst, bewahren wir deine E-Mail nur so lange auf, wie es nötig ist, um dir zu antworten und dein Anliegen zu klären.</p>
+<p>Daten auf deinem Gerät bleiben dort, bis du die App löschst. Die iCloud-Kopie deines Fortschritts bleibt in deinem iCloud. Die Kopie in Google Play Games bleibt in deinem Google-Konto, bis du sie löschst. Analyse-Ereignisse werden höchstens 2 Monate aufbewahrt, Absturzberichte 90 Tage. Von Google für Werbung erhobene Daten werden nach den Richtlinien von Google aufbewahrt. Wenn du uns schreibst, bewahren wir deine E-Mail nur so lange auf, wie es nötig ist, um dir zu antworten und dein Anliegen zu klären.</p>
 
 <h2 id="rights">10. Deine Rechte</h2>
 <p>Du hast das Recht auf Auskunft über deine personenbezogenen Daten, auf ihre Berichtigung und Löschung, auf Einschränkung der Verarbeitung und Widerspruch gegen sie, auf Datenübertragbarkeit sowie das Recht, deine Einwilligung jederzeit zu widerrufen. Da wir keine Spieldaten auf unseren Servern speichern, lassen sich die meisten Anfragen durch das Löschen der App erledigen; Anfragen zu Werbedaten kannst du über die oben genannten Links an Google richten. Du kannst uns jederzeit unter <a href="mailto:{EMAIL}">{EMAIL}</a> schreiben. Außerdem hast du das Recht, dich bei einer Aufsichtsbehörde zu beschweren – in Polen beim <a href="https://uodo.gov.pl/" rel="noopener">Präsidenten des Amtes für den Schutz personenbezogener Daten (UODO)</a> – oder bei der Behörde in deinem Land.</p>
@@ -1287,7 +1287,7 @@ L["de"] = dict(
 </ul>
 <p>Ist das Spiel noch installiert und bist du weiterhin angemeldet, wird der Fortschritt beim nächsten Spielen erneut kopiert.</p>
 <h2>Analyse und Absturzberichte</h2>
-<p>Analyse-Ereignisse und Absturzberichte (Google Firebase) sind nicht mit deinem Namen oder deiner E-Mail verknüpft, daher können wir die Einträge einer einzelnen Person nicht finden. Sie werden automatisch gelöscht: Analyse-Ereignisse spätestens nach 14 Monaten, Absturzberichte nach 90 Tagen.</p>
+<p>Analyse-Ereignisse und Absturzberichte (Google Firebase) sind nicht mit deinem Namen oder deiner E-Mail verknüpft, daher können wir die Einträge einer einzelnen Person nicht finden. Sie werden automatisch gelöscht: Analyse-Ereignisse spätestens nach 2 Monaten, Absturzberichte nach 90 Tagen.</p>
 <h2>Werbedaten</h2>
 <p>Die Werbung in Koselig stellt Google AdMob bereit. Für die von Google erhobenen Daten ist Google verantwortlich. Du kannst:</p>
 <ul>
@@ -1433,7 +1433,7 @@ L["fr"] = dict(
 <li><strong>Crashlytics</strong>, après un plantage, reçoit un rapport : l’état technique de l’application, la trace de la pile, le modèle de l’appareil et la version du système, ainsi qu’un identifiant d’installation Crashlytics.</li>
 <li><strong>Remote Config</strong> télécharge les réglages du jeu et transmet votre pays, votre langue, votre fuseau horaire, les versions de l’application et du système.</li>
 </ul>
-<p>Google traite ces données pour notre compte. Les événements d’analyse sont conservés 14 mois au maximum, les rapports de plantage 90 jours. Voir <a href="https://firebase.google.com/support/privacy" rel="noopener">Confidentialité et sécurité dans Firebase</a>.</p>
+<p>Google traite ces données pour notre compte. Les événements d’analyse sont conservés 2 mois au maximum, les rapports de plantage 90 jours. Voir <a href="https://firebase.google.com/support/privacy" rel="noopener">Confidentialité et sécurité dans Firebase</a>.</p>
 <h2 id="purchases">5. L’achat « Sans pub »</h2>
 <p>Koselig propose un seul achat intégré facultatif, <strong>« Sans pub »</strong> (produit <code>koselig.no_ads</code>). Il est entièrement traité par l’<strong>App Store d’Apple</strong> ou par <strong>Google Play</strong>. Nous ne recevons ni votre nom, ni votre carte, ni vos informations de paiement. L’application reçoit seulement de la boutique la confirmation que l’achat vous appartient, et elle enregistre cette information sur votre appareil. Voir la <a href="https://www.apple.com/legal/privacy/" rel="noopener">Politique de confidentialité d’Apple</a> et les <a href="https://policies.google.com/privacy" rel="noopener">Règles de confidentialité de Google</a>.</p>
 
@@ -1459,7 +1459,7 @@ L["fr"] = dict(
 <p>Google agit en qualité de responsable du traitement indépendant pour les données qu’il collecte via son SDK. Google et Apple peuvent traiter des données en dehors de l’Espace économique européen, dans le cadre de leurs propres garanties. Google Play Games sur Android est un service de Google auquel vous vous connectez vous-même ; Google traite votre profil de joueur et vos sauvegardes selon ses propres règles de confidentialité.</p>
 
 <h2 id="retention">9. Durée de conservation</h2>
-<p>Les données stockées sur votre appareil y restent jusqu’à ce que vous supprimiez l’application. La copie de votre progression dans iCloud reste dans votre iCloud. La copie dans Google Play Games reste dans votre compte Google jusqu’à ce que vous la supprimiez. Les événements d’analyse sont conservés 14 mois au maximum, les rapports de plantage 90 jours. Les données publicitaires collectées par Google sont conservées conformément aux règles de Google. Si vous nous écrivez, nous ne conservons votre adresse e-mail que le temps nécessaire pour vous répondre et traiter votre demande.</p>
+<p>Les données stockées sur votre appareil y restent jusqu’à ce que vous supprimiez l’application. La copie de votre progression dans iCloud reste dans votre iCloud. La copie dans Google Play Games reste dans votre compte Google jusqu’à ce que vous la supprimiez. Les événements d’analyse sont conservés 2 mois au maximum, les rapports de plantage 90 jours. Les données publicitaires collectées par Google sont conservées conformément aux règles de Google. Si vous nous écrivez, nous ne conservons votre adresse e-mail que le temps nécessaire pour vous répondre et traiter votre demande.</p>
 
 <h2 id="rights">10. Vos droits</h2>
 <p>Vous disposez d’un droit d’accès, de rectification et d’effacement de vos données personnelles, du droit de demander la limitation du traitement ou de vous y opposer, du droit à la portabilité des données et du droit de retirer votre consentement à tout moment. Comme nous ne conservons pas de données de jeu sur nos serveurs, la plupart des demandes se règlent en supprimant l’application ; les demandes concernant les données publicitaires peuvent être adressées à Google via les liens ci-dessus. Vous pouvez toujours nous écrire à <a href="mailto:{EMAIL}">{EMAIL}</a>. Vous avez également le droit d’introduire une réclamation auprès d’une autorité de contrôle — en Pologne, le <a href="https://uodo.gov.pl/" rel="noopener">Président de l’Office de protection des données personnelles (UODO)</a> — ou auprès de l’autorité de votre pays.</p>
@@ -1555,7 +1555,7 @@ L["fr"] = dict(
 </ul>
 <p>Si le jeu est encore installé et que vous êtes toujours connecté, la progression sera de nouveau copiée la prochaine fois que vous jouerez.</p>
 <h2>Analyse et rapports de plantage</h2>
-<p>Les événements d’analyse et les rapports de plantage (Google Firebase) ne sont liés ni à votre nom ni à votre e-mail : nous ne pouvons donc pas retrouver les données d’une personne. Ils sont supprimés automatiquement : les événements d’analyse au plus tard après 14 mois, les rapports de plantage après 90 jours.</p>
+<p>Les événements d’analyse et les rapports de plantage (Google Firebase) ne sont liés ni à votre nom ni à votre e-mail : nous ne pouvons donc pas retrouver les données d’une personne. Ils sont supprimés automatiquement : les événements d’analyse au plus tard après 2 mois, les rapports de plantage après 90 jours.</p>
 <h2>Données publicitaires</h2>
 <p>Les publicités de Koselig sont fournies par Google AdMob. Google est responsable du traitement des données qu’il collecte. Vous pouvez :</p>
 <ul>
@@ -1701,7 +1701,7 @@ L["it"] = dict(
 <li><strong>Crashlytics</strong>, dopo un arresto anomalo, riceve una segnalazione: lo stato tecnico dell’app, lo stack trace, il modello del dispositivo e la versione del sistema, e un identificatore di installazione Crashlytics.</li>
 <li><strong>Remote Config</strong> scarica le impostazioni del gioco e invia paese, lingua, fuso orario, versioni dell’app e del sistema.</li>
 </ul>
-<p>Google tratta questi dati per nostro conto. Gli eventi di analisi sono conservati al massimo 14 mesi, le segnalazioni degli arresti anomali 90 giorni. Vedi <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacy e sicurezza in Firebase</a>.</p>
+<p>Google tratta questi dati per nostro conto. Gli eventi di analisi sono conservati al massimo 2 mesi, le segnalazioni degli arresti anomali 90 giorni. Vedi <a href="https://firebase.google.com/support/privacy" rel="noopener">Privacy e sicurezza in Firebase</a>.</p>
 <h2 id="purchases">5. L’acquisto «Senza annunci»</h2>
 <p>Koselig offre un solo acquisto in-app facoltativo, <strong>«Senza annunci»</strong> (prodotto <code>koselig.no_ads</code>). È gestito interamente da <strong>Apple App Store</strong> o <strong>Google Play</strong>. Non riceviamo il tuo nome, la tua carta né i tuoi dati di pagamento. L’app riceve dallo store soltanto la conferma che possiedi l’acquisto e salva questa informazione sul tuo dispositivo. Consulta l’<a href="https://www.apple.com/legal/privacy/" rel="noopener">Informativa sulla privacy di Apple</a> e le <a href="https://policies.google.com/privacy" rel="noopener">Norme sulla privacy di Google</a>.</p>
 
@@ -1727,7 +1727,7 @@ L["it"] = dict(
 <p>Google agisce come titolare autonomo del trattamento per i dati che raccoglie tramite il suo SDK. Google e Apple possono trattare dati al di fuori dello Spazio economico europeo, con garanzie proprie. Google Play Games su Android è un servizio di Google a cui accedi direttamente; Google tratta il tuo profilo giocatore e i tuoi salvataggi secondo le proprie norme sulla privacy.</p>
 
 <h2 id="retention">9. Per quanto tempo vengono conservati i dati</h2>
-<p>I dati sul tuo dispositivo restano lì finché non elimini l’app. La copia dei progressi in iCloud resta nel tuo iCloud. La copia in Google Play Games resta nel tuo account Google finché non la elimini. Gli eventi di analisi sono conservati al massimo 14 mesi, le segnalazioni degli arresti anomali 90 giorni. I dati pubblicitari raccolti da Google vengono conservati secondo le norme di Google. Se ci scrivi, conserviamo il tuo indirizzo email solo per il tempo necessario a risponderti e a risolvere la tua richiesta.</p>
+<p>I dati sul tuo dispositivo restano lì finché non elimini l’app. La copia dei progressi in iCloud resta nel tuo iCloud. La copia in Google Play Games resta nel tuo account Google finché non la elimini. Gli eventi di analisi sono conservati al massimo 2 mesi, le segnalazioni degli arresti anomali 90 giorni. I dati pubblicitari raccolti da Google vengono conservati secondo le norme di Google. Se ci scrivi, conserviamo il tuo indirizzo email solo per il tempo necessario a risponderti e a risolvere la tua richiesta.</p>
 
 <h2 id="rights">10. I tuoi diritti</h2>
 <p>Hai il diritto di accesso, di rettifica e di cancellazione dei tuoi dati personali, di limitazione del trattamento, di opposizione al trattamento, alla portabilità dei dati e di revocare il consenso in qualsiasi momento. Poiché non conserviamo dati di gioco sui nostri server, la maggior parte delle richieste si risolve eliminando l’app; le richieste sui dati pubblicitari si possono rivolgere a Google tramite i link qui sopra. Puoi sempre scriverci a <a href="mailto:{EMAIL}">{EMAIL}</a>. Hai anche il diritto di proporre reclamo a un’autorità di controllo — in Polonia il <a href="https://uodo.gov.pl/" rel="noopener">Presidente dell’Ufficio per la protezione dei dati personali (UODO)</a> — o all’autorità del tuo Paese.</p>
@@ -1823,7 +1823,7 @@ L["it"] = dict(
 </ul>
 <p>Se il gioco è ancora installato e l’accesso è ancora attivo, i progressi verranno copiati di nuovo la prossima volta che giochi.</p>
 <h2>Analisi e segnalazioni degli arresti anomali</h2>
-<p>Gli eventi di analisi e le segnalazioni degli arresti anomali (Google Firebase) non sono collegati al tuo nome o alla tua email, quindi non possiamo trovare i dati di una singola persona. Vengono cancellati automaticamente: gli eventi di analisi entro 14 mesi, le segnalazioni degli arresti anomali dopo 90 giorni.</p>
+<p>Gli eventi di analisi e le segnalazioni degli arresti anomali (Google Firebase) non sono collegati al tuo nome o alla tua email, quindi non possiamo trovare i dati di una singola persona. Vengono cancellati automaticamente: gli eventi di analisi entro 2 mesi, le segnalazioni degli arresti anomali dopo 90 giorni.</p>
 <h2>Dati pubblicitari</h2>
 <p>Gli annunci in Koselig sono forniti da Google AdMob. I dati raccolti da Google sono sotto il controllo di Google. Puoi:</p>
 <ul>
