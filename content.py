@@ -80,7 +80,7 @@ L["en"] = dict(
 <h2 id="short">In short</h2>
 <ul>
 <li>There are <strong>no accounts</strong> and no sign-in. We never ask for your name, email or phone number.</li>
-<li>Your progress and settings are <strong>stored on your device</strong>; on iPhone they are also copied to your own iCloud account. We do not receive them.</li>
+<li>Your progress and settings are <strong>stored on your device</strong>; on iPhone they are also copied to your own iCloud account, and on Android to your own Google Play Games account if you are signed in to it. We do not receive them.</li>
 <li>The game shows ads <strong>only when you choose</strong> to watch a short rewarded video for the <em>Stuck?</em> check. There are no banners and no interstitial ads. The ads come from <strong>Google AdMob</strong>, which processes device data and identifiers.</li>
 <li>Where the law requires it (for example in the EEA, the UK and Switzerland), you are asked for <strong>consent</strong> through Google’s consent form before personalised ads are shown.</li>
 <li>The optional <strong>“No ads”</strong> purchase is handled by Apple or Google. We never see your payment details.</li>
@@ -95,7 +95,8 @@ L["en"] = dict(
 <li>whether you own the “No ads” purchase;</li>
 <li>your advertising consent choice, which is stored on the device by Google’s consent SDK.</li>
 </ul>
-<p>This data stays on your device and is not sent to us. It is deleted when you delete the app. <strong>On iPhone</strong>, progress and save slots are also copied to <strong>your own iCloud account</strong> (iCloud key-value storage), so you can continue on another device or after reinstalling. This copy is stored by Apple under your Apple ID; we cannot read it. You can stop it in iOS Settings → [your name] → iCloud. On Android the game does not use cloud saves, so after reinstalling progress starts again. The “No ads” purchase can always be restored from Apple or Google (Settings → <em>Restore</em>).</p>
+<p>This data stays on your device and is not sent to us. It is deleted when you delete the app. <strong>On iPhone</strong>, progress and save slots are also copied to <strong>your own iCloud account</strong> (iCloud key-value storage), so you can continue on another device or after reinstalling. This copy is stored by Apple under your Apple ID; we cannot read it. You can stop it in iOS Settings → [your name] → iCloud. The “No ads” purchase can always be restored from Apple or Google (Settings → <em>Restore</em>).</p>
+<p><strong>On Android</strong>, if you are signed in to <strong>Google Play Games</strong> on your phone, progress and save slots are also copied to your Google account (Saved Games in Google Play Games Services), so you can continue on another device or after reinstalling. Sign-in is handled by the phone itself through Google Play Games; Koselig has no accounts of its own. This copy is stored by Google in your account; we cannot read it, and it does not reach our servers. Through the Play Games SDK, Google receives your Play Games profile (gamer name and avatar) and the saved game data, and also collects analytics and diagnostic data on how its SDK works. See the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>. If you do not sign in to Google Play Games, or sign out of it, progress stays only on your phone.</p>
 
 <h2 id="ads">2. Advertising: Google AdMob</h2>
 <p>Koselig uses the <strong>Google Mobile Ads SDK</strong> (Google AdMob) to show rewarded videos. To have a video ready when you ask for one, the app starts the SDK at launch and loads one video in the background. This means Google may receive data from your device <strong>even if you never watch a video</strong>.</p>
@@ -140,7 +141,7 @@ L["en"] = dict(
 <li>No access to your contacts, photos, camera, microphone or precise location.</li>
 <li>We do not sell personal data and we do not use it for anything except what is described here.</li>
 </ul>
-<p>The app uses internet access (for ads, analytics and crash reports, the purchase and, on iPhone, iCloud saves) and, on Android, vibration for haptic feedback.</p>
+<p>The app uses internet access (for ads, analytics and crash reports, the purchase and cloud saves — iCloud on iPhone, Google Play Games on Android) and, on Android, vibration for haptic feedback.</p>
 
 <h2 id="children">7. Children</h2>
 <p>Koselig is a general-audience puzzle game. It is not directed at children under 13 and is not part of a children’s category. Ads in Koselig are not configured as child-directed. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, contact us and we will delete it.</p>
@@ -152,10 +153,10 @@ L["en"] = dict(
 <li><strong>Legitimate interests</strong> (Art. 6(1)(f)) — game analytics and crash reports to fix and improve the game.</li>
 <li><strong>Contract</strong> (Art. 6(1)(b)) — delivering and restoring the “No ads” purchase.</li>
 </ul>
-<p>Google acts as an independent controller for the data it collects through its SDK. Google and Apple may process data outside the European Economic Area under their own safeguards.</p>
+<p>Google acts as an independent controller for the data it collects through its SDK. Google and Apple may process data outside the European Economic Area under their own safeguards. Google Play Games on Android is a Google service that you sign in to yourself; Google processes your Play Games profile and saved games under its own privacy policy.</p>
 
 <h2 id="retention">9. How long data is kept</h2>
-<p>Data on your device stays there until you delete the app. The iCloud copy of your progress stays in your iCloud account. Analytics event data is kept for no longer than 14 months and crash reports for 90 days. Data collected by Google for ads is kept according to Google’s policies. If you write to us, we keep your email only as long as needed to answer and solve your request.</p>
+<p>Data on your device stays there until you delete the app. The iCloud copy of your progress stays in your iCloud account. The Google Play Games copy stays in your Google account until you delete it. Analytics event data is kept for no longer than 14 months and crash reports for 90 days. Data collected by Google for ads is kept according to Google’s policies. If you write to us, we keep your email only as long as needed to answer and solve your request.</p>
 
 <h2 id="rights">10. Your rights</h2>
 <p>You have the right to access, correct and delete your personal data, to restrict or object to processing, to data portability and to withdraw consent at any time. Because we do not hold game data on our servers, most requests are answered by deleting the app; requests about advertising data can be made to Google through the links above. You can always write to us at <a href="mailto:{EMAIL}">{EMAIL}</a>. You also have the right to lodge a complaint with a supervisory authority — in Poland the <a href="https://uodo.gov.pl/" rel="noopener">President of the Personal Data Protection Office (UODO)</a> — or with the authority in your country.</p>
@@ -185,7 +186,7 @@ L["en"] = dict(
 <p>“No ads” is a one-time, non-consumable purchase. It lets the <em>Stuck?</em> check work without videos; the number of checks per level stays the same. The price is shown by the store before you pay. Payment, refunds and cancellations are handled by Apple or Google under their policies. The purchase is tied to your Apple ID or Google account and can be restored after reinstalling (Settings → <em>Restore</em>).</p>
 
 <h2>4. Your progress</h2>
-<p>Progress is stored on your device and, on iPhone, also in your own iCloud account. If you delete the app or lose the device, we cannot recover progress for you; on iPhone it can come back from iCloud.</p>
+<p>Progress is stored on your device and, on iPhone, also in your own iCloud account; on Android, also in Google Play Games if you are signed in. If you delete the app or lose the device, we cannot recover progress for you; it can come back from iCloud on iPhone or from Google Play Games on Android.</p>
 
 <h2>5. Changes and availability</h2>
 <p>We may update the game — add, change or remove levels and features — and may stop offering it. We will try to keep it working, but we cannot promise it will always be available or free of bugs.</p>
@@ -222,10 +223,10 @@ L["en"] = dict(
          "Yes. Settings → <em>Saves</em> has three slots: <em>Save</em> stores the current position, <em>Load</em> brings it back."),
     ],
     s_del_h="Deleting your data",
-    s_del_p="Koselig has no accounts. Progress is kept on your device and, on iPhone, in your own iCloud account. Deleting the app deletes everything it stored on the device. About ad, analytics and iCloud data — see the <a href=\"{R}koselig/delete-data/\">data deletion page</a>.",
+    s_del_p="Koselig has no accounts. Progress is kept on your device and, on iPhone, in your own iCloud account; on Android, in Google Play Games if you are signed in. Deleting the app deletes everything it stored on the device. About ad, analytics, iCloud and Google Play Games data — see the <a href=\"{R}koselig/delete-data/\">data deletion page</a>.",
     # delete data
     d_title="Delete your data — Koselig",
-    d_desc="How to delete data related to the Koselig game: delete the app; the iCloud copy is managed by Apple; ad data is managed by Google.",
+    d_desc="How to delete data related to the Koselig game: delete the app; the iCloud copy is managed by Apple; the Google Play Games copy and ad data are managed by Google.",
     d_h1="Delete your data",
     d_sub="Koselig by Coffee Beans Studio",
     delete_html="""
@@ -241,6 +242,14 @@ L["en"] = dict(
 
 <h2>iCloud copy (iPhone)</h2>
 <p>On iPhone, progress and save slots are also copied to your own iCloud account. It is stored by Apple under your Apple ID. To stop it, turn off iCloud for Koselig in <em>Settings → [your name] → iCloud</em>.</p>
+<h2>Google Play Games copy (Android)</h2>
+<p>On Android, if you are signed in to Google Play Games, progress and save slots are also copied to Saved Games in your Google account. This copy is stored by Google; we cannot read it or delete it for you. You can:</p>
+<ul>
+<li>delete Koselig’s data in your Play Games profile, where you can remove the data of a single game: <a href="https://play.google.com/games/profile" rel="noopener">play.google.com/games/profile</a>;</li>
+<li>manage or delete your data in your <a href="https://myaccount.google.com" rel="noopener">Google Account</a>;</li>
+<li>stop the copying: sign out of Google Play Games on your phone, or do not sign in — progress then stays only on the phone.</li>
+</ul>
+<p>If the game is still installed and you are still signed in, your progress will be copied again the next time you play.</p>
 <h2>Analytics and crash reports</h2>
 <p>Analytics events and crash reports (Google Firebase) are not linked to your name or email, so we cannot find one person’s records. They are deleted automatically: analytics events after no more than 14 months, crash reports after 90 days.</p>
 <h2>Advertising data</h2>
@@ -334,7 +343,7 @@ L["ru"] = dict(
 <h2 id="short">Коротко</h2>
 <ul>
 <li><strong>Аккаунтов нет</strong>, входа нет. Мы не спрашиваем имя, почту или телефон.</li>
-<li>Прогресс и настройки <strong>хранятся на вашем устройстве</strong>; на iPhone они ещё копируются в ваш собственный iCloud. Мы их не получаем.</li>
+<li>Прогресс и настройки <strong>хранятся на вашем устройстве</strong>; на iPhone они ещё копируются в ваш собственный iCloud, а на Android — в ваш аккаунт Google Play Games, если вы в него вошли. Мы их не получаем.</li>
 <li>Реклама — <strong>только по вашему выбору</strong>: короткий ролик за награду для проверки «Тупик?». Баннеров и межстраничной рекламы нет. Ролики показывает <strong>Google AdMob</strong>, он обрабатывает данные устройства и идентификаторы.</li>
 <li>Где этого требует закон (например, ЕЭЗ, Великобритания, Швейцария), перед персонализированной рекламой у вас спрашивают <strong>согласие</strong> через форму Google.</li>
 <li>Необязательную покупку <strong>«Без рекламы»</strong> проводят Apple или Google. Платёжных данных мы не видим.</li>
@@ -349,7 +358,8 @@ L["ru"] = dict(
 <li>куплено ли «Без рекламы»;</li>
 <li>ваш выбор по согласию на рекламу — его хранит на устройстве SDK согласия Google.</li>
 </ul>
-<p>Эти данные остаются на устройстве и нам не отправляются. Они удаляются вместе с приложением. <strong>На iPhone</strong> прогресс и сохранения ещё копируются в <strong>ваш собственный iCloud</strong> (хранилище «ключ–значение» iCloud), чтобы продолжить на другом устройстве или после переустановки. Эту копию хранит Apple под вашим Apple ID; прочитать её мы не можем. Отключить можно в Настройках iOS → [ваше имя] → iCloud. На Android облачных сохранений нет: после переустановки прогресс начнётся заново. Покупку «Без рекламы» всегда можно восстановить у Apple или Google (Настройки → <em>Восстановить</em>).</p>
+<p>Эти данные остаются на устройстве и нам не отправляются. Они удаляются вместе с приложением. <strong>На iPhone</strong> прогресс и сохранения ещё копируются в <strong>ваш собственный iCloud</strong> (хранилище «ключ–значение» iCloud), чтобы продолжить на другом устройстве или после переустановки. Эту копию хранит Apple под вашим Apple ID; прочитать её мы не можем. Отключить можно в Настройках iOS → [ваше имя] → iCloud. Покупку «Без рекламы» всегда можно восстановить у Apple или Google (Настройки → <em>Восстановить</em>).</p>
+<p><strong>На Android</strong>, если на телефоне выполнен вход в <strong>Google Play Games</strong>, прогресс и сохранения ещё копируются в ваш аккаунт Google (облачные сохранения Google Play Games Services) — чтобы продолжить на другом устройстве или после переустановки. Вход выполняет сам телефон через Google Play Games; своих аккаунтов у Koselig нет. Эту копию хранит Google в вашем аккаунте; прочитать её мы не можем, и на наши серверы она не попадает. Через SDK Play Games Google получает ваш игровой профиль (игровое имя и аватар) и данные сохранения, а также собирает аналитику и диагностику работы своего SDK. Подробнее — в <a href="https://policies.google.com/privacy" rel="noopener">Политике конфиденциальности Google</a>. Если не входить в Google Play Games или выйти из него, прогресс останется только на телефоне.</p>
 
 <h2 id="ads">2. Реклама: Google AdMob</h2>
 <p>Для роликов за награду Koselig использует <strong>Google Mobile Ads SDK</strong> (Google AdMob). Чтобы ролик был готов, когда вы его попросите, приложение запускает SDK при старте и заранее загружает один ролик. Поэтому Google может получать данные с устройства, <strong>даже если вы ни разу не смотрели ролик</strong>.</p>
@@ -394,7 +404,7 @@ L["ru"] = dict(
 <li>Нет доступа к контактам, фото, камере, микрофону и точному местоположению.</li>
 <li>Мы не продаём персональные данные и не используем их ни для чего, кроме описанного здесь.</li>
 </ul>
-<p>Приложению нужен интернет (для рекламы, аналитики и отчётов о сбоях, покупки и, на iPhone, сохранений в iCloud) и, на Android, вибрация для тактильного отклика.</p>
+<p>Приложению нужен интернет (для рекламы, аналитики и отчётов о сбоях, покупки и облачных сохранений: на iPhone — в iCloud, на Android — в Google Play Games) и, на Android, вибрация для тактильного отклика.</p>
 
 <h2 id="children">7. Дети</h2>
 <p>Koselig — головоломка для широкой аудитории. Она не предназначена для детей младше 13 лет и не входит в детские категории. Реклама в Koselig не настроена как реклама для детей. Мы сознательно не собираем персональные данные детей. Если вы считаете, что ребёнок передал нам такие данные, напишите нам — мы их удалим.</p>
@@ -406,10 +416,10 @@ L["ru"] = dict(
 <li><strong>Законный интерес</strong> (ст. 6(1)(f)) — игровая аналитика и отчёты о сбоях, чтобы чинить и улучшать игру.</li>
 <li><strong>Договор</strong> (ст. 6(1)(b)) — выдача и восстановление покупки «Без рекламы».</li>
 </ul>
-<p>Google — самостоятельный контролёр данных, которые собирает через свой SDK. Google и Apple могут обрабатывать данные за пределами ЕЭЗ со своими гарантиями защиты.</p>
+<p>Google — самостоятельный контролёр данных, которые собирает через свой SDK. Google и Apple могут обрабатывать данные за пределами ЕЭЗ со своими гарантиями защиты. Google Play Games на Android — сервис Google, в который вы входите сами; ваш игровой профиль и сохранения Google обрабатывает по своей политике конфиденциальности.</p>
 
 <h2 id="retention">9. Сроки хранения</h2>
-<p>Данные на устройстве хранятся, пока вы не удалите приложение. Копия прогресса в iCloud остаётся в вашем iCloud. События аналитики хранятся не дольше 14 месяцев, отчёты о сбоях — 90 дней. Рекламные данные Google хранятся по правилам Google. Если вы нам написали, мы храним вашу почту, пока это нужно для ответа и решения вопроса.</p>
+<p>Данные на устройстве хранятся, пока вы не удалите приложение. Копия прогресса в iCloud остаётся в вашем iCloud. Копия в Google Play Games остаётся в вашем аккаунте Google, пока вы её не удалите. События аналитики хранятся не дольше 14 месяцев, отчёты о сбоях — 90 дней. Рекламные данные Google хранятся по правилам Google. Если вы нам написали, мы храним вашу почту, пока это нужно для ответа и решения вопроса.</p>
 
 <h2 id="rights">10. Ваши права</h2>
 <p>Вы вправе получить доступ к своим данным, исправить и удалить их, ограничить обработку или возразить против неё, получить данные в переносимом виде и в любой момент отозвать согласие. Игровых данных на наших серверах нет, поэтому большинство запросов решается удалением приложения; запросы о рекламных данных — к Google по ссылкам выше. Нам всегда можно написать: <a href="mailto:{EMAIL}">{EMAIL}</a>. Вы также вправе подать жалобу в надзорный орган — в Польше это <a href="https://uodo.gov.pl/" rel="noopener">Председатель Управления по защите персональных данных (UODO)</a> — или в орган своей страны.</p>
@@ -435,7 +445,7 @@ L["ru"] = dict(
 <p>Koselig бесплатна. Она может показать короткий ролик за награду, когда вы просите проверку «Тупик?». Рекламу показывает Google AdMob; мы не управляем её содержанием и не отвечаем за рекламируемые товары третьих лиц.</p>
 <p>«Без рекламы» — разовая постоянная покупка. С ней проверка «Тупик?» работает без роликов; число проверок на уровне не меняется. Цену показывает магазин до оплаты. Оплату, возвраты и отмены проводят Apple или Google по своим правилам. Покупка привязана к вашему Apple ID или аккаунту Google и восстанавливается после переустановки (Настройки → <em>Восстановить</em>).</p>
 <h2>4. Прогресс</h2>
-<p>Прогресс хранится на вашем устройстве, а на iPhone ещё и в вашем собственном iCloud. Если удалить приложение или потерять устройство, мы восстановить прогресс не сможем; на iPhone он может вернуться из iCloud.</p>
+<p>Прогресс хранится на вашем устройстве, а на iPhone ещё и в вашем собственном iCloud; на Android — ещё и в Google Play Games, если вы в него вошли. Если удалить приложение или потерять устройство, мы восстановить прогресс не сможем; он может вернуться из iCloud на iPhone или из Google Play Games на Android.</p>
 <h2>5. Изменения и доступность</h2>
 <p>Мы можем обновлять игру — добавлять, менять и убирать уровни и функции — и можем прекратить её распространение. Мы стараемся, чтобы всё работало, но не обещаем, что игра всегда будет доступна и без ошибок.</p>
 <h2>6. Ответственность</h2>
@@ -467,9 +477,9 @@ L["ru"] = dict(
          "Да. В настройках, в разделе <em>«Позиции»</em>, три ячейки: <em>«Записать»</em> сохраняет текущую позицию, <em>«Открыть»</em> возвращает её."),
     ],
     s_del_h="Удаление данных",
-    s_del_p="В Koselig нет аккаунтов. Прогресс хранится на устройстве, а на iPhone — ещё и в вашем iCloud. Удалите приложение — удалится всё, что оно хранило на устройстве. О рекламных данных, аналитике и iCloud — <a href=\"{R}ru/koselig/delete-data/\">страница об удалении данных</a>.",
+    s_del_p="В Koselig нет аккаунтов. Прогресс хранится на устройстве, а на iPhone — ещё и в вашем iCloud, на Android — в Google Play Games, если вы в него вошли. Удалите приложение — удалится всё, что оно хранило на устройстве. О рекламных данных, аналитике, iCloud и Google Play Games — <a href=\"{R}ru/koselig/delete-data/\">страница об удалении данных</a>.",
     d_title="Удаление данных — Koselig",
-    d_desc="Как удалить данные игры Koselig: удалите приложение; копией в iCloud распоряжается Apple, рекламными данными — Google.",
+    d_desc="Как удалить данные игры Koselig: удалите приложение; копией в iCloud распоряжается Apple, копией в Google Play Games и рекламными данными — Google.",
     d_h1="Удаление данных",
     d_sub="Koselig, Coffee Beans Studio",
     delete_html="""
@@ -483,6 +493,14 @@ L["ru"] = dict(
 <p>Удаление приложения не отменяет покупку «Без рекламы» — она принадлежит вашему Apple ID или аккаунту Google и восстанавливается позже.</p>
 <h2>Копия в iCloud (iPhone)</h2>
 <p>На iPhone прогресс и сохранения ещё копируются в ваш собственный iCloud. Эту копию хранит Apple под вашим Apple ID. Чтобы отключить, выключите iCloud для Koselig: <em>Настройки → [ваше имя] → iCloud</em>.</p>
+<h2>Копия в Google Play Games (Android)</h2>
+<p>На Android, если вы вошли в Google Play Games, прогресс и сохранения ещё копируются в облачные сохранения вашего аккаунта Google. Эту копию хранит Google; прочитать или удалить её за вас мы не можем. Вы можете:</p>
+<ul>
+<li>удалить данные Koselig в профиле Play Games — там можно удалить данные отдельной игры: <a href="https://play.google.com/games/profile" rel="noopener">play.google.com/games/profile</a>;</li>
+<li>управлять своими данными и удалять их в <a href="https://myaccount.google.com" rel="noopener">аккаунте Google</a>;</li>
+<li>отключить копирование: выйти из Google Play Games на телефоне или не входить в него — тогда прогресс останется только на телефоне.</li>
+</ul>
+<p>Если игра осталась на телефоне и вы не вышли из Google Play Games, при следующей игре прогресс снова скопируется.</p>
 <h2>Аналитика и отчёты о сбоях</h2>
 <p>События аналитики и отчёты о сбоях (Google Firebase) не связаны с вашим именем или почтой, поэтому найти записи одного человека мы не можем. Они удаляются сами: события аналитики — не позже чем через 14 месяцев, отчёты о сбоях — через 90 дней.</p>
 <h2>Рекламные данные</h2>
@@ -575,7 +593,7 @@ L["pl"] = dict(
 <h2 id="short">W skrócie</h2>
 <ul>
 <li><strong>Nie ma kont</strong> ani logowania. Nie pytamy o imię, e-mail ani numer telefonu.</li>
-<li>Postęp i ustawienia <strong>są zapisywane na Twoim urządzeniu</strong>; na iPhonie są też kopiowane do Twojego własnego iCloud. Nie otrzymujemy ich.</li>
+<li>Postęp i ustawienia <strong>są zapisywane na Twoim urządzeniu</strong>; na iPhonie są też kopiowane do Twojego własnego iCloud, a na Androidzie — do Twojego konta Google Play Games, jeśli zalogowano się do niego na telefonie. Nie otrzymujemy ich.</li>
 <li>Reklamy pojawiają się <strong>tylko wtedy, gdy sam wybierzesz</strong> krótki film z nagrodą przy sprawdzaniu „Impas?”. Nie ma banerów ani reklam pełnoekranowych. Reklamy dostarcza <strong>Google AdMob</strong>, który przetwarza dane urządzenia i identyfikatory.</li>
 <li>Tam, gdzie wymaga tego prawo (np. w EOG, Wielkiej Brytanii i Szwajcarii), przed reklamami spersonalizowanymi prosimy o <strong>zgodę</strong> w formularzu Google.</li>
 <li>Opcjonalny zakup <strong>„Bez reklam”</strong> obsługuje Apple lub Google. Nie widzimy Twoich danych płatniczych.</li>
@@ -590,7 +608,8 @@ L["pl"] = dict(
 <li>informację, czy masz zakup „Bez reklam”;</li>
 <li>Twój wybór dotyczący zgody na reklamy, zapisywany na urządzeniu przez SDK zgody Google.</li>
 </ul>
-<p>Te dane zostają na urządzeniu i nie są do nas wysyłane. Usuwasz je razem z aplikacją. <strong>Na iPhonie</strong> postęp i zapisy są też kopiowane do <strong>Twojego własnego iCloud</strong> (magazyn klucz–wartość iCloud), aby można było grać dalej na innym urządzeniu lub po ponownej instalacji. Tę kopię przechowuje Apple w ramach Twojego Apple ID; nie możemy jej odczytać. Możesz to wyłączyć w Ustawieniach iOS → [Twoje imię] → iCloud. Na Androidzie gra nie korzysta z zapisów w chmurze, więc po ponownej instalacji postęp zaczyna się od nowa. Zakup „Bez reklam” zawsze można przywrócić z Apple lub Google (Ustawienia → <em>Przywróć</em>).</p>
+<p>Te dane zostają na urządzeniu i nie są do nas wysyłane. Usuwasz je razem z aplikacją. <strong>Na iPhonie</strong> postęp i zapisy są też kopiowane do <strong>Twojego własnego iCloud</strong> (magazyn klucz–wartość iCloud), aby można było grać dalej na innym urządzeniu lub po ponownej instalacji. Tę kopię przechowuje Apple w ramach Twojego Apple ID; nie możemy jej odczytać. Możesz to wyłączyć w Ustawieniach iOS → [Twoje imię] → iCloud. Zakup „Bez reklam” zawsze można przywrócić z Apple lub Google (Ustawienia → <em>Przywróć</em>).</p>
+<p><strong>Na Androidzie</strong>, jeśli na telefonie zalogowano się do <strong>Google Play Games</strong>, postęp i zapisy są też kopiowane na Twoje konto Google (zapisane gry w Google Play Games Services), aby można było grać dalej na innym urządzeniu lub po ponownej instalacji. Logowaniem zajmuje się sam telefon przez Google Play Games; Koselig nie ma własnych kont. Tę kopię przechowuje Google na Twoim koncie; nie możemy jej odczytać i nie trafia ona na nasze serwery. Przez SDK Play Games Google otrzymuje Twój profil gracza (nazwę gracza i awatar) oraz dane zapisu, a także zbiera dane analityczne i diagnostyczne o działaniu swojego SDK. Szczegóły: <a href="https://policies.google.com/privacy" rel="noopener">Polityka prywatności Google</a>. Jeśli nie zalogujesz się do Google Play Games albo się z niego wylogujesz, postęp zostanie tylko na telefonie.</p>
 
 <h2 id="ads">2. Reklamy: Google AdMob</h2>
 <p>Koselig korzysta z <strong>Google Mobile Ads SDK</strong> (Google AdMob), aby wyświetlać filmy z nagrodą. Żeby film był gotowy, gdy o niego poprosisz, aplikacja uruchamia SDK przy starcie i wczytuje jeden film w tle. Dlatego Google może otrzymywać dane z urządzenia <strong>nawet wtedy, gdy nie obejrzysz żadnego filmu</strong>.</p>
@@ -635,7 +654,7 @@ L["pl"] = dict(
 <li>Nie ma dostępu do kontaktów, zdjęć, aparatu, mikrofonu ani dokładnej lokalizacji.</li>
 <li>Nie sprzedajemy danych osobowych i nie używamy ich do niczego poza tym, co tu opisano.</li>
 </ul>
-<p>Aplikacja korzysta z internetu (reklamy, analityka i raporty awarii, zakup oraz, na iPhonie, zapisy w iCloud) oraz, na Androidzie, z wibracji jako informacji dotykowej.</p>
+<p>Aplikacja korzysta z internetu (reklamy, analityka i raporty awarii, zakup oraz zapisy w chmurze: na iPhonie w iCloud, na Androidzie w Google Play Games) oraz, na Androidzie, z wibracji jako informacji dotykowej.</p>
 
 <h2 id="children">7. Dzieci</h2>
 <p>Koselig to łamigłówka dla ogólnej publiczności. Nie jest skierowana do dzieci poniżej 13 lat i nie należy do kategorii dziecięcych. Reklamy w Koselig nie są skonfigurowane jako skierowane do dzieci. Świadomie nie zbieramy danych osobowych dzieci. Jeśli uważasz, że dziecko przekazało nam takie dane, napisz — usuniemy je.</p>
@@ -647,10 +666,10 @@ L["pl"] = dict(
 <li><strong>Prawnie uzasadniony interes</strong> (art. 6 ust. 1 lit. f) — analityka gry i raporty awarii, aby naprawiać i ulepszać grę.</li>
 <li><strong>Umowa</strong> (art. 6 ust. 1 lit. b) — dostarczenie i przywrócenie zakupu „Bez reklam”.</li>
 </ul>
-<p>Google jest niezależnym administratorem danych zbieranych przez swój SDK. Google i Apple mogą przetwarzać dane poza Europejskim Obszarem Gospodarczym na podstawie własnych zabezpieczeń.</p>
+<p>Google jest niezależnym administratorem danych zbieranych przez swój SDK. Google i Apple mogą przetwarzać dane poza Europejskim Obszarem Gospodarczym na podstawie własnych zabezpieczeń. Google Play Games na Androidzie to usługa Google, do której logujesz się samodzielnie; Twój profil gracza i zapisy Google przetwarza zgodnie z własną polityką prywatności.</p>
 
 <h2 id="retention">9. Jak długo przechowujemy dane</h2>
-<p>Dane na urządzeniu pozostają tam do usunięcia aplikacji. Kopia postępu w iCloud pozostaje na Twoim koncie iCloud. Zdarzenia analityki są przechowywane nie dłużej niż 14 miesięcy, raporty awarii — 90 dni. Dane reklamowe zebrane przez Google są przechowywane zgodnie z zasadami Google. Jeśli do nas napiszesz, przechowujemy Twój e-mail tak długo, jak to potrzebne do odpowiedzi i rozwiązania sprawy.</p>
+<p>Dane na urządzeniu pozostają tam do usunięcia aplikacji. Kopia postępu w iCloud pozostaje na Twoim koncie iCloud. Kopia w Google Play Games pozostaje na Twoim koncie Google, dopóki jej nie usuniesz. Zdarzenia analityki są przechowywane nie dłużej niż 14 miesięcy, raporty awarii — 90 dni. Dane reklamowe zebrane przez Google są przechowywane zgodnie z zasadami Google. Jeśli do nas napiszesz, przechowujemy Twój e-mail tak długo, jak to potrzebne do odpowiedzi i rozwiązania sprawy.</p>
 
 <h2 id="rights">10. Twoje prawa</h2>
 <p>Masz prawo dostępu do swoich danych, ich sprostowania i usunięcia, ograniczenia przetwarzania, sprzeciwu, przenoszenia danych oraz wycofania zgody w dowolnym momencie. Nie przechowujemy danych gry na serwerach, więc większość żądań realizuje usunięcie aplikacji; żądania dotyczące danych reklamowych kieruj do Google przez powyższe linki. Zawsze możesz napisać do nas: <a href="mailto:{EMAIL}">{EMAIL}</a>. Masz też prawo wnieść skargę do <a href="https://uodo.gov.pl/" rel="noopener">Prezesa Urzędu Ochrony Danych Osobowych (UODO)</a> lub do organu nadzorczego w swoim kraju.</p>
@@ -676,7 +695,7 @@ L["pl"] = dict(
 <p>Koselig jest darmowa. Może pokazać krótki film z nagrodą, gdy prosisz o sprawdzenie „Impas?”. Reklamy dostarcza Google AdMob; nie kontrolujemy ich treści i nie odpowiadamy za reklamowane produkty osób trzecich.</p>
 <p>„Bez reklam” to jednorazowy, trwały zakup. Dzięki niemu sprawdzanie „Impas?” działa bez filmów; liczba sprawdzeń na poziom się nie zmienia. Cenę pokazuje sklep przed zapłatą. Płatności, zwroty i anulowania obsługuje Apple lub Google na swoich zasadach. Zakup jest przypisany do Twojego Apple ID lub konta Google i można go przywrócić po ponownej instalacji (Ustawienia → <em>Przywróć</em>).</p>
 <h2>4. Postęp</h2>
-<p>Postęp jest zapisywany na Twoim urządzeniu, a na iPhonie także w Twoim własnym iCloud. Jeśli usuniesz aplikację lub stracisz urządzenie, nie odzyskamy go; na iPhonie może wrócić z iCloud.</p>
+<p>Postęp jest zapisywany na Twoim urządzeniu, a na iPhonie także w Twoim własnym iCloud; na Androidzie także w Google Play Games, jeśli zalogowano się do tej usługi. Jeśli usuniesz aplikację lub stracisz urządzenie, nie odzyskamy go; może wrócić z iCloud na iPhonie lub z Google Play Games na Androidzie.</p>
 <h2>5. Zmiany i dostępność</h2>
 <p>Możemy aktualizować grę — dodawać, zmieniać i usuwać poziomy i funkcje — i możemy przestać ją oferować. Staramy się, żeby wszystko działało, ale nie obiecujemy, że gra zawsze będzie dostępna i wolna od błędów.</p>
 <h2>6. Odpowiedzialność</h2>
@@ -708,9 +727,9 @@ L["pl"] = dict(
          "Tak. W Ustawieniach, w sekcji <em>„Zapisy”</em>, są trzy miejsca: <em>„Zapisz”</em> zachowuje bieżący układ, <em>„Wczytaj”</em> go przywraca."),
     ],
     s_del_h="Usuwanie danych",
-    s_del_p="Koselig nie ma kont. Postęp jest zapisany na urządzeniu, a na iPhonie także w Twoim iCloud. Usunięcie aplikacji usuwa wszystko, co zapisała na urządzeniu. O danych reklamowych, analityce i iCloud — <a href=\"{R}pl/koselig/delete-data/\">strona o usuwaniu danych</a>.",
+    s_del_p="Koselig nie ma kont. Postęp jest zapisany na urządzeniu, a na iPhonie także w Twoim iCloud, na Androidzie — w Google Play Games, jeśli zalogowano się do tej usługi. Usunięcie aplikacji usuwa wszystko, co zapisała na urządzeniu. O danych reklamowych, analityce, iCloud i Google Play Games — <a href=\"{R}pl/koselig/delete-data/\">strona o usuwaniu danych</a>.",
     d_title="Usuwanie danych — Koselig",
-    d_desc="Jak usunąć dane gry Koselig: usuń aplikację; kopią w iCloud zarządza Apple, danymi reklamowymi — Google.",
+    d_desc="Jak usunąć dane gry Koselig: usuń aplikację; kopią w iCloud zarządza Apple, kopią w Google Play Games i danymi reklamowymi — Google.",
     d_h1="Usuwanie danych",
     d_sub="Koselig, Coffee Beans Studio",
     delete_html="""
@@ -724,6 +743,14 @@ L["pl"] = dict(
 <p>Usunięcie aplikacji nie anuluje zakupu „Bez reklam” — należy on do Twojego Apple ID lub konta Google i można go później przywrócić.</p>
 <h2>Kopia w iCloud (iPhone)</h2>
 <p>Na iPhonie postęp i zapisy są też kopiowane do Twojego własnego iCloud. Przechowuje je Apple w ramach Twojego Apple ID. Aby to wyłączyć, wyłącz iCloud dla Koselig: <em>Ustawienia → [Twoje imię] → iCloud</em>.</p>
+<h2>Kopia w Google Play Games (Android)</h2>
+<p>Na Androidzie, jeśli zalogowano się do Google Play Games, postęp i zapisy są też kopiowane do zapisanych gier na Twoim koncie Google. Tę kopię przechowuje Google; nie możemy jej odczytać ani usunąć za Ciebie. Możesz:</p>
+<ul>
+<li>usunąć dane Koselig w profilu Play Games — można tam usunąć dane pojedynczej gry: <a href="https://play.google.com/games/profile" rel="noopener">play.google.com/games/profile</a>;</li>
+<li>zarządzać swoimi danymi i usuwać je na <a href="https://myaccount.google.com" rel="noopener">koncie Google</a>;</li>
+<li>wyłączyć kopiowanie: wyloguj się z Google Play Games na telefonie albo się nie loguj — wtedy postęp zostaje tylko na telefonie.</li>
+</ul>
+<p>Jeśli gra jest nadal zainstalowana, a telefon wciąż jest zalogowany do Google Play Games, przy następnej grze postęp znów zostanie skopiowany.</p>
 <h2>Analityka i raporty awarii</h2>
 <p>Zdarzenia analityki i raporty awarii (Google Firebase) nie są powiązane z Twoim imieniem ani e-mailem, więc nie możemy znaleźć zapisów jednej osoby. Usuwają się same: zdarzenia analityki najpóźniej po 14 miesiącach, raporty awarii po 90 dniach.</p>
 <h2>Dane reklamowe</h2>
@@ -820,7 +847,7 @@ L["es"] = dict(
 <h2 id="short">En resumen</h2>
 <ul>
 <li><strong>No hay cuentas</strong> ni inicio de sesión. Nunca te pedimos tu nombre, tu correo electrónico ni tu número de teléfono.</li>
-<li>Tu progreso y tus ajustes <strong>se guardan en tu dispositivo</strong>; en iPhone también se copian a tu propia cuenta de iCloud. Nosotros no los recibimos.</li>
+<li>Tu progreso y tus ajustes <strong>se guardan en tu dispositivo</strong>; en iPhone también se copian a tu propia cuenta de iCloud y, en Android, a tu cuenta de Google Play Games si has iniciado sesión en ella. Nosotros no los recibimos.</li>
 <li>El juego muestra anuncios <strong>solo cuando tú decides</strong> ver un video corto con recompensa a cambio de la comprobación <em>¿Atascado?</em>; no hay banners ni anuncios intersticiales. Los anuncios los proporciona <strong>Google AdMob</strong>, que trata datos e identificadores del dispositivo.</li>
 <li>Donde la ley lo exige (por ejemplo, en el EEE, el Reino Unido y Suiza), se te pide el <strong>consentimiento</strong> mediante el formulario de consentimiento de Google antes de mostrarte anuncios personalizados.</li>
 <li>La compra opcional <strong>«Sin anuncios»</strong> la gestionan Apple o Google. Nunca vemos tus datos de pago.</li>
@@ -835,7 +862,8 @@ L["es"] = dict(
 <li>si tienes la compra «Sin anuncios»;</li>
 <li>tu elección sobre el consentimiento publicitario, que el SDK de consentimiento de Google guarda en el dispositivo.</li>
 </ul>
-<p>Estos datos permanecen en tu dispositivo y no se nos envían. Se borran al eliminar la aplicación. <strong>En iPhone</strong>, el progreso y las partidas guardadas también se copian a <strong>tu propia cuenta de iCloud</strong> (almacenamiento clave-valor de iCloud), para que puedas seguir en otro dispositivo o tras reinstalar. Esa copia la guarda Apple con tu Apple ID; nosotros no podemos leerla. Puedes desactivarla en Ajustes de iOS → [tu nombre] → iCloud. En Android el juego no usa guardado en la nube, así que tras reinstalar el progreso empieza de cero. La compra «Sin anuncios» siempre se puede restaurar desde Apple o Google (Ajustes → <em>Restaurar</em>).</p>
+<p>Estos datos permanecen en tu dispositivo y no se nos envían. Se borran al eliminar la aplicación. <strong>En iPhone</strong>, el progreso y las partidas guardadas también se copian a <strong>tu propia cuenta de iCloud</strong> (almacenamiento clave-valor de iCloud), para que puedas seguir en otro dispositivo o tras reinstalar. Esa copia la guarda Apple con tu Apple ID; nosotros no podemos leerla. Puedes desactivarla en Ajustes de iOS → [tu nombre] → iCloud. La compra «Sin anuncios» siempre se puede restaurar desde Apple o Google (Ajustes → <em>Restaurar</em>).</p>
+<p><strong>En Android</strong>, si has iniciado sesión en <strong>Google Play Games</strong> en el teléfono, el progreso y las partidas guardadas también se copian a tu cuenta de Google (guardado en la nube de Google Play Games Services), para que puedas seguir en otro dispositivo o tras reinstalar. El inicio de sesión lo gestiona el propio teléfono con Google Play Games; Koselig no tiene cuentas propias. Esa copia la guarda Google en tu cuenta; nosotros no podemos leerla y no llega a nuestros servidores. A través del SDK de Play Games, Google recibe tu perfil de jugador (nombre de jugador y avatar) y los datos guardados, y además recopila datos de analítica y diagnóstico sobre el funcionamiento de su SDK. Consulta la <a href="https://policies.google.com/privacy" rel="noopener">Política de privacidad de Google</a>. Si no inicias sesión en Google Play Games o cierras la sesión, el progreso se queda solo en el teléfono.</p>
 
 <h2 id="ads">2. Publicidad: Google AdMob</h2>
 <p>Koselig usa el <strong>Google Mobile Ads SDK</strong> (Google AdMob) para mostrar videos con recompensa. Para tener un video listo cuando lo pidas, la aplicación inicia el SDK al abrirse y carga un video en segundo plano. Esto significa que Google puede recibir datos de tu dispositivo <strong>aunque nunca llegues a ver un video</strong>.</p>
@@ -880,7 +908,7 @@ L["es"] = dict(
 <li>Sin acceso a tus contactos, fotos, cámara, micrófono ni ubicación precisa.</li>
 <li>No vendemos datos personales ni los usamos para nada más que lo descrito aquí.</li>
 </ul>
-<p>La aplicación usa el acceso a internet (para los anuncios, la analítica y los informes de fallos, la compra y, en iPhone, el guardado en iCloud) y, en Android, la vibración para la respuesta háptica.</p>
+<p>La aplicación usa el acceso a internet (para los anuncios, la analítica y los informes de fallos, la compra y el guardado en la nube: iCloud en iPhone y Google Play Games en Android) y, en Android, la vibración para la respuesta háptica.</p>
 
 <h2 id="children">7. Niños</h2>
 <p>Koselig es un juego de rompecabezas para el público general. No está dirigido a niños menores de 13 años ni forma parte de ninguna categoría infantil. Los anuncios de Koselig no están configurados como dirigidos a niños. No recopilamos a sabiendas información personal de niños. Si crees que un niño nos ha facilitado datos personales, contáctanos y los eliminaremos.</p>
@@ -892,10 +920,10 @@ L["es"] = dict(
 <li><strong>Interés legítimo</strong> (art. 6.1.f) del RGPD): analítica del juego e informes de fallos para corregir y mejorar el juego.</li>
 <li><strong>Contrato</strong> (art. 6.1.b) del RGPD): proporcionar y restaurar la compra «Sin anuncios».</li>
 </ul>
-<p>Google actúa como responsable del tratamiento independiente respecto de los datos que recopila a través de su SDK. Google y Apple pueden tratar datos fuera del Espacio Económico Europeo con sus propias garantías.</p>
+<p>Google actúa como responsable del tratamiento independiente respecto de los datos que recopila a través de su SDK. Google y Apple pueden tratar datos fuera del Espacio Económico Europeo con sus propias garantías. Google Play Games en Android es un servicio de Google en el que inicias sesión por tu cuenta; Google trata tu perfil de jugador y tus partidas guardadas según su propia política de privacidad.</p>
 
 <h2 id="retention">9. Cuánto tiempo se conservan los datos</h2>
-<p>Los datos de tu dispositivo permanecen allí hasta que eliminas la aplicación. La copia del progreso en iCloud permanece en tu cuenta de iCloud. Los eventos de analítica se conservan como máximo 14 meses y los informes de fallos, 90 días. Los datos publicitarios recopilados por Google se conservan según las políticas de Google. Si nos escribes, conservamos tu correo electrónico solo el tiempo necesario para responderte y resolver tu solicitud.</p>
+<p>Los datos de tu dispositivo permanecen allí hasta que eliminas la aplicación. La copia del progreso en iCloud permanece en tu cuenta de iCloud. La copia en Google Play Games permanece en tu cuenta de Google hasta que la elimines. Los eventos de analítica se conservan como máximo 14 meses y los informes de fallos, 90 días. Los datos publicitarios recopilados por Google se conservan según las políticas de Google. Si nos escribes, conservamos tu correo electrónico solo el tiempo necesario para responderte y resolver tu solicitud.</p>
 
 <h2 id="rights">10. Tus derechos</h2>
 <p>Tienes derecho a acceder a tus datos personales, rectificarlos y suprimirlos, a limitar su tratamiento u oponerte a él, a la portabilidad de los datos y a retirar tu consentimiento en cualquier momento. Como no guardamos datos del juego en nuestros servidores, la mayoría de las solicitudes se resuelven eliminando la aplicación; las solicitudes sobre datos publicitarios pueden dirigirse a Google a través de los enlaces anteriores. Siempre puedes escribirnos a <a href="mailto:{EMAIL}">{EMAIL}</a>. También tienes derecho a presentar una reclamación ante una autoridad de control —en Polonia, el <a href="https://uodo.gov.pl/" rel="noopener">Presidente de la Oficina de Protección de Datos Personales (UODO)</a>— o ante la autoridad de tu país.</p>
@@ -926,7 +954,7 @@ L["es"] = dict(
 <p>«Sin anuncios» es una compra no consumible de pago único. Hace que la comprobación <em>¿Atascado?</em> funcione sin videos; el número de comprobaciones por nivel no cambia. La tienda muestra el precio antes del pago. Los pagos, reembolsos y cancelaciones los gestionan Apple o Google según sus políticas. La compra está vinculada a tu ID de Apple o a tu cuenta de Google y puede restaurarse después de reinstalar el juego (Ajustes → <em>Restaurar</em>).</p>
 
 <h2>4. Tu progreso</h2>
-<p>El progreso se guarda en tu dispositivo y, en iPhone, también en tu propia cuenta de iCloud. Si eliminas la aplicación o pierdes el dispositivo, no podremos recuperarlo; en iPhone puede volver desde iCloud.</p>
+<p>El progreso se guarda en tu dispositivo y, en iPhone, también en tu propia cuenta de iCloud; en Android, también en Google Play Games si has iniciado sesión. Si eliminas la aplicación o pierdes el dispositivo, no podremos recuperarlo; puede volver desde iCloud en iPhone o desde Google Play Games en Android.</p>
 
 <h2>5. Cambios y disponibilidad</h2>
 <p>Podemos actualizar el juego —añadir, cambiar o quitar niveles y funciones— y podemos dejar de ofrecerlo. Haremos lo posible por que siga funcionando, pero no podemos prometer que esté siempre disponible ni libre de errores.</p>
@@ -963,10 +991,10 @@ L["es"] = dict(
          "Sí. En Ajustes → <em>Partidas</em> hay tres espacios: <em>Guardar</em> almacena la posición actual y <em>Cargar</em> la recupera."),
     ],
     s_del_h="Eliminar tus datos",
-    s_del_p="Koselig no tiene cuentas. El progreso se guarda en tu dispositivo y, en iPhone, también en tu iCloud. Al eliminar la aplicación se borra todo lo que guardó en el dispositivo. Sobre los datos publicitarios, la analítica y iCloud, consulta la <a href=\"{R}es/koselig/delete-data/\">página sobre la eliminación de datos</a>.",
+    s_del_p="Koselig no tiene cuentas. El progreso se guarda en tu dispositivo y, en iPhone, también en tu iCloud; en Android, en Google Play Games si has iniciado sesión. Al eliminar la aplicación se borra todo lo que guardó en el dispositivo. Sobre los datos publicitarios, la analítica, iCloud y Google Play Games, consulta la <a href=\"{R}es/koselig/delete-data/\">página sobre la eliminación de datos</a>.",
     # delete data
     d_title="Eliminar tus datos — Koselig",
-    d_desc="Cómo eliminar los datos del juego Koselig: elimina la aplicación; la copia en iCloud la gestiona Apple y los datos publicitarios, Google.",
+    d_desc="Cómo eliminar los datos del juego Koselig: elimina la aplicación; la copia en iCloud la gestiona Apple, y la copia en Google Play Games y los datos publicitarios, Google.",
     d_h1="Eliminar tus datos",
     d_sub="Koselig, de Coffee Beans Studio",
     delete_html="""
@@ -982,6 +1010,14 @@ L["es"] = dict(
 
 <h2>Copia en iCloud (iPhone)</h2>
 <p>En iPhone, el progreso y las partidas guardadas también se copian a tu propia cuenta de iCloud. La guarda Apple con tu Apple ID. Para detenerlo, desactiva iCloud para Koselig en <em>Ajustes → [tu nombre] → iCloud</em>.</p>
+<h2>Copia en Google Play Games (Android)</h2>
+<p>En Android, si has iniciado sesión en Google Play Games, el progreso y las partidas guardadas también se copian a tu cuenta de Google. Esa copia la guarda Google; nosotros no podemos leerla ni eliminarla por ti. Puedes:</p>
+<ul>
+<li>eliminar los datos de Koselig en tu perfil de Play Games, donde se pueden borrar los datos de un solo juego: <a href="https://play.google.com/games/profile" rel="noopener">play.google.com/games/profile</a>;</li>
+<li>gestionar o eliminar tus datos en tu <a href="https://myaccount.google.com" rel="noopener">cuenta de Google</a>;</li>
+<li>detener la copia: cierra la sesión de Google Play Games en el teléfono o no la inicies; así el progreso se queda solo en el teléfono.</li>
+</ul>
+<p>Si el juego sigue instalado y la sesión sigue iniciada, el progreso se volverá a copiar la próxima vez que juegues.</p>
 <h2>Analítica e informes de fallos</h2>
 <p>Los eventos de analítica y los informes de fallos (Google Firebase) no están vinculados a tu nombre ni a tu correo, así que no podemos encontrar los registros de una persona. Se borran solos: los eventos de analítica en un máximo de 14 meses y los informes de fallos a los 90 días.</p>
 <h2>Datos publicitarios</h2>
@@ -1079,7 +1115,7 @@ L["de"] = dict(
 <h2 id="short">Das Wichtigste in Kürze</h2>
 <ul>
 <li>Es gibt <strong>keine Konten</strong> und keine Anmeldung. Wir fragen nie nach deinem Namen, deiner E-Mail-Adresse oder deiner Telefonnummer.</li>
-<li>Dein Fortschritt und deine Einstellungen werden <strong>auf deinem Gerät gespeichert</strong>; auf dem iPhone zusätzlich in deinem eigenen iCloud. Wir erhalten sie nicht.</li>
+<li>Dein Fortschritt und deine Einstellungen werden <strong>auf deinem Gerät gespeichert</strong>; auf dem iPhone zusätzlich in deinem eigenen iCloud, unter Android in deinem Konto bei Google Play Games, wenn du dort angemeldet bist. Wir erhalten sie nicht.</li>
 <li>Das Spiel zeigt Werbung <strong>nur, wenn du dich dafür entscheidest</strong>, für die Prüfung mit <em>Verrannt?</em> ein kurzes Belohnungsvideo anzusehen. Es gibt keine Banner und keine Interstitial-Anzeigen. Die Werbung stammt von <strong>Google AdMob</strong>; Google verarbeitet dabei Gerätedaten und Kennungen.</li>
 <li>Wo das Gesetz es verlangt (zum Beispiel im EWR, im Vereinigten Königreich und in der Schweiz), wirst du über das Einwilligungsformular von Google um deine <strong>Einwilligung</strong> gebeten, bevor personalisierte Werbung angezeigt wird.</li>
 <li>Den optionalen Kauf <strong>„Werbefrei“</strong> wickeln Apple oder Google ab. Deine Zahlungsdaten sehen wir nie.</li>
@@ -1094,7 +1130,8 @@ L["de"] = dict(
 <li>ob du den Kauf „Werbefrei“ besitzt;</li>
 <li>deine Entscheidung zur Werbeeinwilligung, die das Einwilligungs-SDK von Google auf dem Gerät speichert.</li>
 </ul>
-<p>Diese Daten bleiben auf deinem Gerät und werden nicht an uns gesendet. Sie werden gelöscht, wenn du die App löschst. <strong>Auf dem iPhone</strong> werden Fortschritt und Spielstände zusätzlich in <strong>dein eigenes iCloud</strong> kopiert (iCloud-Schlüssel-Wert-Speicher), damit du auf einem anderen Gerät oder nach einer Neuinstallation weiterspielen kannst. Diese Kopie speichert Apple unter deiner Apple-ID; wir können sie nicht lesen. Du kannst das in den iOS-Einstellungen → [dein Name] → iCloud ausschalten. Unter Android nutzt das Spiel keine Cloud-Spielstände, nach einer Neuinstallation beginnt der Fortschritt also von vorn. Der Kauf „Werbefrei“ lässt sich jederzeit über Apple oder Google wiederherstellen (Einstellungen → <em>Wiederherstellen</em>).</p>
+<p>Diese Daten bleiben auf deinem Gerät und werden nicht an uns gesendet. Sie werden gelöscht, wenn du die App löschst. <strong>Auf dem iPhone</strong> werden Fortschritt und Spielstände zusätzlich in <strong>dein eigenes iCloud</strong> kopiert (iCloud-Schlüssel-Wert-Speicher), damit du auf einem anderen Gerät oder nach einer Neuinstallation weiterspielen kannst. Diese Kopie speichert Apple unter deiner Apple-ID; wir können sie nicht lesen. Du kannst das in den iOS-Einstellungen → [dein Name] → iCloud ausschalten. Der Kauf „Werbefrei“ lässt sich jederzeit über Apple oder Google wiederherstellen (Einstellungen → <em>Wiederherstellen</em>).</p>
+<p><strong>Unter Android</strong> werden Fortschritt und Spielstände zusätzlich in deinem Google-Konto gespeichert (gespeicherte Spiele der Google Play Games Services), wenn du auf dem Handy bei <strong>Google Play Games</strong> angemeldet bist – so kannst du auf einem anderen Gerät oder nach einer Neuinstallation weiterspielen. Die Anmeldung übernimmt das Handy selbst über Google Play Games; eigene Konten hat Koselig nicht. Diese Kopie speichert Google in deinem Konto; wir können sie nicht lesen, und sie gelangt nicht auf unsere Server. Über das Play-Games-SDK erhält Google dein Spielerprofil (Spielername und Avatar) und die Spielstanddaten und erhebt außerdem Analyse- und Diagnosedaten dazu, wie sein SDK funktioniert. Mehr dazu in der <a href="https://policies.google.com/privacy" rel="noopener">Datenschutzerklärung von Google</a>. Wenn du dich nicht bei Google Play Games anmeldest oder dich abmeldest, bleibt der Fortschritt nur auf dem Handy.</p>
 
 <h2 id="ads">2. Werbung: Google AdMob</h2>
 <p>Koselig nutzt das <strong>Google Mobile Ads SDK</strong> (Google AdMob), um Belohnungsvideos anzuzeigen. Damit ein Video bereitsteht, wenn du eines anforderst, startet die App das SDK gleich beim Öffnen und lädt im Hintergrund ein Video vor. Google kann daher Daten von deinem Gerät erhalten, <strong>auch wenn du nie ein Video ansiehst</strong>.</p>
@@ -1139,7 +1176,7 @@ L["de"] = dict(
 <li>Kein Zugriff auf Kontakte, Fotos, Kamera, Mikrofon oder deinen genauen Standort.</li>
 <li>Wir verkaufen keine personenbezogenen Daten und verwenden sie für nichts anderes als das hier Beschriebene.</li>
 </ul>
-<p>Die App nutzt den Internetzugang (für Werbung, Analyse und Absturzberichte, den Kauf und auf dem iPhone für iCloud-Spielstände) und unter Android die Vibration für haptisches Feedback.</p>
+<p>Die App nutzt den Internetzugang (für Werbung, Analyse und Absturzberichte, den Kauf und Cloud-Spielstände – auf dem iPhone in iCloud, unter Android in Google Play Games) und unter Android die Vibration für haptisches Feedback.</p>
 
 <h2 id="children">7. Kinder</h2>
 <p>Koselig ist ein Rätselspiel für ein allgemeines Publikum. Es richtet sich nicht an Kinder unter 13 Jahren und gehört keiner Kinderkategorie an. Die Werbung in Koselig ist nicht als kindgerichtet konfiguriert. Wir erheben nicht wissentlich personenbezogene Daten von Kindern. Wenn du glaubst, dass ein Kind uns personenbezogene Daten übermittelt hat, melde dich bei uns – wir löschen sie dann.</p>
@@ -1151,10 +1188,10 @@ L["de"] = dict(
 <li><strong>Berechtigte Interessen</strong> (Art. 6 Abs. 1 lit. f) – Spielanalyse und Absturzberichte, um das Spiel zu reparieren und zu verbessern.</li>
 <li><strong>Vertrag</strong> (Art. 6 Abs. 1 lit. b) – Bereitstellung und Wiederherstellung des Kaufs „Werbefrei“.</li>
 </ul>
-<p>Für die Daten, die Google über sein SDK erhebt, ist Google eigenständiger Verantwortlicher. Google und Apple können Daten außerhalb des Europäischen Wirtschaftsraums verarbeiten und stützen sich dabei auf eigene Garantien.</p>
+<p>Für die Daten, die Google über sein SDK erhebt, ist Google eigenständiger Verantwortlicher. Google und Apple können Daten außerhalb des Europäischen Wirtschaftsraums verarbeiten und stützen sich dabei auf eigene Garantien. Google Play Games unter Android ist ein Dienst von Google, bei dem du dich selbst anmeldest; dein Spielerprofil und deine Spielstände verarbeitet Google nach seiner eigenen Datenschutzerklärung.</p>
 
 <h2 id="retention">9. Speicherdauer</h2>
-<p>Daten auf deinem Gerät bleiben dort, bis du die App löschst. Die iCloud-Kopie deines Fortschritts bleibt in deinem iCloud. Analyse-Ereignisse werden höchstens 14 Monate aufbewahrt, Absturzberichte 90 Tage. Von Google für Werbung erhobene Daten werden nach den Richtlinien von Google aufbewahrt. Wenn du uns schreibst, bewahren wir deine E-Mail nur so lange auf, wie es nötig ist, um dir zu antworten und dein Anliegen zu klären.</p>
+<p>Daten auf deinem Gerät bleiben dort, bis du die App löschst. Die iCloud-Kopie deines Fortschritts bleibt in deinem iCloud. Die Kopie in Google Play Games bleibt in deinem Google-Konto, bis du sie löschst. Analyse-Ereignisse werden höchstens 14 Monate aufbewahrt, Absturzberichte 90 Tage. Von Google für Werbung erhobene Daten werden nach den Richtlinien von Google aufbewahrt. Wenn du uns schreibst, bewahren wir deine E-Mail nur so lange auf, wie es nötig ist, um dir zu antworten und dein Anliegen zu klären.</p>
 
 <h2 id="rights">10. Deine Rechte</h2>
 <p>Du hast das Recht auf Auskunft über deine personenbezogenen Daten, auf ihre Berichtigung und Löschung, auf Einschränkung der Verarbeitung und Widerspruch gegen sie, auf Datenübertragbarkeit sowie das Recht, deine Einwilligung jederzeit zu widerrufen. Da wir keine Spieldaten auf unseren Servern speichern, lassen sich die meisten Anfragen durch das Löschen der App erledigen; Anfragen zu Werbedaten kannst du über die oben genannten Links an Google richten. Du kannst uns jederzeit unter <a href="mailto:{EMAIL}">{EMAIL}</a> schreiben. Außerdem hast du das Recht, dich bei einer Aufsichtsbehörde zu beschweren – in Polen beim <a href="https://uodo.gov.pl/" rel="noopener">Präsidenten des Amtes für den Schutz personenbezogener Daten (UODO)</a> – oder bei der Behörde in deinem Land.</p>
@@ -1185,7 +1222,7 @@ L["de"] = dict(
 <p>„Werbefrei“ ist ein einmaliger Kauf, der sich nicht verbraucht. Damit funktioniert die Prüfung mit <em>Verrannt?</em> ohne Videos; die Zahl der Prüfungen pro Level bleibt gleich. Den Preis zeigt dir der Store, bevor du bezahlst. Zahlung, Erstattungen und Stornierungen wickeln Apple oder Google nach ihren eigenen Richtlinien ab. Der Kauf ist an deine Apple-ID oder dein Google-Konto gebunden und lässt sich nach einer Neuinstallation wiederherstellen (Einstellungen → <em>Wiederherstellen</em>).</p>
 
 <h2>4. Dein Fortschritt</h2>
-<p>Der Fortschritt wird auf deinem Gerät gespeichert und auf dem iPhone zusätzlich in deinem eigenen iCloud. Wenn du die App löschst oder das Gerät verlierst, können wir ihn nicht wiederherstellen; auf dem iPhone kann er aus iCloud zurückkommen.</p>
+<p>Der Fortschritt wird auf deinem Gerät gespeichert und auf dem iPhone zusätzlich in deinem eigenen iCloud, unter Android zusätzlich in Google Play Games, wenn du dort angemeldet bist. Wenn du die App löschst oder das Gerät verlierst, können wir ihn nicht wiederherstellen; er kann auf dem iPhone aus iCloud und unter Android aus Google Play Games zurückkommen.</p>
 
 <h2>5. Änderungen und Verfügbarkeit</h2>
 <p>Wir können das Spiel aktualisieren – Level und Funktionen hinzufügen, ändern oder entfernen – und das Angebot auch einstellen. Wir bemühen uns, es am Laufen zu halten, können aber nicht versprechen, dass es immer verfügbar oder fehlerfrei ist.</p>
@@ -1222,10 +1259,10 @@ L["de"] = dict(
          "Ja. Unter Einstellungen → <em>Spielstände</em> gibt es drei Plätze: <em>Speichern</em> sichert den aktuellen Stand, <em>Öffnen</em> holt ihn zurück."),
     ],
     s_del_h="Daten löschen",
-    s_del_p="Koselig hat keine Konten. Der Fortschritt liegt auf deinem Gerät und auf dem iPhone zusätzlich in deinem iCloud. Löschst du die App, wird alles entfernt, was sie auf dem Gerät gespeichert hat. Zu Werbe-, Analyse- und iCloud-Daten siehe die <a href=\"{R}de/koselig/delete-data/\">Seite zum Löschen von Daten</a>.",
+    s_del_p="Koselig hat keine Konten. Der Fortschritt liegt auf deinem Gerät und auf dem iPhone zusätzlich in deinem iCloud, unter Android in Google Play Games, wenn du dort angemeldet bist. Löschst du die App, wird alles entfernt, was sie auf dem Gerät gespeichert hat. Zu Werbe- und Analysedaten, iCloud und Google Play Games siehe die <a href=\"{R}de/koselig/delete-data/\">Seite zum Löschen von Daten</a>.",
     # delete data
     d_title="Deine Daten löschen – Koselig",
-    d_desc="So löschst du Daten zum Spiel Koselig: Lösche die App; die iCloud-Kopie verwaltet Apple, Werbedaten verwaltet Google.",
+    d_desc="So löschst du Daten zum Spiel Koselig: Lösche die App; die iCloud-Kopie verwaltet Apple, die Kopie in Google Play Games und die Werbedaten verwaltet Google.",
     d_h1="Deine Daten löschen",
     d_sub="Koselig von Coffee Beans Studio",
     delete_html="""
@@ -1241,6 +1278,14 @@ L["de"] = dict(
 
 <h2>iCloud-Kopie (iPhone)</h2>
 <p>Auf dem iPhone werden Fortschritt und Spielstände zusätzlich in dein eigenes iCloud kopiert. Apple speichert sie unter deiner Apple-ID. Zum Abschalten deaktiviere iCloud für Koselig: <em>Einstellungen → [dein Name] → iCloud</em>.</p>
+<h2>Kopie in Google Play Games (Android)</h2>
+<p>Unter Android werden Fortschritt und Spielstände zusätzlich in deinem Google-Konto gespeichert, wenn du bei Google Play Games angemeldet bist. Diese Kopie speichert Google; wir können sie weder lesen noch für dich löschen. Du kannst:</p>
+<ul>
+<li>die Daten von Koselig in deinem Play-Games-Profil löschen – dort lassen sich die Daten eines einzelnen Spiels entfernen: <a href="https://play.google.com/games/profile" rel="noopener">play.google.com/games/profile</a>;</li>
+<li>deine Daten in deinem <a href="https://myaccount.google.com" rel="noopener">Google-Konto</a> verwalten oder löschen;</li>
+<li>das Kopieren beenden: Melde dich auf dem Handy bei Google Play Games ab oder melde dich gar nicht erst an – dann bleibt der Fortschritt nur auf dem Handy.</li>
+</ul>
+<p>Ist das Spiel noch installiert und bist du weiterhin angemeldet, wird der Fortschritt beim nächsten Spielen erneut kopiert.</p>
 <h2>Analyse und Absturzberichte</h2>
 <p>Analyse-Ereignisse und Absturzberichte (Google Firebase) sind nicht mit deinem Namen oder deiner E-Mail verknüpft, daher können wir die Einträge einer einzelnen Person nicht finden. Sie werden automatisch gelöscht: Analyse-Ereignisse spätestens nach 14 Monaten, Absturzberichte nach 90 Tagen.</p>
 <h2>Werbedaten</h2>
@@ -1338,7 +1383,7 @@ L["fr"] = dict(
 <h2 id="short">En bref</h2>
 <ul>
 <li>Il n’y a <strong>aucun compte</strong>, et aucune connexion n’est requise. Nous ne vous demandons jamais votre nom, votre adresse e-mail ni votre numéro de téléphone.</li>
-<li>Votre progression et vos réglages sont <strong>enregistrés sur votre appareil</strong> ; sur iPhone, ils sont aussi copiés dans votre propre iCloud. Nous ne les recevons pas.</li>
+<li>Votre progression et vos réglages sont <strong>enregistrés sur votre appareil</strong> ; sur iPhone, ils sont aussi copiés dans votre propre iCloud et, sur Android, dans votre compte Google Play Games si vous y êtes connecté. Nous ne les recevons pas.</li>
 <li>Le jeu n’affiche de publicité <strong>que si vous choisissez</strong> de regarder une courte vidéo avec récompense pour la vérification <em>Sans issue ?</em> Il n’y a ni bannière ni publicité interstitielle. Les publicités sont fournies par <strong>Google AdMob</strong>, qui traite des données et des identifiants de l’appareil.</li>
 <li>Lorsque la loi l’exige (par exemple dans l’EEE, au Royaume-Uni et en Suisse), votre <strong>consentement</strong> vous est demandé via le formulaire de consentement de Google avant l’affichage de publicités personnalisées.</li>
 <li>L’achat facultatif <strong>« Sans pub »</strong> est géré par Apple ou Google. Nous ne voyons jamais vos informations de paiement.</li>
@@ -1353,7 +1398,8 @@ L["fr"] = dict(
 <li>le fait que vous possédiez ou non l’achat « Sans pub » ;</li>
 <li>votre choix en matière de consentement publicitaire, enregistré sur l’appareil par le SDK de consentement de Google.</li>
 </ul>
-<p>Ces données restent sur votre appareil et ne nous sont pas transmises. Elles sont effacées lorsque vous supprimez l’application. <strong>Sur iPhone</strong>, la progression et les sauvegardes sont aussi copiées dans <strong>votre propre iCloud</strong> (stockage clé-valeur iCloud), pour continuer sur un autre appareil ou après une réinstallation. Cette copie est conservée par Apple sous votre identifiant Apple ; nous ne pouvons pas la lire. Vous pouvez la désactiver dans Réglages iOS → [votre nom] → iCloud. Sur Android, le jeu n’utilise pas de sauvegarde dans le cloud : après une réinstallation, la progression repart de zéro. L’achat « Sans pub » peut toujours être restauré auprès d’Apple ou de Google (Réglages → <em>Restaurer</em>).</p>
+<p>Ces données restent sur votre appareil et ne nous sont pas transmises. Elles sont effacées lorsque vous supprimez l’application. <strong>Sur iPhone</strong>, la progression et les sauvegardes sont aussi copiées dans <strong>votre propre iCloud</strong> (stockage clé-valeur iCloud), pour continuer sur un autre appareil ou après une réinstallation. Cette copie est conservée par Apple sous votre identifiant Apple ; nous ne pouvons pas la lire. Vous pouvez la désactiver dans Réglages iOS → [votre nom] → iCloud. L’achat « Sans pub » peut toujours être restauré auprès d’Apple ou de Google (Réglages → <em>Restaurer</em>).</p>
+<p><strong>Sur Android</strong>, si vous êtes connecté à <strong>Google Play Games</strong> sur votre téléphone, la progression et les sauvegardes sont aussi copiées dans votre compte Google (jeux sauvegardés de Google Play Games Services), pour continuer sur un autre appareil ou après une réinstallation. La connexion est gérée par le téléphone lui-même, via Google Play Games ; Koselig ne propose pas de compte. Cette copie est conservée par Google dans votre compte ; nous ne pouvons pas la lire, et elle n’arrive pas sur nos serveurs. Via le SDK Play Games, Google reçoit votre profil de joueur (nom de joueur et avatar) et les données de sauvegarde, et collecte aussi des données d’analyse et de diagnostic sur le fonctionnement de son SDK. Voir les <a href="https://policies.google.com/privacy" rel="noopener">Règles de confidentialité de Google</a>. Si vous ne vous connectez pas à Google Play Games ou si vous vous en déconnectez, la progression reste uniquement sur le téléphone.</p>
 
 <h2 id="ads">2. Publicité : Google AdMob</h2>
 <p>Koselig utilise le <strong>Google Mobile Ads SDK</strong> (Google AdMob) pour afficher des vidéos avec récompense. Pour qu’une vidéo soit prête au moment où vous la demandez, l’application initialise le SDK au lancement et charge une vidéo en arrière-plan. Google peut donc recevoir des données de votre appareil <strong>même si vous ne regardez jamais de vidéo</strong>.</p>
@@ -1398,7 +1444,7 @@ L["fr"] = dict(
 <li>Aucun accès à vos contacts, à vos photos, à l’appareil photo, au micro ni à votre localisation précise.</li>
 <li>Nous ne vendons pas de données personnelles et ne les utilisons à aucune autre fin que celles décrites ici.</li>
 </ul>
-<p>L’application utilise l’accès à Internet (pour la publicité, l’analyse et les rapports de plantage, l’achat et, sur iPhone, les sauvegardes iCloud) et, sur Android, le vibreur pour le retour haptique.</p>
+<p>L’application utilise l’accès à Internet (pour la publicité, l’analyse et les rapports de plantage, l’achat et la sauvegarde dans le cloud : iCloud sur iPhone, Google Play Games sur Android) et, sur Android, le vibreur pour le retour haptique.</p>
 
 <h2 id="children">7. Enfants</h2>
 <p>Koselig est un jeu de casse-tête tout public. Il ne s’adresse pas aux enfants de moins de 13 ans et ne figure dans aucune catégorie destinée aux enfants. Les publicités de Koselig ne sont pas configurées comme destinées aux enfants. Nous ne collectons pas sciemment d’informations personnelles auprès d’enfants. Si vous pensez qu’un enfant nous a communiqué des données personnelles, contactez-nous et nous les supprimerons.</p>
@@ -1410,10 +1456,10 @@ L["fr"] = dict(
 <li><strong>Intérêts légitimes</strong> (art. 6.1.f) — analyse du jeu et rapports de plantage pour corriger et améliorer le jeu.</li>
 <li><strong>Contrat</strong> (art. 6.1.b) — fourniture et restauration de l’achat « Sans pub ».</li>
 </ul>
-<p>Google agit en qualité de responsable du traitement indépendant pour les données qu’il collecte via son SDK. Google et Apple peuvent traiter des données en dehors de l’Espace économique européen, dans le cadre de leurs propres garanties.</p>
+<p>Google agit en qualité de responsable du traitement indépendant pour les données qu’il collecte via son SDK. Google et Apple peuvent traiter des données en dehors de l’Espace économique européen, dans le cadre de leurs propres garanties. Google Play Games sur Android est un service de Google auquel vous vous connectez vous-même ; Google traite votre profil de joueur et vos sauvegardes selon ses propres règles de confidentialité.</p>
 
 <h2 id="retention">9. Durée de conservation</h2>
-<p>Les données stockées sur votre appareil y restent jusqu’à ce que vous supprimiez l’application. La copie de votre progression dans iCloud reste dans votre iCloud. Les événements d’analyse sont conservés 14 mois au maximum, les rapports de plantage 90 jours. Les données publicitaires collectées par Google sont conservées conformément aux règles de Google. Si vous nous écrivez, nous ne conservons votre adresse e-mail que le temps nécessaire pour vous répondre et traiter votre demande.</p>
+<p>Les données stockées sur votre appareil y restent jusqu’à ce que vous supprimiez l’application. La copie de votre progression dans iCloud reste dans votre iCloud. La copie dans Google Play Games reste dans votre compte Google jusqu’à ce que vous la supprimiez. Les événements d’analyse sont conservés 14 mois au maximum, les rapports de plantage 90 jours. Les données publicitaires collectées par Google sont conservées conformément aux règles de Google. Si vous nous écrivez, nous ne conservons votre adresse e-mail que le temps nécessaire pour vous répondre et traiter votre demande.</p>
 
 <h2 id="rights">10. Vos droits</h2>
 <p>Vous disposez d’un droit d’accès, de rectification et d’effacement de vos données personnelles, du droit de demander la limitation du traitement ou de vous y opposer, du droit à la portabilité des données et du droit de retirer votre consentement à tout moment. Comme nous ne conservons pas de données de jeu sur nos serveurs, la plupart des demandes se règlent en supprimant l’application ; les demandes concernant les données publicitaires peuvent être adressées à Google via les liens ci-dessus. Vous pouvez toujours nous écrire à <a href="mailto:{EMAIL}">{EMAIL}</a>. Vous avez également le droit d’introduire une réclamation auprès d’une autorité de contrôle — en Pologne, le <a href="https://uodo.gov.pl/" rel="noopener">Président de l’Office de protection des données personnelles (UODO)</a> — ou auprès de l’autorité de votre pays.</p>
@@ -1444,7 +1490,7 @@ L["fr"] = dict(
 <p>« Sans pub » est un achat unique et non consommable. Il permet à la vérification <em>Sans issue ?</em> de fonctionner sans vidéo ; le nombre de vérifications par niveau reste le même. Le prix est indiqué par la boutique avant le paiement. Le paiement, les remboursements et les annulations sont gérés par Apple ou Google selon leurs propres règles. L’achat est lié à votre identifiant Apple ou à votre compte Google et peut être restauré après une réinstallation (Réglages → <em>Restaurer</em>).</p>
 
 <h2>4. Votre progression</h2>
-<p>La progression est enregistrée sur votre appareil et, sur iPhone, aussi dans votre propre iCloud. Si vous supprimez l’application ou perdez l’appareil, nous ne pouvons pas la récupérer ; sur iPhone, elle peut revenir depuis iCloud.</p>
+<p>La progression est enregistrée sur votre appareil et, sur iPhone, aussi dans votre propre iCloud ; sur Android, aussi dans Google Play Games si vous y êtes connecté. Si vous supprimez l’application ou perdez l’appareil, nous ne pouvons pas la récupérer ; elle peut revenir depuis iCloud sur iPhone ou depuis Google Play Games sur Android.</p>
 
 <h2>5. Évolutions et disponibilité</h2>
 <p>Nous pouvons mettre le jeu à jour — ajouter, modifier ou retirer des niveaux et des fonctionnalités — et nous pouvons cesser de le proposer. Nous nous efforcerons de le maintenir en état de marche, mais nous ne pouvons pas promettre qu’il sera toujours disponible ni exempt de bugs.</p>
@@ -1481,10 +1527,10 @@ L["fr"] = dict(
          "Oui. Réglages → <em>Sauvegardes</em> propose trois emplacements : <em>Sauver</em> enregistre la position actuelle, <em>Charger</em> la rétablit."),
     ],
     s_del_h="Supprimer vos données",
-    s_del_p="Koselig fonctionne sans compte. La progression est conservée sur votre appareil et, sur iPhone, aussi dans votre iCloud. Supprimer l’application efface tout ce qu’elle a enregistré sur l’appareil. Pour les données publicitaires, d’analyse et iCloud, voir la <a href=\"{R}fr/koselig/delete-data/\">page sur la suppression des données</a>.",
+    s_del_p="Koselig fonctionne sans compte. La progression est conservée sur votre appareil et, sur iPhone, aussi dans votre iCloud ; sur Android, dans Google Play Games si vous y êtes connecté. Supprimer l’application efface tout ce qu’elle a enregistré sur l’appareil. Pour les données publicitaires, d’analyse, iCloud et Google Play Games, voir la <a href=\"{R}fr/koselig/delete-data/\">page sur la suppression des données</a>.",
     # delete data
     d_title="Supprimer vos données — Koselig",
-    d_desc="Comment supprimer les données du jeu Koselig : supprimez l’application ; la copie iCloud est gérée par Apple, les données publicitaires par Google.",
+    d_desc="Comment supprimer les données du jeu Koselig : supprimez l’application ; la copie iCloud est gérée par Apple, la copie Google Play Games et les données publicitaires par Google.",
     d_h1="Supprimer vos données",
     d_sub="Koselig, un jeu de Coffee Beans Studio",
     delete_html="""
@@ -1500,6 +1546,14 @@ L["fr"] = dict(
 
 <h2>Copie iCloud (iPhone)</h2>
 <p>Sur iPhone, la progression et les sauvegardes sont aussi copiées dans votre propre iCloud. Apple la conserve sous votre identifiant Apple. Pour l’arrêter, désactivez iCloud pour Koselig : <em>Réglages → [votre nom] → iCloud</em>.</p>
+<h2>Copie dans Google Play Games (Android)</h2>
+<p>Sur Android, si vous êtes connecté à Google Play Games, la progression et les sauvegardes sont aussi copiées dans votre compte Google. Cette copie est conservée par Google ; nous ne pouvons ni la lire ni la supprimer à votre place. Vous pouvez :</p>
+<ul>
+<li>supprimer les données de Koselig dans votre profil Play Games, où l’on peut effacer les données d’un seul jeu : <a href="https://play.google.com/games/profile" rel="noopener">play.google.com/games/profile</a> ;</li>
+<li>gérer ou supprimer vos données dans votre <a href="https://myaccount.google.com" rel="noopener">compte Google</a> ;</li>
+<li>arrêter la copie : déconnectez-vous de Google Play Games sur le téléphone, ou ne vous y connectez pas ; la progression reste alors uniquement sur le téléphone.</li>
+</ul>
+<p>Si le jeu est encore installé et que vous êtes toujours connecté, la progression sera de nouveau copiée la prochaine fois que vous jouerez.</p>
 <h2>Analyse et rapports de plantage</h2>
 <p>Les événements d’analyse et les rapports de plantage (Google Firebase) ne sont liés ni à votre nom ni à votre e-mail : nous ne pouvons donc pas retrouver les données d’une personne. Ils sont supprimés automatiquement : les événements d’analyse au plus tard après 14 mois, les rapports de plantage après 90 jours.</p>
 <h2>Données publicitaires</h2>
@@ -1597,7 +1651,7 @@ L["it"] = dict(
 <h2 id="short">In breve</h2>
 <ul>
 <li><strong>Nessun account</strong> e nessun login. Non ti chiediamo mai nome, email o numero di telefono.</li>
-<li>Progressi e impostazioni sono <strong>salvati sul tuo dispositivo</strong>; su iPhone vengono anche copiati nel tuo iCloud personale. Noi non li riceviamo.</li>
+<li>Progressi e impostazioni sono <strong>salvati sul tuo dispositivo</strong>; su iPhone vengono anche copiati nel tuo iCloud personale e, su Android, nel tuo account Google Play Games se hai effettuato l’accesso. Noi non li riceviamo.</li>
 <li>Il gioco mostra annunci <strong>solo quando scegli tu</strong> di guardare un breve video con premio per il controllo <em>Bloccato?</em>. Non ci sono banner né annunci interstitial. Gli annunci sono forniti da <strong>Google AdMob</strong>, che tratta dati e identificatori del dispositivo.</li>
 <li>Dove la legge lo richiede (ad esempio nel SEE, nel Regno Unito e in Svizzera), prima di mostrarti annunci personalizzati ti viene chiesto il <strong>consenso</strong> tramite il modulo di Google.</li>
 <li>L’acquisto facoltativo <strong>«Senza annunci»</strong> è gestito da Apple o da Google. Non vediamo mai i tuoi dati di pagamento.</li>
@@ -1612,7 +1666,8 @@ L["it"] = dict(
 <li>se possiedi l’acquisto «Senza annunci»;</li>
 <li>la tua scelta sul consenso pubblicitario, che l’SDK di consenso di Google salva sul dispositivo.</li>
 </ul>
-<p>Questi dati restano sul tuo dispositivo e non ci vengono inviati. Vengono cancellati quando elimini l’app. <strong>Su iPhone</strong> progressi e salvataggi vengono anche copiati nel <strong>tuo iCloud personale</strong> (archivio chiave-valore di iCloud), per continuare su un altro dispositivo o dopo la reinstallazione. Questa copia è conservata da Apple con il tuo ID Apple; noi non possiamo leggerla. Puoi disattivarla in Impostazioni di iOS → [il tuo nome] → iCloud. Su Android il gioco non usa salvataggi nel cloud, quindi dopo la reinstallazione i progressi ripartono da zero. L’acquisto «Senza annunci» si può sempre ripristinare tramite Apple o Google (Impostazioni → <em>Ripristina</em>).</p>
+<p>Questi dati restano sul tuo dispositivo e non ci vengono inviati. Vengono cancellati quando elimini l’app. <strong>Su iPhone</strong> progressi e salvataggi vengono anche copiati nel <strong>tuo iCloud personale</strong> (archivio chiave-valore di iCloud), per continuare su un altro dispositivo o dopo la reinstallazione. Questa copia è conservata da Apple con il tuo ID Apple; noi non possiamo leggerla. Puoi disattivarla in Impostazioni di iOS → [il tuo nome] → iCloud. L’acquisto «Senza annunci» si può sempre ripristinare tramite Apple o Google (Impostazioni → <em>Ripristina</em>).</p>
+<p><strong>Su Android</strong>, se sul telefono hai effettuato l’accesso a <strong>Google Play Games</strong>, progressi e salvataggi vengono anche copiati nel tuo account Google (giochi salvati di Google Play Games Services), per continuare su un altro dispositivo o dopo la reinstallazione. L’accesso lo gestisce il telefono stesso tramite Google Play Games; Koselig non ha account propri. Questa copia è conservata da Google nel tuo account; noi non possiamo leggerla e non arriva sui nostri server. Tramite l’SDK di Play Games, Google riceve il tuo profilo giocatore (nome giocatore e avatar) e i dati di salvataggio, e raccoglie anche dati di analisi e di diagnostica sul funzionamento del proprio SDK. Vedi le <a href="https://policies.google.com/privacy" rel="noopener">Norme sulla privacy di Google</a>. Se non accedi a Google Play Games o esci dall’account, i progressi restano solo sul telefono.</p>
 
 <h2 id="ads">2. Pubblicità: Google AdMob</h2>
 <p>Koselig usa il <strong>Google Mobile Ads SDK</strong> (Google AdMob) per mostrare video con premio. Per avere un video pronto quando lo chiedi, l’app avvia l’SDK all’apertura e carica un video in background. Ciò significa che Google può ricevere dati dal tuo dispositivo <strong>anche se non guardi mai un video</strong>.</p>
@@ -1657,7 +1712,7 @@ L["it"] = dict(
 <li>Nessun accesso a contatti, foto, fotocamera, microfono o posizione precisa.</li>
 <li>Non vendiamo dati personali e non li usiamo per scopi diversi da quelli descritti qui.</li>
 </ul>
-<p>L’app usa l’accesso a internet (per gli annunci, l’analisi e le segnalazioni degli arresti anomali, l’acquisto e, su iPhone, i salvataggi iCloud) e, su Android, la vibrazione per il feedback aptico.</p>
+<p>L’app usa l’accesso a internet (per gli annunci, l’analisi e le segnalazioni degli arresti anomali, l’acquisto e i salvataggi nel cloud: iCloud su iPhone, Google Play Games su Android) e, su Android, la vibrazione per il feedback aptico.</p>
 
 <h2 id="children">7. Bambini</h2>
 <p>Koselig è un rompicapo per un pubblico generale. Non è rivolto ai bambini sotto i 13 anni e non fa parte di una categoria per bambini. Gli annunci in Koselig non sono configurati come destinati ai bambini. Non raccogliamo consapevolmente informazioni personali dai bambini. Se ritieni che un bambino ci abbia fornito dati personali, contattaci e li elimineremo.</p>
@@ -1669,10 +1724,10 @@ L["it"] = dict(
 <li><strong>Legittimo interesse</strong> (art. 6, par. 1, lett. f) — analisi del gioco e segnalazioni degli arresti anomali per correggere e migliorare il gioco.</li>
 <li><strong>Contratto</strong> (art. 6, par. 1, lett. b) — fornitura e ripristino dell’acquisto «Senza annunci».</li>
 </ul>
-<p>Google agisce come titolare autonomo del trattamento per i dati che raccoglie tramite il suo SDK. Google e Apple possono trattare dati al di fuori dello Spazio economico europeo, con garanzie proprie.</p>
+<p>Google agisce come titolare autonomo del trattamento per i dati che raccoglie tramite il suo SDK. Google e Apple possono trattare dati al di fuori dello Spazio economico europeo, con garanzie proprie. Google Play Games su Android è un servizio di Google a cui accedi direttamente; Google tratta il tuo profilo giocatore e i tuoi salvataggi secondo le proprie norme sulla privacy.</p>
 
 <h2 id="retention">9. Per quanto tempo vengono conservati i dati</h2>
-<p>I dati sul tuo dispositivo restano lì finché non elimini l’app. La copia dei progressi in iCloud resta nel tuo iCloud. Gli eventi di analisi sono conservati al massimo 14 mesi, le segnalazioni degli arresti anomali 90 giorni. I dati pubblicitari raccolti da Google vengono conservati secondo le norme di Google. Se ci scrivi, conserviamo il tuo indirizzo email solo per il tempo necessario a risponderti e a risolvere la tua richiesta.</p>
+<p>I dati sul tuo dispositivo restano lì finché non elimini l’app. La copia dei progressi in iCloud resta nel tuo iCloud. La copia in Google Play Games resta nel tuo account Google finché non la elimini. Gli eventi di analisi sono conservati al massimo 14 mesi, le segnalazioni degli arresti anomali 90 giorni. I dati pubblicitari raccolti da Google vengono conservati secondo le norme di Google. Se ci scrivi, conserviamo il tuo indirizzo email solo per il tempo necessario a risponderti e a risolvere la tua richiesta.</p>
 
 <h2 id="rights">10. I tuoi diritti</h2>
 <p>Hai il diritto di accesso, di rettifica e di cancellazione dei tuoi dati personali, di limitazione del trattamento, di opposizione al trattamento, alla portabilità dei dati e di revocare il consenso in qualsiasi momento. Poiché non conserviamo dati di gioco sui nostri server, la maggior parte delle richieste si risolve eliminando l’app; le richieste sui dati pubblicitari si possono rivolgere a Google tramite i link qui sopra. Puoi sempre scriverci a <a href="mailto:{EMAIL}">{EMAIL}</a>. Hai anche il diritto di proporre reclamo a un’autorità di controllo — in Polonia il <a href="https://uodo.gov.pl/" rel="noopener">Presidente dell’Ufficio per la protezione dei dati personali (UODO)</a> — o all’autorità del tuo Paese.</p>
@@ -1703,7 +1758,7 @@ L["it"] = dict(
 <p>«Senza annunci» è un acquisto una tantum, non consumabile. Permette al controllo <em>Bloccato?</em> di funzionare senza video; il numero di controlli per livello resta lo stesso. Il prezzo viene indicato dallo store prima del pagamento. Pagamenti, rimborsi e annullamenti sono gestiti da Apple o da Google secondo le rispettive regole. L’acquisto è legato al tuo ID Apple o al tuo account Google e si può ripristinare dopo una reinstallazione (Impostazioni → <em>Ripristina</em>).</p>
 
 <h2>4. I tuoi progressi</h2>
-<p>I progressi sono salvati sul tuo dispositivo e, su iPhone, anche nel tuo iCloud personale. Se elimini l’app o perdi il dispositivo, non possiamo recuperarli; su iPhone possono tornare da iCloud.</p>
+<p>I progressi sono salvati sul tuo dispositivo e, su iPhone, anche nel tuo iCloud personale; su Android anche in Google Play Games, se hai effettuato l’accesso. Se elimini l’app o perdi il dispositivo, non possiamo recuperarli; possono tornare da iCloud su iPhone o da Google Play Games su Android.</p>
 
 <h2>5. Modifiche e disponibilità</h2>
 <p>Possiamo aggiornare il gioco — aggiungere, modificare o rimuovere livelli e funzioni — e possiamo smettere di offrirlo. Cercheremo di mantenerlo funzionante, ma non possiamo promettere che sarà sempre disponibile o privo di bug.</p>
@@ -1740,10 +1795,10 @@ L["it"] = dict(
          "Sì. In Impostazioni, <em>Salvataggi</em> ha tre slot: <em>Salva</em> memorizza la disposizione attuale, <em>Apri</em> la ricarica."),
     ],
     s_del_h="Eliminare i tuoi dati",
-    s_del_p="Koselig non ha account. I progressi sono salvati sul dispositivo e, su iPhone, anche nel tuo iCloud. Eliminando l’app elimini tutto ciò che aveva salvato sul dispositivo. Per i dati pubblicitari, di analisi e iCloud vedi la <a href=\"{R}it/koselig/delete-data/\">pagina sull’eliminazione dei dati</a>.",
+    s_del_p="Koselig non ha account. I progressi sono salvati sul dispositivo e, su iPhone, anche nel tuo iCloud; su Android, in Google Play Games se hai effettuato l’accesso. Eliminando l’app elimini tutto ciò che aveva salvato sul dispositivo. Per i dati pubblicitari, di analisi, iCloud e Google Play Games vedi la <a href=\"{R}it/koselig/delete-data/\">pagina sull’eliminazione dei dati</a>.",
     # delete data
     d_title="Elimina i tuoi dati — Koselig",
-    d_desc="Come eliminare i dati del gioco Koselig: elimina l’app; la copia in iCloud è gestita da Apple, i dati pubblicitari da Google.",
+    d_desc="Come eliminare i dati del gioco Koselig: elimina l’app; la copia in iCloud è gestita da Apple, la copia in Google Play Games e i dati pubblicitari da Google.",
     d_h1="Elimina i tuoi dati",
     d_sub="Koselig di Coffee Beans Studio",
     delete_html="""
@@ -1759,6 +1814,14 @@ L["it"] = dict(
 
 <h2>Copia in iCloud (iPhone)</h2>
 <p>Su iPhone progressi e salvataggi vengono anche copiati nel tuo iCloud personale. La conserva Apple con il tuo ID Apple. Per interromperla, disattiva iCloud per Koselig: <em>Impostazioni → [il tuo nome] → iCloud</em>.</p>
+<h2>Copia in Google Play Games (Android)</h2>
+<p>Su Android, se hai effettuato l’accesso a Google Play Games, progressi e salvataggi vengono anche copiati nel tuo account Google. Questa copia è conservata da Google; noi non possiamo leggerla né eliminarla al posto tuo. Puoi:</p>
+<ul>
+<li>eliminare i dati di Koselig nel tuo profilo Play Games, dove si possono cancellare i dati di un singolo gioco: <a href="https://play.google.com/games/profile" rel="noopener">play.google.com/games/profile</a>;</li>
+<li>gestire o eliminare i tuoi dati nel tuo <a href="https://myaccount.google.com" rel="noopener">Account Google</a>;</li>
+<li>interrompere la copia: esci da Google Play Games sul telefono o non accedere; così i progressi restano solo sul telefono.</li>
+</ul>
+<p>Se il gioco è ancora installato e l’accesso è ancora attivo, i progressi verranno copiati di nuovo la prossima volta che giochi.</p>
 <h2>Analisi e segnalazioni degli arresti anomali</h2>
 <p>Gli eventi di analisi e le segnalazioni degli arresti anomali (Google Firebase) non sono collegati al tuo nome o alla tua email, quindi non possiamo trovare i dati di una singola persona. Vengono cancellati automaticamente: gli eventi di analisi entro 14 mesi, le segnalazioni degli arresti anomali dopo 90 giorni.</p>
 <h2>Dati pubblicitari</h2>
