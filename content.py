@@ -229,14 +229,27 @@ L["en"] = dict(
          "Yes. Settings → <em>Saves</em> has three slots: <em>Save</em> stores the current position, <em>Load</em> brings it back."),
     ],
     s_del_h="Deleting your data",
-    s_del_p="Koselig has no accounts. Progress is kept on your device and, on iPhone, in your own iCloud account; on Android, in Google Play Games if you are signed in. Deleting the app deletes everything it stored on the device. About ad, analytics, iCloud and Google Play Games data — see the <a href=\"{R}koselig/delete-data/\">data deletion page</a>.",
+    s_del_p="Koselig has no accounts. Progress is kept on your device and, on iPhone, in your own iCloud account; on Android, in Google Play Games if you are signed in. <em>Settings → Delete my data</em> in the game erases it from the phone and the cloud and turns statistics off; to delete statistics already sent, send us the code it shows. More on the <a href=\"{R}koselig/delete-data/\">data deletion page</a>.",
     # delete data
     d_title="Delete your data — Koselig",
-    d_desc="How to delete data related to the Koselig game: delete the app; the iCloud copy is managed by Apple; the Google Play Games copy and ad data are managed by Google.",
+    d_desc="How to delete data related to the Koselig game: Settings → Delete my data in the game, the installation code for statistics already sent, the iCloud and Google Play Games copies, ad data.",
     d_h1="Delete your data",
     d_sub="Koselig by Coffee Beans Studio",
     delete_html="""
 <p><strong>Koselig</strong> has no accounts, so there is no account to delete. We do not keep your progress on our servers.</p>
+
+<h2>Delete your data in the game</h2>
+<p>Open <em>Settings</em>, tap <em>Delete my data</em> at the bottom and confirm. The game will:</p>
+<ul>
+<li>erase progress, save slots and settings from your phone; only the record of the “No ads” purchase (without payment details), a note that the deletion was done and technical settings of the SDKs on the device remain;</li>
+<li>delete Koselig’s copy in the cloud: on Android, Koselig’s saved games in Google Play Games are deleted and the game checks that none are left; on iPhone, the deletion is sent to your iCloud account and Apple applies it at its next sync, so for at least 24 hours and 3 launches with iCloud available the game neither uploads nor downloads progress;</li>
+<li>turn off statistics (analytics) and crash reports — they stay off until you reinstall the game or turn <em>Statistics</em> on again — erase analytics data stored on the phone, delete unsent crash reports and delete the Firebase installation identifier, also on Google’s servers (without internet, this is retried at the next launch); at the next launch, Remote Config creates a new identifier that is not linked to the old one;</li>
+<li>show an <strong>installation code</strong>. Send it to <a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a>, and we will delete the statistics already sent from this installation right away; we answer within one month.</li>
+</ul>
+<p>If you do not send the code, statistics already sent are deleted when the 2-month retention period ends; Google removes expired data once a month, so in practice this takes up to about 3 months. Crash reports are deleted after 90 days. Aggregated reports that cannot identify you remain.</p>
+<p><strong>No internet, not signed in or iCloud turned off:</strong> the phone is cleared at once; the cloud copy is deleted at the next launch with internet and sign-in, and until then the game neither uploads nor downloads progress.</p>
+<p><strong>Another device</strong> with the same Apple ID or Google account: delete your data there too, otherwise it may upload its progress to the cloud again.</p>
+<p>The “No ads” purchase is not affected — you can restore it with <em>Restore</em>. Google ads follow your choice in the consent form (<em>Settings → Ads &amp; data</em>, where shown). Your Play Games profile and your Game Center data are managed by Google and Apple — see below.</p>
 
 <h2>Data on your device</h2>
 <p>Progress, saves, settings, the “No ads” purchase status and your ad consent choice are stored on your phone. <strong>To delete all of it, delete the app</strong>:</p>
@@ -246,8 +259,9 @@ L["en"] = dict(
 </ul>
 <p>Deleting the app does not cancel or remove the “No ads” purchase — it belongs to your Apple ID or Google account and can be restored later.</p>
 
-<h2>iCloud copy (iPhone)</h2>
+<h2>iCloud copy and Game Center (iPhone)</h2>
 <p>On iPhone, progress and save slots are also copied to your own iCloud account. It is stored by Apple under your Apple ID. To stop it, turn off iCloud for Koselig in <em>Settings → [your name] → iCloud</em>.</p>
+<p>At launch, the game signs in to Game Center (Apple), which it needs for iCloud saves. Your Game Center profile is managed by Apple: you can turn Game Center off in <em>Settings → Game Center</em> and manage your Apple data at <a href="https://privacy.apple.com/" rel="noopener">privacy.apple.com</a>.</p>
 <h2>Google Play Games copy (Android)</h2>
 <p>On Android, if you are signed in to Google Play Games, progress and save slots are also copied to Saved Games in your Google account. This copy is stored by Google; we cannot read it or delete it for you. You can:</p>
 <ul>
@@ -257,7 +271,7 @@ L["en"] = dict(
 </ul>
 <p>If the game is still installed and you are still signed in, your progress will be copied again the next time you play.</p>
 <h2>Analytics and crash reports</h2>
-<p>Analytics events and crash reports (Google Firebase) are not linked to your name or email, so we cannot find one person’s records. They are deleted automatically: analytics events after no more than 2 months, crash reports after 90 days.</p>
+<p>Analytics events and crash reports (Google Firebase) are not linked to your name or email, so without the installation code from <em>Delete my data</em> we cannot find one person’s records. With the code, we delete statistics already sent right away; without it, analytics events are deleted after the 2-month retention period (in practice up to about 3 months) and crash reports after 90 days.</p>
 <h2>Advertising data</h2>
 <p>Ads in Koselig are provided by Google AdMob. Data collected by Google is controlled by Google. You can:</p>
 <ul>
@@ -486,13 +500,26 @@ L["ru"] = dict(
          "Да. В настройках, в разделе <em>«Позиции»</em>, три ячейки: <em>«Записать»</em> сохраняет текущую позицию, <em>«Открыть»</em> возвращает её."),
     ],
     s_del_h="Удаление данных",
-    s_del_p="В Koselig нет аккаунтов. Прогресс хранится на устройстве, а на iPhone — ещё и в вашем iCloud, на Android — в Google Play Games, если вы в него вошли. Удалите приложение — удалится всё, что оно хранило на устройстве. О рекламных данных, аналитике, iCloud и Google Play Games — <a href=\"{R}ru/koselig/delete-data/\">страница об удалении данных</a>.",
+    s_del_p="В Koselig нет аккаунтов. Прогресс хранится на устройстве, а на iPhone — ещё и в вашем iCloud, на Android — в Google Play Games, если вы в него вошли. <em>Настройки → Удалить мои данные</em> в игре стирают его с телефона и из облака и выключают статистику; чтобы удалить уже отправленную статистику, пришлите нам код, который покажет игра. Подробнее — на <a href=\"{R}ru/koselig/delete-data/\">странице об удалении данных</a>.",
     d_title="Удаление данных — Koselig",
-    d_desc="Как удалить данные игры Koselig: удалите приложение; копией в iCloud распоряжается Apple, копией в Google Play Games и рекламными данными — Google.",
+    d_desc="Как удалить данные игры Koselig: «Настройки → Удалить мои данные» в игре, код установки для уже отправленной статистики, копии в iCloud и Google Play Games, рекламные данные.",
     d_h1="Удаление данных",
     d_sub="Koselig, Coffee Beans Studio",
     delete_html="""
 <p>В <strong>Koselig</strong> нет аккаунтов, поэтому удалять аккаунт не нужно. Ваш прогресс на наших серверах мы не храним.</p>
+<h2>Удалить данные в игре</h2>
+<p>Откройте <em>Настройки</em>, нажмите внизу <em>Удалить мои данные</em> и подтвердите. Игра:</p>
+<ul>
+<li>сотрёт с телефона прогресс, сохранения и настройки; останутся только запись о покупке «Без рекламы» (без платёжных данных), отметка о том, что удаление было, и технические настройки SDK на устройстве;</li>
+<li>удалит копию Koselig в облаке: на Android удаляются сохранения Koselig в Google Play Games, и игра проверяет, что их не осталось; на iPhone удаление отправляется в ваш iCloud, и Apple применяет его при следующей синхронизации, поэтому как минимум 24 часа и 3 запуска с доступным iCloud игра не загружает и не скачивает прогресс;</li>
+<li>выключит статистику (аналитику) и отчёты о сбоях — они не включатся, пока вы не переустановите игру или сами не включите <em>Статистику</em>, — сотрёт данные аналитики на телефоне, удалит неотправленные отчёты о сбоях и идентификатор установки Firebase, в том числе на серверах Google (без интернета повторит при следующем запуске); при следующем запуске Remote Config создаст новый идентификатор, не связанный со старым;</li>
+<li>покажет <strong>код установки</strong>. Пришлите его на <a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a> — и мы сразу удалим уже отправленную статистику этой установки; отвечаем в течение месяца.</li>
+</ul>
+<p>Если код не прислать, уже отправленная статистика удалится по истечении 2-месячного срока хранения; Google стирает просроченные данные раз в месяц, так что на деле это занимает примерно до 3 месяцев. Отчёты о сбоях удаляются через 90 дней. Сводные отчёты, по которым нельзя узнать человека, остаются.</p>
+<p><strong>Нет интернета, нет входа или выключен iCloud:</strong> телефон очищается сразу; копия в облаке удалится при следующем запуске с интернетом и входом, а до тех пор игра не загружает и не скачивает прогресс.</p>
+<p><strong>Другое устройство</strong> с тем же Apple ID или аккаунтом Google: удалите данные и там, иначе оно может снова загрузить свой прогресс в облако.</p>
+<p>Покупка «Без рекламы» не затрагивается — её можно восстановить кнопкой <em>Восстановить</em>. Реклама Google показывается по вашему выбору в окне согласия (<em>Настройки → Реклама и данные</em>, где этот пункт есть). Профилем Play Games и данными Game Center распоряжаются Google и Apple — см. ниже.</p>
+
 <h2>Данные на устройстве</h2>
 <p>Прогресс, сохранения, настройки, статус покупки «Без рекламы» и выбор по согласию на рекламу хранятся на телефоне. <strong>Чтобы удалить всё, удалите приложение</strong>:</p>
 <ul>
@@ -500,8 +527,9 @@ L["ru"] = dict(
 <li><strong>Android:</strong> нажмите и удерживайте значок Koselig → <em>О приложении</em> → <em>Удалить</em> (или <em>Хранилище → Очистить хранилище</em>, чтобы оставить приложение, но стереть его данные).</li>
 </ul>
 <p>Удаление приложения не отменяет покупку «Без рекламы» — она принадлежит вашему Apple ID или аккаунту Google и восстанавливается позже.</p>
-<h2>Копия в iCloud (iPhone)</h2>
+<h2>Копия в iCloud и Game Center (iPhone)</h2>
 <p>На iPhone прогресс и сохранения ещё копируются в ваш собственный iCloud. Эту копию хранит Apple под вашим Apple ID. Чтобы отключить, выключите iCloud для Koselig: <em>Настройки → [ваше имя] → iCloud</em>.</p>
+<p>При запуске игра входит в Game Center (Apple) — он нужен для сохранений в iCloud. Профилем Game Center распоряжается Apple: отключить Game Center можно в <em>Настройки → Game Center</em>, а управлять данными Apple — на <a href="https://privacy.apple.com/" rel="noopener">privacy.apple.com</a>.</p>
 <h2>Копия в Google Play Games (Android)</h2>
 <p>На Android, если вы вошли в Google Play Games, прогресс и сохранения ещё копируются в облачные сохранения вашего аккаунта Google. Эту копию хранит Google; прочитать или удалить её за вас мы не можем. Вы можете:</p>
 <ul>
@@ -511,7 +539,7 @@ L["ru"] = dict(
 </ul>
 <p>Если игра осталась на телефоне и вы не вышли из Google Play Games, при следующей игре прогресс снова скопируется.</p>
 <h2>Аналитика и отчёты о сбоях</h2>
-<p>События аналитики и отчёты о сбоях (Google Firebase) не связаны с вашим именем или почтой, поэтому найти записи одного человека мы не можем. Они удаляются сами: события аналитики — не позже чем через 2 месяца, отчёты о сбоях — через 90 дней.</p>
+<p>События аналитики и отчёты о сбоях (Google Firebase) не связаны с вашим именем или почтой, поэтому без кода установки из <em>Удалить мои данные</em> найти записи одного человека мы не можем. По коду мы сразу удаляем уже отправленную статистику; без кода события аналитики удаляются по истечении 2-месячного срока (на деле примерно до 3 месяцев), отчёты о сбоях — через 90 дней.</p>
 <h2>Рекламные данные</h2>
 <p>Рекламу в Koselig показывает Google AdMob, собранными данными распоряжается Google. Вы можете:</p>
 <ul>
@@ -739,13 +767,26 @@ L["pl"] = dict(
          "Tak. W Ustawieniach, w sekcji <em>„Zapisy”</em>, są trzy miejsca: <em>„Zapisz”</em> zachowuje bieżący układ, <em>„Wczytaj”</em> go przywraca."),
     ],
     s_del_h="Usuwanie danych",
-    s_del_p="Koselig nie ma kont. Postęp jest zapisany na urządzeniu, a na iPhonie także w Twoim iCloud, na Androidzie — w Google Play Games, jeśli zalogowano się do tej usługi. Usunięcie aplikacji usuwa wszystko, co zapisała na urządzeniu. O danych reklamowych, analityce, iCloud i Google Play Games — <a href=\"{R}pl/koselig/delete-data/\">strona o usuwaniu danych</a>.",
+    s_del_p="Koselig nie ma kont. Postęp jest zapisany na urządzeniu, a na iPhonie także w Twoim iCloud, na Androidzie — w Google Play Games, jeśli zalogowano się do tej usługi. <em>Ustawienia → Usuń moje dane</em> w grze usuwa go z telefonu i z chmury oraz wyłącza statystyki; aby usunąć już wysłane statystyki, wyślij nam kod, który pokaże gra. Więcej na <a href=\"{R}pl/koselig/delete-data/\">stronie o usuwaniu danych</a>.",
     d_title="Usuwanie danych — Koselig",
-    d_desc="Jak usunąć dane gry Koselig: usuń aplikację; kopią w iCloud zarządza Apple, kopią w Google Play Games i danymi reklamowymi — Google.",
+    d_desc="Jak usunąć dane gry Koselig: „Ustawienia → Usuń moje dane” w grze, kod instalacji dla już wysłanych statystyk, kopie w iCloud i Google Play Games, dane reklamowe.",
     d_h1="Usuwanie danych",
     d_sub="Koselig, Coffee Beans Studio",
     delete_html="""
 <p><strong>Koselig</strong> nie ma kont, więc nie ma konta do usunięcia. Nie przechowujemy Twojego postępu na naszych serwerach.</p>
+<h2>Usuń dane w grze</h2>
+<p>Otwórz <em>Ustawienia</em>, stuknij na dole <em>Usuń moje dane</em> i potwierdź. Gra:</p>
+<ul>
+<li>usunie z telefonu postęp, zapisy i ustawienia; zostaną tylko zapis o zakupie „Bez reklam” (bez danych płatniczych), znacznik, że usunięcie nastąpiło, oraz ustawienia techniczne SDK na urządzeniu;</li>
+<li>usunie kopię Koselig w chmurze: na Androidzie zapisane gry Koselig w Google Play Games są usuwane, a gra sprawdza, czy żadna nie została; na iPhonie usunięcie trafia do Twojego iCloud, a Apple stosuje je przy następnej synchronizacji, dlatego przez co najmniej 24 godziny i 3 uruchomienia z dostępnym iCloud gra nie wysyła ani nie pobiera postępu;</li>
+<li>wyłączy statystyki (analitykę) i raporty awarii — pozostaną wyłączone, dopóki nie zainstalujesz gry ponownie albo nie włączysz <em>Statystyk</em> samodzielnie — usunie dane analityczne zapisane w telefonie, niewysłane raporty awarii i identyfikator instalacji Firebase, także na serwerach Google (bez internetu ponowi próbę przy następnym uruchomieniu); przy następnym uruchomieniu Remote Config utworzy nowy identyfikator, niepowiązany ze starym;</li>
+<li>pokaże <strong>kod instalacji</strong>. Wyślij go na <a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a>, a od razu usuniemy statystyki już wysłane z tej instalacji; odpowiadamy w ciągu miesiąca.</li>
+</ul>
+<p>Jeśli nie wyślesz kodu, już wysłane statystyki zostaną usunięte po upływie 2-miesięcznego okresu przechowywania; Google usuwa przeterminowane dane raz w miesiącu, więc w praktyce trwa to do około 3 miesięcy. Raporty awarii są usuwane po 90 dniach. Zbiorcze raporty, z których nie da się Cię zidentyfikować, pozostają.</p>
+<p><strong>Brak internetu, brak logowania lub wyłączony iCloud:</strong> telefon jest czyszczony od razu; kopia w chmurze zostanie usunięta przy następnym uruchomieniu z internetem i zalogowaniem, a do tego czasu gra nie wysyła ani nie pobiera postępu.</p>
+<p><strong>Inne urządzenie</strong> z tym samym Apple ID lub kontem Google: usuń dane także tam, inaczej może ono ponownie wysłać swój postęp do chmury.</p>
+<p>Zakup „Bez reklam” pozostaje bez zmian — możesz go przywrócić przyciskiem <em>Przywróć</em>. Reklamy Google są wyświetlane zgodnie z Twoim wyborem w formularzu zgody (<em>Ustawienia → Reklamy i dane</em>, tam gdzie ta pozycja jest widoczna). Profilem Play Games i danymi Game Center zarządzają Google i Apple — zob. niżej.</p>
+
 <h2>Dane na urządzeniu</h2>
 <p>Postęp, zapisy, ustawienia, status zakupu „Bez reklam” i wybór dotyczący zgody na reklamy są zapisane na telefonie. <strong>Aby usunąć wszystko, usuń aplikację</strong>:</p>
 <ul>
@@ -753,8 +794,9 @@ L["pl"] = dict(
 <li><strong>Android:</strong> przytrzymaj ikonę Koselig → <em>Informacje o aplikacji</em> → <em>Odinstaluj</em> (albo <em>Pamięć → Wyczyść pamięć</em>, aby zostawić aplikację, ale skasować jej dane).</li>
 </ul>
 <p>Usunięcie aplikacji nie anuluje zakupu „Bez reklam” — należy on do Twojego Apple ID lub konta Google i można go później przywrócić.</p>
-<h2>Kopia w iCloud (iPhone)</h2>
+<h2>Kopia w iCloud i Game Center (iPhone)</h2>
 <p>Na iPhonie postęp i zapisy są też kopiowane do Twojego własnego iCloud. Przechowuje je Apple w ramach Twojego Apple ID. Aby to wyłączyć, wyłącz iCloud dla Koselig: <em>Ustawienia → [Twoje imię] → iCloud</em>.</p>
+<p>Przy uruchomieniu gra loguje się do Game Center (Apple), który jest potrzebny do zapisów w iCloud. Profilem Game Center zarządza Apple: Game Center możesz wyłączyć w <em>Ustawienia → Game Center</em>, a danymi Apple zarządzać na <a href="https://privacy.apple.com/" rel="noopener">privacy.apple.com</a>.</p>
 <h2>Kopia w Google Play Games (Android)</h2>
 <p>Na Androidzie, jeśli zalogowano się do Google Play Games, postęp i zapisy są też kopiowane do zapisanych gier na Twoim koncie Google. Tę kopię przechowuje Google; nie możemy jej odczytać ani usunąć za Ciebie. Możesz:</p>
 <ul>
@@ -764,7 +806,7 @@ L["pl"] = dict(
 </ul>
 <p>Jeśli gra jest nadal zainstalowana, a telefon wciąż jest zalogowany do Google Play Games, przy następnej grze postęp znów zostanie skopiowany.</p>
 <h2>Analityka i raporty awarii</h2>
-<p>Zdarzenia analityki i raporty awarii (Google Firebase) nie są powiązane z Twoim imieniem ani e-mailem, więc nie możemy znaleźć zapisów jednej osoby. Usuwają się same: zdarzenia analityki najpóźniej po 2 miesiącach, raporty awarii po 90 dniach.</p>
+<p>Zdarzenia analityki i raporty awarii (Google Firebase) nie są powiązane z Twoim imieniem ani e-mailem, więc bez kodu instalacji z <em>Usuń moje dane</em> nie możemy znaleźć danych jednej osoby. Z kodem od razu usuwamy już wysłane statystyki; bez niego zdarzenia analityki są usuwane po upływie 2-miesięcznego okresu (w praktyce do około 3 miesięcy), a raporty awarii po 90 dniach.</p>
 <h2>Dane reklamowe</h2>
 <p>Reklamy w Koselig dostarcza Google AdMob, a zebranymi danymi zarządza Google. Możesz:</p>
 <ul>
@@ -1006,14 +1048,27 @@ L["es"] = dict(
          "Sí. En Ajustes → <em>Partidas</em> hay tres espacios: <em>Guardar</em> almacena la posición actual y <em>Cargar</em> la recupera."),
     ],
     s_del_h="Eliminar tus datos",
-    s_del_p="Koselig no tiene cuentas. El progreso se guarda en tu dispositivo y, en iPhone, también en tu iCloud; en Android, en Google Play Games si has iniciado sesión. Al eliminar la aplicación se borra todo lo que guardó en el dispositivo. Sobre los datos publicitarios, la analítica, iCloud y Google Play Games, consulta la <a href=\"{R}es/koselig/delete-data/\">página sobre la eliminación de datos</a>.",
+    s_del_p="Koselig no tiene cuentas. El progreso se guarda en tu dispositivo y, en iPhone, también en tu iCloud; en Android, en Google Play Games si has iniciado sesión. <em>Ajustes → Borrar mis datos</em> en el juego lo borra del teléfono y de la nube y desactiva las estadísticas; para borrar las estadísticas ya enviadas, envíanos el código que muestra el juego. Más información en la <a href=\"{R}es/koselig/delete-data/\">página sobre la eliminación de datos</a>.",
     # delete data
     d_title="Eliminar tus datos — Koselig",
-    d_desc="Cómo eliminar los datos del juego Koselig: elimina la aplicación; la copia en iCloud la gestiona Apple, y la copia en Google Play Games y los datos publicitarios, Google.",
+    d_desc="Cómo eliminar los datos del juego Koselig: «Ajustes → Borrar mis datos» en el juego, el código de instalación para las estadísticas ya enviadas, las copias en iCloud y Google Play Games, los datos publicitarios.",
     d_h1="Eliminar tus datos",
     d_sub="Koselig, de Coffee Beans Studio",
     delete_html="""
 <p><strong>Koselig</strong> no tiene cuentas, así que no hay ninguna cuenta que eliminar. No guardamos tu progreso en nuestros servidores.</p>
+
+<h2>Borrar tus datos en el juego</h2>
+<p>Abre <em>Ajustes</em>, toca <em>Borrar mis datos</em> abajo del todo y confirma. El juego:</p>
+<ul>
+<li>borra del teléfono el progreso, las partidas guardadas y los ajustes; solo quedan el registro de la compra «Sin anuncios» (sin datos de pago), una marca de que se hizo el borrado y los ajustes técnicos de los SDK en el dispositivo;</li>
+<li>borra la copia de Koselig en la nube: en Android se eliminan las partidas guardadas de Koselig en Google Play Games y el juego comprueba que no quede ninguna; en iPhone el borrado se envía a tu cuenta de iCloud y Apple lo aplica en la siguiente sincronización, por eso durante al menos 24 horas y 3 inicios con iCloud disponible el juego no sube ni descarga el progreso;</li>
+<li>desactiva las estadísticas (analítica) y los informes de fallos —siguen desactivados hasta que reinstales el juego o vuelvas a activar <em>Estadísticas</em>—, borra los datos de analítica guardados en el teléfono, elimina los informes de fallos no enviados y el identificador de instalación de Firebase, también en los servidores de Google (sin internet, lo reintenta en el siguiente inicio); en el siguiente inicio, Remote Config crea un identificador nuevo, sin relación con el anterior;</li>
+<li>muestra un <strong>código de instalación</strong>. Envíalo a <a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a> y borraremos de inmediato las estadísticas ya enviadas desde esta instalación; respondemos en el plazo de un mes.</li>
+</ul>
+<p>Si no envías el código, las estadísticas ya enviadas se borran al terminar el plazo de conservación de 2 meses; Google elimina los datos caducados una vez al mes, así que en la práctica tarda hasta unos 3 meses. Los informes de fallos se borran a los 90 días. Los informes agregados que no permiten identificarte se conservan.</p>
+<p><strong>Sin internet, sin sesión iniciada o con iCloud desactivado:</strong> el teléfono se borra al instante; la copia en la nube se borra en el siguiente inicio con internet y sesión iniciada, y hasta entonces el juego no sube ni descarga el progreso.</p>
+<p><strong>Otro dispositivo</strong> con el mismo Apple ID o cuenta de Google: borra los datos también allí; si no, puede volver a subir su progreso a la nube.</p>
+<p>La compra «Sin anuncios» no se ve afectada: puedes restaurarla con <em>Restaurar</em>. Los anuncios de Google siguen tu elección en el formulario de consentimiento (<em>Ajustes → Anuncios y datos</em>, donde aparece). Tu perfil de Play Games y tus datos de Game Center los gestionan Google y Apple; consulta más abajo.</p>
 
 <h2>Datos en tu dispositivo</h2>
 <p>El progreso, las partidas guardadas, los ajustes, el estado de la compra «Sin anuncios» y tu elección sobre el consentimiento publicitario se guardan en tu teléfono. <strong>Para borrarlo todo, elimina la aplicación</strong>:</p>
@@ -1023,8 +1078,9 @@ L["es"] = dict(
 </ul>
 <p>Eliminar la aplicación no cancela ni elimina la compra «Sin anuncios»: está vinculada a tu ID de Apple o a tu cuenta de Google y puedes restaurarla más adelante.</p>
 
-<h2>Copia en iCloud (iPhone)</h2>
+<h2>Copia en iCloud y Game Center (iPhone)</h2>
 <p>En iPhone, el progreso y las partidas guardadas también se copian a tu propia cuenta de iCloud. La guarda Apple con tu Apple ID. Para detenerlo, desactiva iCloud para Koselig en <em>Ajustes → [tu nombre] → iCloud</em>.</p>
+<p>Al iniciarse, el juego inicia sesión en Game Center (Apple), que necesita para el guardado en iCloud. Tu perfil de Game Center lo gestiona Apple: puedes desactivar Game Center en <em>Ajustes → Game Center</em> y gestionar tus datos de Apple en <a href="https://privacy.apple.com/" rel="noopener">privacy.apple.com</a>.</p>
 <h2>Copia en Google Play Games (Android)</h2>
 <p>En Android, si has iniciado sesión en Google Play Games, el progreso y las partidas guardadas también se copian a tu cuenta de Google. Esa copia la guarda Google; nosotros no podemos leerla ni eliminarla por ti. Puedes:</p>
 <ul>
@@ -1034,7 +1090,7 @@ L["es"] = dict(
 </ul>
 <p>Si el juego sigue instalado y la sesión sigue iniciada, el progreso se volverá a copiar la próxima vez que juegues.</p>
 <h2>Analítica e informes de fallos</h2>
-<p>Los eventos de analítica y los informes de fallos (Google Firebase) no están vinculados a tu nombre ni a tu correo, así que no podemos encontrar los registros de una persona. Se borran solos: los eventos de analítica en un máximo de 2 meses y los informes de fallos a los 90 días.</p>
+<p>Los eventos de analítica y los informes de fallos (Google Firebase) no están vinculados a tu nombre ni a tu correo, así que sin el código de instalación de <em>Borrar mis datos</em> no podemos encontrar los registros de una persona. Con el código borramos de inmediato las estadísticas ya enviadas; sin él, los eventos de analítica se borran al terminar el plazo de 2 meses (en la práctica, hasta unos 3 meses) y los informes de fallos, a los 90 días.</p>
 <h2>Datos publicitarios</h2>
 <p>Los anuncios de Koselig los proporciona Google AdMob. Los datos que recopila Google están bajo el control de Google. Puedes:</p>
 <ul>
@@ -1277,14 +1333,27 @@ L["de"] = dict(
          "Ja. Unter Einstellungen → <em>Spielstände</em> gibt es drei Plätze: <em>Speichern</em> sichert den aktuellen Stand, <em>Öffnen</em> holt ihn zurück."),
     ],
     s_del_h="Daten löschen",
-    s_del_p="Koselig hat keine Konten. Der Fortschritt liegt auf deinem Gerät und auf dem iPhone zusätzlich in deinem iCloud, unter Android in Google Play Games, wenn du dort angemeldet bist. Löschst du die App, wird alles entfernt, was sie auf dem Gerät gespeichert hat. Zu Werbe- und Analysedaten, iCloud und Google Play Games siehe die <a href=\"{R}de/koselig/delete-data/\">Seite zum Löschen von Daten</a>.",
+    s_del_p="Koselig hat keine Konten. Der Fortschritt liegt auf deinem Gerät und auf dem iPhone zusätzlich in deinem iCloud, unter Android in Google Play Games, wenn du dort angemeldet bist. <em>Einstellungen → Meine Daten löschen</em> im Spiel löscht ihn vom Handy und aus der Cloud und schaltet die Statistik aus; um bereits gesendete Statistik zu löschen, schick uns den Code, den das Spiel anzeigt. Mehr auf der <a href=\"{R}de/koselig/delete-data/\">Seite zum Löschen von Daten</a>.",
     # delete data
     d_title="Deine Daten löschen – Koselig",
-    d_desc="So löschst du Daten zum Spiel Koselig: Lösche die App; die iCloud-Kopie verwaltet Apple, die Kopie in Google Play Games und die Werbedaten verwaltet Google.",
+    d_desc="So löschst du Daten zum Spiel Koselig: „Einstellungen → Meine Daten löschen“ im Spiel, der Installationscode für bereits gesendete Statistik, die Kopien in iCloud und Google Play Games, Werbedaten.",
     d_h1="Deine Daten löschen",
     d_sub="Koselig von Coffee Beans Studio",
     delete_html="""
 <p><strong>Koselig</strong> hat keine Konten – es gibt also kein Konto, das gelöscht werden müsste. Deinen Fortschritt speichern wir auf keinem unserer Server.</p>
+
+<h2>Daten im Spiel löschen</h2>
+<p>Öffne <em>Einstellungen</em>, tippe ganz unten auf <em>Meine Daten löschen</em> und bestätige. Das Spiel:</p>
+<ul>
+<li>löscht Fortschritt, Spielstände und Einstellungen vom Handy; nur der Eintrag über den Kauf „Werbefrei“ (ohne Zahlungsdaten), ein Vermerk, dass gelöscht wurde, und technische Einstellungen der SDKs auf dem Gerät bleiben;</li>
+<li>löscht die Kopie von Koselig in der Cloud: Unter Android werden die gespeicherten Spiele von Koselig in Google Play Games gelöscht, und das Spiel prüft, dass keine übrig sind; auf dem iPhone wird die Löschung an dein iCloud gesendet, und Apple führt sie bei der nächsten Synchronisierung aus – deshalb lädt das Spiel mindestens 24 Stunden und 3 Starts mit verfügbarem iCloud lang keinen Fortschritt hoch oder herunter;</li>
+<li>schaltet Statistik (Analyse) und Absturzberichte aus – sie bleiben aus, bis du das Spiel neu installierst oder <em>Statistik</em> selbst wieder einschaltest –, löscht die auf dem Handy gespeicherten Analysedaten, nicht gesendete Absturzberichte und die Firebase-Installationskennung, auch auf den Servern von Google (ohne Internet erneut beim nächsten Start); beim nächsten Start erzeugt Remote Config eine neue Kennung, die nicht mit der alten verknüpft ist;</li>
+<li>zeigt einen <strong>Installationscode</strong>. Schick ihn an <a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a>, und wir löschen die bereits gesendete Statistik dieser Installation sofort; wir antworten innerhalb eines Monats.</li>
+</ul>
+<p>Schickst du den Code nicht, wird bereits gesendete Statistik nach Ablauf der 2-monatigen Aufbewahrungsfrist gelöscht; Google entfernt abgelaufene Daten einmal im Monat, in der Praxis dauert es also bis zu etwa 3 Monate. Absturzberichte werden nach 90 Tagen gelöscht. Zusammengefasste Berichte, die dich nicht erkennen lassen, bleiben erhalten.</p>
+<p><strong>Kein Internet, nicht angemeldet oder iCloud aus:</strong> Das Handy wird sofort geleert; die Kopie in der Cloud wird beim nächsten Start mit Internet und Anmeldung gelöscht, und bis dahin lädt das Spiel keinen Fortschritt hoch oder herunter.</p>
+<p><strong>Ein anderes Gerät</strong> mit derselben Apple-ID oder demselben Google-Konto: Lösche die Daten auch dort, sonst kann es seinen Fortschritt wieder in die Cloud hochladen.</p>
+<p>Der Kauf „Werbefrei“ bleibt unberührt – du kannst ihn mit <em>Wiederherstellen</em> zurückholen. Google-Werbung richtet sich nach deiner Wahl im Einwilligungsformular (<em>Einstellungen → Werbung &amp; Daten</em>, wo angezeigt). Dein Play-Games-Profil und deine Game-Center-Daten verwalten Google und Apple – siehe unten.</p>
 
 <h2>Daten auf deinem Gerät</h2>
 <p>Fortschritt, Spielstände, Einstellungen, der Status des Kaufs „Werbefrei“ und deine Entscheidung zur Werbeeinwilligung werden auf deinem Smartphone gespeichert. <strong>Um all das zu löschen, lösche die App</strong>:</p>
@@ -1294,8 +1363,9 @@ L["de"] = dict(
 </ul>
 <p>Das Löschen der App storniert oder entfernt den Kauf „Werbefrei“ nicht – er gehört zu deiner Apple-ID oder deinem Google-Konto und lässt sich später wiederherstellen.</p>
 
-<h2>iCloud-Kopie (iPhone)</h2>
+<h2>iCloud-Kopie und Game Center (iPhone)</h2>
 <p>Auf dem iPhone werden Fortschritt und Spielstände zusätzlich in dein eigenes iCloud kopiert. Apple speichert sie unter deiner Apple-ID. Zum Abschalten deaktiviere iCloud für Koselig: <em>Einstellungen → [dein Name] → iCloud</em>.</p>
+<p>Beim Start meldet sich das Spiel bei Game Center (Apple) an, das es für die iCloud-Spielstände braucht. Dein Game-Center-Profil verwaltet Apple: Game Center kannst du unter <em>Einstellungen → Game Center</em> ausschalten und deine Apple-Daten unter <a href="https://privacy.apple.com/" rel="noopener">privacy.apple.com</a> verwalten.</p>
 <h2>Kopie in Google Play Games (Android)</h2>
 <p>Unter Android werden Fortschritt und Spielstände zusätzlich in deinem Google-Konto gespeichert, wenn du bei Google Play Games angemeldet bist. Diese Kopie speichert Google; wir können sie weder lesen noch für dich löschen. Du kannst:</p>
 <ul>
@@ -1305,7 +1375,7 @@ L["de"] = dict(
 </ul>
 <p>Ist das Spiel noch installiert und bist du weiterhin angemeldet, wird der Fortschritt beim nächsten Spielen erneut kopiert.</p>
 <h2>Analyse und Absturzberichte</h2>
-<p>Analyse-Ereignisse und Absturzberichte (Google Firebase) sind nicht mit deinem Namen oder deiner E-Mail verknüpft, daher können wir die Einträge einer einzelnen Person nicht finden. Sie werden automatisch gelöscht: Analyse-Ereignisse spätestens nach 2 Monaten, Absturzberichte nach 90 Tagen.</p>
+<p>Analyse-Ereignisse und Absturzberichte (Google Firebase) sind nicht mit deinem Namen oder deiner E-Mail verknüpft, daher können wir ohne den Installationscode aus <em>Meine Daten löschen</em> die Einträge einer einzelnen Person nicht finden. Mit dem Code löschen wir bereits gesendete Statistik sofort; ohne ihn werden Analyse-Ereignisse nach Ablauf der 2-monatigen Frist (in der Praxis bis zu etwa 3 Monate) und Absturzberichte nach 90 Tagen gelöscht.</p>
 <h2>Werbedaten</h2>
 <p>Die Werbung in Koselig stellt Google AdMob bereit. Für die von Google erhobenen Daten ist Google verantwortlich. Du kannst:</p>
 <ul>
@@ -1548,14 +1618,27 @@ L["fr"] = dict(
          "Oui. Réglages → <em>Sauvegardes</em> propose trois emplacements : <em>Sauver</em> enregistre la position actuelle, <em>Charger</em> la rétablit."),
     ],
     s_del_h="Supprimer vos données",
-    s_del_p="Koselig fonctionne sans compte. La progression est conservée sur votre appareil et, sur iPhone, aussi dans votre iCloud ; sur Android, dans Google Play Games si vous y êtes connecté. Supprimer l’application efface tout ce qu’elle a enregistré sur l’appareil. Pour les données publicitaires, d’analyse, iCloud et Google Play Games, voir la <a href=\"{R}fr/koselig/delete-data/\">page sur la suppression des données</a>.",
+    s_del_p="Koselig fonctionne sans compte. La progression est conservée sur votre appareil et, sur iPhone, aussi dans votre iCloud ; sur Android, dans Google Play Games si vous y êtes connecté. <em>Réglages → Supprimer mes données</em> dans le jeu l’efface du téléphone et du cloud et désactive les statistiques ; pour supprimer les statistiques déjà envoyées, envoyez-nous le code affiché par le jeu. Plus d’informations sur la <a href=\"{R}fr/koselig/delete-data/\">page sur la suppression des données</a>.",
     # delete data
     d_title="Supprimer vos données — Koselig",
-    d_desc="Comment supprimer les données du jeu Koselig : supprimez l’application ; la copie iCloud est gérée par Apple, la copie Google Play Games et les données publicitaires par Google.",
+    d_desc="Comment supprimer les données du jeu Koselig : « Réglages → Supprimer mes données » dans le jeu, le code d’installation pour les statistiques déjà envoyées, les copies iCloud et Google Play Games, les données publicitaires.",
     d_h1="Supprimer vos données",
     d_sub="Koselig, un jeu de Coffee Beans Studio",
     delete_html="""
 <p><strong>Koselig</strong> fonctionne sans compte : il n’y a donc aucun compte à supprimer. Nous ne conservons pas votre progression sur nos serveurs.</p>
+
+<h2>Supprimer vos données dans le jeu</h2>
+<p>Ouvrez <em>Réglages</em>, touchez <em>Supprimer mes données</em> tout en bas et confirmez. Le jeu :</p>
+<ul>
+<li>efface du téléphone la progression, les sauvegardes et les réglages ; il ne reste que l’enregistrement de l’achat « Sans pub » (sans données de paiement), une marque indiquant que la suppression a eu lieu et les réglages techniques des SDK sur l’appareil ;</li>
+<li>supprime la copie de Koselig dans le cloud : sur Android, les jeux sauvegardés de Koselig dans Google Play Games sont supprimés et le jeu vérifie qu’il n’en reste aucun ; sur iPhone, la suppression est envoyée à votre iCloud et Apple l’applique à la synchronisation suivante, c’est pourquoi, pendant au moins 24 heures et 3 lancements avec iCloud disponible, le jeu n’envoie ni ne télécharge la progression ;</li>
+<li>désactive les statistiques (analyse) et les rapports de plantage — ils restent désactivés jusqu’à ce que vous réinstalliez le jeu ou réactiviez vous-même <em>Statistiques</em> —, efface les données d’analyse stockées sur le téléphone, supprime les rapports de plantage non envoyés et l’identifiant d’installation Firebase, y compris sur les serveurs de Google (sans Internet, nouvel essai au lancement suivant) ; au lancement suivant, Remote Config crée un nouvel identifiant, sans lien avec l’ancien ;</li>
+<li>affiche un <strong>code d’installation</strong>. Envoyez-le à <a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a> et nous supprimerons immédiatement les statistiques déjà envoyées depuis cette installation ; nous répondons dans un délai d’un mois.</li>
+</ul>
+<p>Si vous n’envoyez pas le code, les statistiques déjà envoyées sont supprimées à l’expiration du délai de conservation de 2 mois ; Google efface les données expirées une fois par mois, ce qui prend en pratique jusqu’à 3 mois environ. Les rapports de plantage sont supprimés après 90 jours. Les rapports agrégés qui ne permettent pas de vous identifier sont conservés.</p>
+<p><strong>Pas d’Internet, pas connecté ou iCloud désactivé :</strong> le téléphone est vidé immédiatement ; la copie dans le cloud est supprimée au lancement suivant avec Internet et connexion, et d’ici là le jeu n’envoie ni ne télécharge la progression.</p>
+<p><strong>Un autre appareil</strong> avec le même identifiant Apple ou le même compte Google : supprimez aussi les données sur celui-ci, sinon il peut renvoyer sa progression dans le cloud.</p>
+<p>L’achat « Sans pub » n’est pas concerné : vous pouvez le restaurer avec <em>Restaurer</em>. Les publicités Google suivent votre choix dans le formulaire de consentement (<em>Réglages → Publicité et données</em>, là où l’option apparaît). Votre profil Play Games et vos données Game Center sont gérés par Google et Apple — voir ci-dessous.</p>
 
 <h2>Données sur votre appareil</h2>
 <p>La progression, les sauvegardes, les réglages, l’état de l’achat « Sans pub » et votre choix de consentement publicitaire sont enregistrés sur votre téléphone. <strong>Pour tout effacer, supprimez l’application</strong> :</p>
@@ -1565,8 +1648,9 @@ L["fr"] = dict(
 </ul>
 <p>Supprimer l’application n’annule pas et ne retire pas l’achat « Sans pub » : il est rattaché à votre identifiant Apple ou à votre compte Google et pourra être restauré plus tard.</p>
 
-<h2>Copie iCloud (iPhone)</h2>
+<h2>Copie iCloud et Game Center (iPhone)</h2>
 <p>Sur iPhone, la progression et les sauvegardes sont aussi copiées dans votre propre iCloud. Apple la conserve sous votre identifiant Apple. Pour l’arrêter, désactivez iCloud pour Koselig : <em>Réglages → [votre nom] → iCloud</em>.</p>
+<p>Au lancement, le jeu se connecte à Game Center (Apple), nécessaire aux sauvegardes iCloud. Votre profil Game Center est géré par Apple : vous pouvez désactiver Game Center dans <em>Réglages → Game Center</em> et gérer vos données Apple sur <a href="https://privacy.apple.com/" rel="noopener">privacy.apple.com</a>.</p>
 <h2>Copie dans Google Play Games (Android)</h2>
 <p>Sur Android, si vous êtes connecté à Google Play Games, la progression et les sauvegardes sont aussi copiées dans votre compte Google. Cette copie est conservée par Google ; nous ne pouvons ni la lire ni la supprimer à votre place. Vous pouvez :</p>
 <ul>
@@ -1576,7 +1660,7 @@ L["fr"] = dict(
 </ul>
 <p>Si le jeu est encore installé et que vous êtes toujours connecté, la progression sera de nouveau copiée la prochaine fois que vous jouerez.</p>
 <h2>Analyse et rapports de plantage</h2>
-<p>Les événements d’analyse et les rapports de plantage (Google Firebase) ne sont liés ni à votre nom ni à votre e-mail : nous ne pouvons donc pas retrouver les données d’une personne. Ils sont supprimés automatiquement : les événements d’analyse au plus tard après 2 mois, les rapports de plantage après 90 jours.</p>
+<p>Les événements d’analyse et les rapports de plantage (Google Firebase) ne sont liés ni à votre nom ni à votre e-mail : sans le code d’installation de <em>Supprimer mes données</em>, nous ne pouvons donc pas retrouver les données d’une personne. Avec le code, nous supprimons immédiatement les statistiques déjà envoyées ; sans lui, les événements d’analyse sont supprimés à l’expiration du délai de 2 mois (en pratique jusqu’à 3 mois environ) et les rapports de plantage après 90 jours.</p>
 <h2>Données publicitaires</h2>
 <p>Les publicités de Koselig sont fournies par Google AdMob. Google est responsable du traitement des données qu’il collecte. Vous pouvez :</p>
 <ul>
@@ -1819,14 +1903,27 @@ L["it"] = dict(
          "Sì. In Impostazioni, <em>Salvataggi</em> ha tre slot: <em>Salva</em> memorizza la disposizione attuale, <em>Apri</em> la ricarica."),
     ],
     s_del_h="Eliminare i tuoi dati",
-    s_del_p="Koselig non ha account. I progressi sono salvati sul dispositivo e, su iPhone, anche nel tuo iCloud; su Android, in Google Play Games se hai effettuato l’accesso. Eliminando l’app elimini tutto ciò che aveva salvato sul dispositivo. Per i dati pubblicitari, di analisi, iCloud e Google Play Games vedi la <a href=\"{R}it/koselig/delete-data/\">pagina sull’eliminazione dei dati</a>.",
+    s_del_p="Koselig non ha account. I progressi sono salvati sul dispositivo e, su iPhone, anche nel tuo iCloud; su Android, in Google Play Games se hai effettuato l’accesso. <em>Impostazioni → Elimina i miei dati</em> nel gioco li cancella dal telefono e dal cloud e disattiva le statistiche; per eliminare le statistiche già inviate, inviaci il codice che mostra il gioco. Maggiori dettagli nella <a href=\"{R}it/koselig/delete-data/\">pagina sull’eliminazione dei dati</a>.",
     # delete data
     d_title="Elimina i tuoi dati — Koselig",
-    d_desc="Come eliminare i dati del gioco Koselig: elimina l’app; la copia in iCloud è gestita da Apple, la copia in Google Play Games e i dati pubblicitari da Google.",
+    d_desc="Come eliminare i dati del gioco Koselig: «Impostazioni → Elimina i miei dati» nel gioco, il codice di installazione per le statistiche già inviate, le copie in iCloud e Google Play Games, i dati pubblicitari.",
     d_h1="Elimina i tuoi dati",
     d_sub="Koselig di Coffee Beans Studio",
     delete_html="""
 <p><strong>Koselig</strong> non ha account, quindi non c’è nessun account da eliminare. Non conserviamo i tuoi progressi sui nostri server.</p>
+
+<h2>Eliminare i dati nel gioco</h2>
+<p>Apri <em>Impostazioni</em>, tocca <em>Elimina i miei dati</em> in fondo e conferma. Il gioco:</p>
+<ul>
+<li>cancella dal telefono progressi, salvataggi e impostazioni; restano solo la registrazione dell’acquisto «Senza annunci» (senza dati di pagamento), un’indicazione che l’eliminazione è avvenuta e le impostazioni tecniche degli SDK sul dispositivo;</li>
+<li>elimina la copia di Koselig nel cloud: su Android vengono eliminati i giochi salvati di Koselig in Google Play Games e il gioco verifica che non ne resti nessuno; su iPhone l’eliminazione viene inviata al tuo iCloud e Apple la applica alla sincronizzazione successiva, perciò per almeno 24 ore e 3 avvii con iCloud disponibile il gioco non carica né scarica i progressi;</li>
+<li>disattiva le statistiche (analisi) e le segnalazioni degli arresti anomali — restano disattivate finché non reinstalli il gioco o non riattivi tu <em>Statistiche</em> —, cancella i dati di analisi salvati sul telefono, elimina le segnalazioni non inviate e l’identificatore di installazione di Firebase, anche sui server di Google (senza internet, riprova all’avvio successivo); all’avvio successivo Remote Config crea un nuovo identificatore, non collegato al precedente;</li>
+<li>mostra un <strong>codice di installazione</strong>. Invialo a <a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a> e cancelleremo subito le statistiche già inviate da questa installazione; rispondiamo entro un mese.</li>
+</ul>
+<p>Se non invii il codice, le statistiche già inviate vengono cancellate alla scadenza del periodo di conservazione di 2 mesi; Google elimina i dati scaduti una volta al mese, quindi in pratica servono fino a circa 3 mesi. Le segnalazioni degli arresti anomali vengono cancellate dopo 90 giorni. I report aggregati che non permettono di identificarti restano.</p>
+<p><strong>Senza internet, senza accesso o con iCloud disattivato:</strong> il telefono viene ripulito subito; la copia nel cloud viene eliminata al successivo avvio con internet e accesso, e fino ad allora il gioco non carica né scarica i progressi.</p>
+<p><strong>Un altro dispositivo</strong> con lo stesso ID Apple o account Google: elimina i dati anche lì, altrimenti potrebbe ricaricare i suoi progressi nel cloud.</p>
+<p>L’acquisto «Senza annunci» non viene toccato: puoi ripristinarlo con <em>Ripristina</em>. Gli annunci Google seguono la tua scelta nel modulo di consenso (<em>Impostazioni → Annunci e dati</em>, dove compare). Il tuo profilo Play Games e i tuoi dati Game Center sono gestiti da Google e Apple — vedi sotto.</p>
 
 <h2>Dati sul tuo dispositivo</h2>
 <p>Progressi, salvataggi, impostazioni, stato dell’acquisto «Senza annunci» e la tua scelta sul consenso pubblicitario sono salvati sul tuo telefono. <strong>Per eliminare tutto, elimina l’app</strong>:</p>
@@ -1836,8 +1933,9 @@ L["it"] = dict(
 </ul>
 <p>Eliminare l’app non annulla né rimuove l’acquisto «Senza annunci»: appartiene al tuo ID Apple o al tuo account Google e puoi ripristinarlo in seguito.</p>
 
-<h2>Copia in iCloud (iPhone)</h2>
+<h2>Copia in iCloud e Game Center (iPhone)</h2>
 <p>Su iPhone progressi e salvataggi vengono anche copiati nel tuo iCloud personale. La conserva Apple con il tuo ID Apple. Per interromperla, disattiva iCloud per Koselig: <em>Impostazioni → [il tuo nome] → iCloud</em>.</p>
+<p>All’avvio il gioco accede a Game Center (Apple), necessario per i salvataggi in iCloud. Il tuo profilo Game Center è gestito da Apple: puoi disattivare Game Center in <em>Impostazioni → Game Center</em> e gestire i tuoi dati Apple su <a href="https://privacy.apple.com/" rel="noopener">privacy.apple.com</a>.</p>
 <h2>Copia in Google Play Games (Android)</h2>
 <p>Su Android, se hai effettuato l’accesso a Google Play Games, progressi e salvataggi vengono anche copiati nel tuo account Google. Questa copia è conservata da Google; noi non possiamo leggerla né eliminarla al posto tuo. Puoi:</p>
 <ul>
@@ -1847,7 +1945,7 @@ L["it"] = dict(
 </ul>
 <p>Se il gioco è ancora installato e l’accesso è ancora attivo, i progressi verranno copiati di nuovo la prossima volta che giochi.</p>
 <h2>Analisi e segnalazioni degli arresti anomali</h2>
-<p>Gli eventi di analisi e le segnalazioni degli arresti anomali (Google Firebase) non sono collegati al tuo nome o alla tua email, quindi non possiamo trovare i dati di una singola persona. Vengono cancellati automaticamente: gli eventi di analisi entro 2 mesi, le segnalazioni degli arresti anomali dopo 90 giorni.</p>
+<p>Gli eventi di analisi e le segnalazioni degli arresti anomali (Google Firebase) non sono collegati al tuo nome o alla tua email, quindi senza il codice di installazione di <em>Elimina i miei dati</em> non possiamo trovare i dati di una singola persona. Con il codice cancelliamo subito le statistiche già inviate; senza, gli eventi di analisi vengono cancellati alla scadenza del periodo di 2 mesi (in pratica fino a circa 3 mesi) e le segnalazioni degli arresti anomali dopo 90 giorni.</p>
 <h2>Dati pubblicitari</h2>
 <p>Gli annunci in Koselig sono forniti da Google AdMob. I dati raccolti da Google sono sotto il controllo di Google. Puoi:</p>
 <ul>

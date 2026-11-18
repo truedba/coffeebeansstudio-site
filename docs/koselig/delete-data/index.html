@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Delete your data — Koselig</title>
-<meta name="description" content="How to delete data related to the Koselig game: delete the app; the iCloud copy is managed by Apple; the Google Play Games copy and ad data are managed by Google.">
+<meta name="description" content="How to delete data related to the Koselig game: Settings → Delete my data in the game, the installation code for statistics already sent, the iCloud and Google Play Games copies, ad data.">
 <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self'; manifest-src 'self'; base-uri 'none'; form-action 'none'">
 <meta name="referrer" content="no-referrer">
 <link rel="canonical" href="https://coffeebeansstudio.eu/koselig/delete-data/">
@@ -13,7 +13,7 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Coffee Beans Studio">
 <meta property="og:title" content="Delete your data — Koselig">
-<meta property="og:description" content="How to delete data related to the Koselig game: delete the app; the iCloud copy is managed by Apple; the Google Play Games copy and ad data are managed by Google.">
+<meta property="og:description" content="How to delete data related to the Koselig game: Settings → Delete my data in the game, the installation code for statistics already sent, the iCloud and Google Play Games copies, ad data.">
 <meta property="og:url" content="https://coffeebeansstudio.eu/koselig/delete-data/">
 <meta property="og:locale" content="en_GB">
 <meta property="og:image" content="https://coffeebeansstudio.eu/assets/og-koselig.jpg">
@@ -43,6 +43,18 @@
   </header>
   <article class="prose legal-body">
 <p><strong>Koselig</strong> has no accounts, so there is no account to delete. We do not keep your progress on our servers.</p>
+<h2>Delete your data in the game</h2>
+<p>Open <em>Settings</em>, tap <em>Delete my data</em> at the bottom and confirm. The game will:</p>
+<ul>
+<li>erase progress, save slots and settings from your phone; only the record of the “No ads” purchase (without payment details), a note that the deletion was done and technical settings of the SDKs on the device remain;</li>
+<li>delete Koselig’s copy in the cloud: on Android, Koselig’s saved games in Google Play Games are deleted and the game checks that none are left; on iPhone, the deletion is sent to your iCloud account and Apple applies it at its next sync, so for at least 24 hours and 3 launches with iCloud available the game neither uploads nor downloads progress;</li>
+<li>turn off statistics (analytics) and crash reports — they stay off until you reinstall the game or turn <em>Statistics</em> on again — erase analytics data stored on the phone, delete unsent crash reports and delete the Firebase installation identifier, also on Google’s servers (without internet, this is retried at the next launch); at the next launch, Remote Config creates a new identifier that is not linked to the old one;</li>
+<li>show an <strong>installation code</strong>. Send it to <a href="../../support/" data-u="support" data-d="coffeebeansstudio" data-t="eu" data-s="Delete%20my%20data">support [at] coffeebeansstudio [dot] eu</a>, and we will delete the statistics already sent from this installation right away; we answer within one month.</li>
+</ul>
+<p>If you do not send the code, statistics already sent are deleted when the 2-month retention period ends; Google removes expired data once a month, so in practice this takes up to about 3 months. Crash reports are deleted after 90 days. Aggregated reports that cannot identify you remain.</p>
+<p><strong>No internet, not signed in or iCloud turned off:</strong> the phone is cleared at once; the cloud copy is deleted at the next launch with internet and sign-in, and until then the game neither uploads nor downloads progress.</p>
+<p><strong>Another device</strong> with the same Apple ID or Google account: delete your data there too, otherwise it may upload its progress to the cloud again.</p>
+<p>The “No ads” purchase is not affected — you can restore it with <em>Restore</em>. Google ads follow your choice in the consent form (<em>Settings → Ads &amp; data</em>, where shown). Your Play Games profile and your Game Center data are managed by Google and Apple — see below.</p>
 <h2>Data on your device</h2>
 <p>Progress, saves, settings, the “No ads” purchase status and your ad consent choice are stored on your phone. <strong>To delete all of it, delete the app</strong>:</p>
 <ul>
@@ -50,8 +62,9 @@
 <li><strong>Android:</strong> touch and hold the Koselig icon → <em>App info</em> → <em>Uninstall</em> (or <em>Storage → Clear storage</em> to keep the app but erase its data).</li>
 </ul>
 <p>Deleting the app does not cancel or remove the “No ads” purchase — it belongs to your Apple ID or Google account and can be restored later.</p>
-<h2>iCloud copy (iPhone)</h2>
+<h2>iCloud copy and Game Center (iPhone)</h2>
 <p>On iPhone, progress and save slots are also copied to your own iCloud account. It is stored by Apple under your Apple ID. To stop it, turn off iCloud for Koselig in <em>Settings → [your name] → iCloud</em>.</p>
+<p>At launch, the game signs in to Game Center (Apple), which it needs for iCloud saves. Your Game Center profile is managed by Apple: you can turn Game Center off in <em>Settings → Game Center</em> and manage your Apple data at <a href="https://privacy.apple.com/" rel="noopener">privacy.apple.com</a>.</p>
 <h2>Google Play Games copy (Android)</h2>
 <p>On Android, if you are signed in to Google Play Games, progress and save slots are also copied to Saved Games in your Google account. This copy is stored by Google; we cannot read it or delete it for you. You can:</p>
 <ul>
@@ -61,7 +74,7 @@
 </ul>
 <p>If the game is still installed and you are still signed in, your progress will be copied again the next time you play.</p>
 <h2>Analytics and crash reports</h2>
-<p>Analytics events and crash reports (Google Firebase) are not linked to your name or email, so we cannot find one person’s records. They are deleted automatically: analytics events after no more than 2 months, crash reports after 90 days.</p>
+<p>Analytics events and crash reports (Google Firebase) are not linked to your name or email, so without the installation code from <em>Delete my data</em> we cannot find one person’s records. With the code, we delete statistics already sent right away; without it, analytics events are deleted after the 2-month retention period (in practice up to about 3 months) and crash reports after 90 days.</p>
 <h2>Advertising data</h2>
 <p>Ads in Koselig are provided by Google AdMob. Data collected by Google is controlled by Google. You can:</p>
 <ul>
