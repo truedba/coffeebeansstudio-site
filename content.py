@@ -254,6 +254,7 @@ L["en"] = dict(
 <li>from Google Play Games (Android): Koselig’s saves;</li>
 <li>the Firebase identifier.</li>
 </ul>
+<p>If Koselig is also installed on another device with the same Apple ID or Google account, delete the data there too — otherwise it will upload its progress to the cloud again.</p>
 <p>Statistics and crash reports are turned off. Statistics already sent are deleted in accordance with Article 17 GDPR (Regulation (EU) 2016/679) and the retention period stated in our <a href="{R}koselig/privacy/">privacy policy</a>. To have them deleted right away, send the code the game shows at the end to <a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a>.</p>
 <p>The “No ads” purchase is not affected — you can restore it with <em>Restore</em>.</p>
 
@@ -521,6 +522,7 @@ L["ru"] = dict(
 <li>из Google Play Games (Android) — сохранения Koselig;</li>
 <li>идентификатор Firebase.</li>
 </ul>
+<p>Если Koselig установлена и на другом устройстве с тем же Apple ID или аккаунтом Google, удалите данные и там — иначе оно снова загрузит свой прогресс в облако.</p>
 <p>Статистика и отчёты о сбоях выключаются. Уже отправленная статистика удаляется в соответствии со статьёй 17 GDPR (Регламент (ЕС) 2016/679) и сроком хранения, указанным в нашей <a href="{R}ru/koselig/privacy/">политике конфиденциальности</a>. Чтобы её удалили сразу, пришлите код, который игра покажет в конце, на <a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a>.</p>
 <p>Покупка «Без рекламы» не затрагивается — её можно восстановить кнопкой <em>Восстановить</em>.</p>
 
@@ -786,6 +788,7 @@ L["pl"] = dict(
 <li>z Google Play Games (Android) — zapisy Koselig;</li>
 <li>identyfikator Firebase.</li>
 </ul>
+<p>Jeśli Koselig jest zainstalowana także na innym urządzeniu z tym samym Apple ID lub kontem Google, usuń dane również tam — inaczej ponownie wyśle ono swój postęp do chmury.</p>
 <p>Statystyki i raporty awarii zostają wyłączone. Już wysłane statystyki są usuwane zgodnie z art. 17 RODO (rozporządzenie (UE) 2016/679) i okresem przechowywania podanym w naszej <a href="{R}pl/koselig/privacy/">polityce prywatności</a>. Aby usunąć je od razu, wyślij kod, który gra pokaże na końcu, na <a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a>.</p>
 <p>Zakup „Bez reklam” pozostaje bez zmian — możesz go przywrócić przyciskiem <em>Przywróć</em>.</p>
 
@@ -1067,6 +1070,7 @@ L["es"] = dict(
 <li>de Google Play Games (Android): las partidas guardadas de Koselig;</li>
 <li>el identificador de Firebase.</li>
 </ul>
+<p>Si Koselig también está instalado en otro dispositivo con el mismo Apple ID o la misma cuenta de Google, borra los datos también allí; de lo contrario, volverá a subir su progreso a la nube.</p>
 <p>Las estadísticas y los informes de fallos se desactivan. Las estadísticas ya enviadas se borran de conformidad con el artículo 17 del RGPD (Reglamento (UE) 2016/679) y el plazo de conservación indicado en nuestra <a href="{R}es/koselig/privacy/">política de privacidad</a>. Para que se borren de inmediato, envía a <a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a> el código que el juego muestra al final.</p>
 <p>La compra «Sin anuncios» no se ve afectada: puedes restaurarla con <em>Restaurar</em>.</p>
 
@@ -1350,6 +1354,7 @@ L["de"] = dict(
 <li>in Google Play Games (Android): die Spielstände von Koselig;</li>
 <li>die Firebase-Kennung.</li>
 </ul>
+<p>Ist Koselig auch auf einem anderen Gerät mit derselben Apple-ID oder demselben Google-Konto installiert, lösche die Daten auch dort – sonst lädt es seinen Fortschritt wieder in die Cloud hoch.</p>
 <p>Statistik und Absturzberichte werden ausgeschaltet. Bereits gesendete Statistik wird gemäß Art. 17 DSGVO (Verordnung (EU) 2016/679) und der in unserer <a href="{R}de/koselig/privacy/">Datenschutzerklärung</a> genannten Speicherdauer gelöscht. Damit sie sofort gelöscht wird, schick den Code, den das Spiel am Ende anzeigt, an <a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a>.</p>
 <p>Der Kauf „Werbefrei“ bleibt unberührt – du kannst ihn mit <em>Wiederherstellen</em> zurückholen.</p>
 
@@ -1633,6 +1638,7 @@ L["fr"] = dict(
 <li>de Google Play Games (Android) : les sauvegardes de Koselig ;</li>
 <li>l’identifiant Firebase.</li>
 </ul>
+<p>Si Koselig est aussi installé sur un autre appareil avec le même identifiant Apple ou le même compte Google, supprimez aussi les données sur celui-ci — sinon il renverra sa progression dans le cloud.</p>
 <p>Les statistiques et les rapports de plantage sont désactivés. Les statistiques déjà envoyées sont supprimées conformément à l’article 17 du RGPD (règlement (UE) 2016/679) et au délai de conservation indiqué dans notre <a href="{R}fr/koselig/privacy/">politique de confidentialité</a>. Pour qu’elles soient supprimées immédiatement, envoyez à <a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a> le code que le jeu affiche à la fin.</p>
 <p>L’achat « Sans pub » n’est pas concerné : vous pouvez le restaurer avec <em>Restaurer</em>.</p>
 
@@ -1916,6 +1922,7 @@ L["it"] = dict(
 <li>da Google Play Games (Android): i salvataggi di Koselig;</li>
 <li>l’identificatore Firebase.</li>
 </ul>
+<p>Se Koselig è installato anche su un altro dispositivo con lo stesso ID Apple o account Google, elimina i dati anche lì, altrimenti ricaricherà i suoi progressi nel cloud.</p>
 <p>Le statistiche e le segnalazioni degli arresti anomali vengono disattivate. Le statistiche già inviate vengono eliminate in conformità all’articolo 17 del GDPR (Regolamento (UE) 2016/679) e al periodo di conservazione indicato nella nostra <a href="{R}it/koselig/privacy/">informativa sulla privacy</a>. Per farle eliminare subito, invia a <a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a> il codice che il gioco mostra alla fine.</p>
 <p>L’acquisto «Senza annunci» non viene toccato: puoi ripristinarlo con <em>Ripristina</em>.</p>
 
