@@ -23,6 +23,8 @@ DOMAIN = "https://coffeebeansstudio.eu"
 SECURITY_EXPIRES = "2027-11-01T00:00:00.000Z"  # security.txt; продлевать раз в год
 sys.path.insert(0, str(ROOT))
 from content import L, EMAIL, DATE_ISO  # noqa: E402
+import content as _content  # noqa: E402
+ADDRESS = getattr(_content, "ADDRESS", "")  # пусто → {ADDRESS} остаётся в тексте и check() падает
 
 ARGS = sys.argv[1:]
 for a in ARGS:
@@ -380,6 +382,8 @@ def page_koselig(lang, R, T):
 def page_legal(lang, R, T, h1, sub, body, key):
     body = (body.replace('<a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a>', mail_link(R, lang, subject="Delete%20my%20data"))
             .replace('<a href="mailto:{EMAIL}">{EMAIL}</a>', mail_link(R, lang)).replace("{R}", R))
+    if ADDRESS:
+        body = body.replace("{ADDRESS}", html.escape(ADDRESS))
     return f"""<body class="legal">
 {header(lang, key, R, T, solid=True)}
 <main id="main" class="legal-main">
@@ -510,8 +514,8 @@ def check(out=None):
                     tgt = tgt / "index.html"
                 if not tgt.exists():
                     bad.append(f"{p.relative_to(OUT)} → {ref}")
-        if "{EMAIL}" in t or "{R}" in t:
-            bad.append(f"{p.relative_to(out)}: неподставленный шаблон")
+        for ph in sorted(set(re.findall(r"\{[A-Z][A-Z_]*\}", t))):   # {EMAIL}, {R}, {ADDRESS} (пустой ADDRESS в content.py) …
+            bad.append(f"{p.relative_to(out)}: неподставленный шаблон {ph}")
     if (out / "app-ads.txt").read_text() != "google.com, pub-8167533003532456, DIRECT, f08c47fec0942fa0\n":
         bad.append("app-ads.txt: строка не та")
     bad += check_security(out)
