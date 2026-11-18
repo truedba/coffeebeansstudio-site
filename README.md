@@ -55,4 +55,8 @@ OG-картинки: `src/og.html` + `work/og.mjs` (Playwright, Chrome) → `doc
 - Firebase: плагины закомментированы (`android/overlay/build.gradle`), аналитика — заглушка `DummyAnalytics`;
 - iOS: нет `NSUserTrackingUsageDescription` → ATT не спрашивается; `PrivacyInfo.xcprivacy`: `NSPrivacyTracking=false`;
 - покупка: `scripts/pokupka.gd`, товар `koselig.no_ads`, состояние `user://pokupki.json`; сохранения `user://lotok.json`.
+- удаление данных (18.11, вариант A разбора Radle — `~/lotok/docs/RAZBOR-oblako-i-privacy-2026-11-18.md`): встроенного удаления в игре нет,
+  строка «Настройки → Удалить мои данные» открывает `/koselig/delete-data/`; кода установки нет. iCloud (KVS): проверено владельцем
+  на iPhone 18.11 — в «Управлении хранилищем» Koselig НЕТ, поэтому путь «стереть копию» на сайте не пишется (решение владельца впереди);
+  пишется только: копия под Apple ID, мы её не читаем, удаление игры её не стирает, копирование выключается в Настройки → [имя] → iCloud.
 **Включили Firebase, медиацию или новую сеть — СНАЧАЛА правка `content.py` (раздел ads/no) и дата, потом сборка игры.**
