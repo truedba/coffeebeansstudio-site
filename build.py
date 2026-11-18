@@ -382,8 +382,9 @@ def page_koselig(lang, R, T):
 def page_legal(lang, R, T, h1, sub, body, key):
     body = (body.replace('<a href="mailto:{EMAIL}?subject=Delete%20my%20data">{EMAIL}</a>', mail_link(R, lang, subject="Delete%20my%20data"))
             .replace('<a href="mailto:{EMAIL}">{EMAIL}</a>', mail_link(R, lang)).replace("{R}", R))
-    if ADDRESS:
-        body = body.replace("{ADDRESS}", html.escape(ADDRESS))
+    addr = ADDRESS.get(lang, "") if isinstance(ADDRESS, dict) else ADDRESS   # dict: страна на языке страницы
+    if addr:
+        body = body.replace("{ADDRESS}", html.escape(addr))
     return f"""<body class="legal">
 {header(lang, key, R, T, solid=True)}
 <main id="main" class="legal-main">
