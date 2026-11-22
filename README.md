@@ -2,7 +2,7 @@
 
 **Цель одной фразой:** дать человеку, который нашёл Koselig в магазине (или магазину, который проверяет разработчика), тёплое
 первое впечатление о студии и честные ответы — что за игра, что она делает с данными, куда писать.
-**Правило отбора текста:** фраза проходит, только если её можно проверить в коде игры (`~/lotok/game`) или в магазине.
+**Правило отбора текста:** фраза проходит, только если её можно проверить в коде игры (репозиторий игры, папка `game/`) или в магазине.
 
 - Прод: https://coffeebeansstudio.eu (GitHub Pages, ветка `main`, папка `/docs`, файл `docs/CNAME`)
 - Репозиторий: https://github.com/truedba/coffeebeansstudio-site · локально `~/coffeebeansstudio-site`
@@ -21,15 +21,15 @@ style=/встроенных скриптов/голых адресов/внеш�
 из `data-u/data-d/data-t` — в HTML адреса нет. Заголовки живого сайта: `python3 ~/tooling/web-headers/webheaders.py URL`.
 Тексты — `content.py` (7 языков, как в игре: en es de fr it pl ru; порядок — `LANGS` в `build.py`), вёрстка — `src/site.css`, `src/site.js`, шаблоны — функции `page_*` в `build.py`.
 Картинки-исходники в `src/img/` в git не лежат (сотни МБ): откуда они —
-- кадры Nano Banana 4K: `~/lotok/game/assets/sait/*.png`, промпты — `~/lotok/art/NB_SAIT.tsv`, учёт — `~/lotok/art/GEN-LEDGER.md`;
+- кадры Nano Banana 4K: `game/assets/sait/*.png` в репозитории игры, промпты — `art/NB_SAIT.tsv`, учёт — `art/GEN-LEDGER.md` там же;
 - бонсай и логотип с пурпура: `bash ~/tooling/claude-rig/rig.sh prep_key.py <src> <out> [--no-crop]` (розовые лепестки сохраняются);
-- иконка и заставка игры: `~/lotok/game/assets/icon.png`, `nb/zs_fon_a.png`;
-- кадры игры 1170×2084 (англ.): `SHOT_TOLKO=yazyki SHOT_YAZYKI=en … engine.sh run --resolution 1170x2532 --script tools/shot.gd` в `~/lotok/game`.
+- иконка и заставка игры: `game/assets/icon.png`, `nb/zs_fon_a.png` в репозитории игры;
+- кадры игры 1170×2084 (англ.): `SHOT_TOLKO=yazyki SHOT_YAZYKI=en … engine.sh run --resolution 1170x2532 --script tools/shot.gd` в папке `game/` репозитория игры.
 OG-картинки: `src/og.html` + `work/og.mjs` (Playwright, Chrome) → `docs/assets/og-*.jpg`.
 
 ## Языки
 Семь — ровно языки игры. Названия кнопок и терминов (Тупик?/Stuck?/¿Atascado?/Verrannt?/Sans issue ?/Bloccato?, «Без рекламы»,
-Настройки, Позиции, материалы столов, лотков и фигур) берутся из `~/lotok/tools/teksty_gen.py` — единого источника строк игры:
+Настройки, Позиции, материалы столов, лотков и фигур) берутся из `tools/teksty_gen.py` репозитория игры — единого источника строк игры:
 сайт обязан называть то, что игрок видит на экране. Правовые страницы переводятся без изменения смысла; на каждой — пометка,
 что обязывает английская версия. Новый язык: словарь `L["xx"]` в `content.py` с теми же ключами, что `L["en"]` (включая
 `lang_label`), + `LANGS` и `og:locale` в `build.py`. Переключатель — `<details class="langs">` (не встаёт строкой в шапку
@@ -54,9 +54,15 @@ OG-картинки: `src/og.html` + `work/og.mjs` (Playwright, Chrome) → `doc
 - адаптеры медиации Meta/AppLovin есть в Android-сборке (`addons/admob/admob_export_plugin.gd`), в AdMob не включены (BACKLOG P2);
 - Firebase: плагины закомментированы (`android/overlay/build.gradle`), аналитика — заглушка `DummyAnalytics`;
 - iOS: нет `NSUserTrackingUsageDescription` → ATT не спрашивается; `PrivacyInfo.xcprivacy`: `NSPrivacyTracking=false`;
-- покупка: `scripts/pokupka.gd`, товар `koselig.no_ads`, состояние `user://pokupki.json`; сохранения `user://lotok.json`.
-- удаление данных (18.11, вариант A разбора Radle — `~/lotok/docs/RAZBOR-oblako-i-privacy-2026-11-18.md`): встроенного удаления в игре нет,
+- покупка: `scripts/pokupka.gd`, товар `koselig.no_ads`, состояние `user://pokupki.json`; сохранения — файл сохранения игры в `user://`.
+- удаление данных (18.11, вариант A разбора Radle — `docs/RAZBOR-oblako-i-privacy-2026-11-18.md` в репозитории игры): встроенного удаления в игре нет,
   строка «Настройки → Удалить мои данные» открывает `/koselig/delete-data/`; кода установки нет. iCloud (KVS): проверено владельцем
   на iPhone 18.11 — в «Управлении хранилищем» Koselig НЕТ, поэтому путь «стереть копию» на сайте не пишется (решение владельца впереди);
-  пишется только: копия под Apple ID, мы её не читаем, удаление игры её не стирает, копирование выключается в Настройки → [имя] → iCloud.
+  пишется только: копия под Apple ID, мы её не читаем, удаление игры её не стирает, копирование выключается в Настройки → [имя] → iCloud → See All
+  («Показать все» и т. п. — как в iOS на языке страницы); другое устройство с тем же Apple ID / аккаунтом Google снова зальёт прогресс в облако.
+- 22.11 (решения владельца по GDPR-аудиту): Remote Config и идентификатор установки Firebase — только после окна согласия (ЕЭЗ/UK/CH — цель
+  TCF 1; отказ — встроенные настройки), §8 — Remote Config на согласии; Analytics без рекламных идентификаторов (Android
+  `google_analytics_adid_collection_enabled=false`, iOS `GOOGLE_ANALYTICS_ADID_COLLECTION_ENABLED=NO`, `…IDFV_COLLECTION_ENABLED=NO`);
+  Game Center не используется (iCloud KVS работает без него); события `perf_session` (`scripts/perf.gd`, `scripts/ev_game.gd`) и
+  `boot_ready` (`foundation/boot/boot.gd`, `_timings()`) названы в §4 с параметрами.
 **Включили Firebase, медиацию или новую сеть — СНАЧАЛА правка `content.py` (раздел ads/no) и дата, потом сборка игры.**

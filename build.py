@@ -65,7 +65,7 @@ def build_images():
     for name, (src, widths, kind) in IMAGES.items():
         s = SRC / "img" / src
         if not s.exists():
-            print(f"нет исходника {s} (исходники: ~/lotok/game/assets/sait, nb, en3x — см. README)"); sys.exit(2)
+            print(f"нет исходника {s} (исходники: assets/sait, nb, en3x в репозитории игры — см. README)"); sys.exit(2)
         for w in widths:
             webp, avif = out / f"{name}-{w}.webp", out / f"{name}-{w}.avif"
             if webp.exists() and avif.exists():
