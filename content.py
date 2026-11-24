@@ -1,7 +1,7 @@
 # Тексты сайта coffeebeansstudio.eu на семи языках (как в игре). Факты об игре — только из кода игры (см. README.md, раздел «Откуда факты»).
 # Правило отбора: фраза проходит, если её можно проверить в коде игры или в магазине; «красивое, но непроверяемое» — нет.
 
-DATE_ISO = "2026-11-22"
+DATE_ISO = "2026-11-24"
 EMAIL = "support@coffeebeansstudio.eu"
 # Почтовый адрес контролёра (GDPR ст. 13: личность и контакты) — ровно как на публичной странице разработчика в Play Console.
 # Пусто — в тексте остаётся {ADDRESS}, и сборка падает «неподставленный шаблон {ADDRESS}»: заглушка на сайт не уходит.
@@ -19,7 +19,7 @@ L = {}
 
 # ─────────────────────────────── ENGLISH ───────────────────────────────
 L["en"] = dict(
-    name="English", short="EN", date="22 November 2026",
+    name="English", short="EN", date="24 November 2026",
     nav_koselig="Koselig", nav_support="Support", skip="Skip to content", lang_label="Language",
     foot_legal="Privacy", foot_terms="Terms", foot_support="Support", foot_delete="Delete data",
     soon_stores="Coming soon to the App Store and Google Play",
@@ -299,7 +299,7 @@ L["en"] = dict(
 
 # ─────────────────────────────── РУССКИЙ ───────────────────────────────
 L["ru"] = dict(
-    name="Русский", short="RU", date="22 ноября 2026",
+    name="Русский", short="RU", date="24 ноября 2026",
     nav_koselig="Koselig", nav_support="Поддержка", skip="К содержанию", lang_label="Язык",
     foot_legal="Конфиденциальность", foot_terms="Условия", foot_support="Поддержка", foot_delete="Удаление данных",
     soon_stores="Скоро в App Store и Google Play",
@@ -564,7 +564,7 @@ L["ru"] = dict(
 
 # ─────────────────────────────── POLSKI ───────────────────────────────
 L["pl"] = dict(
-    name="Polski", short="PL", date="22 listopada 2026",
+    name="Polski", short="PL", date="24 listopada 2026",
     nav_koselig="Koselig", nav_support="Pomoc", skip="Przejdź do treści", lang_label="Język",
     foot_legal="Prywatność", foot_terms="Warunki", foot_support="Pomoc", foot_delete="Usuwanie danych",
     soon_stores="Wkrótce w App Store i Google Play",
@@ -830,7 +830,7 @@ L["pl"] = dict(
 # ─────────────────────────────── ESPAÑOL ───────────────────────────────
 # Термины игры — колонка «es» единого источника строк игры (teksty_gen.py в репозитории игры); правовые тексты — смысл английских без изменений.
 L["es"] = dict(
-    name="Español", short="ES", date="22 de noviembre de 2026",
+    name="Español", short="ES", date="24 de noviembre de 2026",
     nav_koselig="Koselig", nav_support="Soporte", skip="Saltar al contenido", lang_label="Idioma",
     foot_legal="Privacidad", foot_terms="Condiciones", foot_support="Soporte", foot_delete="Eliminar datos",
     soon_stores="Próximamente en el App Store y Google Play",
@@ -1113,7 +1113,7 @@ L["es"] = dict(
 # ─────────────────────────────── DEUTSCH ───────────────────────────────
 # Термины игры — колонка «de» единого источника строк игры (teksty_gen.py в репозитории игры); правовые тексты — смысл английских без изменений.
 L["de"] = dict(
-    name="Deutsch", short="DE", date="22. November 2026",
+    name="Deutsch", short="DE", date="24. November 2026",
     nav_koselig="Koselig", nav_support="Hilfe", skip="Zum Inhalt springen", lang_label="Sprache",
     foot_legal="Datenschutz", foot_terms="Nutzungsbedingungen", foot_support="Hilfe", foot_delete="Daten löschen",
     soon_stores="Bald im App Store und bei Google Play",
@@ -1396,7 +1396,7 @@ L["de"] = dict(
 # ─────────────────────────────── FRANÇAIS ───────────────────────────────
 # Термины игры — колонка «fr» единого источника строк игры (teksty_gen.py в репозитории игры); правовые тексты — смысл английских без изменений.
 L["fr"] = dict(
-    name="Français", short="FR", date="22 novembre 2026",
+    name="Français", short="FR", date="24 novembre 2026",
     nav_koselig="Koselig", nav_support="Aide", skip="Aller au contenu", lang_label="Langue",
     foot_legal="Confidentialité", foot_terms="Conditions", foot_support="Aide", foot_delete="Suppression des données",
     soon_stores="Bientôt sur l’App Store et Google Play",
@@ -1679,7 +1679,7 @@ L["fr"] = dict(
 # ─────────────────────────────── ITALIANO ───────────────────────────────
 # Термины игры — колонка «it» единого источника строк игры (teksty_gen.py в репозитории игры); правовые тексты — смысл английских без изменений.
 L["it"] = dict(
-    name="Italiano", short="IT", date="22 novembre 2026",
+    name="Italiano", short="IT", date="24 novembre 2026",
     nav_koselig="Koselig", nav_support="Assistenza", skip="Vai al contenuto", lang_label="Lingua",
     foot_legal="Privacy", foot_terms="Termini", foot_support="Assistenza", foot_delete="Elimina dati",
     soon_stores="Presto su App Store e Google Play",
